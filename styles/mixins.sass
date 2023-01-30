@@ -1,0 +1,47 @@
+@import "./variables"
+
+@mixin font ($fontSize, $color, $weight, $important: "not important")
+    @if $important == important
+        color: $color !important
+        font-size: $fontSize !important
+
+        @if $weight == black
+            font-weight: 800 !important
+            font-family: ExoBlack !important
+
+        @else if $weight == medium
+            font-weight: 600 !important
+            font-family: ExoBold !important
+
+        @else if $weight == bold
+            font-weight: 800 !important
+            font-family: ExoBold !important
+
+        @else if $weight == regular
+            font-weight: 300 !important
+            font-family: ExoItalic !important
+
+        @else if $weight == regular
+            font-weight: 300 !important
+            font-family: ExoLight !important
+
+        @else if $weight == regular
+            font-weight: 500 !important
+            font-family: ExoMedium !important
+
+        @else if $weight == regular
+            font-weight: 300 !important
+            font-family: ExoRegular !important
+    @else
+        color: $color
+        font-size: $fontSize
+
+        @if $weight == regular
+            font-weight: 400
+            font-family: "Montserrat-Regular"
+        @else if $weight == medium
+            font-weight: 500
+            font-family: "Montserrat-Medium"
+        @else if $weight == bold
+            font-weight: 700
+            font-family: "Montserrat-Bold"

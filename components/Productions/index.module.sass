@@ -1,0 +1,70 @@
+@import ../../styles/variables, ../../styles/mixins
+
+.cont
+    height: 701px
+    background: #F9F9F9
+
+    &__productions
+        display: flex
+        justify-content: center
+        justify-content: space-around
+        flex-wrap: wrap
+        margin-top: 80px
+
+        &__card
+            height: 276px
+            box-shadow: 0px 4px 4px 0px #0000000F
+            background: $white
+            width: 100%
+            max-width: 305px
+            border-radius: 20px
+            &:hover
+                opacity: 0.8
+                background: #0000004f
+                cursor: pointer
+
+            &:hover &__title
+                color: $white
+
+            &:hover &__hoverContent
+                display: block
+
+            &__img
+                display: flex
+                margin: 20px auto
+
+            &__title
+                font-family: ExoBold
+                font-size: 20px
+                font-weight: 700
+                line-height: 36px
+                letter-spacing: 0.02em
+                text-align: center
+                color: #000000
+
+            &__hoverContent
+                width: 100%
+                padding-left: 20%
+                position: relative
+                top: -220px
+                flex-direction: column
+                justify-content: center
+                display: none
+
+                & button
+                    padding: 6px 22px
+                    color: $white
+                    border: none
+                    border-radius: 6px
+                    background: #3D3D3D
+                    font-family: ExoBold
+                    cursor: pointer
+                    font-size: 16px
+                    font-weight: 400
+                    line-height: 28px
+                    margin-top: 50px
+                    display: flex
+                    justify-content: center
+                    margin-bottom: 30px
+
+                

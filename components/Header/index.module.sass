@@ -1,0 +1,53 @@
+@import ../../styles/variables, ../../styles/mixins
+
+.cont
+    width: 100%
+    height: 720px
+    background-image: url('/assets/img/headerBg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    object-fit: contain
+    backface-visibility: hidden
+    padding: 100px 80px 
+
+    &__info
+        height: 419px
+        background: #4E4E4E99
+        backdrop-filter: blur(10px)
+        max-width: 674px
+        width: 100%
+        border-radius: 10px
+        padding-left: 40px
+        overflow: hidden
+
+        &__title
+            font-family: ExoBold
+            color: red
+            font-size: 48px
+            font-weight: 700
+            line-height: 58px
+            color: #00E376
+            padding-top: 20px
+
+            & span
+                color: $white
+
+        &__description
+            font-family: ExoExtraLight
+            font-size: 22px
+            font-weight: 400
+            line-height: 30px
+            color: $white
+            padding-top: 20px
+
+        &__btn
+            padding: 16px 63px
+            background: #3D3D3D
+            margin-top: 40px
+            border: none
+            font-family: ExoExtraLight  
+            color: $white
+            font-size: 24px
+            font-weight: 500
+            line-height: 29px
+            border-radius: 6px

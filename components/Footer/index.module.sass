@@ -1,0 +1,61 @@
+@import ../../styles/variables, ../../styles/mixins
+
+.cont
+    width: 100%
+    background: #505050
+    padding: 100px 79px
+    display: flex
+    flex-wrap: wrap
+
+    &__title
+        font-family: ExoBold
+        font-size: 24px
+        font-weight: 700
+        color: $white
+
+    &__address
+        font-family: ExoLight
+        font-size: 18px
+        font-weight: 400
+        text-align: left
+        color: #9E9E9E
+        padding-top: 30px
+        line-height: 21px
+        letter-spacing: 2%
+
+    &__social
+        margin: 30px 10px
+        &:first-child
+            margin-left: 0px
+
+    &__plan
+        font-family: ExoLight
+        font-size: 18px
+        font-weight: 400
+        text-align: left
+        color: #9E9E9E
+
+    &__workPlan
+        font-family: ExoMedium
+        font-size: 18px
+        font-weight: 400
+        color: $white
+        padding-top: 8px
+
+    &__menus
+        display: flex
+        margin-left: 181px
+
+        &__menu
+            list-style: none
+            color: $white
+            font-family: ExoMedium
+            font-size: 18px
+            text-align: left
+            &:nth-last-child(1)
+                margin-left: 201px
+            & li
+                padding-top: 20px
+                &_Link
+                    display: none
+                    

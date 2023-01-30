@@ -1,0 +1,24 @@
+{
+    "members" : "Members",  
+    "restaurants" : "Restaurants" , 
+    "productive" : "Productive" , 
+    "chef" : "Chef" , 
+    "partners" : "Partners" , 
+    "main" : "Main" ,  
+    "our" : "About us"  ,
+
+    "aboutUs" : "About us" , 
+    "aboutUsInformation" : "We are the World Halal Committee (WHC) - we certify tourist sites, catering establishments, as well as food producers - based on the Holy Quran and international standards." , 
+    "btnMore" : "More" , 
+
+    "pagesTitle" : {
+        "partners" : "Partners" , 
+        "travel" : "TRAVEL" , 
+        "restaurantsHalal" : "HALAL RESTAURANTS"  , 
+        "ourMembers" : "OUR MEMBERS" , 
+        "chefSHalal" : "HALAL CHEF" , 
+        "manufacturers" : "MANUFACTURERS" , 
+        "siyob" : ""
+    }
+    
+}   

@@ -1,0 +1,51 @@
+@import ../../styles/variables, ../../styles/mixins
+
+.cont
+    &__chefs
+        display: flex
+        justify-content: center
+        justify-content: space-around
+        padding: 100px 80px
+        flex-wrap: wrap
+
+        &__card
+            height: 390px
+            width: 280px
+            margin: 5px
+
+
+            &:hover &__hoverContent
+                display: flex
+                padding: auto
+                transition: 1s ease
+                background: #000000a5
+                height: 100%
+                border-radius: 10px
+
+            &__hoverContent
+                align-items: center
+                display: flex
+                flex-direction: column
+                justify-content: center
+                position: relative
+                top: -380px
+                display: none
+
+
+                & h3
+                    font-family: ExoBold
+                    font-size: 24px
+                    font-weight: 700
+                    line-height: 36px
+                    color: #28D783
+                    text-align: center
+
+                & p
+                    font-family: ExoExtraRegular
+                    padding-top: 20px
+                    font-size: 16px
+                    font-weight: 400
+                    color: $white
+                    line-height: 28px
+                    text-align: center
+                    padding-bottom: 35px
