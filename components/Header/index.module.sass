@@ -3,22 +3,67 @@
 .cont
     width: 100%
     height: 720px
-    background-image: url('/assets/img/headerBg.png')
     background-repeat: no-repeat
     background-size: cover
     object-fit: contain
     backface-visibility: hidden
-    padding: 100px 80px 
+    overflow: hidden
+
+    &__first
+        display: flex
+        flex-direction: column
+
+        &__location
+            // height: 39px
+            // max-width: 294px
+            // width: 100%
+            background: #2F2F2F
+            border-radius: 6px
+            position: absolute
+            bottom: 100px
+            right: 100px
+            font-family: ExoBold
+            font-size: 16px
+            font-weight: 700
+            line-height: 36px
+            letter-spacing: 0.02em
+            text-align: center
+            color: #FFFFFF
+            padding: 7px 17px 6px 11px
+            backdrop-filter: blur(10px)
+
+        &__region
+            position: absolute
+            bottom: 50px
+            right: 100px
+            background: #2F2F2F
+            backdrop-filter: blur(10px)
+            height: 39px
+            max-width: 128px
+            width: 100% 
+            border-radius: 6px
+            font-family: ExoLight
+            font-size: 16px
+            font-weight: 400
+            line-height: 36px
+            letter-spacing: 0em
+            color: #FFFFFF
+            padding-left: 21px
+            padding-top: 6px
 
     &__info
         height: 419px
-        background: #4E4E4E99
         backdrop-filter: blur(10px)
         max-width: 674px
         width: 100%
         border-radius: 10px
         padding-left: 40px
         overflow: hidden
+        position: relative
+        // top: -500px
+        bottom: 625px
+        left: 80px
+        background: #4E4E4E99
 
         &__title
             font-family: ExoBold
@@ -45,7 +90,7 @@
             background: #3D3D3D
             margin-top: 40px
             border: none
-            font-family: ExoExtraLight  
+            font-family: ExoExtraLight
             color: $white
             font-size: 24px
             font-weight: 500

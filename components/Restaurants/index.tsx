@@ -154,7 +154,6 @@ export const Restaurants: FC<any> = () => {
           </div>
         </div>
 
-        
         <div className={styles.cont__restaurants__restaurant}>
           <Image
             src="/assets/img/sarikbola.png"
@@ -204,7 +203,6 @@ export const Restaurants: FC<any> = () => {
           </div>
         </div>
 
-              
         <div className={styles.cont__restaurants__restaurant}>
           <Image
             src="/assets/img/shashlikuz.png"
@@ -253,14 +251,11 @@ export const Restaurants: FC<any> = () => {
             </button>
           </div>
         </div>
-
-
-        
       </div>
 
-      
-
-      <button className={styles.cont__btn}>Смотреть больше</button>
+      <Link href="/restaurants">
+        <button className={styles.cont__btn}>Смотреть больше</button>
+      </Link>
     </div>
   );
 };

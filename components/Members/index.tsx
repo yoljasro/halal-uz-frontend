@@ -35,14 +35,12 @@ export const Members: FC<any> = () => {
       />
       <Carousel
         className={styles.cont__carousel}
-        // autoplay={true}  
-        // animation={'fade'}
+        autoplay={true}  
         wrapAround={true}
         // autoplayReverse={true}
         swiping={true}
         adaptiveHeight={false}
-        speed={5000}
-        autoplayInterval={5000}
+        autoplayInterval={3000}
         renderCenterRightControls={null}
         renderCenterLeftControls={null}
         renderBottomCenterControls={null}
