@@ -4,6 +4,7 @@ import { NextIntlProvider } from "next-intl";
 import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import Script from "next/script";
+import { Layout } from "../components/Layout";
 
 type PagePropsType = {
   messages: typeof import("../messages/en.json");
@@ -32,15 +33,9 @@ var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
 })('https://widget.replain.cc/dist/client.js')`}
       </Script>
 
-      <div
-        id="replain-embedded"
-        data-subject="Company information"
-        data-theme="light"
-        data-width="100%"
-        data-height="500px"
-      ></div>
-
+      <Layout>
       <Component {...pageProps} {...{ previousRoute: previousRoute }} />
+      </Layout>
     </NextIntlProvider>
   );
 }

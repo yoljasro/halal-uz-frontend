@@ -1,15 +1,15 @@
 .form
     display: flex
     justify-content: center
-    margin-top: 100px
+    margin-top: 0px
 
 .cont
-    height: 509px
-    max-width: 984px
+    height: 609px
+    max-width: 906px
     width: 100%
     border-radius: 20px
+    margin-top: 15px
     background: #FFFFFF
-    border: 1px solid black
 
     &__title
         font-family: ExoBold
@@ -19,7 +19,7 @@
         letter-spacing: 0.02em
         color: #00E376
         text-align: center
-        padding-top: 60px
+        padding-top: 50px
 
     &__description
         font-family: ExoExtraRegular
@@ -29,11 +29,69 @@
         letter-spacing: 0.02em
         text-align: center
         color: #696969
-        padding-top: 40px
-        padding-bottom: 80px
+        padding-top: 30px
+        padding-bottom: 40px
 
-    &__input
-        height: 50px
-        max-width: 413px
-        width: 100%
-        border-radius: 6px
+    &__form
+        padding: 0px 40px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+        & input
+            font-family: ExExtraRegular
+            font-size: 18px
+            font-weight: 400
+            line-height: 36px
+            letter-spacing: 0.02em
+
+        &__input
+            height: 40px !important
+            max-width: 393px
+            width: 100%
+            border-radius: 6px
+
+        &__lastName
+            height: 40px !important
+            max-width: 393px
+            width: 100%
+            border-radius: 6px
+
+        &__brandName
+            max-height: 40px !important
+            max-width: 826px
+            width: 100%
+            border-radius: 6px
+            margin-top: 40px !important
+
+        &__select
+            height: 40px
+            max-width: 816px
+            width: 100%
+            border-radius: 6px
+            margin-top: 30px !important
+
+        &__inputLabel
+            position: relative
+            top: 31px
+
+        &__tel
+            max-width: 393px
+            width: 100%
+            border-radius: 6px
+            margin-top: 30px !important
+
+        &__btn
+            background: #3D3D3D
+            font-family: ExoBold
+            font-size: 18px
+            font-weight: 500
+            line-height: 36px
+            letter-spacing: 0.02em
+            text-align: center
+            padding: 2px 365px
+            border-radius: 6px
+            border: none
+            margin-top: 30px !important
+            color: #FFFFFF
+            cursor: pointer

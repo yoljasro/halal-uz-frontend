@@ -9,32 +9,15 @@ import { useTranslations } from "next-intl";
 // router
 import { useRouter } from "next/router";
 // styles
-import styles from "./index.module.sass";
-import { MainPageTitle } from "../MainPageTitle";
-import { restaurants } from "../../constants";
-import { SocialNetworks } from "../socialNetworks";
+import styles from "../styles/restaurants.module.sass";
+import { MainPageTitle } from "../components/MainPageTitle";
+import { restaurants } from "../constants";
+import { SocialNetworks } from "../components/socialNetworks";
 
-export const Restaurants: FC<any> = () => {
+const Restaurants: FC<any> = () => {
   const t = useTranslations();
   const router = useRouter();
   const [selectedLang, setSelectedLang] = useState(router.locale);
-
-  const restaurants = [
-    {
-      background: "/assets/img/appexPizza.png",
-      img: "/assets/img/appexPizza2.png",
-    },
-
-    {
-      background: "/assets/img/appexPizza.png",
-      img: "/assets/img/appexPizza2.png",
-    },
-
-    {
-      background: "/assets/img/appexPizza.png",
-      img: "/assets/img/appexPizza2.png",
-    },
-  ];
 
   useEffect(() => {
     if (selectedLang) {
@@ -154,7 +137,6 @@ export const Restaurants: FC<any> = () => {
           </div>
         </div>
 
-        
         <div className={styles.cont__restaurants__restaurant}>
           <Image
             src="/assets/img/sarikbola.png"
@@ -204,7 +186,6 @@ export const Restaurants: FC<any> = () => {
           </div>
         </div>
 
-              
         <div className={styles.cont__restaurants__restaurant}>
           <Image
             src="/assets/img/shashlikuz.png"
@@ -254,13 +235,58 @@ export const Restaurants: FC<any> = () => {
           </div>
         </div>
 
-
         
+        <div className={styles.cont__restaurants__restaurant}>
+          <Image
+            src="/assets/img/shashlikuz.png"
+            alt="shashlik uz"
+            width={620}
+            height={320}
+            className={styles.cont__restaurants__restaurant__bg}
+          />
+          <Image
+            src={"/assets/img/shashlik.png"}
+            alt="shashlik uz"
+            width={100}
+            height={100}
+            className={styles.cont__restaurants__restaurant__img}
+          />
+          <div className={styles.cont__restaurants__restaurant__hoverContent}>
+            <h1
+              className={
+                styles.cont__restaurants__restaurant__hoverContent__title
+              }
+            >
+              ERGASH MEAT HOUSE
+            </h1>
+            <p
+              className={
+                styles.cont__restaurants__restaurant__hoverContent__description
+              }
+            >
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+            <SocialNetworks />
+            <br />
+            <button
+              className={
+                styles.cont__restaurants__restaurant__hoverContent__visitBtn
+              }
+            >
+              Перейти на сайт
+            </button>
+            <button
+              className={
+                styles.cont__restaurants__restaurant__hoverContent__moreBtn
+              }
+            >
+              Подробнее{" "}
+            </button>
+          </div>
+        </div>
       </div>
 
-      
-
-      <button className={styles.cont__btn}>Смотреть больше</button>
     </div>
   );
 };
+export default Restaurants;

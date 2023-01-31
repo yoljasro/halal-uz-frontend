@@ -29,7 +29,7 @@ export const Navbar = () => {
         <Link className={styles.cont__menu__link} href="/">
           <li className={styles.cont__menu__link__main}>{t("main")}</li>
         </Link>
-        <Link className={styles.cont__menu__link} href="/">
+        <Link className={styles.cont__menu__link} href="/aboutUs">
           <li>{t("our")}</li>
         </Link>
         <Link className={styles.cont__menu__link} href="/">

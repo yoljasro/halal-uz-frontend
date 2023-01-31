@@ -37,7 +37,7 @@ export const Header: FC<any> = () => {
           Коране и международных стандартах.
         </p>
         <button className={styles.cont__info__btn}>
-          <Link href={'/'}>Подробно </Link>
+          <Link href={'/aboutUs'}>Подробно </Link>
         </button>
       </div>
     </div>

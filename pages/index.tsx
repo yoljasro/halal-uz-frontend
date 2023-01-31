@@ -12,7 +12,7 @@ import { Partners } from "../components/Partners";
 // import { Restaurants } from "../components/Restaurants";
 import { Footer } from "../components/Footer";
 import { Members } from "../components/Members";
-import { Travels } from "../components/Travels";
+// import { Travels } from "../components/Travels";
 import { Restaurants } from "../components/Restaurants";
 import { Main } from "../components/Main";
 import { Chefs } from "../components/Chefs";
@@ -23,18 +23,9 @@ import { Productions } from "../components/Productions";
 export default function Home() {
   const { locale, locales, push, asPath } = useRouter();
 
-  
-
   return (
     <div className={styles.container}>
       <div>
-        
-        {/* {locales.map((l) => (
-          <button key={l} onClick={handleClick(l)}>
-            {l}
-          </button>
-        ))} */}
-
       </div>
       <Head>
 
@@ -48,17 +39,16 @@ export default function Home() {
       {/* <UserInfo /> */}
       {/* <Header/>}
       {/* <Main/> */}
-      <Main/>
+      {/* <Main/> */}
       <Navbar />
       <Header/>
-      <Travels/>
+      {/* <Travels/> */}
       <Restaurants/>
       <Productions/>
       <Chefs/>
       <Members/>
       <Partners/>
-      <Footer/>
-      {/* <Get/> */}
+      {/* <Footer/> */}
     </div>
   );
 }
