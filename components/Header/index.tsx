@@ -29,24 +29,27 @@ export const Header: FC<any> = () => {
   return (
     <div className={styles.cont}>
       <Carousel
-        // autoplay={true}
-        autoplayInterval={2000}
+        autoplay={true}
+        autoplayInterval={7000}
+        animation={'fade'}
+        wrapAround={true}
+        pauseOnHover={true}
         renderCenterRightControls={null}
         renderCenterLeftControls={null}
         renderBottomCenterControls={null}
-        swiping={true}
+        swiping={false}
       >
-        <div className={styles.cont__first}>
+        <div className={styles.cont__map}>
           <Image
             src={"/assets/img/headerBg.png"}
             alt="header"
             width={1440}
             height={720}
           />
-          <div className={styles.cont__first__location}>
+          {/* <div className={styles.cont__map__location}>
             Центр Исламской Цивилизации
           </div>
-          <div className={styles.cont__first__region}>
+          <div className={styles.cont__map__region}>
             <Image
               src={"/assets/img/location.png"}
               alt="location"
@@ -54,20 +57,119 @@ export const Header: FC<any> = () => {
               height={24}
             />{" "}
             Ташкент
-          </div>
+          </div> */}
         </div>
-        <Image
-          src={"/assets/img/headerBg.png"}
-          alt="header"
-          width={1440}
-          height={720}
-        />
-        <Image
-          src={"/assets/img/headerBg.png"}
-          alt="header"
-          width={1440}
-          height={720}
-        />
+
+        <div className={styles.cont__map}>
+          <Image
+            src={"/assets/img/travelone.jpg"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+          {/* <div className={styles.cont__map__location}>
+            Xorazm
+          </div>
+          <div className={styles.cont__map__region}>
+            <Image
+              src={"/assets/img/location.png"}
+              alt="location"
+              width={20}
+              height={24}
+            />{" "}
+            Xorazm didimu tepada
+          </div> */}
+        </div>
+
+        <div className={styles.cont__map}>
+          <Image
+            src={"/assets/img/traveltwo.jpg"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+        </div>
+
+        <div className={styles.cont__map}>
+          <Image
+            src={"/assets/img/travel3.jpg"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+        </div>
+
+        <div className={styles.cont__map}>
+          <Image
+            src={"/assets/img/travel4.jpg"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+        </div>
+
+        <div className={styles.cont__map}>
+          <Image
+            src={"/assets/img/travelfive.png"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+        </div>
+
+        <div className={styles.cont__map}>
+          <Image
+            src={"/assets/img/travel6.jpg"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+        </div>
+
+        <div className={styles.cont__map}>
+          <Image
+            src={"/assets/img/travel7.jpg"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+        </div>
+
+        <div className={styles.cont__map}>
+          <Image
+            src={"/assets/img/travel8.jpg"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+        </div>
+
+        <div className={styles.cont__map}>
+          <Image
+            src={"/assets/img/travel9.jpg"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+        </div>
+
+        <div className={styles.cont__map}>
+          <Image
+            src={"/assets/img/travel11.jpg"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+        </div>
+
+        <div className={styles.cont__map}>
+          <Image
+            src={"/assets/img/travel12.jpg"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+        </div>
       </Carousel>
       <div className={styles.cont__info}>
         <h1 className={styles.cont__info__title}>

@@ -28,7 +28,7 @@ export const Members: FC<any> = () => {
   }, [selectedLang]);
 
   return (
-    <div className={styles.cont}>
+    <div className={styles.cont} id='members'>
       <MainPageTitle
         subtitle="НАШИ ЧЛЕНЫ"
         description="В данном разделе указаны государства, которые входят в состав нашей международной организации"
@@ -36,11 +36,12 @@ export const Members: FC<any> = () => {
       <Carousel
         className={styles.cont__carousel}
         autoplay={true}  
-        wrapAround={true}
-        // autoplayReverse={true}
         swiping={true}
+        animation={'zoom'}
         adaptiveHeight={false}
         autoplayInterval={3000}
+        speed={3000}
+        wrapAround={true}
         renderCenterRightControls={null}
         renderCenterLeftControls={null}
         renderBottomCenterControls={null}

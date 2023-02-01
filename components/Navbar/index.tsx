@@ -41,7 +41,7 @@ export const Navbar = () => {
         <Link className={styles.cont__menu__link} href="/">
           <li>Халяль Шеф</li>
         </Link>
-        <Link className={styles.cont__menu__link} href="/">
+        <Link className={styles.cont__menu__link} href="#members">
           <li>Члены</li>
         </Link>
         <Link className={styles.cont__menu__link} href="/">
