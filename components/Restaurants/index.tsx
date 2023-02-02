@@ -50,7 +50,7 @@ export const Restaurants: FC<any> = () => {
   }
 
   return (
-    <div className={styles.cont}>
+    <div className={styles.cont}> 
       <MainPageTitle
         subtitle="ХАЛЯЛЬ РЕСТОРАНЫ"
         description="В данном разделе вы можете ознакомится с заведениями общественного питания, которые удостоились Сертификата Халяль"
@@ -75,9 +75,9 @@ export const Restaurants: FC<any> = () => {
             <h1
               className={
                 styles.cont__restaurants__restaurant__hoverContent__title
-              }
+              } 
             >
-              KHAN AHMAD
+              KHAN AHMADs 
             </h1>
             <p
               className={
