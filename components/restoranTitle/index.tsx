@@ -109,7 +109,7 @@ export const RestoranTitle: FC<RestoranTitle> = ({
             height={45}
           />
         </Link>
-        
+
         <Link href={facebook}>
           <Image
             src={"/assets/img/cafeFacebook.png"}

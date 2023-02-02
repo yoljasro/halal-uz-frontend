@@ -19,23 +19,6 @@ export const Restaurants: FC<any> = () => {
   const router = useRouter();
   const [selectedLang, setSelectedLang] = useState(router.locale);
 
-  const restaurants = [
-    {
-      background: "/assets/img/appexPizza.png",
-      img: "/assets/img/appexPizza2.png",
-    },
-
-    {
-      background: "/assets/img/appexPizza.png",
-      img: "/assets/img/appexPizza2.png",
-    },
-
-    {
-      background: "/assets/img/appexPizza.png",
-      img: "/assets/img/appexPizza2.png",
-    },
-  ];
-
   useEffect(() => {
     if (selectedLang) {
       router.push(router.asPath, undefined, {
@@ -44,13 +27,8 @@ export const Restaurants: FC<any> = () => {
     }
   }, [selectedLang]);
 
-  interface RestaurantsValue {
-    background: string;
-    img: string;
-  }
-
   return (
-    <div className={styles.cont}> 
+    <div className={styles.cont}>
       <MainPageTitle
         subtitle="ХАЛЯЛЬ РЕСТОРАНЫ"
         description="В данном разделе вы можете ознакомится с заведениями общественного питания, которые удостоились Сертификата Халяль"
@@ -75,9 +53,9 @@ export const Restaurants: FC<any> = () => {
             <h1
               className={
                 styles.cont__restaurants__restaurant__hoverContent__title
-              } 
+              }
             >
-              KHAN AHMADs 
+              KHAN AHMADs
             </h1>
             <p
               className={
@@ -95,13 +73,15 @@ export const Restaurants: FC<any> = () => {
             >
               Перейти на сайт
             </button>
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__moreBtn
-              }
-            >
-              Подробнее{" "}
-            </button>
+            <Link href={"/cafes/khanahmad"}>
+              <button
+                className={
+                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
+                }
+              >
+                Подробнее
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -144,13 +124,15 @@ export const Restaurants: FC<any> = () => {
             >
               Перейти на сайт
             </button>
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__moreBtn
-              }
-            >
-              Подробнее{" "}
-            </button>
+            <Link href={"/cafes/apexpizza"}>
+              <button
+                className={
+                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
+                }
+              >
+                Подробнее{" "}
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -175,7 +157,7 @@ export const Restaurants: FC<any> = () => {
                 styles.cont__restaurants__restaurant__hoverContent__title
               }
             >
-              ERGASH MEAT HOUSE
+              SARIQ BOLA
             </h1>
             <p
               className={
@@ -193,13 +175,15 @@ export const Restaurants: FC<any> = () => {
             >
               Перейти на сайт
             </button>
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__moreBtn
-              }
-            >
-              Подробнее{" "}
-            </button>
+            <Link href={"/cafes/sariqbola"}>
+              <button
+                className={
+                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
+                }
+              >
+                Подробнее{" "}
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -224,7 +208,7 @@ export const Restaurants: FC<any> = () => {
                 styles.cont__restaurants__restaurant__hoverContent__title
               }
             >
-              ERGASH MEAT HOUSE
+              SHASHLIK UZ
             </h1>
             <p
               className={
@@ -233,7 +217,7 @@ export const Restaurants: FC<any> = () => {
             >
               Lorem ipsum dolor sit amet consectetur.
             </p>
-            <SocialNetworks />
+            <SocialNetworks/>
             <br />
             <button
               className={
@@ -242,13 +226,15 @@ export const Restaurants: FC<any> = () => {
             >
               Перейти на сайт
             </button>
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__moreBtn
-              }
-            >
-              Подробнее{" "}
-            </button>
+            <Link href={'/cafes/shashlik'}>
+              <button
+                className={
+                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
+                }
+              >
+                Подробнее{" "}
+              </button>
+            </Link>
           </div>
         </div>
       </div>

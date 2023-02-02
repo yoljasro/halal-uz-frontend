@@ -10,7 +10,13 @@ import { useRouter } from "next/router";
 //styles
 import styles from "./index.module.sass";
 
-export const SocialNetworks = () => {
+type SocialNetworks = {
+  instagram: string;
+  facebook: string;
+  telegram: string;
+};
+
+export const SocialNetworks: FC = () => {
   const t = useTranslations();
   const router = useRouter();
   const [selectedLang, setSelectedLang] = useState(router.locale);
@@ -25,26 +31,27 @@ export const SocialNetworks = () => {
 
   return (
     <div className={styles.cont}>
-      <Image
-        src={"/assets/img/instaRes.png"}
-        alt="instagram"
-        width={40}
-        height={40}
-      />
-
-      <Image
-        src={"/assets/img/faceRes.png"}
-        alt="faceebook"
-        width={40}
-        height={40}
-      />
-
-      <Image
-        src={"/assets/img/telegramRes.png"}
-        alt="telragram"
-        width={40}
-        height={40}
-      />
+      {/* <Link href={instagram}> */}
+        <Image
+          src={"/assets/img/instaRes.png"}
+          alt="instagram"
+          width={40}
+          height={40}
+        />
+      {/* <Link href={facebook}> */}
+        <Image
+          src={"/assets/img/faceRes.png"}
+          alt="faceebook"
+          width={40}
+          height={40}
+        />
+      {/* <Link href={telegram}> */}
+        <Image
+          src={"/assets/img/telegramRes.png"}
+          alt="telragram"
+          width={40}
+          height={40}
+        />
     </div>
   );
 };

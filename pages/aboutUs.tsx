@@ -26,11 +26,11 @@ const AboutUs: FC<any> = ({ props }) => {
     }
   }, [selectedLang]);
 
-  window.open(
-    "/assets/documents/nihol.pdf",
-    "",
-    "resizable=yes, scrollbars=yes, toolbar=0 titlebar=yes, width=1024, height=900, top=10, left=10"
-  );
+  // window.open(
+  //   "/assets/documents/nihol.pdf",
+  //   "",
+  //   "resizable=yes, scrollbars=yes, toolbar=0 titlebar=yes, width=1024, height=900, top=10, left=10"
+  // );
 
   return (
     <div className={styles.cont}>
@@ -51,12 +51,10 @@ const AboutUs: FC<any> = ({ props }) => {
         деятельность.
       </p>
       <Link className={styles.cont__link} href="/">
-        {" "}
         <span>№1</span> Просмотр документов
       </Link>{" "}
       <br />
       <Link className={styles.cont__link} href="/">
-        {" "}
         <span>№2</span> Просмотр документов
       </Link>
       <a href={"/assets/documents/nihol.pdf"} target={"_blank"}>
