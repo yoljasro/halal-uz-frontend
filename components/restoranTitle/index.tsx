@@ -20,6 +20,7 @@ type RestoranTitle = {
   img6: string;
   instagram: string;
   facebook: string;
+  pdf: string;
 };
 
 export const RestoranTitle: FC<RestoranTitle> = ({
@@ -33,6 +34,7 @@ export const RestoranTitle: FC<RestoranTitle> = ({
   img6,
   instagram,
   facebook,
+  pdf,
 }) => {
   return (
     <div className={styles.title}>
@@ -40,7 +42,7 @@ export const RestoranTitle: FC<RestoranTitle> = ({
       <div className={styles.title__eventText}>
         <h1 className={styles.title__eventText__description}>{description}</h1>
       </div>
-      <a className={styles.title__link} href="/">
+      <a className={styles.title__link} href={pdf} target={"_blank"}>
         Посмотреть сертификат
       </a>
       <h3 className={styles.title__gallery}>Галерея</h3>

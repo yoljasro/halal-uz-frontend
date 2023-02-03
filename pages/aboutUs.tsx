@@ -26,11 +26,6 @@ const AboutUs: FC<any> = ({ props }) => {
     }
   }, [selectedLang]);
 
-  // window.open(
-  //   "/assets/documents/nihol.pdf",
-  //   "",
-  //   "resizable=yes, scrollbars=yes, toolbar=0 titlebar=yes, width=1024, height=900, top=10, left=10"
-  // );
 
   return (
     <div className={styles.cont}>
@@ -50,16 +45,55 @@ const AboutUs: FC<any> = ({ props }) => {
         Далее вы можете ознакомиться с документами, подтверждающие нашу
         деятельность.
       </p>
-      <Link className={styles.cont__link} href="/">
-        <span>№1</span> Просмотр документов
-      </Link>{" "}
-      <br />
-      <Link className={styles.cont__link} href="/">
-        <span>№2</span> Просмотр документов
-      </Link>
-      <a href={"/assets/documents/nihol.pdf"} target={"_blank"}>
-        Text
+      <a
+        className={styles.cont__link}
+        href={"/assets/documents/halal1.pdf"}
+        target="_blank"
+      >
+         Просмотр документов
       </a>
+      <br />
+      <a
+        
+        className={styles.cont__link}
+        href="/assets/documents/halal2.pdf"
+        target="_blank"
+      >
+         Просмотр документов
+      </a>
+      <br />
+      <a
+        className={styles.cont__link}
+        href="/assets/documents/halal3.pdf"
+        target="_blank"
+      >
+         Просмотр документов
+      </a>
+      <div className={styles.cont__links}>
+        <a
+          className={styles.cont__links__link}
+          href="/assets/documents/halal4.pdf"
+          target="_blank"
+        >
+           Просмотр документов
+        </a>
+
+        <a
+          className={styles.cont__links__link}
+          href="/assets/documents/halal5.pdf"
+          target="_blank"
+        >
+           Просмотр документов
+        </a>
+
+        <a
+          className={styles.cont__links__link}
+          href="/assets/documents/halal6.pdf"
+          target="_blank"
+        >
+           Просмотр документов
+        </a>
+      </div>
     </div>
   );
 };

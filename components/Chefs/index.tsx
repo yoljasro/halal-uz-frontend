@@ -27,7 +27,7 @@ export const Chefs: FC<any> = ({ props }) => {
   }, [selectedLang]);
 
   return (
-    <div className={styles.cont}>
+    <div className={styles.cont} id="chefs">
       <MainPageTitle
         subtitle="ХАЛЯЛЬ ШЕФ"
         description="Этот раздел посвящён именитым Шеф-поварам, которые получили Международный Нагрудной Знак Халяль Шеф"
@@ -48,7 +48,11 @@ export const Chefs: FC<any> = ({ props }) => {
               purus diam tempor feugiat quisque. Mattis a quis donec pretium
               nuncut.
             </p>
-            <SocialNetworks />
+            <SocialNetworks
+              instagram=" https://instagram.com/fathullakhan_?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/fathulla.khan.796?mibextid=LQQJ4d"
+              telegram="@Fathullakhan_001"
+            />
           </div>
         </div>
 
@@ -68,7 +72,11 @@ export const Chefs: FC<any> = ({ props }) => {
               purus diam tempor feugiat quisque. Mattis a quis donec pretium
               nuncut.
             </p>
-            <SocialNetworks />
+            <SocialNetworks
+              instagram="https://instagram.com/mirzakarimov.muzaffar?igshid=NDk5N2NlZjQ="
+              facebook="/"
+              telegram="/"
+            />
           </div>
         </div>
 
@@ -87,7 +95,11 @@ export const Chefs: FC<any> = ({ props }) => {
               purus diam tempor feugiat quisque. Mattis a quis donec pretium
               nuncut.
             </p>
-            <SocialNetworks />
+            <SocialNetworks
+              instagram="https://instagram.com/doniyor_malikovv?igshid=NDk5N2NlZjQ="
+              facebook="/"
+              telegram="/"
+            />
           </div>
         </div>
 
@@ -107,10 +119,21 @@ export const Chefs: FC<any> = ({ props }) => {
               purus diam tempor feugiat quisque. Mattis a quis donec pretium
               nuncut.
             </p>
-            <SocialNetworks />
+            <SocialNetworks
+              instagram="https://instagram.com/chef_akmall?igshid=NDk5N2NlZjQ="
+              facebook="/"
+              telegram="/"
+            />
           </div>
         </div>
       </div>
+      <Image
+      className={styles.cont__backgroundImg}
+        src="/assets/img/chefBG.png"
+        alt="chefBg"
+        width={1440}
+        height="366"
+      />
     </div>
   );
 };

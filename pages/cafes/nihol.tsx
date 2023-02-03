@@ -18,6 +18,7 @@ const Nihol = () => {
         img6="/assets/img/niholtwo.jpeg"
         instagram=" https://instagram.com/nihol_cafe?igshid=NDk5N2NlZjQ="
         facebook="https://m.facebook.com/niholjoja.uz?tpclid=facebook.PAAaZ8QzEbRBjEiNiivRswUl341itVzrFkS-WDBhWfMWQMmKaMltK8TH81Vec"
+        pdf="/assets/documents/nihol.pdf"
       />
     </div>
   );

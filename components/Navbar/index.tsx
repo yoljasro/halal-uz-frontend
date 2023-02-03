@@ -32,19 +32,19 @@ export const Navbar = () => {
         <Link className={styles.cont__menu__link} href="/aboutUs">
           <li>{t("our")}</li>
         </Link>
-        <Link className={styles.cont__menu__link} href="/">
+        <Link className={styles.cont__menu__link} href="/restaurants">
           <li>Рестораны</li>
         </Link>
-        <Link className={styles.cont__menu__link} href="/">
+        <Link className={styles.cont__menu__link} href="#productions">
           <li>Производители</li>
         </Link>
-        <Link className={styles.cont__menu__link} href="/">
+        <Link className={styles.cont__menu__link} href="#chefs">
           <li>Халяль Шеф</li>
         </Link>
         <Link className={styles.cont__menu__link} href="#members">
           <li>Члены</li>
         </Link>
-        <Link className={styles.cont__menu__link} href="/">
+        <Link className={styles.cont__menu__link} href="/halalMap">
           <li>Халяль Гид</li>
         </Link>
       </ul>

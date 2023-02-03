@@ -18,6 +18,7 @@ const Sariqbola = () => {
         img6="/assets/img/sariq6.jpeg"
         instagram="https://instagram.com/sariqbola_pizza?igshid=NDk5N2NlZjQ="
         facebook="https://www.facebook.com/sariqbolapizza/?mibextid=LQQJ4d"
+        pdf="/assets/documents/sariq.pdf"
       />
     </div>
   );

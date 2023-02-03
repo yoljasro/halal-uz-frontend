@@ -55,7 +55,7 @@ export const Restaurants: FC<any> = () => {
                 styles.cont__restaurants__restaurant__hoverContent__title
               }
             >
-              KHAN AHMADs
+              KHAN AHMAD
             </h1>
             <p
               className={
@@ -64,8 +64,13 @@ export const Restaurants: FC<any> = () => {
             >
               Lorem ipsum dolor sit amet consectetur.
             </p>
-            <SocialNetworks />
+            <SocialNetworks
+              instagram="https://instagram.com/khanahmad_restaurant?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/profile.php?id=100054751930596&mibextid=LQQJ4d"
+              telegram="https://t.me/KhanAhmad_restaurant"
+            />
             <br />
+            
             <button
               className={
                 styles.cont__restaurants__restaurant__hoverContent__visitBtn
@@ -115,7 +120,11 @@ export const Restaurants: FC<any> = () => {
             >
               Lorem ipsum dolor sit amet consectetur.
             </p>
-            <SocialNetworks />
+            <SocialNetworks
+              instagram="https://instagram.com/apexpizza.uz?igshid=NDk5N2NlZjQ="
+              facebook=" https://www.facebook.com/apexpizza.uz?mibextid=LQQJ4d"
+              telegram="/"
+            />
             <br />
             <button
               className={
@@ -166,7 +175,11 @@ export const Restaurants: FC<any> = () => {
             >
               Lorem ipsum dolor sit amet consectetur.
             </p>
-            <SocialNetworks />
+            <SocialNetworks
+              instagram="https://instagram.com/sariqbola_pizza?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/sariqbolapizza/?mibextid=LQQJ4d"
+              telegram="/"
+            />
             <br />
             <button
               className={
@@ -217,7 +230,11 @@ export const Restaurants: FC<any> = () => {
             >
               Lorem ipsum dolor sit amet consectetur.
             </p>
-            <SocialNetworks/>
+            <SocialNetworks
+              instagram="https://instagram.com/shashlikuz?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
+              telegram="https://t.me/shashlikuz_group"
+            />
             <br />
             <button
               className={
@@ -226,7 +243,7 @@ export const Restaurants: FC<any> = () => {
             >
               Перейти на сайт
             </button>
-            <Link href={'/cafes/shashlik'}>
+            <Link href={"/cafes/shashlik"}>
               <button
                 className={
                   styles.cont__restaurants__restaurant__hoverContent__moreBtn

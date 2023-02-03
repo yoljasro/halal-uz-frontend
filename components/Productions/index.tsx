@@ -26,7 +26,7 @@ export const Productions = () => {
   }, [selectedLang]);
 
   return (
-    <div className={styles.cont}>
+    <div className={styles.cont} id="productions">
       <MainPageTitle
         subtitle="ПРОИЗВОДИТЕЛИ"
         description="Здесь указаны производители продуктов питания, которые получили сертификат Халяль"
@@ -42,8 +42,22 @@ export const Productions = () => {
           />
           <p className={styles.cont__productions__card__title}>SIYOB FERMA</p>
           <div className={styles.cont__productions__card__hoverContent}>
-            <button>Перейти на сайт</button> <br />
-            <SocialNetworks />
+            <Link
+              href={
+                "https://www.siyobferma.uz/?fbclid=PAAaZoczZM9mEBs79QfIJBKDMS3mnhcLHQRFfy7blglqEId8HySgl3bk5h-LY"
+              }
+            >
+              <button>Перейти на сайт</button> <br />
+              <a target={"_blank"} href="/assets/documents/siyob.pdf">
+                {" "}
+                Посмотреть сертификат
+              </a>
+            </Link>
+            <SocialNetworks
+              instagram=" https://instagram.com/siyobferma.uz?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/siyob.ferma?mibextid=LQQJ4d"
+              telegram="https://www.facebook.com/siyob.ferma?mibextid=LQQJ4d"
+            />
           </div>
         </div>
 
@@ -57,8 +71,16 @@ export const Productions = () => {
           />
           <p className={styles.cont__productions__card__title}> SHASHLIKUZ</p>
           <div className={styles.cont__productions__card__hoverContent}>
-            <button>Перейти на сайт</button> <br />
-            <SocialNetworks />
+              <button>Перейти на сайт</button> <br />
+              <a target={"_blank"} href="/assets/documents/shashlikuz.pdf">
+                {" "}
+                Посмотреть сертификат
+              </a>
+            <SocialNetworks
+              instagram="https://instagram.com/shashlikuz?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
+              telegram="https://t.me/shashlikuz_group"
+            />
           </div>
         </div>
         <div className={styles.cont__productions__card}>
@@ -73,8 +95,18 @@ export const Productions = () => {
             SIYOB AGROBRAVO
           </p>
           <div className={styles.cont__productions__card__hoverContent}>
-            <button>Перейти на сайт</button> <br />
-            <SocialNetworks />
+            <Link href={"http://www.agrobravo.uz/ru/"}>
+              <button>Перейти на сайт</button> <br />
+              <a target={"_blank"} href="/assets/documents/agro.pdf">
+                {" "}
+                Посмотреть сертификат
+              </a>
+            </Link>
+            <SocialNetworks
+              instagram=" https://instagram.com/agrobravo.uz?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/agrobravo.uz?mibextid=LQQJ4d"
+              telegram="/"
+            />
           </div>
         </div>
       </div>

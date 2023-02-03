@@ -18,6 +18,7 @@ const Apexpizza = () => {
         img6="/assets/img/ap6.jpeg"
         instagram="https://instagram.com/apexpizza.uz?igshid=NDk5N2NlZjQ="
         facebook="https://www.facebook.com/apexpizza.uz?mibextid=LQQJ4d"
+        pdf="/assets/documents/appex.pdf"
       />
     </div>
   );

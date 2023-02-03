@@ -18,6 +18,7 @@ const Khanahmad = () => {
         img6="/assets/img/ahmad6.jpg"
         instagram="https://instagram.com/khanahmad_restaurant?igshid=NDk5N2NlZjQ="
         facebook="https://www.facebook.com/profile.php?id=100054751930596&mibextid=LQQJ4d"
+        pdf="/assets/documents/ahmad.pdf"
       />
     </div>
   );

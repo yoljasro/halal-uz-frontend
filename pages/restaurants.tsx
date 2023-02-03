@@ -9,32 +9,15 @@ import { useTranslations } from "next-intl";
 // router
 import { useRouter } from "next/router";
 // styles
-import styles from "../styles/restaurants.module.sass";
+import styles from "./index.module.sass";
 import { MainPageTitle } from "../components/MainPageTitle";
 import { restaurants } from "../constants";
 import { SocialNetworks } from "../components/socialNetworks";
 
-export const Restaurants: FC<any> = () => {
+ const Restaurants: FC<any> = () => {
   const t = useTranslations();
   const router = useRouter();
   const [selectedLang, setSelectedLang] = useState(router.locale);
-
-  const restaurants = [
-    {
-      background: "/assets/img/appexPizza.png",
-      img: "/assets/img/appexPizza2.png",
-    },
-
-    {
-      background: "/assets/img/appexPizza.png",
-      img: "/assets/img/appexPizza2.png",
-    },
-
-    {
-      background: "/assets/img/appexPizza.png",
-      img: "/assets/img/appexPizza2.png",
-    },
-  ];
 
   useEffect(() => {
     if (selectedLang) {
@@ -43,7 +26,6 @@ export const Restaurants: FC<any> = () => {
       });
     }
   }, [selectedLang]);
-
 
   return (
     <div className={styles.cont}>
@@ -73,7 +55,7 @@ export const Restaurants: FC<any> = () => {
                 styles.cont__restaurants__restaurant__hoverContent__title
               }
             >
-              KHAN AHMADs
+              KHAN AHMAD
             </h1>
             <p
               className={
@@ -82,7 +64,11 @@ export const Restaurants: FC<any> = () => {
             >
               Lorem ipsum dolor sit amet consectetur.
             </p>
-            <SocialNetworks />
+            <SocialNetworks
+              instagram="https://instagram.com/khanahmad_restaurant?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/profile.php?id=100054751930596&mibextid=LQQJ4d"
+              telegram="https://t.me/KhanAhmad_restaurant"
+            />
             <br />
             <button
               className={
@@ -133,7 +119,11 @@ export const Restaurants: FC<any> = () => {
             >
               Lorem ipsum dolor sit amet consectetur.
             </p>
-            <SocialNetworks />
+            <SocialNetworks
+              instagram="https://instagram.com/apexpizza.uz?igshid=NDk5N2NlZjQ="
+              facebook=" https://www.facebook.com/apexpizza.uz?mibextid=LQQJ4d"
+              telegram="/"
+            />
             <br />
             <button
               className={
@@ -184,7 +174,11 @@ export const Restaurants: FC<any> = () => {
             >
               Lorem ipsum dolor sit amet consectetur.
             </p>
-            <SocialNetworks />
+            <SocialNetworks
+              instagram="https://instagram.com/sariqbola_pizza?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/sariqbolapizza/?mibextid=LQQJ4d"
+              telegram="/"
+            />
             <br />
             <button
               className={
@@ -235,7 +229,11 @@ export const Restaurants: FC<any> = () => {
             >
               Lorem ipsum dolor sit amet consectetur.
             </p>
-            <SocialNetworks />
+            <SocialNetworks
+              instagram="https://instagram.com/shashlikuz?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
+              telegram="https://t.me/shashlikuz_group"
+            />
             <br />
             <button
               className={
@@ -244,59 +242,7 @@ export const Restaurants: FC<any> = () => {
             >
               Перейти на сайт
             </button>
-            <Link href={'/cafes/shashlik'}>
-              <button
-                className={
-                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
-                }
-              >
-                Подробнее{" "}
-              </button>
-            </Link>
-          </div>
-        </div>
-
-        
-        <div className={styles.cont__restaurants__restaurant}>
-          <Image
-            src="/assets/img/shashlikuz.png"
-            alt="shashlik uz"
-            width={620}
-            height={320}
-            className={styles.cont__restaurants__restaurant__bg}
-          />
-          <Image
-            src={"/assets/img/shashlik.png"}
-            alt="shashlik uz"
-            width={100}
-            height={100}
-            className={styles.cont__restaurants__restaurant__img}
-          />
-          <div className={styles.cont__restaurants__restaurant__hoverContent}>
-            <h1
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__title
-              }
-            >
-              SHASHLIK UZ
-            </h1>
-            <p
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__description
-              }
-            >
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <SocialNetworks />
-            <br />
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__visitBtn
-              }
-            >
-              Перейти на сайт
-            </button>
-            <Link href={'/cafes/shashlik'}>
+            <Link href={"/cafes/shashlik"}>
               <button
                 className={
                   styles.cont__restaurants__restaurant__hoverContent__moreBtn
@@ -309,6 +255,9 @@ export const Restaurants: FC<any> = () => {
         </div>
       </div>
 
+      <Link href="/restaurants">
+        <button className={styles.cont__btn}>Смотреть больше</button>
+      </Link>
     </div>
   );
 };

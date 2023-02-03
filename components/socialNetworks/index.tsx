@@ -16,7 +16,11 @@ type SocialNetworks = {
   telegram: string;
 };
 
-export const SocialNetworks: FC = () => {
+export const SocialNetworks: FC<SocialNetworks> = ({
+  instagram,
+  facebook,
+  telegram,
+}) => {
   const t = useTranslations();
   const router = useRouter();
   const [selectedLang, setSelectedLang] = useState(router.locale);
@@ -31,27 +35,30 @@ export const SocialNetworks: FC = () => {
 
   return (
     <div className={styles.cont}>
-      {/* <Link href={instagram}> */}
+      <Link href={instagram}>
         <Image
           src={"/assets/img/instaRes.png"}
           alt="instagram"
           width={40}
           height={40}
         />
-      {/* <Link href={facebook}> */}
+      </Link>
+      <Link href={facebook}>
         <Image
           src={"/assets/img/faceRes.png"}
           alt="faceebook"
           width={40}
           height={40}
         />
-      {/* <Link href={telegram}> */}
+      </Link>
+      <Link href={telegram}>
         <Image
           src={"/assets/img/telegramRes.png"}
           alt="telragram"
           width={40}
           height={40}
         />
+      </Link>
     </div>
   );
 };
