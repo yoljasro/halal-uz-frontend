@@ -25,7 +25,7 @@ export const Navbar = () => {
 
   return (
     <div className={styles.cont}>
-      <ul className={styles.cont__menu}>
+      <ul className={styles.cont__menu}>  
         <Link className={styles.cont__menu__link} href="/">
           <li className={styles.cont__menu__link__main}>{t("main")}</li>
         </Link>
@@ -33,16 +33,16 @@ export const Navbar = () => {
           <li>{t("our")}</li>
         </Link>
         <Link className={styles.cont__menu__link} href="/restaurants">
-          <li>Рестораны</li>
+          <li>{t("restaurants")}</li>
         </Link>
         <Link className={styles.cont__menu__link} href="#productions">
-          <li>Производители</li>
+          <li>{t("productive")}</li>
         </Link>
         <Link className={styles.cont__menu__link} href="#chefs">
-          <li>Халяль Шеф</li>
+          <li>{t("chef")}</li>
         </Link>
         <Link className={styles.cont__menu__link} href="#members">
-          <li>Члены</li>
+          <li>{t("partners")}</li>
         </Link>
         <Link className={styles.cont__menu__link} href="/halalMap">
           <li>Халяль Гид</li>

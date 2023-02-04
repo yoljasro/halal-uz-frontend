@@ -1,13 +1,107 @@
 {
-    "members" : "A'zolar" , 
-    "restaurants" : "Restoranlar" , 
-    "productive" : "Ishlab chiqaruvchilar" ,
-    "chef" : "Bosh Oshpaz" , 
-    "partners" : "Hamkorlar" , 
-    "main" : "Asosiy" , 
-    "our" : "Biz haqimizda" , 
+  "members": "A'zolar",
+  "restaurants": "Restoranlar",
+  "productive": "Ishlab chiqaruvchilar",
+  "chef": "Bosh Oshpaz",
+  "partners": "Hamkorlar",
+  "main": "Asosiy",
+  "our": "Biz haqimizda",
 
-    "aboutUs" : "Biz haqimizda"  , 
-    "aboutUsInformation" : "Biz Butunjahon Halol Q'omitasi (WHC) – biz turistik ob'ektlar, umumiy ovqatlanish korxonalari, shuningdek, oziq-ovqat ishlab chiqaruvchilarni Qur'oni Karim va xalqaro standartlar asosida sertifikatlaymiz. " , 
-    "btnMore" : "Ko'proq"
+  "aboutUs": "Biz haqimizda",
+  "aboutUsInformation": "Biz Butunjahon Halol Q'omitasi (WHC)  ",
+  "certificate" : " biz turistik ob'ektlar, umumiy ovqatlanish korxonalari, shuningdek, oziq-ovqat ishlab chiqaruvchilarni Qur'oni Karim va xalqaro standartlar asosida sertifikatlaymiz." , 
+  "btnMore": "Ko'proq",
+
+  "pagesTitle": {
+    "partners": "HAMKORLAR",
+    "travel": "SAYOHAT",
+    "restaurantsHalal": "HALOL RESTORANLAR",
+    "ourMembers": "BIZNING A'ZOLAR",
+    "chefSHalal": "HALOL OSHPAZ",
+    "manufacturers": "ISHLAB CHIQARUVCHILAR",
+    "siyob": ""
+  },
+
+  "pageRestaurants": {
+    "title": "HALOL RESTORANLAR",
+    "information": "Ushbu bo'limda siz Halol sertifikatini olgan umumiy ovqatlanish korxonalari bilan tanishishingiz mumkin",
+    "btnmore": "Batafsil"
+  },
+
+  "pageManufacturers": {
+    "title": "ISHLAB CHIQARUVCHILAR",
+    "information": "Mana, “Halol” sertifikatini olgan oziq-ovqat ishlab chiqaruvchilari",
+    "siyob": "SIYOB FERMA",
+    "shashlik": "SHASHLIKUZ",
+    "agro": "AGRO-BRAVO"
+  },
+
+  "pageHalalChef": {
+    "title": "HALOL OSHPAZ",
+    "information": "Ushbu bo'lim Xalqaro halol oshpaz nishonini olgan taniqli oshpazlarga bag'ishlangan"
+  },
+
+  "pageOurMembers": {
+    "title": "BIZNING A'ZOLAR",
+    "information": "Ushbu bo'limda xalqaro tashkilotimizga kiruvchi davlatlar ro'yxati keltirilgan",
+    "azerbaijan": "OZARBAYJON",
+    "kazakhstan": "QOZOQISTON",
+    "bosniaAndHerzegovina": "BOSNIYA VA GERSOGAVINA",
+    "Kyrgyzstan": "QIRG'IZISTON",
+    "morocco": "MAROKASH",
+    "maldives": "MALDIV OROLLARI",
+    "nigeria": "NIGERIYA",
+    "singapore": "SINGAPUR",
+    "tunisia": "TUNIS",
+    "libya": "LIVIYA",
+    "malaysia": "MALAYZIYA",
+    "pakistan": "POKISTON",
+    "lebanon": "LIVAN",
+    "jordan": "IORDANIYA",
+    "bangladesh": "BANGLADESH",
+    "gambia": "GAMBIA",
+    "algeria": "JAZOIR",
+    "uzbekistan": "O'ZBEKISTON",
+    "qatar": "QATAR",
+    "egypt": "MISR",
+    "saudiArabia": "SAUDIA ARABISTONI",
+    "turkey": "TURKIYA"
+  },
+
+  "pagePartners": {
+    "title": "HAMKORLAR"
+  },
+
+  "pageFooter": {
+    "title": "ALOQA",
+    "address": "«JAHON HALOL KOMITTESI» QK, Manzil: O'zbekiston, Toshkent sh., Mirzo-Ulug'bek tumani, ko'ch. Oltintepa 354 Tel: +998 71 266-77-78, +998 71 266-78-00 Elektron pochta Pochta: committeehalal@gmail.com",
+    "workingMode": "Ish rejimi:",
+    "workingModeInformation": "Dushanba - Juma, 09:00 - 18:00",
+    "our": "Biz haqimizda",
+    "restourants": "Restoranlar",
+    "manufacturers": "Ishlab chiqaruvchilar",
+    "chefSHalal": "Halol oshpaz",
+    "guide": "Halol qo'llanma",
+    "questions": "Tez-tez so'raladigan savollar",
+    "apply": "Ariza yuborish"
+  },
+
+  "pageAboutUs": {
+    "title": "BIZ HAQIMIZDA",
+    "information": "Biz haqimizda – Islom oshpazlik jamiyatlari uchun Jahon platformasi (WICS) 22 islom davlati oshpazlik uyushmalari tomonidan 2017-yil 13-may kuni Turkiyaning Istanbul shahrida tashkil etilgan. 2019 yilda WICS qoshida Butunjahon halol qo'mitasi (WHC) tashkil etildi. WHC - turistik ob'ektlar, umumiy ovqatlanish korxonalari, shuningdek, oziq-ovqat mahsulotlarini ishlab chiqaruvchilarni - Qur'oni Karim va xalqaro standartlar asosida sertifikatlaydi.",
+    "document": "Quyida faoliyatimizni tasdiqlovchi hujjatlar bilan tanishishingiz mumkin.",
+    "viewDocument": "Hujjatlarni ko'rish"
+  },
+
+  "pageHalalGuide": {
+    "title": "HALOL QO'LLANMA",
+    "information": "Ushbu bo'limda mehmonxonalar, umumiy ovqatlanish korxonalari, shuningdek, halol sertifikatini olgan oziq-ovqat ishlab chiqaruvchilari joylashgan dunyo xaritasi keltirilgan.",
+    "country": "Mamlakatni tanlang",
+    "select": "Kategoriyani tanlang"
+  } , 
+    "mainC" :{
+        "company": "DUNYO BO'YICHA HALAL QO'MITA  (WICS)" , 
+        "request" : "Murojaat qiling"
+    }
 }
+

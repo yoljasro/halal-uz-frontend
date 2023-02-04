@@ -173,12 +173,10 @@ export const Header: FC<any> = () => {
       </Carousel>
       <div className={styles.cont__info}>
         <h1 className={styles.cont__info__title}>
-          Всемирный Халяльный Комитет <span>(WICS)</span>
+          {t("mainC.company")}
         </h1>
         <p className={styles.cont__info__description}>
-          Сертифицируем туристические объекты, заведения общественного питания,
-          а также производителей продуктов питания, основываясь на священном
-          Коране и международных стандартах.
+         {t("certificate")}
         </p>
         <button className={styles.cont__info__btn}>
           <Link href={"/aboutUs"}>Подробно </Link>

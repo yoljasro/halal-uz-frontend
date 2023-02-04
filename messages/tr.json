@@ -1,22 +1,105 @@
 {
-    "members" : "Members",  
-    "restaurants" : "Restaurants" , 
-    "productive" : "Productive" , 
-    "chef" : "Chef" , 
-    "partners" : "Partners" , 
+  "members": "Üyeler",
+  "restaurants": "Restoranlar",
+  "productive": "Verimli",
+  "chef": "Şef",
+  "partners": "Ortaklar",
+  "main": "Ana",
+  "our": "",
 
-    "aboutUs" : "About us" , 
-    "aboutUsInformation" : "We are the World Halal Committee (WHC) - we certify tourist sites, catering establishments, as well as food producers - based on the Holy Quran and international standards." , 
-    "btnMore" : "More" , 
+  "aboutUs": "Bizim hakkımızda",
+  "aboutUsInformation": "Biz Dünya Helal Komitesi'yiz (WHC)", 
+  "certificate" : "turistik yerleri, catering kuruluşlarını ve gıda üreticilerini sertifikalandırıyoruz - Kur'an-ı Kerim ve uluslararası standartlar temelinde." , 
+  "btnMore": "Daha fazla",
 
-    "pagesTitle" : {
-        "partners" : "Partners" , 
-        "travel" : "TRAVEL" , 
-        "restaurantsHalal" : "HALAL RESTAURANTS"  , 
-        "ourMembers" : "OUR MEMBERS" , 
-        "chefSHalal" : "HALAL CHEF" , 
-        "manufacturers" : "MANUFACTURERS"
-    }
+  "pagesTitle": {
+    "partners": "Ortaklar",
+    "travel": "SEYAHAT",
+    "restaurantsHalal": "HALAL Restoranlar",
+    "ourMembers": "OUR MEMBERS",
+    "chefSHalal": "HALAL Şef",
+    "manufacturers": "ÜRETİCİLER",
+    "siyob": ""
+  },
 
-    
+  "pageRestaurants": {
+    "title": "HALAL Restoranlar",
+    "information": "Bu bölümde Halal sertifikası almış yemek şirketleri hakkında bilgi edinebilirsiniz",
+    "btnmore": "Daha fazlası"
+  },
+
+  "pageManufacturers": {
+    "title": "ÜRETİCİLER",
+    "information": "Burada Helal sertifikası alan gıda üreticileri",
+    "siyob": "SIYOB FERMA",
+    "shashlik": "SHASHLIKUZ",
+    "agro": "AGRO-BRAVO"
+  },
+
+  "pageHalalChef": {
+    "title": "HALAL Şef",
+    "information": "Bu bölüm Uluslararası Helal Şef rozeti alan seçkin şeflere ayrılmıştır"
+  },
+
+  "pageOurMembers": {
+    "title": "BİZİM ÜYELERİMİZ",
+    "information": "Bu bölümde uluslararası organizasyonumuzun parçası olan ülkeler listelenmektedir",
+    "azerbaijan": "AZERBAYCAN",
+    "kazakhstan": "KAZAKİSTAN",
+    "bosniaAndHerzegovina": "BOSNA VE HERSEK",
+    "kyrgyzstan": "KIRGIZİSTAN",
+    "morocco": "MOROKO",
+    "maldives": "MALDİVLER",
+    "nigeria": "NİJERYA",
+    "singapore": "SİNGAPUR",
+    "tunisia": "TUNUS",
+    "libya": "LİBYA",
+    "malaysia": "MALEZYA",
+    "pakistan": "PAKİSTAN",
+    "lebanon": "LÜBNAN",
+    "jordan": "JORDAN",
+    "bangladesh": "BANGLADEŞ",
+    "gambia": "GAMBİYA",
+    "algeria": "CEZAYİR",
+    "uzbekistan": "ÖZBEKİSTAN",
+    "qatar": "KATAR",
+    "egypt": "MISIR",
+    "saudiArabia": "SUUDİ ARABİSTAN",
+    "turkey": "TÜRKİYE"
+  },
+
+  "pagePartners": {
+    "title": "ORTAKLAR"
+  },
+
+  "pageFooter": {
+    "title": "İLETİŞİM",
+    "address": "<<JOHAN HELAL KOMİTESİ>> OG, Adres:Uzbekistan, Taşkent, Mirzo-Ulugbek ilçe, sokak Altyntepa 354 Tel: +998 71 266-77-78, +998 71 266-78-00 E-posta Posts: committeehalal@gmail.com",
+    "workingMode": "Çalışma saati:",
+    "workingModeInformation": "Pazartesi - Cuma, 09:00 - 18:00",
+    "our": "Bizim hakkımızda",
+    "restourants": "Restoranlar",
+    "manufacturers": "Üreticiler",
+    "chefSHalal": "Halal şef",
+    "guide": "Halal sertifikasi",
+    "questions": "Sıkça Sorulan Sorular",
+    "apply": "Başvuru gönderin"
+  },
+  "pageAboutUs": {
+    "title": "Bizim hakkımızda",
+    "information": "Bizim hakkımızda - Dünya İslami Mutfak Toplulukları Platformu (WICS), 22 İslam ülkesinden mutfak dernekleri tarafından 13 Mayıs'ta kuruldu, 2017 yılında İstanbul, Türkiye. 2019 yılında, Dünya Helal Komitesi (WHC) WICS altında kurulmuştur. WHC - turistik yerleri, catering kuruluşlarını ve gıda üreticilerini sertifikalandırıyoruz - Kur'an-ı Kerim ve uluslararası standartlar temelinde.",
+    "document": "Aşağıda faaliyetlerimizi teyit eden belgeleri görebilirsiniz.",
+    "viewDocument": "Belgeleri Görüntüleme"
+  },
+
+  "pageHalalGuide": {
+    "title": "Halal sertifikasi",
+    "information": "Bu bölümde, Helal sertifikası almış otellerin, catering kuruluşlarının ve gıda üreticilerinin bulunduğu yerleri gösteren bir dünya haritası yer almaktadır.",
+    "country": "Ülkeyi seçin",
+    "select": "Kategori seçin"
+  } , 
+  "mainC" :{
+    "company": "DÜNYA ÇAPINDA HELAL KOMİTESİ (WICS)" , 
+    "request" : "Murojaat qiling"
+}
 }

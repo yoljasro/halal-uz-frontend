@@ -31,20 +31,20 @@ export const Partners: FC<any> = () => {
     <div className={styles.cont} id='partner'>
       <MainPageTitle subtitle="ПАРТНЁРЫ" />
       <div className={styles.cont__partners}>
-        <Carousel
-          // autoplay={true}
+        {/* <Carousel
+          // autoplay={true} */}
           swiping={true}
           animation={"zoom"}
-          adaptiveHeight={false}
-          autoplayInterval={2000}
-          speed={3000}
+          // adaptiveHeight={false}
+          // autoplayInterval={2000}
+          // speed={3000}
           wrapAround={true}
-          renderCenterRightControls={null}
-          renderCenterLeftControls={null}
-          renderBottomCenterControls={null}
-        >
+          // renderCenterRightControls={null}
+          // renderCenterLeftControls={null}
+          // renderBottomCenterControls={null}
+        {/* > */}
           {" "}
-          <div className={styles.cont__partners__content}>
+          {/* <div className={styles.cont__partners__content}> */}
             <Image
               alt="partner1"
               src="/assets/img/partner1.png"
@@ -63,7 +63,7 @@ export const Partners: FC<any> = () => {
               width={170}
               height={171}
             />
-          </div>
+          {/* </div> */}
 
           <Image
             alt="partner3"
@@ -83,7 +83,7 @@ export const Partners: FC<any> = () => {
             width={170}
             height={171}
           />
-        </Carousel>
+        {/* </Carousel> */}
       </div>
     </div>
   );

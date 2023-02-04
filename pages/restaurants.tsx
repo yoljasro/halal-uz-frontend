@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 // router
 import { useRouter } from "next/router";
 // styles
-import styles from "./index.module.sass";
+import styles from "../styles/restaurants.module.sass";
 import { MainPageTitle } from "../components/MainPageTitle";
 import { restaurants } from "../constants";
 import { SocialNetworks } from "../components/socialNetworks";

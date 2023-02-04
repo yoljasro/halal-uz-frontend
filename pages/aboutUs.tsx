@@ -26,6 +26,13 @@ const AboutUs: FC<any> = ({ props }) => {
     }
   }, [selectedLang]);
 
+  const disablePdf = () => {
+    window.open(
+      "/assets/documents/halal1.pdf",
+      "",
+      "resizable=yes, scrollbars=yes, titlebar=yes, width=1024, toolbar=0 ,  height=900, top=10, left=10"
+    );
+  };
 
   return (
     <div className={styles.cont}>
@@ -46,20 +53,20 @@ const AboutUs: FC<any> = ({ props }) => {
         деятельность.
       </p>
       <a
+        // onClick={disablePdf}
         className={styles.cont__link}
-        href={"/assets/documents/halal1.pdf"}
+        href="/assets/documents/halal1.pdf"
         target="_blank"
       >
-         Просмотр документов
+        Просмотр документов
       </a>
       <br />
       <a
-        
         className={styles.cont__link}
         href="/assets/documents/halal2.pdf"
         target="_blank"
       >
-         Просмотр документов
+        Просмотр документов
       </a>
       <br />
       <a
@@ -67,7 +74,7 @@ const AboutUs: FC<any> = ({ props }) => {
         href="/assets/documents/halal3.pdf"
         target="_blank"
       >
-         Просмотр документов
+        Просмотр документов
       </a>
       <div className={styles.cont__links}>
         <a
@@ -75,7 +82,7 @@ const AboutUs: FC<any> = ({ props }) => {
           href="/assets/documents/halal4.pdf"
           target="_blank"
         >
-           Просмотр документов
+          Просмотр документов
         </a>
 
         <a
@@ -83,7 +90,7 @@ const AboutUs: FC<any> = ({ props }) => {
           href="/assets/documents/halal5.pdf"
           target="_blank"
         >
-           Просмотр документов
+          Просмотр документов
         </a>
 
         <a
@@ -91,7 +98,7 @@ const AboutUs: FC<any> = ({ props }) => {
           href="/assets/documents/halal6.pdf"
           target="_blank"
         >
-           Просмотр документов
+          Просмотр документов
         </a>
       </div>
     </div>

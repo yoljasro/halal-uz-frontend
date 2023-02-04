@@ -1,22 +1,103 @@
 {
     "members" : "الأساسية",  
-    "restaurants" : "Restaurants" , 
-    "productive" : "Productive" , 
-    "chef" : "Chef" , 
-    "partners" : "Partners" , 
+    "restaurants" : "مطاعم" , 
+    "productive" : "إنتاجي" , 
+    "chef" : "طاه" , 
+    "partners" : "شركاء" , 
     "main" : "الأساسية" ,  
+    "our" : "معلومات عنا"  ,
 
-    "aboutUs" : "About us" , 
-    "aboutUsInformation" : "We are the World Halal Committee (WHC) - we certify tourist sites, catering establishments, as well as food producers - based on the Holy Quran and international standards." , 
-    "btnMore" : "More" , 
+    "aboutUs" : "معلومات عنا" , 
+    "aboutUsInformation" : "نحن لجنة الحلال العالمية (WHC) " , 
+    "certificate" : "نحن نصادق على المواقع السياحية ، ومؤسسات تقديم الطعام ، وكذلك منتجي المواد الغذائية - بناءً على القرآن الكريم والمعايير الدولية."  , 
+    "btnMore" : "أكثر" , 
 
     "pagesTitle" : {
-        "partners" : "Partners" , 
-        "travel" : "TRAVEL" , 
-        "restaurantsHalal" : "HALAL RESTAURANTS"  , 
-        "ourMembers" : "OUR MEMBERS" , 
-        "chefSHalal" : "HALAL CHEF" , 
-        "manufacturers" : "MANUFACTURERS"
-    }
+        "partners" : "شركاء" , 
+        "travel" : "يسافر" , 
+        "restaurantsHalal" : "مطاعم حلال"  , 
+        "ourMembers" : "أعضائنا" , 
+        "chefSHalal" : "شيف حلال" , 
+        "manufacturers" : "المصنعون" , 
+        "siyob" : ""
+    },
+
+    "pageRestaurants" : {
+        "title" : "مطاعم حلال",
+        "information" : "في هذا القسم ، يمكنك التعرف على مؤسسات تقديم الطعام التي حصلت على شهادة الحلال",
+        "btnmore" : "شاهد المزيد"
+    },
+
+    "pageManufacturers" : {
+        "title" : "المصنعون",
+        "information" : "فيما يلي صانعو المواد الغذائية الذين حصلوا على شهادة الحلال",
+        "siyob":"سيوب فيرما",
+        "shashlik":"شاشليكوز",
+        "agro":"اجرو برافو"
+    },
+
+    "pageHalalChef" : {
+        "title" : "شيف حلال",
+        "information" : "هذا القسم مخصص للطهاة البارزين الذين حصلوا على شارة الشيف الحلال الدولية"
+    },
+
+    "pageOurMembers" : {
+        "title" : "أعضائنا",
+        "information" : "يسرد هذا القسم الدول التي تشكل جزءًا من منظمتنا الدولية",
+        "azerbaijan" : "أذربيجان",
+        "kazakhstan" : "كازاخستان",
+        "bosniaAndHerzegovina" : "البوسنة والهرسك",
+        "kyrgyzstan" : "قيرغيزستان",
+        "morocco" : "المغرب",
+        "maldives" : "جزر المالديف",
+        "nigeria" : "نيجيريا",
+        "singapore" : "سنغافورة",
+        "tunisia" : "تونس",
+        "libya" : "ليبيا",
+        "malaysia" : "ماليزيا",
+        "pakistan" : "باكستان",
+        "lebanon" : "لبنان",
+        "jordan" : "الأردن",
+        "bangladesh" : "بنغلاديش",
+        "gambia" : "غامبيا",
+        "algeria" : "الجزائر",
+        "uzbekistan" : "أوزبيكستان",
+        "qatar" : "دولة قطر",
+        "egypt" : "مصر",
+        "saudiArabia" : "المملكة العربية السعودية",
+        "turkey" : "ديك رومى"
+    },
+
+    "pagePartners" : {
+        "title" : "شركاء"
+    },
+
+    "pageFooter" : {
+        "title" : "جهات الاتصال" ,
+        "address" : "JV «لجنة الحلال العالمية» ، العنوان: أوزبكستان ، طشقند ، منطقة ميرزو أولوغبيك ، شارع. Altyntepa 354 Tel: +998 71266-77-78، +998 71266-78-00 البريد الإلكتروني: Committeehalal@gmail.com",
+        "workingMode" : "نمط العمل:",
+        "workingModeInformation" : "من الإثنين إلى الجمعة ، 09:00 - 18:00",
+        "our" : "معلومات عنا",
+        "restourants" : "مطاعم",
+        "manufacturers" : "المصنّعين",
+        "chefSHalal" : "طاه حلال" , 
+        "guide" : "دليل الحلال",
+        "questions" : "أسئلة مكررة",
+        "apply" : "قم بتقديم طلب"
+    },
+
     
-}
+    "pageAboutUs" : {
+        "title" : "معلومات عنا",
+        "information" : "من نحن - تأسست المنصة العالمية لمجتمعات الطهي الإسلامية (WICS) من قبل جمعيات طهي من 22 دولة إسلامية في 13 مايو 2017 في اسطنبول ، تركيا. في عام 2019 ، تأسست لجنة الحلال العالمية (WHC) في إطار WICS. WHC - تصادق على المنشآت السياحية ومؤسسات تقديم الطعام ومنتجي المواد الغذائية - بناءً على القرآن الكريم والمعايير الدولية.",
+        "document" : "أدناه يمكنك الاطلاع على الوثائق التي تؤكد أنشطتنا.",
+        "viewDocument" : "عرض المستندات"
+    },
+    
+    "pageHalalGuide" : {
+        "title" : "دليل حلال",
+        "information" : "في هذا القسم ، خريطة العالم ، مع المواقع التي توجد بها الفنادق ومؤسسات تقديم الطعام ، وكذلك الشركات المصنعة للمواد الغذائية الحاصلة على شهادة الحلال",
+        "country" : "اختر الدولة",
+        "select" : "اختر تصنيف"
+    }
+}   
