@@ -33,7 +33,7 @@ export const Partners: FC<any> = () => {
       <div className={styles.cont__partners}>
         {/* <Carousel
           // autoplay={true} */}
-          swiping={true}
+          {/* swiping={true}
           animation={"zoom"}
           // adaptiveHeight={false}
           // autoplayInterval={2000}
@@ -41,7 +41,7 @@ export const Partners: FC<any> = () => {
           wrapAround={true}
           // renderCenterRightControls={null}
           // renderCenterLeftControls={null}
-          // renderBottomCenterControls={null}
+          // renderBottomCenterControls={null} */}
         {/* > */}
           {" "}
           {/* <div className={styles.cont__partners__content}> */}
