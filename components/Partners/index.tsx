@@ -35,7 +35,7 @@ export const Partners: FC<any> = () => {
           // autoplay={true} */}
           {/* swiping={true}
           animation={"zoom"}
-          // adaptiveHeight={false}
+          {/* // adaptiveHeight={false}
           // autoplayInterval={2000}
           // speed={3000}
           wrapAround={true}
