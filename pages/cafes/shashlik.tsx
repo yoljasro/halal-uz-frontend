@@ -16,8 +16,8 @@ const Shashlik = () => {
         img4="/assets/img/shashlik4.jpg"
         img5="/assets/img/shashlik5.jpg"
         img6="/assets/img/shashlik6.jpg"
-        instagram="https://www.instagram.com/shashlikuz/?igshid=NDk5N2NlZjQ%3D"
-        facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
+        instagram="https://www.instagram.com/shashlikuz/"
+        facebook="https://www.facebook.com/shashlikuz1"
         pdf="/assets/documents/shashlik.pdf"
       />
     </div>
