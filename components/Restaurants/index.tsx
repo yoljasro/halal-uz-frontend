@@ -30,8 +30,8 @@ export const Restaurants: FC<any> = () => {
   return (
     <div className={styles.cont}>
       <MainPageTitle
-        subtitle="ХАЛЯЛЬ РЕСТОРАНЫ"
-        description="В данном разделе вы можете ознакомится с заведениями общественного питания, которые удостоились Сертификата Халяль"
+        subtitle={t("pageRestaurants.title")}
+        description={t("pageRestaurants.information")}
       />
       <div className={styles.cont__restaurants}>
         <div className={styles.cont__restaurants__restaurant}>

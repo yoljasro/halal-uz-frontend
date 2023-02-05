@@ -34,38 +34,42 @@ export const Footer: FC<any> = () => {
           266-77-78, +998 71 266-78-00 <br /> Эл. Почта:
           committeehalal@gmail.com
         </p>
-
-        <Image
-          className={styles.cont__social}
-          src={"/assets/img/instagram.png"}
-          alt="instagram"
-          width={45}
-          height={45}
-        />
-
-        <Image
-          className={styles.cont__social}
-          src={"/assets/img/facebook.png"}
-          alt="facebook"
-          width={45}
-          height={45}
-        />
-
-        <Image
-          className={styles.cont__social}
-          src={"/assets/img/telegram.png"}
-          alt="telegram"
-          width={45}
-          height={45}
-        />
-
-        <Image
-          className={styles.cont__social}
-          src={"/assets/img/whatsapp.png"}
-          alt="instagram"
-          width={45}
-          height={45}
-        />
+        <Link href={"https://instagram.com/world.halal"} target={"_blank"}>
+          <Image
+            className={styles.cont__social}
+            src={"/assets/img/instagram.png"}
+            alt="instagram"
+            width={45}
+            height={45}
+          />
+        </Link>
+        <Link href={"https://www.facebook.com/WorldHalalCommittee?mibextid=LQQJ4d"} target={"_blank"}>
+          <Image
+            className={styles.cont__social}
+            src={"/assets/img/facebook.png"}
+            alt="facebook"
+            width={45}
+            height={45}
+          />
+        </Link>
+        <Link href={"/"} target={"_blank"}>
+          <Image
+            className={styles.cont__social}
+            src={"/assets/img/telegram.png"}
+            alt="telegram"
+            width={45}
+            height={45}
+          />
+        </Link>
+        <Link href={"/"} target={"_blank"}>
+          <Image
+            className={styles.cont__social}
+            src={"/assets/img/whatsapp.png"}
+            alt="instagram"
+            width={45}
+            height={45}
+          />
+        </Link>
         <p className={styles.cont__plan}>Режим работы:</p>
         <p className={styles.cont__workPlan}>Пн - Пт, 09:00 - 18:00</p>
       </div>
@@ -80,10 +84,15 @@ export const Footer: FC<any> = () => {
         </ul>
 
         <ul className={styles.cont__menus__menu}>
-            <li>Условия использования</li>
-            <li>Политика конфиденциальности</li>
-            <li>Часто задаваемые вопросы</li>
-            <li> <Link  className={styles.cont__menus__menu__link} href={'/'}>Подать заявку</Link> </li>
+          <li>Условия использования</li>
+          <li>Политика конфиденциальности</li>
+          <li>Часто задаваемые вопросы</li>
+          <li>
+            {" "}
+            <Link className={styles.cont__menus__menu__link} href={"/"}>
+              Подать заявку
+            </Link>{" "}
+          </li>
         </ul>
       </div>
     </div>

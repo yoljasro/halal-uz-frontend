@@ -28,8 +28,8 @@ export const Productions = () => {
   return (
     <div className={styles.cont} id="productions">
       <MainPageTitle
-        subtitle="ПРОИЗВОДИТЕЛИ"
-        description="Здесь указаны производители продуктов питания, которые получили сертификат Халяль"
+        subtitle={t("pageManufacturers.title")}
+        description={t("pageManufacturers.information")}
       />
       <div className={styles.cont__productions}>
         <div className={styles.cont__productions__card}>

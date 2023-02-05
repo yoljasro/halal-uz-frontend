@@ -13,40 +13,41 @@
         display: flex
         flex-direction: column
 
-        &__location
-            background: #2F2F2F
-            border-radius: 6px
-            position: relative
-            bottom: 100px
-            right: 100px
-            font-family: ExoBold
-            font-size: 16px
-            font-weight: 700
-            line-height: 36px
-            letter-spacing: 0.02em
-            text-align: center
-            color: #FFFFFF
-            padding: 7px 17px 6px 11px
-            backdrop-filter: blur(10px)
+    &__location
+        background: #2F2F2F
+        border-radius: 6px
+        position: absolute
+        bottom: -200px
+        left: 75%
+        font-family: ExoLight
+        font-size: 16px
+        font-weight: 700
+        line-height: 36px
+        text-align: center
+        color: #FFFFFF
+        // padding: 7px 17px 6px 11px
+        width: 100%
+        max-width: 294px
+        height: 40px
 
-        &__region
-            position: absolute
-            bottom: 50px
-            right: 100px
-            background: #2F2F2F
-            backdrop-filter: blur(10px)
-            height: 39px
-            max-width: 128px
-            width: 100% 
-            border-radius: 6px
-            font-family: ExoLight
-            font-size: 16px
-            font-weight: 400
-            line-height: 36px
-            letter-spacing: 0em
-            color: #FFFFFF
-            padding-left: 21px
-            padding-top: 6px
+    &__region
+        position: absolute
+        bottom: -250px
+        left: 75%
+        background: #2F2F2F
+        backdrop-filter: blur(10px)
+        height: 39px
+        max-width: 128px
+        width: 100% 
+        border-radius: 6px
+        font-family: ExoLight
+        font-size: 16px
+        font-weight: 400
+        line-height: 36px
+        letter-spacing: 0em
+        color: #FFFFFF
+        padding-left: 21px
+        padding-top: 6px
 
     &__info
         height: 419px

@@ -28,8 +28,8 @@ export const Header: FC<any> = () => {
 
   return (
     <div className={styles.cont}>
-      <Carousel
-        autoplay={true}
+      {/* <Carousel
+        autoplay={false}
         autoplayInterval={7000}
         animation={'fade'}
         wrapAround={true}
@@ -38,29 +38,17 @@ export const Header: FC<any> = () => {
         renderCenterLeftControls={null}
         renderBottomCenterControls={null}
         swiping={false}
-      >
-        <div className={styles.cont__map}>
-          <Image
-            src={"/assets/img/headerBg.png"}
-            alt="header"
-            width={1440}
-            height={720}
-          />
-          {/* <div className={styles.cont__map__location}>
-            Центр Исламской Цивилизации
-          </div>
-          <div className={styles.cont__map__region}>
-            <Image
-              src={"/assets/img/location.png"}
-              alt="location"
-              width={20}
-              height={24}
-            />{" "}
-            Ташкент
-          </div> */}
-        </div>
+      > */}
+      <div className={styles.cont__map}>
+        <Image
+          src={"/assets/img/headerBg.png"}
+          alt="header"
+          width={1440}
+          height={720}
+        />
+      </div>
 
-        <div className={styles.cont__map}>
+      {/* <div className={styles.cont__map}>
           <Image
             src={"/assets/img/travelone.jpg"}
             alt="header"
@@ -79,8 +67,8 @@ export const Header: FC<any> = () => {
             />{" "}
             Xorazm didimu tepada
           </div> */}
-        </div>
-
+      {/* </div> */}
+      {/* 
         <div className={styles.cont__map}>
           <Image
             src={"/assets/img/traveltwo.jpg"}
@@ -169,19 +157,29 @@ export const Header: FC<any> = () => {
             width={1440}
             height={720}
           />
-        </div>
-      </Carousel>
+        </div> */}
+      {/* </Carousel> */}
       <div className={styles.cont__info}>
-        <h1 className={styles.cont__info__title}>
-          {t("mainC.company")}
-        </h1>
-        <p className={styles.cont__info__description}>
-         {t("certificate")}
-        </p>
+        <h1 className={styles.cont__info__title}>{t("mainC.company")}</h1>
+        <p className={styles.cont__info__description}>{t("certificate")}</p>
         <button className={styles.cont__info__btn}>
-          <Link href={"/aboutUs"}>Подробно </Link>
+          <Link href={"/aboutUs"}>{t("btnMore")} </Link>
         </button>
       </div>
+
+      <div className={styles.cont__location}>
+            Центр Исламской Цивилизации
+          </div>
+          <div className={styles.cont__region}>
+            <Image
+              src={"/assets/img/location.png"}
+              alt="location"
+              width={20}
+              height={24}
+            />{" "}
+            Ташкент
+          </div>
+          
     </div>
   );
 };

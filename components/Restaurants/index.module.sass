@@ -15,9 +15,8 @@
             margin-left: 40px
 
             &:hover
-                opacity: 0.7
+                // opacity: 0.7
                 transition: 1s all
-                background: #000000
 
             &:hover &__hoverContent
                 display: block !important
@@ -26,11 +25,14 @@
             &__hoverContent
                 padding-left: 30px
                 position: relative
-                top: -35px 
+                top: -35px
                 display: none !important
                 transition: 2s all
                 position: relative
                 top: -370px
+                background: black
+                height: 265px
+                border-radius: 10px
 
                 &__title
                     font-family: ExoBold
@@ -110,3 +112,6 @@
         line-height: 29px
         color: $white
         cursor: pointer
+
+        &:hover
+            background: #3834b2

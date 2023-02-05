@@ -29,8 +29,8 @@ export const Chefs: FC<any> = ({ props }) => {
   return (
     <div className={styles.cont} id="chefs">
       <MainPageTitle
-        subtitle="ХАЛЯЛЬ ШЕФ"
-        description="Этот раздел посвящён именитым Шеф-поварам, которые получили Международный Нагрудной Знак Халяль Шеф"
+        subtitle={t("pageHalalChef.title")}
+        description={t("pageHalalChef.information")}
       />
       <div className={styles.cont__chefs}>
         <div className={styles.cont__chefs__card}>

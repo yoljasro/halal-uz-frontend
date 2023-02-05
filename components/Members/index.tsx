@@ -30,8 +30,8 @@ export const Members: FC<any> = () => {
   return (
     <div className={styles.cont} id='members'>
       <MainPageTitle
-        subtitle="НАШИ ЧЛЕНЫ"
-        description="В данном разделе указаны государства, которые входят в состав нашей международной организации"
+        subtitle={t("pageOurMembers.title")}
+        description={t("pageOurMembers.information")}
       />
       <Carousel
         className={styles.cont__carousel}
@@ -54,7 +54,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>АЗЕРБАЙДЖАН</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.azerbaijan")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -76,7 +76,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>КАЗАХСТАН</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.kazakhstan")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -86,7 +86,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>МАЛЬДИВЫ</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.bosniaAndHerzegovina")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -96,7 +96,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>КИРГИЗИЯ</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.kyrgyzstan")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -106,7 +106,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>МАРОККО</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.morocco")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -116,7 +116,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>НИГЕРИЯ</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.nigeria")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -126,7 +126,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>МАЛАЙЗИЯ</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.malaysia")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -136,7 +136,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>ПАКИСТАН</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.pakistan")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -146,7 +146,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>ЛИВАН</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.azerbaijan")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -156,7 +156,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>ИОРДАНИЯ</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.azerbaijan")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -166,7 +166,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>БАНГЛАДЕШ</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.azerbaijan")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -176,7 +176,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>ГАМБИЯ</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.azerbaijan")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -186,7 +186,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>АЛЖИР</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.azerbaijan")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -196,7 +196,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>УЗБЕКИСТАН</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.azerbaijan")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>
@@ -206,7 +206,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>КАТАР</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.azerbaijan")}</p>
         </div>
 
         
@@ -218,7 +218,7 @@ export const Members: FC<any> = () => {
           width={120}
           height={120}
         />
-        <p className={styles.cont__carousel__flag__region}>ЕГИПЕТ</p>
+        <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.azerbaijan")}</p>
       </div>
 
       <div className={styles.cont__carousel__flag}>
@@ -228,7 +228,7 @@ export const Members: FC<any> = () => {
           width={120}
           height={120}
         />
-        <p className={styles.cont__carousel__flag__region}>САУДОВСКАЯ АРАВИЯ</p>
+        <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.azerbaijan")}</p>
       </div>
 
       <div className={styles.cont__carousel__flag}>
@@ -238,7 +238,7 @@ export const Members: FC<any> = () => {
           width={120}
           height={120}
         />
-        <p className={styles.cont__carousel__flag__region}> ТУРЦИЯ</p>
+        <p className={styles.cont__carousel__flag__region}> {t("pageOurMembers.azerbaijan")}</p>
       </div>
       </Carousel>
     </div>
