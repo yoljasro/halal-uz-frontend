@@ -44,6 +44,7 @@ export const Partners: FC<any> = () => {
           // renderBottomCenterControls={null} */}
         {/* > */}
           {" "}
+          
           {/* <div className={styles.cont__partners__content}> */}
             <Image
               alt="partner1"

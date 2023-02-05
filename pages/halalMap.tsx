@@ -17,9 +17,9 @@ import { useRouter } from "next/router";
 // styles
 import { MainPageTitle } from "../components/MainPageTitle";
 // hook
-import { useSize } from "../hooks/index";
+import { useSize } from "../hooks/index"; 
 //react-yandex-map
-import { FullscreenControl, Map, Placemark, YMaps } from "react-yandex-maps";
+// import { FullscreenControl, Map, Placemark, YMaps } from "react-yandex-maps";sa
 // styles
 import styles from "../styles/git.index.module.sass";
 import { Select } from "@mui/material";
@@ -73,27 +73,7 @@ const HalalMap: FC<any> = ({ props }) => {
         </select>
       </div>
       <div className={styles.cont__map}>
-        <YMaps>
-          <Map
-            width={"50%"}
-            // height={height}
-            height={'100px'}
-            defaultState={{
-              center: [41.320551, 69.28333],
-              zoom: 15,
-              controls: ["zoomControl"],
-            }}
-            modules={["control.ZoomControl"]} 
-          >
-            <FullscreenControl
-              options={{
-                float: "right",
-              }}
-            />  
-            <Placemark defaultGeometry={[58.320551, 69.28333]} />
-            {/* <Placemark defaultGeometry={[108.320551, 69.28333]} /> */}
-          </Map>
-        </YMaps>
+       
       </div>
     </div>
   );
