@@ -35,7 +35,7 @@ export const SocialNetworks: FC<SocialNetworks> = ({
 
   return (
     <div className={styles.cont}>
-      <Link href={instagram}>
+      <Link href={instagram} target={"_blank"}>
         <Image
           src={"/assets/img/instaRes.png"}
           alt="instagram"
@@ -43,7 +43,7 @@ export const SocialNetworks: FC<SocialNetworks> = ({
           height={40}
         />
       </Link>
-      <Link href={facebook}>
+      <Link href={facebook} target={"_blank"}>
         <Image
           src={"/assets/img/faceRes.png"}
           alt="faceebook"
@@ -51,7 +51,7 @@ export const SocialNetworks: FC<SocialNetworks> = ({
           height={40}
         />
       </Link>
-      <Link href={telegram}>
+      <Link href={telegram} target={"_blank"}>
         <Image
           src={"/assets/img/telegramRes.png"}
           alt="telragram"
