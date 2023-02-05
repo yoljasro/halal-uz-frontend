@@ -42,7 +42,7 @@ export const RestoranTitle: FC<RestoranTitle> = ({
       <div className={styles.title__eventText}>
         <h1 className={styles.title__eventText__description}>{description}</h1>
       </div>
-      <a className={styles.title__link} href={pdf} target={"_blank"}>
+      <a className={styles.title__link} href={pdf} rel={"noreferrer"} target={"_blank"}>
         Посмотреть сертификат
       </a>
       <h3 className={styles.title__gallery}>Галерея</h3>

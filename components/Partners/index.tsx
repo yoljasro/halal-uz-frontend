@@ -35,13 +35,13 @@ export const Partners: FC<any> = () => {
           // autoplay={true} */}
           swiping={true}
           animation={"zoom"}
-          // adaptiveHeight={false}
+          {/* // adaptiveHeight={false}
           // autoplayInterval={2000}
           // speed={3000}
           wrapAround={true}
           // renderCenterRightControls={null}
           // renderCenterLeftControls={null}
-          // renderBottomCenterControls={null}
+          // renderBottomCenterControls={null} */}
         {/* > */}
           {" "}
           {/* <div className={styles.cont__partners__content}> */}

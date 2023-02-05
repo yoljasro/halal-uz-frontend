@@ -16,7 +16,7 @@ const Nihol = () => {
         img4="/assets/img/niholthree.jpeg"
         img5="/assets/img/niholone.jpeg"
         img6="/assets/img/niholtwo.jpeg"
-        instagram=" https://instagram.com/nihol_cafe?igshid=NDk5N2NlZjQ="
+        instagram="https://www.instagram.com/nihol_cafe/?igshid=NDk5N2NlZjQ%3D"
         facebook="https://m.facebook.com/niholjoja.uz?tpclid=facebook.PAAaZ8QzEbRBjEiNiivRswUl341itVzrFkS-WDBhWfMWQMmKaMltK8TH81Vec"
         pdf="/assets/documents/nihol.pdf"
       />

@@ -16,7 +16,7 @@ const Apexpizza = () => {
         img4="/assets/img/ap4.jpeg"
         img5="/assets/img/ap5.jpeg"
         img6="/assets/img/ap6.jpeg"
-        instagram="https://instagram.com/apexpizza.uz?igshid=NDk5N2NlZjQ="
+        instagram="https://www.instagram.com/apexpizza.uz/?igshid=NDk5N2NlZjQ%3D"
         facebook="https://www.facebook.com/apexpizza.uz?mibextid=LQQJ4d"
         pdf="/assets/documents/appex.pdf"
       />

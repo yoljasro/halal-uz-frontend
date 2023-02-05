@@ -10,31 +10,20 @@ type PagePropsType = {
   messages: typeof import("../messages/en.json");
 };
 
-const usePreviousRoute = () => {
-  const { asPath } = useRouter();
-
-  const ref = useRef<string | null>(null);
-
-  useEffect(() => {
-    ref.current = asPath;
-  }, [asPath]);
-
-  return ref.current;
-};
-
-export default function App({ Component, pageProps }: AppProps) {
-  const previousRoute = usePreviousRoute();
+export default function App({ Component, pageProps }: AppProps<PagePropsType>) {
   return (
     <NextIntlProvider messages={pageProps.messages}>
-      <Script type="text/javascript">
-        {`window.replainSettings = { id: '048df61b-d542-4f8e-889a-2cf59dc2bb83' };
+      <Script type="text/javascript" id="script">
+        {
+          `window.replainSettings = { id: '048df61b-d542-4f8e-889a-2cf59dc2bb83' };
 (function(u){var s=document.createElement('script');s.async=true;s.src=u;
 var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-})('https://widget.replain.cc/dist/client.js')`}
+})('https://widget.replain.cc/dist/client.js')`
+        }
       </Script>
 
       <Layout>
-      <Component {...pageProps} {...{ previousRoute: previousRoute }} />
+        <Component {...pageProps} />
       </Layout>
     </NextIntlProvider>
   );

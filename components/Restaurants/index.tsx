@@ -65,7 +65,7 @@ export const Restaurants: FC<any> = () => {
               Lorem ipsum dolor sit amet consectetur.
             </p>
             <SocialNetworks
-              instagram="https://instagram.com/khanahmad_restaurant?igshid=NDk5N2NlZjQ="
+              instagram="https://www.instagram.com/khanahmad_restaurant/?igshid=NDk5N2NlZjQ%3D"
               facebook="https://www.facebook.com/profile.php?id=100054751930596&mibextid=LQQJ4d"
               telegram="https://t.me/KhanAhmad_restaurant"
             />
@@ -121,7 +121,7 @@ export const Restaurants: FC<any> = () => {
               Lorem ipsum dolor sit amet consectetur.
             </p>
             <SocialNetworks
-              instagram="https://instagram.com/apexpizza.uz?igshid=NDk5N2NlZjQ="
+              instagram="https://www.instagram.com/apexpizza.uz/?igshid=NDk5N2NlZjQ%3D"
               facebook=" https://www.facebook.com/apexpizza.uz?mibextid=LQQJ4d"
               telegram="/"
             />
@@ -176,7 +176,7 @@ export const Restaurants: FC<any> = () => {
               Lorem ipsum dolor sit amet consectetur.
             </p>
             <SocialNetworks
-              instagram="https://instagram.com/sariqbola_pizza?igshid=NDk5N2NlZjQ="
+              instagram="https://www.instagram.com/sariqbola_pizza/?igshid=NDk5N2NlZjQ%3D"
               facebook="https://www.facebook.com/sariqbolapizza/?mibextid=LQQJ4d"
               telegram="/"
             />
@@ -231,7 +231,7 @@ export const Restaurants: FC<any> = () => {
               Lorem ipsum dolor sit amet consectetur.
             </p>
             <SocialNetworks
-              instagram="https://instagram.com/shashlikuz?igshid=NDk5N2NlZjQ="
+              instagram="https://www.instagram.com/shashlikuz/?igshid=NDk5N2NlZjQ%3D"
               facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
               telegram="https://t.me/shashlikuz_group"
             />

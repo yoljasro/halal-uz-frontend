@@ -16,7 +16,7 @@ const Sariqbola = () => {
         img4="/assets/img/sariq4.jpeg"
         img5="/assets/img/sariq5.jpeg"
         img6="/assets/img/sariq6.jpeg"
-        instagram="https://instagram.com/sariqbola_pizza?igshid=NDk5N2NlZjQ="
+        instagram="https://www.instagram.com/sariqbola_pizza/?igshid=NDk5N2NlZjQ%3D"
         facebook="https://www.facebook.com/sariqbolapizza/?mibextid=LQQJ4d"
         pdf="/assets/documents/sariq.pdf"
       />
