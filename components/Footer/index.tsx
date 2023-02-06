@@ -29,9 +29,9 @@ export const Footer: FC<any> = () => {
       <div className={styles.cont__contacts}>
         <h1 className={styles.cont__title}>КОНТАКТЫ</h1>
         <p className={styles.cont__address}>
-          СП «WORLD HALAL COMMITTEE», <br /> Адрес: Узбекистан, г.Ташкент,
-          Мирзо-Улугбекский район, <br /> ул. Алтынтепа <br /> 354 Тел: +998 71
-          266-77-78, +998 71 266-78-00 <br /> Эл. Почта:
+          СП «WORLD HALAL COMMITTEE»,  Адрес: Узбекистан, г.Ташкент,
+          Мирзо-Улугбекский район,  ул. Алтынтепа  354 Тел: +998 71
+          266-77-78, +998 71 266-78-00  Эл. Почта:
           committeehalal@gmail.com
         </p>
         <Link href={"https://instagram.com/world.halal"} target={"_blank"}>
