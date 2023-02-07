@@ -42,7 +42,6 @@ export const Form = () => {
   return (
     <div className={styles.form}>
       <div className={styles.cont}>
-        {/* <p onClick={close}>CLose</p> */}
         <h1 className={styles.cont__title}>ОСТАВИТЬ ЗАЯВКУ</h1>
         <p className={styles.cont__description}>
           Lorem ipsum dolor sit amet consectetur. Ornare nec leo molestie <br />

@@ -13,12 +13,17 @@
         display: flex
         flex-direction: column
 
+        &__img
+            width: 100%
+            & img
+                width: 100%
+
     &__location
         background: #2F2F2F
         border-radius: 6px
-        position: absolute
-        bottom: -200px
-        left: 75%
+        position: relative
+        top: 200px
+        left: 200px
         font-family: ExoBold
         font-size: 16px
         font-weight: 700
@@ -31,9 +36,7 @@
         height: 40px
 
     &__region
-        position: absolute
-        bottom: -250px
-        left: 75%
+        position: relative
         background: #2F2F2F
         backdrop-filter: blur(10px)
         height: 39px
@@ -94,3 +97,8 @@
             font-weight: 500
             line-height: 29px
             border-radius: 6px
+
+            &:hover
+                background: #0b4982c9
+                cursor: pointer
+                transition: 1s all

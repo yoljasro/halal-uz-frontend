@@ -15,7 +15,7 @@ export const Footer: FC<any> = () => {
   const t = useTranslations();
   const router = useRouter();
   const [selectedLang, setSelectedLang] = useState(router.locale);
-
+  
   useEffect(() => {
     if (selectedLang) {
       router.push(router.asPath, undefined, {
@@ -46,7 +46,7 @@ export const Footer: FC<any> = () => {
         <Link href={"https://www.facebook.com/WorldHalalCommittee?mibextid=LQQJ4d"} target={"_blank"}>
           <Image
             className={styles.cont__social}
-            src={"/assets/img/facebook.png"}
+            src={"/assets/img/face/book.png"}
             alt="facebook"
             width={45}
             height={45}
@@ -86,11 +86,10 @@ export const Footer: FC<any> = () => {
         <ul className={styles.cont__menus__menu}>
           {/* <li>Условия использования</li> */}
           {/* <li>Политика конфиденциальности</li> */}
-          {/* <li>Часто задаваемые вопросы</li> */}
+          <li>Часто задаваемые вопросы</li>
           <li>
-            {" "}
             <Link className={styles.cont__menus__menu__link} href={"/"}>
-              {/* Подать заявку */}
+              Подать заявку
             </Link>{" "}
           </li>
         </ul>

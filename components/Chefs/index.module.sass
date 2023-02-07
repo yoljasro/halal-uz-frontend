@@ -1,32 +1,44 @@
 @import ../../styles/variables, ../../styles/mixins
 
 .cont
-    
+
     &__backgroundImg
         position: relative !important
         bottom: 160px !important
         z-index: -1 !important
+        background-size: cover
+        opacity: 0.7
 
     &__chefs
         display: flex
         justify-content: center
         justify-content: space-around
-        padding: 100px  80px 0px 80px
+        padding: 100px 80px 0px 80px
         flex-wrap: wrap
 
         &__card
             height: 390px
             width: 280px
             margin: 5px
-
+            overflow: hidden
 
             &:hover &__hoverContent
                 display: flex
                 padding: auto
-                transition: 1s ease
                 background: #000000a5
                 height: 100%
                 border-radius: 10px
+                border-bottom-right-radius: 102px
+                border-top-left-radius: 102px
+
+            &:hover &__hoverContent2
+                display: flex
+                padding: auto
+                background: #000000a5
+                height: 100%
+                border-radius: 10px
+                border-bottom-left-radius: 100px
+                border-top-right-radius: 100px
 
             &__hoverContent
                 align-items: center
@@ -34,9 +46,35 @@
                 flex-direction: column
                 justify-content: center
                 position: relative
-                top: -380px
+                top: -395px
                 display: none
 
+                & h3
+                    font-family: ExoBold
+                    font-size: 24px
+                    font-weight: 700
+                    line-height: 36px
+                    color: #28D783
+                    text-align: center
+
+                & p
+                    font-family: ExoExtraRegular
+                    padding-top: 20px
+                    font-size: 16px
+                    font-weight: 400
+                    color: $white
+                    line-height: 28px
+                    text-align: center
+                    padding-bottom: 35px
+
+            &__hoverContent2
+                align-items: center
+                display: flex
+                flex-direction: column
+                justify-content: center
+                position: relative
+                top: -395px
+                display: none
 
                 & h3
                     font-family: ExoBold

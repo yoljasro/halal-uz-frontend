@@ -64,7 +64,7 @@ export const Chefs: FC<any> = ({ props }) => {
             alt="chef2"
           />
 
-          <div className={styles.cont__chefs__card__hoverContent}>
+          <div className={styles.cont__chefs__card__hoverContent2}>
             <h3>Музаффар МИРЗАКАРИМОВ</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Viverra odio quisque
@@ -73,7 +73,7 @@ export const Chefs: FC<any> = ({ props }) => {
               nuncut.
             </p>
             <SocialNetworks
-              instagram="https://instagram.com/mirzakarimov.muzaffar?igshid=NDk5N2NlZjQ="
+              instagram="https://instagram.com/mirzakarimov.muzaffar?"
               facebook="/"
               telegram="/"
             />
@@ -96,7 +96,7 @@ export const Chefs: FC<any> = ({ props }) => {
               nuncut.
             </p>
             <SocialNetworks
-              instagram="https://instagram.com/doniyor_malikovv?igshid=NDk5N2NlZjQ="
+              instagram="https://instagram.com/doniyor_malikovv"
               facebook="/"
               telegram="/"
             />
@@ -111,7 +111,7 @@ export const Chefs: FC<any> = ({ props }) => {
             alt="chef4"
           />
 
-          <div className={styles.cont__chefs__card__hoverContent}>
+          <div className={styles.cont__chefs__card__hoverContent2}>
             <h3>Акмаль МАХМУДОВ</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Viverra odio quisque

@@ -39,8 +39,8 @@ export const Members: FC<any> = () => {
         swiping={true}
         animation={'zoom'}
         adaptiveHeight={false}
-        autoplayInterval={3000}
-        speed={3000}
+        autoplayInterval={5000}
+        speed={5000}
         wrapAround={true}
         renderCenterRightControls={null}
         renderCenterLeftControls={null}

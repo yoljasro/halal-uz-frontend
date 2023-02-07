@@ -40,12 +40,14 @@ export const Header: FC<any> = () => {
         swiping={false}
       > */}
       <div className={styles.cont__map}>
-        <Image
-          src={"/assets/img/headerBg.png"}
-          alt="header"
-          width={1440}
-          height={720}
-        />
+        <div className={styles.cont__map__img}>
+          <Image
+            src={"/assets/img/headerBg.png"}
+            alt="header"
+            width={1440}
+            height={720}
+          />
+        </div>
       </div>
 
       {/* <div className={styles.cont__map}>
@@ -167,19 +169,16 @@ export const Header: FC<any> = () => {
         </button>
       </div>
 
-      <div className={styles.cont__location}>
-            Центр Исламской Цивилизации
-          </div>
-          <div className={styles.cont__region}>
-            <Image
-              src={"/assets/img/location.png"}
-              alt="location"
-              width={20}
-              height={24}
-            />{" "}
-            Ташкент
-          </div>
-          
+      <div className={styles.cont__location}>Центр Исламской Цивилизации</div>
+      <div className={styles.cont__region}>
+        <Image
+          src={"/assets/img/location.png"}
+          alt="location"
+          width={20}
+          height={24}
+        />{" "}
+        Ташкент
+      </div>
     </div>
   );
 };
