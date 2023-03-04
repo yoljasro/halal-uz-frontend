@@ -22,20 +22,10 @@ export const SocialNetworks: FC<SocialNetworks> = ({
   telegram,
 }) => {
   const t = useTranslations();
-  const router = useRouter();
-  const [selectedLang, setSelectedLang] = useState(router.locale);
-
-  useEffect(() => {
-    if (selectedLang) {
-      router.push(router.asPath, undefined, {
-        locale: selectedLang,
-      });
-    }
-  }, [selectedLang]);
 
   return (
     <div className={styles.cont}>
-      <Link href={instagram} target={"_blank"} >
+      <Link href={instagram} target={"_blank"}>
         <Image
           src={"/assets/img/instagramm.svg"}
           alt="instagram"

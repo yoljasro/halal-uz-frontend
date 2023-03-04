@@ -7,12 +7,11 @@ import type { NextPage, GetStaticProps } from "next";
 // import { UserInfo } from "../components/UserInfo";
 import styles from "../styles/Home.module.sass";
 import { useRouter } from "next/router";
-import { Header } from "../components/Header";
+import { Header } from "../components/Header"; 
 import { Partners } from "../components/Partners";
-// import { Restaurants } from "../components/Restaurants";
 import { Footer } from "../components/Footer";
 import { Members } from "../components/Members";
-// import { Travels } from "../components/Travels";
+import { Travels } from "../components/Travels";
 import { Restaurants } from "../components/Restaurants";
 import { Main } from "../components/Main";
 import { Chefs } from "../components/Chefs";
@@ -21,7 +20,7 @@ import { Productions } from "../components/Productions";
 // import useTranslations  from 'use-intl'
 
 export default function Home() {
-  const { locale, locales, push, asPath } = useRouter();
+  // const { locale, locales, push, asPath } = useRouter();
 
   return (
     <div className={styles.container}>
@@ -32,23 +31,22 @@ export default function Home() {
         <title>Halal.uz </title>
         <meta
           name="description"
-          content="Halal.uz Halol sertifikatini beruvchi kompaniya rasmiy web sayti"
+          content="Halal.uz Halol sertifikatini beruvchi kom  paniya rasmiy web sayti"
         />
         <link rel="icon" href="/assets/img/logo.svg" />
-      </Head>
+      </Head> 
       {/* <UserInfo /> */}
-      {/* <Header/>}
-      {/* <Main/> */}
-      {/* <Main/> */}
-      <Navbar />
-      <Header/>
-      {/* <Travels/> */}
-      <Restaurants/>
-      <Productions/>
-      <Chefs/>
-      <Members/>
-      <Partners/>
-      {/* <Footer/> */}
+      {/* <Main/>  */}
+      {/* <Navbar />  */}
+       {/* <Header/> / */}
+      {/* <Navbar/> */}
+       {/* <Travels/> */}
+      {/* <Restaurants/> */}
+      {/* <Productions/> */}
+      {/* <Chefs/> */}
+      {/* <Members/> */}
+      {/* <Partners/> */}
+      <Footer/>
     </div>
   );
 }
@@ -60,3 +58,4 @@ export const getStaticProps: GetStaticProps = async ({ locale }) => {
       }
   }
 }
+

@@ -5,7 +5,7 @@ import Image from "next/image";
 // react
 //img gallery
 import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/scss/image-gallery.scss";
+// import "react-image-gallery/styles/scss/image-gallery.scss";
 import React, { FC, ChangeEventHandler, useState, useEffect } from "react";
 // nuka carousel
 import Carousel from "nuka-carousel/lib/carousel";
@@ -46,7 +46,7 @@ export const Travels: FC<any> = () => {
   const router = useRouter();
   const [selectedLang, setSelectedLang] = useState(router.locale);
 
-  useEffect(() => {
+  useEffect(() => { 
     if (selectedLang) {
       router.push(router.asPath, undefined, {
         locale: selectedLang,

@@ -44,15 +44,16 @@ export const Productions = () => {
           <div className={styles.cont__productions__card__hoverContent}>
             <Link
               href={
-                "https://www.siyobferma.uz/?fbclid=PAAaZoczZM9mEBs79QfIJBKDMS3mnhcLHQRFfy7blglqEId8HySgl3bk5h-LY"
+                "https://www.siyobferma.uz/"
               }
             >
-              <button>Перейти на сайт</button> <br />
-              <a target={"_blank"} href="/assets/documents/siyob.pdf">
+              <button>Перейти на сайт</button>
+              
+            </Link>
+            <a target={"_blank"} href="/assets/documents/siyob.pdf">
                 {" "}
                 Посмотреть сертификат
               </a>
-            </Link>
             <SocialNetworks
               instagram=" https://instagram.com/siyobferma.uz?igshid=NDk5N2NlZjQ="
               facebook="https://www.facebook.com/siyob.ferma?mibextid=LQQJ4d"

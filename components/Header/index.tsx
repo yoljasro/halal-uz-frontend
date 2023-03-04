@@ -39,6 +39,8 @@ export const Header: FC<any> = () => {
         renderBottomCenterControls={null}
         swiping={false}
       > */}
+      <div>
+      </div>
       <div className={styles.cont__map}>
         <div className={styles.cont__map__img}>
           <Image
@@ -150,7 +152,7 @@ export const Header: FC<any> = () => {
             width={1440}
             height={720}
           />
-        </div>
+        </div> 
 
         <div className={styles.cont__map}>
           <Image
@@ -165,9 +167,10 @@ export const Header: FC<any> = () => {
         <h1 className={styles.cont__info__title}>{t("mainC.company")}</h1>
         <p className={styles.cont__info__description}>{t("certificate")}</p>
         <button className={styles.cont__info__btn}>
-          <Link href={"/aboutUs"}>{t("btnMore")} </Link>
+          More
+          {/* <Link href={""}>{t("btnMore")} </Link> */}
         </button>
-      </div>
+      </div>  
 
       <div className={styles.cont__location}>Центр Исламской Цивилизации</div>
       <div className={styles.cont__region}>
@@ -176,7 +179,7 @@ export const Header: FC<any> = () => {
           alt="location"
           width={20}
           height={24}
-        />{" "}
+        />
         Ташкент
       </div>
     </div>

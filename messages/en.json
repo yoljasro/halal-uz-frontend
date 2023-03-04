@@ -100,7 +100,7 @@
         "select" : "Select a category"
     } , 
     "mainC" :{
-        "company": "WORLDWIDE HALAL COMMITTEE (WICS)" , 
+        "company": "WORLDWIDE HALAL  COMMITTEE <span>(WICS)</span>" , 
         "request" : "Please apply"
     }
 }   

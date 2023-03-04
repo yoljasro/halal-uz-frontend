@@ -63,7 +63,7 @@ export const Restaurants: FC<any> = () => {
               }
             >
               Lorem ipsum dolor sit amet consectetur.
-            </p>
+            </p>  
             <SocialNetworks
               instagram="https://www.instagram.com/khanahmad_restaurant/?igshid=NDk5N2NlZjQ%3D"
               facebook="https://www.facebook.com/profile.php?id=100054751930596&mibextid=LQQJ4d"

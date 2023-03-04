@@ -13,7 +13,7 @@ import styles from "./index.module.sass";
 import { MainPageTitle } from "../MainPageTitle";
 import { restaurants } from "../../constants";
 // mui
-import Box from "@mui/material/Box";
+import Box from "@mui/material/Box"; 
 import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
 import { Form } from "../Form";
@@ -67,7 +67,7 @@ export const Main: FC<any> = () => {
         </Modal>
       </React.Fragment>
       <div className={styles.cont__logo}>
-        <Link href='/'>
+        <Link href="/">
           <Image
             src={"/assets/img/logo.svg"}
             width={80}
@@ -77,7 +77,7 @@ export const Main: FC<any> = () => {
         </Link>
         <div className={styles.cont__logo__line}></div>
         <h1 className={styles.cont__logo__title}>
-          ВСЕМИРНЫЙ ХАЛЯЛЬНЫЙ <br /> КОМИТЕТ <span>(WICS)</span>{" "}
+         {t("mainC.company")}
         </h1>
       </div>
       <div className={styles.cont__media}>

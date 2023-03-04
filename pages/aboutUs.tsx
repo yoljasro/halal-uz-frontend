@@ -34,6 +34,7 @@ const AboutUs: FC<any> = ({ props }) => {
     );
   };
 
+
   return (
     <div className={styles.cont}>
       <h1 className={styles.cont__title}>О НАС</h1>

@@ -17,9 +17,9 @@ import { useRouter } from "next/router";
 // styles
 import { MainPageTitle } from "../components/MainPageTitle";
 // hook
-import { useSize } from "../hooks/index"; 
+import { useSize } from "../hooks/index";
 //react-yandex-map
-// import { FullscreenControl, Map, Placemark, YMaps } from "react-yandex-maps";sa
+import { FullscreenControl, Map, Placemark, YMaps } from "react-yandex-maps";
 // styles
 import styles from "../styles/git.index.module.sass";
 import { Select } from "@mui/material";
@@ -27,6 +27,7 @@ import { Select } from "@mui/material";
 const HalalMap: FC<any> = ({ props }) => {
   const t = useTranslations();
   const router = useRouter();
+  const [address, setAddress] = useState("Tashkent");
   const [selectedLang, setSelectedLang] = useState(router.locale);
   const contactsBlockRef = useRef<HTMLDivElement>(null);
   const size = useSize(contactsBlockRef);
@@ -36,7 +37,7 @@ const HalalMap: FC<any> = ({ props }) => {
     if (size) {
       const { width } = size;
       if (width < 1399) {
-        setHeight("245px");
+        setHeight("100px");
       }
     }
   }, [size]);
@@ -66,14 +67,33 @@ const HalalMap: FC<any> = ({ props }) => {
           <option value="Second">Second</option>
         </select>
 
-        <select className={styles.cont__select__region} placeholder='n'>
+        <select className={styles.cont__select__region} placeholder="n">
           <option disabled>Выберите страну</option>
           <option value="First">First</option>
           <option value="Second">Second</option>
         </select>
       </div>
       <div className={styles.cont__map}>
-       
+
+        <YMaps>
+          <Map
+            width={"50%"}
+            height={height}
+            defaultState={{
+              center: [41.320551, 69.28333],
+              zoom: 12,
+              controls: ["zoomControl"],
+            }}
+            modules={["control.ZoomControl"]}
+          >
+            <FullscreenControl
+              options={{
+                float: "right",
+              }}
+            />
+            <Placemark defaultGeometry={[41.320551, 69.28333]} />
+          </Map>
+        </YMaps>
       </div>
     </div>
   );

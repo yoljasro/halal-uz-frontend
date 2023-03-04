@@ -92,9 +92,16 @@ export const Chefs: FC<any> = ({ props }) => {
             <p>
               Lorem ipsum dolor sit amet consectetur. Viverra odio quisque
               vestibulum enim commodo malesuada orci pretium lectus. Nunc sem
+    
               purus diam tempor feugiat quisque. Mattis a quis donec pretium
               nuncut.
             </p>
+            <div>
+              <option value="val">val</option>
+              <option value="val">Val</option>
+              <option value="val">Val</option>
+              <option value="val">Val</option>
+            </div>
             <SocialNetworks
               instagram="https://instagram.com/doniyor_malikovv"
               facebook="/"
