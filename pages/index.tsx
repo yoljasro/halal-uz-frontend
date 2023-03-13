@@ -33,7 +33,7 @@ export default function Home() {
           name="description"
           content="Halal.uz Halol sertifikatini beruvchi kom  paniya rasmiy web sayti"
         />
-        <meta name="google-site-verification" content="Pi7kisuljjOmFbBlvmk-S8DASJP-WbIGUQ1ERs9XwS4" />
+<meta name="google-site-verification" content="Pi7kisuljjOmFbBlvmk-S8DASJP-WbIGUQ1ERs9XwS4" />
         <link rel="icon" href="/assets/img/logo.svg" />
       </Head> 
       {/* <UserInfo /> */}
