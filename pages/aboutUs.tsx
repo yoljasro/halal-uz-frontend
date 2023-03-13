@@ -10,21 +10,27 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/router";
 // styles
 import { MainPageTitle } from "../components/MainPageTitle";
+// axios
+import axios from "axios";
 // styles
 import styles from "../styles/aboutUs.module.sass";
 
-const AboutUs: FC<any> = ({ props }) => {
-  const t = useTranslations();
-  const router = useRouter();
-  const [selectedLang, setSelectedLang] = useState(router.locale);
+interface About{
+  id: string;
+  description: string;
+}
 
+const AboutUs: FC<any> = () => {
+  const t = useTranslations();
+  const [about, setAbout] = useState<About[]>([]);
+  const url = "http://localhost:5000/about";
   useEffect(() => {
-    if (selectedLang) {
-      router.push(router.asPath, undefined, {
-        locale: selectedLang,
-      });
-    }
-  }, [selectedLang]);
+    axios.get<{about:About[]}>(url).then(function (response) {
+      setAbout(response.data.about);
+      console.log(response)
+    }).catch(err => console.log(err));
+  } ,[]);
+
 
   const disablePdf = () => {
     window.open(
@@ -34,20 +40,17 @@ const AboutUs: FC<any> = ({ props }) => {
     );
   };
 
-
   return (
     <div className={styles.cont}>
       <h1 className={styles.cont__title}>О НАС</h1>
       <div className={styles.cont__content}>
-        <p className={styles.cont__content__description}>
-          О нас - Всемирная платформа кулинарных сообществ исламских стран
-          (WICS) была основана кулинарными ассоциациями 22 исламских стран 13
-          мая 2017 года в Стамбуле (Турция). В 2019 году при WICS был основан
-          Всемирный Халяльный Комитет (Далее ВХК). ВХК – сертифицирует
-          туристические объекты, заведения общественного питания, а также
-          производителей продуктов питания – основаясь на священном Коране и
-          международных стандартов.
-        </p>
+        {
+        about && about.length>0 && about.map(item=>{
+          return(
+            <p className={styles.cont__content__description} key={item.id}>{item.description}</p>
+          )
+         })
+        }
       </div>
       <p className={styles.cont__document}>
         Далее вы можете ознакомиться с документами, подтверждающие нашу
@@ -102,7 +105,7 @@ const AboutUs: FC<any> = ({ props }) => {
           Просмотр документов
         </a>
       </div>
-    </div>
+    </div> 
   );
 };
 

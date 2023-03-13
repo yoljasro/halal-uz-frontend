@@ -5,25 +5,37 @@
     width: 100%
     background: $white
     display: flex
-    padding: 25px 56px 49px 80px
+    padding: 25px 60px 49px 50px
     justify-content: space-between
     overflow: hidden
+    @media (max-width:1900px)
+        padding: 25px 100px 49px 100px
 
-    &__logo
+    &__content
         display: flex
+        & img
+            & span
+                display: none !important
+        &__title
+            width: 100%
+            max-width: 507px
+            & p
+                font-family: ExoExtraRegular
+                font-size: 30px
+                line-height: 36px
+                color: $black
+                padding-left: 20px
+                border: 1px solid black
+                border-right: none
+                color: #000000
+                border-bottom: none
+                border-top: none
 
         &__line
             height: 72px
             width: 2px
             background: rgba(155, 155, 155, 1)
-            margin-left: 20px
-
-        &__title
-            font-family: ExoMedium
-            font-size: 30px
-            line-height: 36px
-            color: $black
-            padding-left: 20px
+            margin-left: 50px
 
             & span
                 color: #818181

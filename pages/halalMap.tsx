@@ -55,9 +55,9 @@ const HalalMap: FC<any> = ({ props }) => {
       <h3 className={styles.cont__title}>ХАЛЯЛЬ ГИД</h3>
       <div className={styles.cont__eventText}>
         <p className={styles.cont__eventText__description}>
-          В данном разделе карта мира, с локациями где есть Гостиницы, заведения
-          общестенного питания, а также производители продуктов питания, которые
-          удостоились сертификата Халяль
+          В данном разделе карта мира, с локациями где есть туристические
+          объекты, заведения общестенного питания, а также производители
+          продуктов питания, которые удостоились сертификата Халяль.
         </p>
       </div>
       <div className={styles.cont__select}>
@@ -74,7 +74,6 @@ const HalalMap: FC<any> = ({ props }) => {
         </select>
       </div>
       <div className={styles.cont__map}>
-
         <YMaps>
           <Map
             width={"50%"}

@@ -61,7 +61,7 @@ export const Footer: FC<any> = () => {
             height={45}
           />
         </Link>
-        <Link href={"/"} target={"_blank"}>
+        <Link href={"/https://api.whatsapp.com/qr/H7LPF2NHCBRCB1?autoload=1&app_absent=0"} target={"_blank"}>
           <Image
             className={styles.cont__social}
             src={"/assets/img/whatsapp.png"}
@@ -84,9 +84,9 @@ export const Footer: FC<any> = () => {
         </ul>
 
         <ul className={styles.cont__menus__menu}>
-          {/* <li>Условия использования</li> */}
-          {/* <li>Политика конфиденциальности</li> */}
-          <li>Часто задаваемые вопросы</li>
+          <li>
+            <Link href={"/faq"}>Часто задаваемые вопросы</Link>
+          </li>
           <li>
             <Link className={styles.cont__menus__menu__link} href={"/"}>
               Подать заявку

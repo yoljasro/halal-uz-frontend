@@ -9,8 +9,6 @@ import { useTranslations } from "next-intl";
 // router
 import { useRouter } from "next/router";
 // styles
-import { MainPageTitle } from "../MainPageTitle";
-import { Navbar } from "../Navbar";
 import { Footer } from "../Footer";
 import { Main } from "../Main";
 
@@ -20,7 +18,7 @@ export const Layout: FC<any> = ({children}) => {
     <div>
         <Main/> 
         {children} 
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   );
 };

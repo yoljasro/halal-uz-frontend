@@ -13,7 +13,7 @@ import styles from "./index.module.sass";
 import { MainPageTitle } from "../MainPageTitle";
 import { restaurants } from "../../constants";
 // mui
-import Box from "@mui/material/Box"; 
+import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Button from "@mui/material/Button";
 import { Form } from "../Form";
@@ -66,19 +66,11 @@ export const Main: FC<any> = () => {
           <Form />
         </Modal>
       </React.Fragment>
-      <div className={styles.cont__logo}>
-        <Link href="/">
-          <Image
-            src={"/assets/img/logo.svg"}
-            width={80}
-            height={80}
-            alt="logo"
-          />
-        </Link>
-        <div className={styles.cont__logo__line}></div>
-        <h1 className={styles.cont__logo__title}>
-         {t("mainC.company")}
-        </h1>
+      <div className={styles.cont__content}>
+        <Image src={"/assets/img/logo.svg"} alt="logo" width={80} height={80} />
+        <div className={styles.cont__content__title}>
+          <p>{t("mainC.company")}</p>
+        </div>
       </div>
       <div className={styles.cont__media}>
         <button onClick={handleOpen} className={styles.cont__media__btn}>

@@ -97,12 +97,13 @@ export const Productions = () => {
           </p>
           <div className={styles.cont__productions__card__hoverContent}>
             <Link href={"http://www.agrobravo.uz/ru/"}>
-              <button>Перейти на сайт</button> <br />
-              <a target={"_blank"} href="/assets/documents/agro.pdf">
+              <button>Перейти на сайт</button>
+              
+            </Link>
+            <a target={"_blank"} href="/assets/documents/agro.pdf">
                 {" "}
                 Посмотреть сертификат
               </a>
-            </Link>
             <SocialNetworks
               instagram=" https://instagram.com/agrobravo.uz?igshid=NDk5N2NlZjQ="
               facebook="https://www.facebook.com/agrobravo.uz?mibextid=LQQJ4d"

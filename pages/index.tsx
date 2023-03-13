@@ -33,20 +33,21 @@ export default function Home() {
           name="description"
           content="Halal.uz Halol sertifikatini beruvchi kom  paniya rasmiy web sayti"
         />
+        <meta name="google-site-verification" content="Pi7kisuljjOmFbBlvmk-S8DASJP-WbIGUQ1ERs9XwS4" />
         <link rel="icon" href="/assets/img/logo.svg" />
       </Head> 
       {/* <UserInfo /> */}
       {/* <Main/>  */}
-      {/* <Navbar />  */}
-       {/* <Header/> / */}
+      {/* <Navbar /> 
+       <Header/>  */}
       {/* <Navbar/> */}
        {/* <Travels/> */}
-      {/* <Restaurants/> */}
-      {/* <Productions/> */}
-      {/* <Chefs/> */}
-      {/* <Members/> */}
-      {/* <Partners/> */}
-      <Footer/>
+      {/* <Restaurants/>
+      <Productions/>
+      <Chefs/>
+      <Members/>
+      <Partners/> */}
+      {/* <Footer/> */}
     </div>
   );
 }
