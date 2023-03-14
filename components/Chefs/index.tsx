@@ -92,16 +92,9 @@ export const Chefs: FC<any> = ({ props }) => {
             <p>
               Lorem ipsum dolor sit amet consectetur. Viverra odio quisque
               vestibulum enim commodo malesuada orci pretium lectus. Nunc sem
-    
               purus diam tempor feugiat quisque. Mattis a quis donec pretium
               nuncut.
             </p>
-            <div>
-              <option value="val">val</option>
-              <option value="val">Val</option>
-              <option value="val">Val</option>
-              <option value="val">Val</option>
-            </div>
             <SocialNetworks
               instagram="https://instagram.com/doniyor_malikovv"
               facebook="/"
@@ -133,14 +126,14 @@ export const Chefs: FC<any> = ({ props }) => {
             />
           </div>
         </div>
+        <Image
+          className={styles.cont__backgroundImg}
+          src="/assets/img/chefBG.png"
+          alt="chefBg"
+          width={1440}
+          height={206}
+        />
       </div>
-      <Image
-      className={styles.cont__backgroundImg}
-        src="/assets/img/chefBG.png"
-        alt="chefBg"
-        width={1440}
-        height="366"
-      />
     </div>
   );
 };

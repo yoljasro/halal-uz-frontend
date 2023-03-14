@@ -100,7 +100,8 @@
     "select": "Kategoriyani tanlang"
   } , 
     "mainC" :{
-        "company": "DUNYO BO'YICHA HALAL QO'MITA  (WICS)" , 
+        "company": "DUNYO BO'YICHA HALAL QO'MITA  " , 
+        "w" : "(WICS)" ,
         "request" : "Murojaat qiling"
     }
 }

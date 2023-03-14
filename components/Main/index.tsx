@@ -69,7 +69,7 @@ export const Main: FC<any> = () => {
       <div className={styles.cont__content}>
         <Image src={"/assets/img/logo.svg"} alt="logo" width={80} height={80} />
         <div className={styles.cont__content__title}>
-          <p>{t("mainC.company")}</p>
+          <p>{t("mainC.company")} <span>{t("mainC.w")}</span></p>
         </div>
       </div>
       <div className={styles.cont__media}>
@@ -94,8 +94,8 @@ export const Main: FC<any> = () => {
           <option className={styles.cont__media__select__option} value="tr">
             TR
           </option>
-          <option className={styles.cont__media__select__option} value="arab">
-            ARAB
+          <option className={styles.cont__media__select__option} value="ar-SA">
+            ARA
           </option>
         </select>
       </div>

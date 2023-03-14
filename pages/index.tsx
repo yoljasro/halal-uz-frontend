@@ -38,16 +38,15 @@ export default function Home() {
       </Head> 
       {/* <UserInfo /> */}
       {/* <Main/>  */}
-      {/* <Navbar /> 
-       <Header/>  */}
-      {/* <Navbar/> */}
+      <Navbar /> 
+       <Header/>  
        {/* <Travels/> */}
-      {/* <Restaurants/>
+      <Restaurants/>
       <Productions/>
       <Chefs/>
-      <Members/>
-      <Partners/> */}
-      {/* <Footer/> */}
+       <Members/>
+       <Partners/>   
+      {/* <Footer/>  */}
     </div>
   );
 }

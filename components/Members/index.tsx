@@ -37,7 +37,7 @@ export const Members: FC<any> = () => {
         className={styles.cont__carousel}
         autoplay={true}  
         swiping={true}
-        animation={'zoom'}
+        // animation={'zoom'}
         adaptiveHeight={false}
         autoplayInterval={5000}
         speed={5000}
@@ -196,7 +196,7 @@ export const Members: FC<any> = () => {
             width={120}
             height={120}
           />
-          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.azerbaijan")}</p>
+          <p className={styles.cont__carousel__flag__region}>{t("pageOurMembers.uzbekistan")}</p>
         </div>
 
         <div className={styles.cont__carousel__flag}>

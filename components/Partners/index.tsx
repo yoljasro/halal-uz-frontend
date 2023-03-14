@@ -45,7 +45,7 @@ export const Partners: FC<any> = () => {
         {/* > */}
           {" "}
           
-          {/* <div className={styles.cont__partners__content}> */}
+          <div className={styles.cont__partners__content}>
             <Image
               alt="partner1"
               src="/assets/img/partner1.png"
@@ -72,7 +72,7 @@ export const Partners: FC<any> = () => {
             width={170}
             height={171}
           />
-          <Image
+          {/* <Image
             alt="partner5"
             src="/assets/img/partner5.png"
             width={170}
@@ -83,9 +83,9 @@ export const Partners: FC<any> = () => {
             src="/assets/img/partner6.png"
             width={170}
             height={171}
-          />
-        {/* </Carousel> */}
+          /> */}
       </div>
+    </div>
     </div>
   );
 };

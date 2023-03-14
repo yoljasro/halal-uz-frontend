@@ -32,9 +32,7 @@ export const Navbar = () => {
         <Link className={styles.cont__menu__link} href={"/aboutUs"}>
             <li>{t("our")}</li>
         </Link>
-        <Link className={styles.cont__menu__link} href="/restaurants">
-            <li>{t("restaurants")}</li>
-        </Link>
+        
         <Link className={styles.cont__menu__link} href="#productions">
             <li>{t("productive")}</li>
         </Link>
@@ -44,6 +42,10 @@ export const Navbar = () => {
         <Link className={styles.cont__menu__link} href="/restaurants">
             <li>{t("restaurants")}</li>
         </Link>
+        <Link className={styles.cont__menu__link} href="#partners">
+            <li>{t("partners")}</li>
+        </Link>
+
         <Link className={styles.cont__menu__link} href="#members">
             <li>{t("partners")}</li>
         </Link>

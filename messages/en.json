@@ -101,6 +101,7 @@
     } , 
     "mainC" :{
         "company": "WORLDWIDE HALAL  COMMITTEE" , 
+        "w" : "(WICS)" ,
         "request" : "Please apply"
     }
 }   

@@ -12,15 +12,19 @@
         padding: 25px 100px 49px 100px
 
     &__content
-        display: flex
+        // display: flex
         & img
+            margin: auto !important
             & span
                 display: none !important
         &__title
             width: 100%
             max-width: 507px
+            top: -80px
+            left: 100px
+            position: relative
             & p
-                font-family: ExoExtraRegular
+                font-family: ExoMedium
                 font-size: 30px
                 line-height: 36px
                 color: $black
@@ -30,6 +34,8 @@
                 color: #000000
                 border-bottom: none
                 border-top: none
+                & span 
+                    color: #818181
 
         &__line
             height: 72px

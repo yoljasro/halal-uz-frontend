@@ -34,6 +34,7 @@ export const Footer: FC<any> = () => {
           266-77-78, +998 71 266-78-00 <br /> Эл. Почта:
           committeehalal@gmail.com
         </p>
+        <div className={styles.cont__contacts__icon}>
         <Link href={"https://instagram.com/world.halal"} target={"_blank"}>
           <Image
             className={styles.cont__social}
@@ -46,7 +47,7 @@ export const Footer: FC<any> = () => {
         <Link href={"https://www.facebook.com/WorldHalalCommittee?mibextid=LQQJ4d"} target={"_blank"}>
           <Image
             className={styles.cont__social}
-            src={"/assets/img/face/book.png"}
+            src={"/assets/img/facebook.png"}
             alt="facebook"
             width={45}
             height={45}
@@ -70,6 +71,7 @@ export const Footer: FC<any> = () => {
             height={45}
           />
         </Link>
+        </div>
         <p className={styles.cont__plan}>Режим работы:</p>
         <p className={styles.cont__workPlan}>Пн - Пт, 09:00 - 18:00</p>
       </div>
@@ -88,9 +90,9 @@ export const Footer: FC<any> = () => {
             <Link href={"/faq"}>Часто задаваемые вопросы</Link>
           </li>
           <li>
-            <Link className={styles.cont__menus__menu__link} href={"/"}>
+            {/* <Link className={styles.cont__menus__menu__link} href={"/"}>
               Подать заявку
-            </Link>{" "}
+            </Link>{" "} */}
           </li>
         </ul>
       </div>
