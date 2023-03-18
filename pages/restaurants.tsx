@@ -8,6 +8,7 @@ import React, { FC, ChangeEventHandler, useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 // router
 import { useRouter } from "next/router";
+import type { NextPage, GetStaticProps } from "next";
 // styles
 import styles from "../styles/restaurants.module.sass";
 import { MainPageTitle } from "../components/MainPageTitle";
@@ -262,4 +263,12 @@ import { SocialNetworks } from "../components/socialNetworks";
   );
 };
 
-export default Restaurants
+export default Restaurants;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+      props: {
+          messages: (await import(`../messages/${locale}.json`)).default
+      }
+  }
+}

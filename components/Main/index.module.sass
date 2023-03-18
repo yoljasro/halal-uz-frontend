@@ -1,72 +1,93 @@
-@import ../../styles/variables, ../../styles/mixins
-
-.cont
-    height: 120px
-    width: 100%
-    background: $white
+.main
     display: flex
-    padding: 25px 60px 49px 50px
     justify-content: space-between
-    overflow: hidden
-    @media (max-width:1900px)
-        padding: 25px 100px 49px 100px
+    flex-wrap: wrap
+    align-items: center
+    width: 100%
+    background: #FFFFFF
+    height: 102px
+    padding: 20px 80px
+    margin-bottom: 24px
+    
+    @media (max-width:769px)
+        width: 100%
+        padding: 20px 40px
 
-    &__content
-        // display: flex
-        & img
-            margin: auto !important
-            & span
-                display: none !important
-        &__title
+    &__section
+        display: flex
+        align-items: center
+        @media (max-width:769px)
             width: 100%
-            max-width: 507px
-            top: -80px
-            left: 100px
-            position: relative
-            & p
-                font-family: ExoMedium
-                font-size: 30px
-                line-height: 36px
-                color: $black
-                padding-left: 20px
-                border: 1px solid black
-                border-right: none
-                color: #000000
-                border-bottom: none
-                border-top: none
-                & span 
-                    color: #818181
+            justify-content: space-between
+            align-content: center
+            &:last-child
+                margin-top: 50px
+                width: 100%
+                justify-content: center
+                align-content: center
+                justify-content: space-between
 
-        &__line
-            height: 72px
-            width: 2px
-            background: rgba(155, 155, 155, 1)
-            margin-left: 50px
+    &__closeBtn
+        font-size: 25px
+        padding: 5px 8px
+        border-radius: 3px
+        border: none
+        float: right
+        cursor: pointer
+        background: aqua
+        &:hover
+            background: #5b74c7
+            transition: 1s ease 
 
-            & span
-                color: #818181
-
-    &__media
-
-        &__btn
-            font-family: ExoBold
+    &__title
+        width: 100%
+        max-width: 320px
+        border: 2px solid #9B9B9B
+        font-family: ExoBold
+        font-size: 20px
+        height: 72px
+        line-height: 36px
+        letter-spacing: 0em
+        text-align: left
+        color: #000000
+        margin-left: 20px
+        border-right: none
+        border-top: none
+        border-bottom: none
+        padding-left: 20px
+        @media (max-width:769px)
             font-size: 18px
-            background: #00E376
-            padding: 14px 36px
-            border: none
-            color: $white
-            cursor: pointer
-            border-radius: 6px
-            margin-right: 30px
+            line-height: 25px
+            padding-top: 10px
+            height: 65px
 
-        &__select
-            border: none
-            outline: none
-            background: none
-            cursor: pointer
+        & span
+            color: #818181
+
+    &__btn
+        background: #00E376
+        border-radius: 6px
+        border: none
+        font-family: ExoBold
+        font-size: 18px
+        font-weight: 700
+        padding: 14px 36px
+        text-align: center
+        color: #FFFFFF
+        cursor: pointer
+        margin-right: 30px
+
+    &__modal
+        // background: red
+
+    &__select
+        border: none
+        outline: none
+        color: #000000
+        font-family: ExoMedium
+        background: none
+        font-size: 16px
+        cursor: pointer
+        @media (max-width:769px)
+            font-size: 22px
             font-family: ExoBold
-            color: #000000
-            font-size: 18px
-
-        & + &
-            cursor: pointer

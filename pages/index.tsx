@@ -37,16 +37,14 @@ export default function Home() {
         <link rel="icon" href="/assets/img/logo.svg" />
       </Head> 
       {/* <UserInfo /> */}
-      {/* <Main/>  */}
       <Navbar /> 
        <Header/>  
        {/* <Travels/> */}
-      <Restaurants/>
+      {/* <Restaurants/>
       <Productions/>
       <Chefs/>
        <Members/>
-       <Partners/>   
-      {/* <Footer/>  */}
+       <Partners/>    */}
     </div>
   );
 }

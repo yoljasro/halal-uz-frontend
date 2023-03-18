@@ -7,6 +7,8 @@ import Typography from "@mui/material/Typography";
 // import { ExpandMore } from '@material-ui/icons';
 // styles
 import styles from "../styles/faq.module.sass";
+// next
+import type { NextPage, GetStaticProps } from "next";
 import { MainPageTitle } from "../components/MainPageTitle";
 
 const FAQ = () => {
@@ -50,3 +52,11 @@ const FAQ = () => {
   );
 };
 export default FAQ;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+      props: {
+          messages: (await import(`../messages/${locale}.json`)).default
+      }
+  }
+}

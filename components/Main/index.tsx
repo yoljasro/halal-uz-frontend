@@ -14,36 +14,23 @@ import { MainPageTitle } from "../MainPageTitle";
 import { restaurants } from "../../constants";
 // mui
 import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
-import Button from "@mui/material/Button";
 import { Form } from "../Form";
-
-const style = {
-  position: "absolute" as "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)",
-  width: 400,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
-  boxShadow: 24,
-  pt: 2,
-  px: 4,
-  pb: 3,
-};
+// modal
+import Modal from "react-modal";
 
 export const Main: FC<any> = () => {
-  const [open, setOpen] = React.useState(false);
   const t = useTranslations();
   const router = useRouter();
   const [selectedLang, setSelectedLang] = useState(router.locale);
+  const [isOpen, setIsOpen] = useState(false);
 
-  const handleOpen = () => {
-    setOpen(true);
-  };
-  const handleClose = () => {
-    setOpen(false);
-  };
+  function handleClick() {
+    setIsOpen(true);
+  }
+
+  function handleClose() {
+    setIsOpen(false);
+  }
 
   useEffect(() => {
     if (selectedLang) {
@@ -54,33 +41,40 @@ export const Main: FC<any> = () => {
   }, [selectedLang]);
 
   return (
-    <div className={styles.cont}>
-      <React.Fragment>
-        <Modal
-          hideBackdrop
-          open={open}
-          onClose={handleClose}
-          aria-labelledby="child-modal-title"
-          aria-describedby="child-modal-description"
-        >
-          <Form />
-        </Modal>
-      </React.Fragment>
-      <div className={styles.cont__content}>
-        <Image src={"/assets/img/logo.svg"} alt="logo" width={80} height={80} />
-        <div className={styles.cont__content__title}>
-          <p>{t("mainC.company")} <span>{t("mainC.w")}</span></p>
+    <div className={styles.main}>
+      <div className={styles.main__section}>
+        <Link href={"/"}>
+          <Image
+            src={"/assets/img/logo.svg"}
+            alt="logo"
+            width={80}
+            height={80}
+          />
+        </Link>
+        <div className={styles.main__title}>
+          <p>
+            {t("mainC.company")} <span>{t("mainC.w")}</span>
+          </p>
         </div>
       </div>
-      <div className={styles.cont__media}>
-        <button onClick={handleOpen} className={styles.cont__media__btn}>
-          Подать заявку
+      <div className={styles.main__section}>
+        <button className={styles.main__btn} onClick={handleClick}>
+          {t("mainC.btn")}
         </button>
-
+        <Modal
+          className={styles.main__modal}
+          isOpen={isOpen}
+          onRequestClose={handleClose}
+        >
+          <button className={styles.main__closeBtn} onClick={handleClose}>
+            X
+          </button>
+          <Form />
+        </Modal>
         <select
+          className={styles.main__select}
           value={selectedLang}
           onChange={(e) => setSelectedLang(e.target.value)}
-          className={styles.cont__media__select}
         >
           <option className={styles.cont__media__select__option} value="ru">
             RU

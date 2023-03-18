@@ -1,107 +1,113 @@
 {
-    "members" : "Members",  
-    "restaurants" : "Restaurants" , 
-    "productive" : "Productive" , 
-    "chef" : "Chef" , 
-    "partners" : "Partners" , 
-    "main" : "Main" ,  
-    "our" : "About us"  ,
+  "members": "Members",
+  "restaurants": "Restaurants",
+  "productive": "Productive",
+  "chef": "Chef",
+  "partners": "Partners",
+  "main": "Main",
+  "our": "About us",
+  "map": "Halal Guide",
+  "address" :"Center of Islamic Civilization" , 
+  "location" : "Tashkent" ,
 
-    "aboutUs" : "About us" , 
-    "aboutUsInformation" : "We are the World Halal Committee (WHC) " ,
-    "certificate"  : " we certify tourist sites, catering establishments, as well as food producers - based on the Holy Quran and international standards." , 
-    "btnMore" : "More" , 
+  "aboutUs": "About us",
+  "aboutUsInformation": "We are the World Halal Committee (WHC) ",
+  "certificate": " we certify tourist sites, catering establishments, as well as food producers - based on the Holy Quran and international standards.",
+  "btnMore": "More",
 
-    "pagesTitle" : {
-        "partners" : "Partners" , 
-        "travel" : "TRAVEL" , 
-        "restaurantsHalal" : "HALAL RESTAURANTS"  , 
-        "ourMembers" : "OUR MEMBERS" , 
-        "chefSHalal" : "HALAL CHEF" , 
-        "manufacturers" : "MANUFACTURERS" , 
-        "siyob" : ""
-    },
+  "pagesTitle": {
+    "partners": "Partners",
+    "travel": "TRAVEL",
+    "restaurantsHalal": "HALAL RESTAURANTS",
+    "ourMembers": "OUR MEMBERS",
+    "chefSHalal": "HALAL CHEF",
+    "manufacturers": "MANUFACTURERS",
+    "siyob": ""
+  },
 
-    "pageRestaurants" : {
-        "title" : "HALAL RESTAURANTS",
-        "information" : "In this section, you can get acquainted with catering establishments that have received the Halal certificate",
-        "btnmore" : "See more"
-    },
+  "pageRestaurants": {
+    "title": "HALAL RESTAURANTS",
+    "information": "In this section, you can get acquainted with catering establishments that have received the Halal certificate",
+    "btnmore": "See more"
+  },
 
-    "pageManufacturers" : {
-        "title" : "MANUFACTURERS",
-        "information" : "Here are the food manufacturers that have received the Halal certificate",
-        "siyob":"SIYOB FERMA",
-        "shashlik":"SHASHLIKUZ",
-        "agro":"AGRO-BRAVO"
-    },
+  "pageManufacturers": {
+    "title": "MANUFACTURERS",
+    "information": "Here are the food manufacturers that have received the Halal certificate",
+    "siyob": "SIYOB FERMA",
+    "shashlik": "SHASHLIKUZ",
+    "agro": "AGRO-BRAVO"
+  },
 
-    "pageHalalChef" : {
-        "title" : "HALAL CHEF",
-        "information" : "This section is dedicated to eminent Chefs who received the International Halal Chef Badge"
-    },
+  "pageHalalChef": {
+    "title": "HALAL CHEF",
+    "information": "This section is dedicated to eminent Chefs who received the International Halal Chef Badge"
+  },
 
-    "pageOurMembers" : {
-        "title" : "OUR MEMBERS",
-        "information" : "This section lists the states that are part of our international organization",
-        "azerbaijan" : "AZERBAIJAN",
-        "kazakhstan" : "KAZAKHSTAN",
-        "bosniaAndHerzegovina" : "BOSNIA AND HERZEGOVINA",
-        "kyrgyzstan" : "KYRGYZSTAN",
-        "morocco" : "MOROCCO",
-        "maldives" : "MALDIVES",
-        "nigeria" : "NIGERIA",
-        "singapore" : "SINGAPORE",
-        "tunisia" : "TUNISIA",
-        "libya" : "LIBYA",
-        "malaysia" : "MALAYSIA",
-        "pakistan" : "PAKISTAN",
-        "lebanon" : "LEBANON",
-        "jordan" : "JORDAN",
-        "bangladesh" : "BANGLADESH",
-        "gambia" : "GAMBIA",
-        "algeria" : "ALGERIA",
-        "uzbekistan" : "UZBEKISTAN",
-        "qatar" : "QATAR",
-        "egypt" : "EGYPT",
-        "saudiArabia" : "SAUDI ARABIA",
-        "turkey" : "TURKEY"
-    },
+  "pageOurMembers": {
+    "title": "OUR MEMBERS",
+    "information": "This section lists the states that are part of our international organization",
+    "azerbaijan": "AZERBAIJAN",
+    "kazakhstan": "KAZAKHSTAN",
+    "bosniaAndHerzegovina": "BOSNIA AND HERZEGOVINA",
+    "kyrgyzstan": "KYRGYZSTAN",
+    "morocco": "MOROCCO",
+    "maldives": "MALDIVES",
+    "nigeria": "NIGERIA",
+    "singapore": "SINGAPORE",
+    "tunisia": "TUNISIA",
+    "libya": "LIBYA",
+    "malaysia": "MALAYSIA",
+    "pakistan": "PAKISTAN",
+    "lebanon": "LEBANON",
+    "jordan": "JORDAN",
+    "bangladesh": "BANGLADESH",
+    "gambia": "GAMBIA",
+    "algeria": "ALGERIA",
+    "uzbekistan": "UZBEKISTAN",
+    "qatar": "QATAR",
+    "egypt": "EGYPT",
+    "saudiArabia": "SAUDI ARABIA",
+    "turkey": "TURKEY"
+  },
 
-    "pagePartners" : { 
-        "title" : "PARTNERS"
-    },
+  "pagePartners": {
+    "title": "PARTNERS"
+  },
 
-    "pageFooter" : {
-        "title" : "CONTACTS" ,
-        "address" : "JV «WORLD HALAL COMMITTEE», Address: Uzbekistan, Tashkent, Mirzo-Ulugbek district, st. Altyntepa 354 Tel: +998 71 266-77-78, +998 71 266-78-00 Email Mail: committeehalal@gmail.com",
-        "workingMode" : "Working mode:",
-        "workingModeInformation" : "Mon - Fri, 09:00 - 18:00",
-        "our" : "About Us",
-        "restourants" : "Restaurants",
-        "manufacturers" : "Manufacturers",
-        "chefSHalal" : "Halal chef" , 
-        "guide" : "Halal Guide",
-        "questions" : "Frequently asked Questions",
-        "apply" : "Submit an application"
-    },
+  "pageFooter": {
+    "title": "CONTACTS",
+    "address": "JV «WORLD HALAL COMMITTEE», Address: Uzbekistan, Tashkent, Mirzo-Ulugbek district, st. Altyntepa 354 Tel: +998 71 266-77-78, +998 71 266-78-00 Email Mail: committeehalal@gmail.com",
+    "workingMode": "Working mode:",
+    "workingModeInformation": "Mon - Fri, 09:00 - 18:00",
+    "our": "About Us",
+    "restourants": "Restaurants",
+    "manufacturers": "Manufacturers",
+    "chefSHalal": "Halal chef",
+    "guide": "Halal Guide",
+    "questions": "Frequently asked Questions",
+    "apply": "Submit an application" , 
+    "faq" : "FAQ"
+  },
 
-    "pageAboutUs" : {
-        "title" : "ABOUT US",
-        "information" : "About Us - The World Platform for Islamic Culinary Communities (WICS) was founded by culinary associations from 22 Islamic countries on May 13, 2017 in Istanbul, Turkey. In 2019, the World Halal Committee (WHC) was founded under WICS. WHC - certifies tourist facilities, catering establishments, as well as food producers - based on the Holy Quran and international standards.",
-        "document" : "Below you can see the documents confirming our activities.",
-        "viewDocument" : "Viewing Documents"
-    },
-    
-    "pageHalalGuide" : {
-        "title" : "HALAL GUIDE",
-        "information" : "In this section, a map of the world, with locations where there are Hotels, catering establishments, as well as food manufacturers who have received a Halal certificate",
-        "country" : "Choose the country",
-        "select" : "Select a category"
-    } , 
-    "mainC" :{
-        "company": "WORLDWIDE HALAL  COMMITTEE" , 
-        "w" : "(WICS)" ,
-        "request" : "Please apply"
-    }
-}   
+  "pageAboutUs": {
+    "title": "ABOUT US",
+    "information": "About Us - The World Platform for Islamic Culinary Communities (WICS) was founded by culinary associations from 22 Islamic countries on May 13, 2017 in Istanbul, Turkey. In 2019, the World Halal Committee (WHC) was founded under WICS. WHC - certifies tourist facilities, catering establishments, as well as food producers - based on the Holy Quran and international standards.",
+    "document": "Below you can see the documents confirming our activities.",
+    "viewDocument": "Viewing Documents"
+  },
+
+  "pageHalalGuide": {
+    "title": "HALAL GUIDE",
+    "information": "In this section, a map of the world, with locations where there are Hotels, catering establishments, as well as food manufacturers who have received a Halal certificate",
+    "country": "Choose the country",
+    "select": "Select a category"
+  },
+  "mainC": {
+    "company": "WORLDWIDE HALAL  COMMITTEE",
+    "w": "(WICS)",
+    "btn" : "Submit an application" ,
+    "request" : "Submit your application:" , 
+    "requestDesc" : "In this section, you can leave a request, our staff will contact you, advise you, answer your questions and help you in obtaining the Halal Certificate."
+  }
+}

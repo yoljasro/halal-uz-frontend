@@ -6,11 +6,14 @@
   "partners": "Ortaklar",
   "main": "Ana",
   "our": "",
+  "map": "Helal Rehber",
 
   "aboutUs": "Bizim hakkımızda",
-  "aboutUsInformation": "Biz Dünya Helal Komitesi'yiz (WHC)", 
-  "certificate" : "turistik yerleri, catering kuruluşlarını ve gıda üreticilerini sertifikalandırıyoruz - Kur'an-ı Kerim ve uluslararası standartlar temelinde." , 
+  "aboutUsInformation": "Biz Dünya Helal Komitesi'yiz (WHC)",
+  "certificate": "turistik yerleri, catering kuruluşlarını ve gıda üreticilerini sertifikalandırıyoruz - Kur'an-ı Kerim ve uluslararası standartlar temelinde.",
   "btnMore": "Daha fazla",
+  "address": "İslam Medeniyeti Merkezi",
+  "location": "Taşkent",
 
   "pagesTitle": {
     "partners": "Ortaklar",
@@ -74,7 +77,7 @@
 
   "pageFooter": {
     "title": "İLETİŞİM",
-    "address": "<<JOHAN HELAL KOMİTESİ>> OG, Adres:Uzbekistan, Taşkent, Mirzo-Ulugbek ilçe, sokak Altyntepa 354 Tel: +998 71 266-77-78, +998 71 266-78-00 E-posta Posts: committeehalal@gmail.com",
+    "address": "JOHAN HELAL KOMİTESİ OG, Adres:Uzbekistan, Taşkent, Mirzo-Ulugbek ilçe, sokak Altyntepa 354 Tel: +998 71 266-77-78, +998 71 266-78-00 E-posta Posts: committeehalal@gmail.com",
     "workingMode": "Çalışma saati:",
     "workingModeInformation": "Pazartesi - Cuma, 09:00 - 18:00",
     "our": "Bizim hakkımızda",
@@ -83,7 +86,8 @@
     "chefSHalal": "Halal şef",
     "guide": "Halal sertifikasi",
     "questions": "Sıkça Sorulan Sorular",
-    "apply": "Başvuru gönderin"
+    "apply": "Başvuru gönderin",
+    "faq": "SSS"
   },
   "pageAboutUs": {
     "title": "Bizim hakkımızda",
@@ -97,10 +101,12 @@
     "information": "Bu bölümde, Helal sertifikası almış otellerin, catering kuruluşlarının ve gıda üreticilerinin bulunduğu yerleri gösteren bir dünya haritası yer almaktadır.",
     "country": "Ülkeyi seçin",
     "select": "Kategori seçin"
-  } , 
-  "mainC" :{
-    "company": "DÜNYA ÇAPINDA HELAL KOMİTESİ" , 
-    "w" : "(WICS)",
-    "request" : "Murojaat qiling"
-}
+  },
+  "mainC": {
+    "company": "DÜNYA ÇAPINDA HELAL KOMİTESİ",
+    "w": "(WICS)",
+    "btn": "Başvuru yapmak",
+    "request": "Başvurunuzu gönderin:",
+    "requestDesc": "Bu bölümde talepte bulunabilirsiniz, personelimiz sizinle iletişime geçecek, tavsiyelerde bulunacak, sorularınızı cevaplayacak ve Helal Sertifikası almanıza yardımcı olacaktır."
+  }
 }

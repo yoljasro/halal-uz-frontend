@@ -16,6 +16,7 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
+import Button from "@mui/material";
 import { TextField } from "@mui/material";
 import axios from "axios";
 
@@ -38,80 +39,98 @@ export const Form = () => {
   const handleChange = (event: SelectChangeEvent) => {
     setActivity(event.target.value as string);
   };
-  const close = () => {
-    setOpen(true);
-  };
-  const url = "http://localhost:5000/request";
+
+  const url = "https://halal-uz-backend-production.up.railway.app/request";
   const data = { name, surname, brandName, activity, phone, email };
+ 
   const handleSubmit = () => {
     console.log(data);
+    if( name === ""){
+      alert("Name required ")
+    }
+    else if (surname === ""){
+      alert("Surname Required")
+    }
+    else if (brandName === ""){
+      alert("BrandName Required")
+    }
+    else if (activity === ""){
+      alert("Activity Required")
+    }
+    else if (phone === ""){
+      alert("Phone Required")
+    }
+    else if (email === ""){
+      alert("Email  Required")
+    }
     axios
       .post(url, data)
       .then(function (response) {
         console.log(response);
-        alert("Submited")
+        alert("Request Sended in Database")
       })
       .catch(function (error) {
         console.log(error);
+        alert("Email already exits")
       });
+
+      // required sytems
+
+      
   };
 
   return (
     <div className={styles.form}>
-      <div className={styles.cont}>
-        <div className={styles.cont__btn}>
-          <p>none</p>
-      <button onClick={close} className={styles.cont__btn__close}>X</button>
+      <p className={styles.form__title}>{t("mainC.request")}</p>
+      <div className={styles.form__text}>
+        <p>{t("mainC.requestDesc")}</p>
       </div>
-        <h1 className={styles.cont__title}>ОСТАВИТЬ ЗАЯВКУ</h1>
-        <p className={styles.cont__description}>
-          Lorem ipsum dolor sit amet consectetur. Ornare nec leo molestie <br />
-          bibendum ut. Elit urna nisl eros volutpat tellus aliquam.{" "}
-        </p>
-        
-        <div className={styles.cont__form}>
+
+      <div className={styles.form__section}>
+        <div className={styles.form__input}>
           <TextField
-            className={styles.cont__form__input}
+            className={styles.form__textField}
             type={"text"}
-            variant="outlined"
-            label="Имя"
+            placeholder={"Имя"}
+            variant={"outlined"}
             onChange={(e) => {
               setName(e.target.value);
             }}
           />
 
           <TextField
-            className={styles.cont__form__lastName}
+            className={styles.form__textField}
             type={"text"}
-            variant="outlined"
-            label="Фамилия"
+            placeholder={"Фамилия"}
+            variant={"outlined"}
             onChange={(e) => {
               setSurName(e.target.value);
             }}
           />
-
+        </div>
+        <div className={styles.form__input}>
           <TextField
-            className={styles.cont__form__brandName}
+            className={styles.form__brandName}
             type={"text"}
-            variant="outlined"
-            label="Название бренда"
+            placeholder={"Название бренда"}
+            variant={"outlined"}
             onChange={(e) => {
               setBrandName(e.target.value);
             }}
           />
-
+        </div>
+        <div className={styles.form__select}>
           <InputLabel
-            className={styles.cont__form__inputLabel}
+            className={styles.form__label}
             id="demo-simple-select-label"
           >
             Выбрать вид деятельности
           </InputLabel>
           <Select
-            className={styles.cont__form__select}
+            className={styles.form__activity}
             labelId="demo-simple-select-label"
             id="demo-simple-select"
             value={activity}
-            label="Age"
             placeholder="text"
             onChange={handleChange}
           >
@@ -125,31 +144,29 @@ export const Form = () => {
               Гостиницы (хостели, мотели и т.п)
             </MenuItem>
           </Select>
-
+        </div>
+        <div className={styles.form__input}>
           <TextField
-            className={styles.cont__form__tel}
-            type={"tel"}
-            variant="outlined"
-            label="Телефон"
+            className={styles.form__textField}
+            type={"text"}
+            placeholder={"Телефон"}
+            variant={"outlined"}
             onChange={(e) => {
               setPhone(e.target.value);
             }}
           />
 
           <TextField
-            className={styles.cont__form__tel}
-            type={"email"}
-            variant="outlined"
-            label="Эл. почта"
+            className={styles.form__textField}
+            type={"text"}
+            placeholder={"Эл. почта"}
+            variant={"outlined"}
             onChange={(e) => {
               setEmail(e.target.value);
             }}
           />
-
-          <button onClick={handleSubmit} className={styles.cont__form__btn}>
-            Отправить
-          </button>
         </div>
+        <button className={styles.form__btn} onClick={handleSubmit}>Отправить</button>
       </div>
     </div>
   );

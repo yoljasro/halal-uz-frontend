@@ -1,68 +1,13 @@
-@import ../../styles/variables, ../../styles/mixins
-
-.cont
+.header
+    display: flex
+    flex-wrap: wrap
     width: 100%
-    height: 720px   
+    height: 720px
+    background-image: url("/assets/img/headerBg.png")
     background-repeat: no-repeat
     background-size: cover
-    object-fit: contain
-    backface-visibility: hidden
-    overflow: hidden
-
-    &__map
-        display: flex
-        flex-direction: column
-
-        &__img
-            width: 100%
-            height: 720px
-            background-image: url("/assets/img/headerBg.png")
-            background-size: cover
-            background-repeat: no-repeat
-            align-content: flex-end
-            justify-content: end
-
-    &__location
-        background: #2F2F2F
-        border-radius: 6px
-        position: relative
-        left: 70%
-        // position: relative
-        // top: 200px
-        // left: 200px
-        font-family: ExoBold
-        font-size: 16px
-        font-weight: 700
-        line-height: 36px
-        text-align: center
-        color: #FFFFFF
-        // padding: 7px 17px 6px 11px
-        width: 100%
-        max-width: 294px
-        height: 40px
-        top: 600px
-
-
-    &__region
-        background: #2F2F2F
-        backdrop-filter: blur(10px)
-        height: 39px
-        max-width: 128px
-        width: 100%
-        position: relative
-        top: 610px
-        left: 70%
-        border-radius: 6px
-        font-family: ExoBold
-        text-align: center
-        font-size: 16px
-        font-weight: 400
-        line-height: 36px
-        letter-spacing: 0em
-        color: #FFFFFF
-        gap: 10px
-        // padding-left: 21px
-        // padding-top: 6px
+    padding: 100px 80px
+    justify-content: center
 
     &__info
         height: 419px
@@ -71,46 +16,81 @@
         width: 100%
         border-radius: 10px
         padding-left: 40px
-        overflow: hidden
-        position: relative
-        // top: -500px
-        bottom: 625px
-        left: 80px
+        overflow: auto
         background: #4E4E4E99
+        @media (max-width:769px)
+            display: none
+            height: 500px
+            width: 100%
+            max-width: 900px !important
+            // text-align: center
+            
 
-        &__title
-            font-family: ExoBold
-            color: red
-            font-size: 48px
-            font-weight: 700
-            line-height: 58px
-            color: #00E376
-            padding-top: 20px
+    &__title
+        font-family: ExoBold
+        color: red
+        font-size: 48px
+        font-weight: 700
+        line-height: 58px
+        color: #00E376
+        padding-top: 20px
 
-            & span
-                color: $white
+        & span
+            color: #FFFFFF
 
-        &__description
-            font-family: ExoExtraLight
-            font-size: 22px
-            font-weight: 400
-            line-height: 30px
-            color: $white
-            padding-top: 20px
+    &__description
+        font-family: ExoExtraLight
+        font-size: 22px
+        font-weight: 400
+        line-height: 30px
+        color: #FFFFFF
+        padding-top: 20px
 
-        &__btn
-            padding: 16px 63px
-            background: #3D3D3D
-            margin-top: 40px
-            border: none
-            font-family: ExoExtraLight
-            color: $white
-            font-size: 24px
-            font-weight: 500
-            line-height: 29px
-            border-radius: 6px
+    &__btn
+        padding: 16px 63px
+        background: #3D3D3D
+        margin-top: 40px
+        border: none
+        font-family: ExoExtraLight
+        color: #FFFFFF
+        font-size: 24px
+        font-weight: 500
+        line-height: 29px
+        border-radius: 6px
 
-            &:hover
-                background: #0b4982c9
-                cursor: pointer
-                transition: 1s all
+        &:hover
+            background: #0b4982c9
+            cursor: pointer
+            transition: 1s all
+
+    &__location
+        display: flex
+        flex-direction: column
+        gap: 12px
+        position: relative
+        margin-left: 200px
+        margin-top: 450px
+        @media (max-width:1250px)
+            margin-top: 30px
+        @media (max-width:769px)
+            display: none
+        // top: 300px
+        // left: 300px
+
+    &__address
+        background: #2F2F2F
+        font-family: ExoBold
+        line-height: 36px
+        text-align: center
+        color: white
+        padding: 7px 11px 6px 17px
+        border-radius: 6px
+
+    &__loc
+        background: #2F2F2F
+        font-family: ExoBold
+        line-height: 36px
+        text-align: center
+        color: white
+        padding: 1px 5px 2px 8px
+        border-radius: 6px

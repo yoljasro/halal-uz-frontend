@@ -1,66 +1,81 @@
-@import ../../styles/variables, ../../styles/mixins
-
-.cont
-    width: 100%
-    background: #505050
-    padding: 100px 79px
+.footer
     display: flex
+    justify-content: space-between
+    align-items: center
     flex-wrap: wrap
-    &__icon
-        // display: none !important
+    color: #FFFFFF
+    background: #505050
+    width: 100%
+    // height: 100vh
+    // max-height: 400px
+    padding: 100px 70px
+    margin-top: 100px
+
+    &__section
+        display: flex
+        flex-direction: column
+        // align-items: center
 
     &__title
         font-family: ExoBold
         font-size: 24px
         font-weight: 700
-        color: $white
+        line-height: 25px
+        text-align: left
 
     &__address
-        font-family: ExoLight
-        font-size: 18px
-        font-weight: 400
-        text-align: left
-        color: #9E9E9E
-        padding-top: 30px
-        line-height: 21px
-        letter-spacing: 2%
+        width: 100%
+        max-width: 350px
+        margin-top: 30px
+        & p
+            font-family: ExoMedium
+            font-size: 18px
+            line-height: 32px
+            text-align: left
+            color: #9E9E9E
 
     &__social
-        margin: 30px 10px
-        cursor: pointer
-            
-        &:first-child
-            margin-left: 0px
+        margin-top: 35px
+        gap: 15px
+        display: flex
 
-    &__plan
-        font-family: ExoLight
-        font-size: 18px
-        font-weight: 400
-        text-align: left
-        color: #9E9E9E
+        & img
+            cursor: pointer !important
+            &:hover
+                transform: rotate(360deg)
+                transition: 1s ease
 
-    &__workPlan
+    &__work
         font-family: ExoMedium
         font-size: 18px
         font-weight: 400
-        color: $white
+        color: #9E9E9E
+        text-align: left
+        padding-top: 60px
+
+    &__plan
+        font-family: ExoMedium
+        font-size: 18px
+        font-weight: 400
+        text-align: left
         padding-top: 8px
 
-    &__menus
+    ul
+        list-style: none
         display: flex
-        margin-left: 181px  
+        flex-direction: column
+        gap: 20px
+        // margin-bottom: 120px
 
-        &__menu
-            list-style: none
-            color: $white
+        & li
             font-family: ExoMedium
             font-size: 18px
-            text-align: left
+            cursor: pointer
 
-            &:nth-last-child(1)
-                margin-left: 201px
-            & li
-                padding-top: 20px
-                &_Link
-                    display: none
-                    
+    &__faq
+        font-family: ExoBold
+        font-size: 18px
+        color: #02C10E
+        cursor: pointer
+        @media (max-width:768px)
+            margin-top: 30px

@@ -1,0 +1,49 @@
+.container
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+
+  @media only screen and (max-width: 768px)
+    flex-direction: column
+
+  &__left-section
+    display: flex
+    flex-direction: row
+    align-items: center
+
+    &__logo
+      height: 30px
+      width: 30px
+
+    &__text
+      font-size: 18px
+      margin-left: 10px
+
+    &__separator
+      width: 1px
+      height: 30px
+      margin-left: 10px
+      margin-right: 10px
+      background-color: gray
+
+  &__right-section
+    display: flex
+    flex-direction: row
+    align-items: center
+    margin-top: 10px
+
+    @media only screen and (max-width: 768px)
+      margin-top: 20px
+
+    &__modal-button
+      background-color: blue
+      color: white
+      border: none
+      padding: 10px 20px
+      margin-right: 10px
+
+    &__select-option
+      width: 150px
+      height: 30px
+      margin-right: 10px

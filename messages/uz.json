@@ -6,11 +6,14 @@
   "partners": "Hamkorlar",
   "main": "Asosiy",
   "our": "Biz haqimizda",
+  "map" : "Halol GID" , 
 
   "aboutUs": "Biz haqimizda",
   "aboutUsInformation": "Biz Butunjahon Halol Q'omitasi (WHC)  ",
   "certificate" : " biz turistik ob'ektlar, umumiy ovqatlanish korxonalari, shuningdek, oziq-ovqat ishlab chiqaruvchilarni Qur'oni Karim va xalqaro standartlar asosida sertifikatlaymiz." , 
   "btnMore": "Ko'proq",
+  "address": "Islom Sivilizatsiyasi Markazi",
+  "location": "Toshkent",
 
   "pagesTitle": {
     "partners": "HAMKORLAR",
@@ -83,7 +86,8 @@
     "chefSHalal": "Halol oshpaz",
     "guide": "Halol qo'llanma",
     "questions": "Tez-tez so'raladigan savollar",
-    "apply": "Ariza yuborish"
+    "apply": "Ariza yuborish" , 
+    "faq" : "Ko'p so'rladigan savollar"
   },
 
   "pageAboutUs": {
@@ -100,9 +104,11 @@
     "select": "Kategoriyani tanlang"
   } , 
     "mainC" :{
-        "company": "DUNYO BO'YICHA HALAL QO'MITA  " , 
+        "company": "Butunjahon Halol Qo'mitasi  " , 
+        "btn" : "Ariza Qoldirmoq" ,
         "w" : "(WICS)" ,
-        "request" : "Murojaat qiling"
+        "request" : "Arizangizni yuboring:" , 
+        "requestDesc" : "Siz ushbu bo'limda so'rov qilishingiz mumkin, bizning xodimlarimiz siz bilan bog'lanadi, maslahat beradi, savollaringizga javob beradi va Halol sertifikatini olishga yordam beradi."
     }
 }
 

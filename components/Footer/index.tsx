@@ -15,86 +15,92 @@ export const Footer: FC<any> = () => {
   const t = useTranslations();
   const router = useRouter();
   const [selectedLang, setSelectedLang] = useState(router.locale);
-  
-  useEffect(() => {
-    if (selectedLang) {
-      router.push(router.asPath, undefined, {
-        locale: selectedLang,
-      });
-    }
-  }, [selectedLang]);
 
   return (
-    <div className={styles.cont}>
-      <div className={styles.cont__contacts}>
-        <h1 className={styles.cont__title}>КОНТАКТЫ</h1>
-        <p className={styles.cont__address}>
-          СП «WORLD HALAL COMMITTEE», <br /> Адрес: Узбекистан, г.Ташкент,
-          Мирзо-Улугбекский район, <br /> ул. Алтынтепа <br /> 354 Тел: +998 71
-          266-77-78, +998 71 266-78-00 <br /> Эл. Почта:
-          committeehalal@gmail.com
-        </p>
-        <div className={styles.cont__contacts__icon}>
-        <Link href={"https://instagram.com/world.halal"} target={"_blank"}>
-          <Image
-            className={styles.cont__social}
-            src={"/assets/img/instagram.png"}
-            alt="instagram"
-            width={45}
-            height={45}
-          />
-        </Link>
-        <Link href={"https://www.facebook.com/WorldHalalCommittee?mibextid=LQQJ4d"} target={"_blank"}>
-          <Image
-            className={styles.cont__social}
-            src={"/assets/img/facebook.png"}
-            alt="facebook"
-            width={45}
-            height={45}
-          />
-        </Link>
-        <Link href={"/"} target={"_blank"}>
-          <Image
-            className={styles.cont__social}
-            src={"/assets/img/telegram.png"}
-            alt="telegram"
-            width={45}
-            height={45}
-          />
-        </Link>
-        <Link href={"/https://api.whatsapp.com/qr/H7LPF2NHCBRCB1?autoload=1&app_absent=0"} target={"_blank"}>
-          <Image
-            className={styles.cont__social}
-            src={"/assets/img/whatsapp.png"}
-            alt="instagram"
-            width={45}
-            height={45}
-          />
-        </Link>
+    <div className={styles.footer}>
+      <div className={styles.footer__section}>
+        <p className={styles.footer__title}>{t("pageFooter.title")}</p>
+        <div className={styles.footer__address}>
+          <p>{t("pageFooter.address")}</p>
         </div>
-        <p className={styles.cont__plan}>Режим работы:</p>
-        <p className={styles.cont__workPlan}>Пн - Пт, 09:00 - 18:00</p>
+        <div className={styles.footer__social}>
+          <Link
+            href={"https://instagram.com/world.halal?igshid=YmMyMTA2M2Y"}
+            target="_blank"
+          >
+            <Image
+              src={"/assets/img/instagram.png"}
+              alt="instagram"
+              width={45}
+              height={45}
+            />
+          </Link>
+          <Link
+            href={
+              "https://www.facebook.com/WorldHalalCommittee?mibextid=LQQJ4d"
+            }
+            target="_blank"
+          >
+            <Image
+              src={"/assets/img/facebook.png"}
+              alt="facebook"
+              width={45}
+              height={45}
+            />
+          </Link>
+          <Link href={"/"} target="_blank">
+            <Image
+              src={"/assets/img/telegram.png"}
+              alt="telegram"
+              width={45}
+              height={45}
+            />
+          </Link>
+          <Link href={"/"} target="_blank">
+            <Image
+              src={"/assets/img/whatsapp.png"}
+              alt="facebook"
+              width={45}
+              height={45}
+            />
+          </Link>
+        </div>
+        <p className={styles.footer__work}>{t("pageFooter.workingMode")}</p>
+        <p className={styles.footer__plan}>
+          {t("pageFooter.workingModeInformation")}
+        </p>
       </div>
+      <div className={styles.footer__section}>
+        <ul>
+          <Link href="/">
+            <li>{t("main")}</li>
+          </Link>
+          <Link href={"/aboutUs"}>
+            <li>{t("our")}</li>
+          </Link>
 
-      <div className={styles.cont__menus}>
-        <ul className={styles.cont__menus__menu}>
-          <li>О нас</li>
-          <li>Рестораны</li>
-          <li>Производители</li>
-          <li>Халяль Шеф</li>
-          <li>Халяль Гид</li>
-        </ul>
+          <Link href="#productions">
+            <li>{t("productive")}</li>
+          </Link>
+          <Link href="#chefs">
+            <li>{t("chef")}</li>
+          </Link>
+          <Link href="/restaurants">
+            <li>{t("restaurants")}</li>
+          </Link>
 
-        <ul className={styles.cont__menus__menu}>
-          <li>
-            <Link href={"/faq"}>Часто задаваемые вопросы</Link>
-          </li>
-          <li>
-            {/* <Link className={styles.cont__menus__menu__link} href={"/"}>
-              Подать заявку
-            </Link>{" "} */}
-          </li>
+          <Link href="#members">
+            <li>{t("partners")}</li>
+          </Link>
+          <Link href="/halalMap">
+            <li>{t("map")}</li>
+          </Link>
         </ul>
+      </div>
+      <div className={styles.footer__section}>
+        <Link href={"/faq"}>
+          <p className={styles.footer__faq}>{t("pageFooter.faq")}</p>
+        </Link>
       </div>
     </div>
   );

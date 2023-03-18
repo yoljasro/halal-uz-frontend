@@ -18,6 +18,9 @@ import { useRouter } from "next/router";
 import { MainPageTitle } from "../components/MainPageTitle";
 // hook
 import { useSize } from "../hooks/index";
+// next
+import type { NextPage, GetStaticProps } from "next";
+
 //react-yandex-map
 import { FullscreenControl, Map, Placemark, YMaps } from "react-yandex-maps";
 // styles
@@ -188,3 +191,11 @@ const HalalMap: FC<any> = ({ props }) => {
 };
 
 export default HalalMap;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+      props: {
+          messages: (await import(`../messages/${locale}.json`)).default
+      }
+  }
+}

@@ -13,44 +13,35 @@ import styles from "./index.module.sass";
 export const Navbar = () => {
   const t = useTranslations();
   const router = useRouter();
-  const [selectedLang, setSelectedLang] = useState(router.locale);
-
-  useEffect(() => {
-    if (selectedLang) {
-      router.push(router.asPath, undefined, {
-        locale: selectedLang,
-      });
-    }
-  }, [selectedLang]);
 
   return (
-    <div className={styles.cont}>
-      <ul className={styles.cont__menu}>
-        <Link className={styles.cont__menu__link} href="/">
-            <li className={styles.cont__menu__link__main}>{t("main")}</li>
+    <div className={styles.navbar}>
+      <ul className={styles.navbar__menu}>
+        <Link href="/">
+          <li>{t("main")}</li>
         </Link>
-        <Link className={styles.cont__menu__link} href={"/aboutUs"}>
-            <li>{t("our")}</li>
-        </Link>
-        
-        <Link className={styles.cont__menu__link} href="#productions">
-            <li>{t("productive")}</li>
-        </Link>
-        <Link className={styles.cont__menu__link} href="#chefs">
-            <li>{t("chef")}</li>
-        </Link>
-        <Link className={styles.cont__menu__link} href="/restaurants">
-            <li>{t("restaurants")}</li>
-        </Link>
-        <Link className={styles.cont__menu__link} href="#partners">
-            <li>{t("partners")}</li>
+        <Link href={"/aboutUs"}>
+          <li>{t("our")}</li>
         </Link>
 
-        <Link className={styles.cont__menu__link} href="#members">
-            <li>{t("partners")}</li>
+        <Link href="#productions">
+          <li>{t("productive")}</li>
         </Link>
-        <Link className={styles.cont__menu__link} href="/halalMap">
-            <li>Халяль Гид</li>   
+        <Link href="#chefs">
+          <li>{t("chef")}</li>
+        </Link>
+        <Link href="/restaurants">
+          <li>{t("restaurants")}</li>
+        </Link>
+        <Link href="#partners">
+          <li>{t("partners")}</li>
+        </Link>
+
+        <Link href="#members">
+          <li>{t("members")}</li>
+        </Link>
+        <Link href="/halalMap">
+          <li>{t("map")}</li>
         </Link>
       </ul>
     </div>

@@ -1,121 +1,88 @@
 .form
     display: flex
     justify-content: center
-    margin-top: 0px
-
-.cont
-    height: 609px
-    max-width: 906px
-    width: 100%
-    border-radius: 20px
-    margin-top: 15px
-    background: #FFFFFF
-    &__btn
-        display: flex
-        position: absolute
-        align-items: flex-end
-        justify-content: space-between
-        align-content: flex-end
-        width: 65%
-        & p
-            color: white
-        &__close
-            // position: absolute
-            // right: 280px
-            // top: 30px
-            background: aqua
-            border: none
-            color: black
-            font-size: 25px
-            cursor: pointer
-            padding: 15px
-            border-radius: 7px
-            float: right
-            &:hover
-                background-color: aquamarine
-                color: white
+    flex-wrap: wrap
+    align-content: center
+    align-items: center
+    margin-top: 40px
+    flex-direction: column
+    @media (max-width:769px)
 
     &__title
         font-family: ExoBold
-        font-size: 48px
-        font-weight: 700
-        line-height: 36px
-        letter-spacing: 0.02em
+        font-size: 40px
         color: #00E376
-        text-align: center
-        padding-top: 50px
-
-    &__description
-        font-family: ExoExtraRegular
-        font-size: 20px
-        font-weight: 500
         line-height: 36px
-        letter-spacing: 0.02em
         text-align: center
+
+    &__text
+        color: red
+        margin-top: 30px
+        font-family: ExoMedium
+        font-size: 18px
+        line-height: 36px
+        text-align: center
+        width: 100%
+        max-width: 617px
         color: #696969
-        padding-top: 30px
-        padding-bottom: 40px
 
-    &__form
-        padding: 0px 40px
+    &__section
         display: flex
+        width: 100%
+        margin-top: 40px
+        justify-content: center
+        gap: 30px
         flex-wrap: wrap
-        justify-content: space-between
 
-        & input
-            font-family: ExExtraRegular
-            font-size: 18px
-            font-weight: 400
-            line-height: 36px
-            letter-spacing: 0.02em
+    &__input
+        width: 100%
+        display: flex
+        justify-content: center
+        align-content: center
+        gap: 40px
+        flex-wrap: wrap
 
-        &__input
-            height: 40px !important
-            max-width: 393px
-            width: 100%
-            border-radius: 6px
+    &__textField
+        height: 40px
+        width: 100%
+        max-width: 393px
+        border-radius: 6px
 
-        &__lastName
-            height: 40px !important
-            max-width: 393px
-            width: 100%
-            border-radius: 6px
+    &__brandName
+        height: 40px
+        width: 100%
+        max-width: 826px
+        border-radius: 6px
 
-        &__brandName
-            max-height: 40px !important
-            max-width: 826px
-            width: 100%
-            border-radius: 6px
-            margin-top: 40px !important
+    &__select
+        display: flex
+        flex-direction: column
+        width: 100%
+        justify-content: center
+        align-items: center
 
-        &__select
-            height: 40px
-            max-width: 816px
-            width: 100%
-            border-radius: 6px
-            margin-top: 30px !important
+    &__activity
+        height: 40px
+        justify-content: center
+        width: 100%
+        max-width: 826px
+        border-radius: 6px
 
-        &__inputLabel
-            position: relative
-            top: 31px
-
-        &__tel
-            max-width: 393px
-            width: 100%
-            border-radius: 6px
-            margin-top: 30px !important
-
-        &__btn
-            background: #3D3D3D
-            font-family: ExoBold
-            font-size: 18px
-            font-weight: 500
-            line-height: 36px
-            letter-spacing: 0.02em
-            text-align: center
-            padding: 2px 365px
-            border-radius: 6px
-            border: none
-            margin-top: 30px !important
-            color: #FFFFFF
-            cursor: pointer
+    &__btn
+        display: flex
+        background: #3D3D3D
+        color: #FFFFFF
+        font-family: ExoBold
+        font-size: 18px
+        border: none
+        border-radius: 6px
+        height: 40px
+        width: 100%
+        max-width: 816px
+        border-radius: 6px
+        text-align: center
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        &:hover
+            background: #3d3d3dc4
