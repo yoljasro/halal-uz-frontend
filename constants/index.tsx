@@ -1,16 +1,12 @@
-export const restaurants = [
-    {
-        "background" : "/assets/img/appexPizza.png" , 
-        "img" : "/assets/img/appexPizza2.png" , 
-    }  , 
+export interface RestaurantsType {
+  img: string;
+}
 
-    {
-        "background" : "/assets/img/appexPizza.png" , 
-        "img" : "/assets/img/appexPizza2.png" , 
-    }  , 
-
-    {
-        "background" : "/assets/img/appexPizza.png" , 
-        "img" : "/assets/img/appexPizza2.png" , 
-    }  , 
-]
+export const RestaurantsModel: RestaurantsType[] = [
+  {
+    img: "/assets/img/xanAhmad2.png",
+  },
+  {
+    img: "/assets/img/appex2.png",
+  },
+];

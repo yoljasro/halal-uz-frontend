@@ -28,7 +28,13 @@
   "pageRestaurants": {
     "title": "HALAL Restoranlar",
     "information": "Bu bölümde Halal sertifikası almış yemek şirketleri hakkında bilgi edinebilirsiniz",
-    "btnmore": "Daha fazlası"
+    "btnmore": "Daha fazlası" ,
+    "ahmad" : "Semerkand'ın ana caddesi üzerinde Türk mutfağının seçkin restoranı. Keyifli bir atmosfer, canlı ses ve tabii ki Türkiye'den gelen şefin elinden Helal yemekler sizleri bekliyor.",
+    "appex" : "Taşkent şehrinde Helal Pizzacılar Ağı. Hızlı, lezzetli ve ucuz" , 
+    "nihol" : "Özbek Mutfağının Aile Restoranı, Helal ürünler ve yüksek kalite" ,
+    "sariq" : "Ünlü Sanatçının Pizzacıları ağı - Jakhongir Khazhaev - Sarık Bola - Helal Pizza." , 
+    "shashlik" : " Semerkant'ta restoran zinciri. Sulu ve Helal Kebaplar sizleri bekliyor",
+    "karadeniz" : "Taşkent'in seçkin semtinde Türk restoranı. Türk Şeften Helal Yemekler"
   },
 
   "pageManufacturers": {

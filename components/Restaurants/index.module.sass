@@ -5,6 +5,9 @@
         display: flex
         justify-content: center
         flex-wrap: wrap
+        align-items: center
+        @media (max-width:769px)
+            flex-direction: column
 
         &__restaurant
             height: 320px
@@ -36,12 +39,7 @@
                 width: 100%
 
                 &__title
-                    font-family: ExoBold
-                    font-size: 32px
-                    font-weight: 700
-                    line-height: 30px
-                    letter-spacing: 0.02em
-                    color: $white
+                    
 
                 &__description
                     font-family: ExoExtraRegular
@@ -96,8 +94,6 @@
                 border-radius: 30px
 
             &__img
-                // position: absolute
-                // top: -280px !important
                 top: -35px !important
                 left: -30px !important
                 display: none !important

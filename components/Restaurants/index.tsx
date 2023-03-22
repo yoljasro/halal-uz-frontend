@@ -11,7 +11,7 @@ import { useRouter } from "next/router";
 // styles
 import styles from "./index.module.sass";
 import { MainPageTitle } from "../MainPageTitle";
-import { restaurants } from "../../constants";
+// import { restaurants } from "../../constants";
 import { SocialNetworks } from "../socialNetworks";
 
 export const Restaurants: FC<any> = () => {
