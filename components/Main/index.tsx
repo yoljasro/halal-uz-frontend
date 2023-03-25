@@ -11,7 +11,6 @@ import { useRouter } from "next/router";
 // styles
 import styles from "./index.module.sass";
 import { MainPageTitle } from "../MainPageTitle";
-import { restaurants } from "../../constants";
 // mui
 import Box from "@mui/material/Box";
 import { Form } from "../Form";
@@ -76,19 +75,19 @@ export const Main: FC<any> = () => {
           value={selectedLang}
           onChange={(e) => setSelectedLang(e.target.value)}
         >
-          <option className={styles.cont__media__select__option} value="ru">
+          <option  value="ru">
             RU
           </option>
-          <option className={styles.cont__media__select__option} value="en">
+          <option  value="en">
             ENG
           </option>
-          <option className={styles.cont__media__select__option} value="uz">
+          <option  value="uz">
             UZ
           </option>
-          <option className={styles.cont__media__select__option} value="tr">
+          <option  value="tr">
             TR
           </option>
-          <option className={styles.cont__media__select__option} value="ar-SA">
+          <option  value="ar-SA">
             ARA
           </option>
         </select>

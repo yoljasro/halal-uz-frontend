@@ -12,20 +12,28 @@
         font-family: ExoBold
         font-size: 60px
         color: $subtitleColor
+        @media (max-width:769px)
+            font-size: 45px
 
     &__eventText
-        width: 706px
+        max-width: 706px
+        width: 100%
         text-align: center
         display: flex
         justify-content: center
         margin: 0px 10px 10px 10px
+        @media (max-width:769px)
+            overflow: hidden
 
         &__description
             font-family: ExoRegular
             padding-top: 20px
             font-size: 24px
-            font-weight: 600    
+            font-weight: 600
             text-align: center
             letter-spacing: 2%
             line-height: 36px
             color: #696969
+            @media (max-width:769px)
+                font-size: 22px
+                text-align: center

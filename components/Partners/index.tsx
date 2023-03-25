@@ -6,86 +6,72 @@ import Image from "next/image";
 import React, { FC, ChangeEventHandler, useState, useEffect } from "react";
 // next intl
 import { useTranslations } from "next-intl";
-// carousel nuka
-import Carousel from "nuka-carousel/lib/carousel";
+// carousel 
+import Carousel from "react-multi-carousel";
 // router
 import { useRouter } from "next/router";
 // styles
 import styles from "./index.module.sass";
 import { MainPageTitle } from "../MainPageTitle";
+// Partners Array
+import { PartnersArray, PartnersType } from "../../constants";
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 5,
+    slidesToSlide: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 1,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1,
+  },
+};
 
 export const Partners: FC<any> = () => {
   const t = useTranslations();
-  const router = useRouter();
-  const [selectedLang, setSelectedLang] = useState(router.locale);
-
-  useEffect(() => {
-    if (selectedLang) {
-      router.push(router.asPath, undefined, {
-        locale: selectedLang,
-      });
-    }
-  }, [selectedLang]);
 
   return (
-    <div className={styles.cont} id='partner'>
+    <div className={styles.cont} id="partners ">
       <MainPageTitle subtitle="ПАРТНЁРЫ" />
-      <div className={styles.cont__partners}>
-        {/* <Carousel
-          // autoplay={true} */}
-          {/* swiping={true}
-          animation={"zoom"}
-          {/* // adaptiveHeight={false}
-          // autoplayInterval={2000}
-          // speed={3000}
-          wrapAround={true}
-          // renderCenterRightControls={null}
-          // renderCenterLeftControls={null}
-          // renderBottomCenterControls={null} */}
-        {/* > */}
-          {" "}
-          
-          <div className={styles.cont__partners__content}>
+      <Carousel
+        className={styles.carousel}
+        swipeable={true}
+        draggable={true}
+        showDots={false}
+        responsive={responsive}
+        ssr={true}
+        infinite={true}
+        rewindWithAnimation={true}
+        autoPlay={true}
+        autoPlaySpeed={4000}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={300}
+        containerClass="carousel-container"
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px"
+      >
+      {PartnersArray.map((partner: PartnersType) => {
+        return (
+          <div className={styles.partner} key={partner.alt}>
             <Image
-              alt="partner1"
-              src="/assets/img/partner1.png"
+            className={styles.partner__img}
+              src={partner.img}
               width={170}
-              height={171}
+              height={120}
+              alt={partner.alt}
             />
-            <Image
-              alt="partner2"
-              src="/assets/img/partner2.png"
-              width={170}
-              height={171}
-            />
-            <Image
-              alt="partner3"
-              src="/assets/img/partner3.png"
-              width={170}
-              height={171}
-            />
-          {/* </div> */}
-
-          <Image
-            alt="partner3"
-            src="/assets/img/partner4.png"
-            width={170}
-            height={171}
-          />
-          {/* <Image
-            alt="partner5"
-            src="/assets/img/partner5.png"
-            width={170}
-            height={171}
-          />
-          <Image
-            alt="partner5"
-            src="/assets/img/partner6.png"
-            width={170}
-            height={171}
-          /> */}
-      </div>
-    </div>
+          </div>
+        );
+      })}
+      </Carousel>
     </div>
   );
 };

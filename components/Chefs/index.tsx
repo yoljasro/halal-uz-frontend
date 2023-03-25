@@ -15,16 +15,6 @@ import { SocialNetworks } from "../socialNetworks";
 
 export const Chefs: FC<any> = ({ props }) => {
   const t = useTranslations();
-  const router = useRouter();
-  const [selectedLang, setSelectedLang] = useState(router.locale);
-
-  useEffect(() => {
-    if (selectedLang) {
-      router.push(router.asPath, undefined, {
-        locale: selectedLang,
-      });
-    }
-  }, [selectedLang]);
 
   return (
     <div className={styles.cont} id="chefs">
@@ -42,12 +32,6 @@ export const Chefs: FC<any> = ({ props }) => {
           />
           <div className={styles.cont__chefs__card__hoverContent}>
             <h3>Фатхуллахон ТУРАХАНОВ</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Viverra odio quisque
-              vestibulum enim commodo malesuada orci pretium lectus. Nunc sem
-              purus diam tempor feugiat quisque. Mattis a quis donec pretium
-              nuncut.
-            </p>
             <SocialNetworks
               instagram=" https://instagram.com/fathullakhan_?igshid=NDk5N2NlZjQ="
               facebook="https://www.facebook.com/fathulla.khan.796?mibextid=LQQJ4d"
@@ -66,12 +50,6 @@ export const Chefs: FC<any> = ({ props }) => {
 
           <div className={styles.cont__chefs__card__hoverContent2}>
             <h3>Музаффар МИРЗАКАРИМОВ</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Viverra odio quisque
-              vestibulum enim commodo malesuada orci pretium lectus. Nunc sem
-              purus diam tempor feugiat quisque. Mattis a quis donec pretium
-              nuncut.
-            </p>
             <SocialNetworks
               instagram="https://instagram.com/mirzakarimov.muzaffar?"
               facebook="/"
@@ -89,12 +67,6 @@ export const Chefs: FC<any> = ({ props }) => {
           />
           <div className={styles.cont__chefs__card__hoverContent}>
             <h3>Дониёр МАЛИКОВ</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Viverra odio quisque
-              vestibulum enim commodo malesuada orci pretium lectus. Nunc sem
-              purus diam tempor feugiat quisque. Mattis a quis donec pretium
-              nuncut.
-            </p>
             <SocialNetworks
               instagram="https://instagram.com/doniyor_malikovv"
               facebook="/"
@@ -113,12 +85,6 @@ export const Chefs: FC<any> = ({ props }) => {
 
           <div className={styles.cont__chefs__card__hoverContent2}>
             <h3>Акмаль МАХМУДОВ</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Viverra odio quisque
-              vestibulum enim commodo malesuada orci pretium lectus. Nunc sem
-              purus diam tempor feugiat quisque. Mattis a quis donec pretium
-              nuncut.
-            </p>
             <SocialNetworks
               instagram="https://instagram.com/chef_akmall?igshid=NDk5N2NlZjQ="
               facebook="/"
@@ -126,13 +92,13 @@ export const Chefs: FC<any> = ({ props }) => {
             />
           </div>
         </div>
-        <Image
+        {/* <Image
           className={styles.cont__backgroundImg}
           src="/assets/img/chefBG.png"
           alt="chefBg"
           width={1440}
           height={206}
-        />
+        /> */}
       </div>
     </div>
   );

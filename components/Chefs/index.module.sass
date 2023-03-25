@@ -1,15 +1,16 @@
 @import ../../styles/variables, ../../styles/mixins
 
 .cont
+    @media (max-width:769px)
+        margin-top: 550px
 
     &__backgroundImg
-        position: relative !important
-        top: -600px !important
-        width: 1600px !important
-        height: 366px !important
-        // z-index:-21 !important
-        background-size: cover
-        opacity: 0.7
+        // position: absolute !important
+        // // bottom: 50px !important
+        // width: 1600px !important
+        // height: 366px !important
+        // // z-index:-21 !important
+        // background-size: contain
 
     &__chefs
         display: flex
@@ -17,11 +18,14 @@
         justify-content: space-around
         padding: 100px 80px 0px 80px
         flex-wrap: wrap
+        gap: 20px
+        align-content: center
+        @media (max-width:769px)
+            justify-content: center
 
         &__card
             height: 390px
             width: 280px
-            margin: 5px
             overflow: hidden
 
             &:hover &__hoverContent
@@ -30,6 +34,7 @@
                 background: #000000a5
                 height: 100%
                 border-radius: 10px
+                overflow: hidden
                 border-bottom-right-radius: 102px
                 border-top-left-radius: 102px
 

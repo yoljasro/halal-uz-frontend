@@ -11,20 +11,9 @@ import { useTranslations } from "next-intl";
 import { useRouter } from "next/router";
 // styles
 import styles from "./index.module.sass";
-import { Button } from "@mui/material";
 
 export const Header: FC<any> = () => {
   const t = useTranslations();
-  const router = useRouter();
-  const [selectedLang, setSelectedLang] = useState(router.locale);
-
-  useEffect(() => {
-    if (selectedLang) {
-      router.push(router.asPath, undefined, {
-        locale: selectedLang,
-      });
-    }
-  }, [selectedLang]);
 
   return (
     <div className={styles.header}>

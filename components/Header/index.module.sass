@@ -10,30 +10,27 @@
     justify-content: center
 
     &__info
-        height: 419px
+        max-height: 419px
+        height: 100vh
         backdrop-filter: blur(10px)
         max-width: 674px
         width: 100%
         border-radius: 10px
         padding-left: 40px
-        overflow: auto
         background: #4E4E4E99
         @media (max-width:769px)
-            display: none
-            height: 500px
-            width: 100%
-            max-width: 900px !important
-            // text-align: center
+            max-height: 500px
+            max-width: 800px 
             
 
     &__title
         font-family: ExoBold
         color: red
         font-size: 48px
-        font-weight: 700
-        line-height: 58px
         color: #00E376
         padding-top: 20px
+        @media (max-width:769px)
+            font-size: 35px
 
         & span
             color: #FFFFFF
@@ -45,6 +42,8 @@
         line-height: 30px
         color: #FFFFFF
         padding-top: 20px
+        @media (max-width:769px)
+            font-size: 19px
 
     &__btn
         padding: 16px 63px
@@ -54,9 +53,10 @@
         font-family: ExoExtraLight
         color: #FFFFFF
         font-size: 24px
-        font-weight: 500
         line-height: 29px
         border-radius: 6px
+        @media (max-width:769px)
+            font-style: 18px
 
         &:hover
             background: #0b4982c9
