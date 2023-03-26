@@ -40,7 +40,7 @@ export const Form = () => {
     setActivity(event.target.value as string);
   };
 
-  const url = "https://halal-uz-backend-production.up.railway.app/request";
+  const url = "http://smartshopcenter.org:5000/request";
   const data = { name, surname, brandName, activity, phone, email };
  
   const handleSubmit = () => {

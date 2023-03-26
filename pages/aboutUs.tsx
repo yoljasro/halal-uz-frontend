@@ -26,7 +26,7 @@ interface About {
 const AboutUs: FC<any> = () => {
   const t = useTranslations();
   const [about, setAbout] = useState<About[]>([]);
-  const url = "https://halal-uz-backend-production.up.railway.app/about";
+  const url = "http://smartshopcenter.org:5000/about";
   useEffect(() => {
     axios
       .get<{ about: About[] }>(url)
