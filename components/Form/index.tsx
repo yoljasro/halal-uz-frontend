@@ -30,12 +30,6 @@ export const Form = () => {
   const t = useTranslations();
   const [open, setOpen] = React.useState(false);
 
-  interface RequestData {
-    name: string;
-    surname: string;
-    prevState: null;
-  }
-
   const handleChange = (event: SelectChangeEvent) => {
     setActivity(event.target.value as string);
   };

@@ -37,13 +37,13 @@ const AboutUs: FC<any> = () => {
       .catch((err) => console.log(err));
   }, []);
 
-  const disablePdf = () => {
-    window.open(
-      "/assets/documents/halal1.pdf",
-      "",
-      "resizable=yes, scrollbars=yes, titlebar=yes, width=1024, toolbar=0 ,  height=900, top=10, left=10"
-    );
-  };
+  // const disablePdf = () => {
+  //   window.open(
+  //     "/assets/documents/halal1.pdf",
+  //     "",
+  //     "resizable=yes, scrollbars=yes, titlebar=yes, width=1024, toolbar=0 ,  height=900, top=10, left=10"
+  //   );
+  // };
 
   return (
     <div className={styles.cont}>
