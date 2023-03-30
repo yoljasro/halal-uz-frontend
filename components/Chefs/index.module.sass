@@ -26,7 +26,7 @@
         &__card
             height: 390px
             width: 280px
-            overflow: hidden
+            overflow: hidden 
 
             &:hover &__hoverContent
                 display: flex
@@ -37,6 +37,9 @@
                 overflow: hidden
                 border-bottom-right-radius: 102px
                 border-top-left-radius: 102px
+                @media (max-width:769px)
+                    border-bottom-left-radius: 80px
+                    border-top-right-radius: 100px
 
             &:hover &__hoverContent2
                 display: flex
@@ -65,7 +68,7 @@
                     text-align: center
 
                 & p
-                    font-family: ExoExtraRegular
+                    font-family: ExoRegular
                     padding-top: 20px
                     font-size: 16px
                     font-weight: 400
@@ -92,7 +95,7 @@
                     text-align: center
 
                 & p
-                    font-family: ExoExtraRegular
+                    font-family: ExoRegular
                     padding-top: 20px
                     font-size: 16px
                     font-weight: 400

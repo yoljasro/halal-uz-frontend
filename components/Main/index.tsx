@@ -1,7 +1,6 @@
 // next components
 import Link from "next/link";
 import Image from "next/image";
-// nuka carousel
 // react
 import React, { FC, ChangeEventHandler, useState, useEffect } from "react";
 // next intl

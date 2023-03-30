@@ -42,7 +42,9 @@
     "information": "Здесь указаны производители продуктов питания, которые получили сертификат Халяль",
     "siyob": "SIYOB FERMA",
     "shashlik": "SHASHLIKUZ",
-    "agro": "AGRO-BRAVO"
+    "agro": "AGRO-BRAVO" , 
+    "certificate" : "Посмотреть сертификат" , 
+    "site" : "Перейти  на сайт "
   },
 
   "pageHalalChef": {

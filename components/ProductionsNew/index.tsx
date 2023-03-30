@@ -31,19 +31,19 @@ export const ProductionsNew = () => {
           />
           <h3 className={styles.production__title}>SIYOB FERMA</h3>
           <div className={styles.production__card__section}>
-            <button className={styles.production__btn}>Перейти на сайт</button>{" "}
+            <button className={styles.production__btn}>{t("pageManufacturers.site")}</button>{" "}
             <br />
             <a
               className={styles.production__link}
               target={"_blank"}
               href="/assets/documents/siyob.pdf"
             >
-              Посмотреть сертификат
+              {t("pageManufacturers.certificate")}
             </a>
             <SocialNetworks
               instagram=" https://instagram.com/siyobferma.uz?igshid=NDk5N2NlZjQ="
               facebook="https://www.facebook.com/siyob.ferma?mibextid=LQQJ4d"
-              telegram="https://www.facebook.com/siyob.ferma?mibextid=LQQJ4d"
+              telegram="https://t.me/siyobferma_uz"
             />
           </div>
         </div>
@@ -57,7 +57,7 @@ export const ProductionsNew = () => {
           />
           <h3 className={styles.production__title}>SHASHLIKUZ</h3>
           <div className={styles.production__card__section}>
-            <button className={styles.production__btn}>Перейти на сайт</button>{" "}
+            <button className={styles.production__btn}>{t("pageManufacturers.site")}</button>{" "}
             <br />
             <a
               className={styles.production__link}
@@ -65,7 +65,7 @@ export const ProductionsNew = () => {
               href="/assets/documents/shashlikuz.pdf"
             >
               {" "}
-              Посмотреть сертификат
+              {t("pageManufacturers.certificate")}
             </a>
             <SocialNetworks
               instagram="https://instagram.com/shashlikuz?igshid=NDk5N2NlZjQ="
@@ -83,20 +83,20 @@ export const ProductionsNew = () => {
           />
           <h3 className={styles.production__title}>AGRO-BRAVO</h3>
           <div className={styles.production__card__section}>
-            <button className={styles.production__btn}>Перейти на сайт</button>{" "}
+            <button className={styles.production__btn}>{t("pageManufacturers.site")}</button>{" "}
             <br />
             <a
               className={styles.production__link}
               target={"_blank"}
-              href="/assets/documents/shashlikuz.pdf"
+              href="/assets/documents/agro.pdf"
             >
               {" "}
-              Посмотреть сертификат
+              {t("pageManufacturers.certificate")}
             </a>
             <SocialNetworks
-              instagram="https://instagram.com/shashlikuz?igshid=NDk5N2NlZjQ="
-              facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
-              telegram="https://t.me/shashlikuz_group"
+              instagram=" https://instagram.com/agrobravo.uz?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/agrobravo.uz?mibextid=LQQJ4d"
+              telegram="/"
             />
           </div>
         </div>

@@ -42,7 +42,9 @@
     "information": "Burada Helal sertifikası alan gıda üreticileri",
     "siyob": "SIYOB FERMA",
     "shashlik": "SHASHLIKUZ",
-    "agro": "AGRO-BRAVO"
+    "agro": "AGRO-BRAVO" ,
+    "site" : "Web sitesine git" , 
+    "certificate" : "sertifikayı görüntüle" 
   },
 
   "pageHalalChef": {

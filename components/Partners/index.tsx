@@ -29,7 +29,7 @@ const responsive = {
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
-    items: 1,
+    items: 2,
     slidesToSlide: 1,
   },
 };
@@ -38,7 +38,7 @@ export const Partners: FC<any> = () => {
   const t = useTranslations();
 
   return (
-    <div className={styles.cont} id="partners ">
+    <div className={styles.cont} id="partners">
       <MainPageTitle subtitle="ПАРТНЁРЫ" />
       <Carousel
         className={styles.carousel}
@@ -64,7 +64,7 @@ export const Partners: FC<any> = () => {
             <Image
             className={styles.partner__img}
               src={partner.img}
-              width={170}
+              width={140}
               height={120}
               alt={partner.alt}
             />

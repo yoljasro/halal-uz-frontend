@@ -42,7 +42,9 @@
     "information": "Mana, “Halol” sertifikatini olgan oziq-ovqat ishlab chiqaruvchilari",
     "siyob": "SIYOB FERMA",
     "shashlik": "SHASHLIKUZ",
-    "agro": "AGRO-BRAVO"
+    "agro": "AGRO-BRAVO" , 
+    "site" : "Saytga tashrif buyuring" , 
+    "certificate" : "Sertifikatni ko'rish"
   },
 
   "pageHalalChef": {

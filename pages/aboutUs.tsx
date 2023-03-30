@@ -61,6 +61,7 @@ const AboutUs: FC<any> = () => {
             })}
         </div>
         <Image
+        className={styles.cont__image}
           src={"/assets/img/aboutImg.png"}
           alt="aboutImg"
           width={359}

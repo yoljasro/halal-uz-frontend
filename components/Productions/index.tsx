@@ -14,16 +14,6 @@ import { SocialNetworks } from "../socialNetworks";
 
 export const Productions = () => {
   const t = useTranslations();
-  const router = useRouter();
-  const [selectedLang, setSelectedLang] = useState(router.locale);
-
-  useEffect(() => {
-    if (selectedLang) {
-      router.push(router.asPath, undefined, {
-        locale: selectedLang,
-      });
-    }
-  }, [selectedLang]);
 
   return (
     <div className={styles.cont} id="productions">
@@ -57,7 +47,7 @@ export const Productions = () => {
             <SocialNetworks
               instagram=" https://instagram.com/siyobferma.uz?igshid=NDk5N2NlZjQ="
               facebook="https://www.facebook.com/siyob.ferma?mibextid=LQQJ4d"
-              telegram="https://www.facebook.com/siyob.ferma?mibextid=LQQJ4d"
+              telegram="https://t.me/siyobferma_uz"
             />
           </div>
         </div>

@@ -45,7 +45,7 @@ export const NewRes: FC<any> = () => {
               <br />
               <div className={styles.restaurants__btn}>
                 <button className={styles.restaurants__visit}>
-                  Перейти на сайт
+                  {t("pageManufacturers.site")}
                 </button>
                 <Link href={"/cafes/khanahmad"}>
                   <button className={styles.restaurants__more}>
@@ -77,7 +77,7 @@ export const NewRes: FC<any> = () => {
               <br />
               <div className={styles.restaurants__btn}>
                 <button className={styles.restaurants__visit}>
-                  Перейти на сайт
+                  {t("pageManufacturers.site")}
                 </button>
                 <Link href={"/cafes/khanahmad"}>
                   <button className={styles.restaurants__more}>
@@ -109,7 +109,7 @@ export const NewRes: FC<any> = () => {
               <br />
               <div className={styles.restaurants__btn}>
                 <button className={styles.restaurants__visit}>
-                  Перейти на сайт
+                  {t("pageManufacturers.site")}
                 </button>
                 <Link href={"/cafes/khanahmad"}>
                   <button className={styles.restaurants__more}>
@@ -141,7 +141,7 @@ export const NewRes: FC<any> = () => {
               <br />
               <div className={styles.restaurants__btn}>
                 <button className={styles.restaurants__visit}>
-                  Перейти на сайт
+                  {t("pageManufacturers.site")}
                 </button>
                 <Link href={"/cafes/khanahmad"}>
                   <button className={styles.restaurants__more}>
@@ -152,6 +152,13 @@ export const NewRes: FC<any> = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.restaurants__moreBtn}>
+        <Link href="/restaurants">
+          <button>
+            {t("btnMore")}
+          </button>
+        </Link>
       </div>
     </div>
   );

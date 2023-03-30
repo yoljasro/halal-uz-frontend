@@ -1,59 +1,36 @@
-import Image from "next/image";
-import  Carousel  from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import { MembersArray , MembersType } from "../constants";
-import styles from '../styles/nav.module.sass'
+// react
+import React, { FC } from "react";
+// styles
+import styles from "../styles/nav.module.sass";
+// next
+import { GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 7,
-    slidesToSlide: 1,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 3,
-    slidesToSlide: 1,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 2,
-    slidesToSlide: 1,
-  },
-};
-
- 
-
-const MyCarousel = () => {
-  const t = useTranslations()
+const Header: FC<any> = () => {
+  const t = useTranslations();
   return (
-    <Carousel
-    className={styles.carousel}
-      swipeable={true}
-      draggable={true}
-      showDots={false}
-      responsive={responsive}
-      ssr={true}
-      infinite={true}
-      rewindWithAnimation={true}
-      autoPlay={true}
-      autoPlaySpeed={3000}
-      keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={700}
-      containerClass="carousel-container"
-      dotListClass="custom-dot-list-style"
-      itemClass="carousel-item-padding-40-px"
-    >
-      {MembersArray.map((image:MembersType) => (
-        <div className={styles.members} key={image.alt}>
-          <img src={image.src} alt={image.alt} />
-          <p className={styles.members__text}>{image.text}</p>
-        </div>
-      ))}
-    </Carousel>
+    <div className={styles.header}>
+      <h3>New Clothing Collection</h3>
+      <div className={styles.header__subTitle}>
+        <p>
+          Lorem ipsum dolor sit ametcaecati odit quaerat nostrum beatae deleniti
+          quos, ipsa consequuntur magni Lorem ipsum dolor sit ametcaecati odit
+          quaerat nostrum beatae deleniti quos, ipsa consequuntur magni Lorem
+          ipsum dolor sit ametcaecati odit quaerat nostrum beatae deleniti quos,
+          ipsa consequuntur magni
+        </p>
+      </div>
+      <button>See More</button>
+    </div>
   );
 };
 
-export default MyCarousel;
+export default Header;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+    props: {
+      messages: (await import(`../messages/${locale}.json`)).default,
+    },
+  };
+};

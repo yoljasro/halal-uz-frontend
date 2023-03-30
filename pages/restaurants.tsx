@@ -12,254 +12,220 @@ import type { NextPage, GetStaticProps } from "next";
 // styles
 import styles from "../styles/restaurants.module.sass";
 import { MainPageTitle } from "../components/MainPageTitle";
-import { restaurants } from "../constants";
 import { SocialNetworks } from "../components/socialNetworks";
 
  const Restaurants: FC<any> = () => {
   const t = useTranslations();
-  const router = useRouter();
-  const [selectedLang, setSelectedLang] = useState(router.locale);
-
-  useEffect(() => {
-    if (selectedLang) {
-      router.push(router.asPath, undefined, {
-        locale: selectedLang,
-      });
-    }
-  }, [selectedLang]);
 
   return (
     <div className={styles.cont}>
       <MainPageTitle
-        subtitle="ХАЛЯЛЬ РЕСТОРАНЫ"
-        description="В данном разделе вы можете ознакомится с заведениями общественного питания, которые удостоились Сертификата Халяль"
+        subtitle={t("pageRestaurants.title")}
+        description={t("pageRestaurants.information")}
       />
-      <div className={styles.cont__restaurants}>
-        <div className={styles.cont__restaurants__restaurant}>
-          <Image
-            src="/assets/img/xanAhmad.png"
-            alt="ergash meat"
-            width={620}
-            height={320}
-            className={styles.cont__restaurants__restaurant__bg}
-          />
-          <Image
-            src={"/assets/img/xanAhmad2.png"}
-            alt="ergash meat house"
-            width={100}
-            height={100}
-            className={styles.cont__restaurants__restaurant__img}
-          />
-          <div className={styles.cont__restaurants__restaurant__hoverContent}>
-            <h1
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__title
-              }
-            >
-              KHAN AHMAD
-            </h1>
-            <p
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__description
-              }
-            >
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <SocialNetworks
-              instagram="https://instagram.com/khanahmad_restaurant?igshid=NDk5N2NlZjQ="
-              facebook="https://www.facebook.com/profile.php?id=100054751930596&mibextid=LQQJ4d"
-              telegram="https://t.me/KhanAhmad_restaurant"
+      <div className={styles.restaurants}>
+        <div className={styles.restaurants__card}>
+          <div className={styles.restaurants__img}>
+            <Image
+              src={"/assets/img/xanAhmad2.png"}
+              alt="sarik bola"
+              width={100}
+              height={100}
             />
-            <br />
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__visitBtn
-              }
-            >
-              Перейти на сайт
-            </button>
-            <Link href={"/cafes/khanahmad"}>
-              <button
-                className={
-                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
-                }
-              >
-                Подробнее
-              </button>
-            </Link>
+            <div className={styles.restaurants__card__section}>
+              <h1 className={styles.restaurants__title}>KHAN AHMAD</h1>
+              <div className={styles.restaurants__text}>
+                <p>{t("pageRestaurants.ahmad")}</p>
+              </div>
+              <SocialNetworks
+                instagram="https://www.instagram.com/khanahmad_restaurant/?igshid=NDk5N2NlZjQ%3D"
+                facebook="https://www.facebook.com/profile.php?id=100054751930596&mibextid=LQQJ4d"
+                telegram="https://t.me/KhanAhmad_restaurant"
+              />
+              <br />
+              <div className={styles.restaurants__btn}>
+                <button className={styles.restaurants__visit}>
+                 {t("pageManufacturers.site")}
+                </button>
+                <Link href={"/cafes/khanahmad"}>
+                  <button className={styles.restaurants__more}>
+                    {t("btnMore")}
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div className={styles.cont__restaurants__restaurant}>
-          <Image
-            src="/assets/img/appexPizza.png"
-            alt="appex pizza"
-            width={620}
-            height={320}
-            className={styles.cont__restaurants__restaurant__bg}
-          />
-          <Image
-            src={"/assets/img/apexpizza2.png"}
-            alt="appex"
-            width={100}
-            height={100}
-            className={styles.cont__restaurants__restaurant__img}
-          />
-          <div className={styles.cont__restaurants__restaurant__hoverContent}>
-            <h1
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__title
-              }
-            >
-              appexpizza
-            </h1>
-            <p
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__description
-              }
-            >
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <SocialNetworks
-              instagram="https://instagram.com/apexpizza.uz?igshid=NDk5N2NlZjQ="
-              facebook=" https://www.facebook.com/apexpizza.uz?mibextid=LQQJ4d"
-              telegram="/"
+        <div className={styles.restaurants__card}>
+          <div className={styles.restaurants__img}>
+            <Image
+              src={"/assets/img/apexpizza2.png"}
+              alt="appex2"
+              width={100}
+              height={100}
             />
-            <br />
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__visitBtn
-              }
-            >
-              Перейти на сайт
-            </button>
-            <Link href={"/cafes/apexpizza"}>
-              <button
-                className={
-                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
-                }
-              >
-                Подробнее{" "}
-              </button>
-            </Link>
+            <div className={styles.restaurants__card__section}>
+              <h1 className={styles.restaurants__title}>appexpizza</h1>
+              <div className={styles.restaurants__text}>
+                <p>{t("pageRestaurants.appex")}</p>
+              </div>
+              <SocialNetworks
+                instagram="https://www.instagram.com/apexpizza.uz/?igshid=NDk5N2NlZjQ%3D"
+                facebook=" https://www.facebook.com/apexpizza.uz?mibextid=LQQJ4d"
+                telegram="/"
+              />
+              <br />
+              <div className={styles.restaurants__btn}>
+                <button className={styles.restaurants__visit}>
+                 {t("pageManufacturers.site")}
+                </button>
+                <Link href={"/cafes/apexpizza"}>
+                  <button className={styles.restaurants__more}>
+                    {t("btnMore")}
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className={styles.cont__restaurants__restaurant}>
-          <Image
-            src="/assets/img/sarikbola.png"
-            alt="sarik bola"
-            width={620}
-            height={320}
-            className={styles.cont__restaurants__restaurant__bg}
-          />
-          <Image
-            src={"/assets/img/sarikbola2.png"}
-            alt="sarik bola"
-            width={100}
-            height={100}
-            className={styles.cont__restaurants__restaurant__img}
-          />
-          <div className={styles.cont__restaurants__restaurant__hoverContent}>
-            <h1
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__title
-              }
-            >
-              SARIQ BOLA
-            </h1>
-            <p
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__description
-              }
-            >
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <SocialNetworks
-              instagram="https://instagram.com/sariqbola_pizza?igshid=NDk5N2NlZjQ="
-              facebook="https://www.facebook.com/sariqbolapizza/?mibextid=LQQJ4d"
-              telegram="/"
+        <div className={styles.restaurants__card}>
+          <div className={styles.restaurants__img}>
+            <Image
+              src={"/assets/img/sarikbola2.png"}
+              alt="appex2"
+              width={100}
+              height={100}
             />
-            <br />
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__visitBtn
-              }
-            >
-              Перейти на сайт
-            </button>
-            <Link href={"/cafes/sariqbola"}>
-              <button
-                className={
-                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
-                }
-              >
-                Подробнее{" "}
-              </button>
-            </Link>
+            <div className={styles.restaurants__card__section}>
+              <h1 className={styles.restaurants__title}>Sariq Bola</h1>
+              <div className={styles.restaurants__text}>
+                <p>{t("pageRestaurants.sariq")}</p>
+              </div>
+              <SocialNetworks
+                instagram="https://www.instagram.com/sariqbola_pizza/?igshid=NDk5N2NlZjQ%3D"
+                facebook="https://www.facebook.com/sariqbolapizza/?mibextid=LQQJ4d"
+                telegram="/"
+              />
+              <br />
+              <div className={styles.restaurants__btn}>
+                <button className={styles.restaurants__visit}>
+                 {t("pageManufacturers.site")}
+                </button>
+                <Link href={"/cafes/sariqbola"}>
+                  <button className={styles.restaurants__more}>
+                    {t("btnMore")}
+                  </button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className={styles.cont__restaurants__restaurant}>
-          <Image
-            src="/assets/img/shashlikuz.png"
-            alt="shashlik uz"
-            width={620}
-            height={320}
-            className={styles.cont__restaurants__restaurant__bg}
-          />
-          <Image
-            src={"/assets/img/shashlik.png"}
-            alt="shashlik uz"
-            width={100}
-            height={100}
-            className={styles.cont__restaurants__restaurant__img}
-          />
-          <div className={styles.cont__restaurants__restaurant__hoverContent}>
-            <h1
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__title
-              }
-            >
-              SHASHLIK UZ
-            </h1>
-            <p
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__description
-              }
-            >
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <SocialNetworks
-              instagram="https://instagram.com/shashlikuz?igshid=NDk5N2NlZjQ="
-              facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
-              telegram="https://t.me/shashlikuz_group"
+        <div className={styles.restaurants__card}>
+          <div className={styles.restaurants__img}>
+            <Image
+              src={"/assets/img/shashlikk.png"}
+              alt="appex2"
+              width={100}
+              height={100}
             />
-            <br />
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__visitBtn
-              }
-            >
-              Перейти на сайт
-            </button>
-            <Link href={"/cafes/shashlik"}>
-              <button
-                className={
-                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
-                }
-              >
-                Подробнее{" "}
-              </button>
-            </Link>
+            <div className={styles.restaurants__card__section}>
+              <h1 className={styles.restaurants__title}>Shashlik Uz</h1>
+              <div className={styles.restaurants__text}>
+                <p>{t("pageRestaurants.shashlik")}</p>
+              </div>
+              <SocialNetworks
+                instagram="https://www.instagram.com/shashlikuz/?igshid=NDk5N2NlZjQ%3D"
+                facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
+                telegram="https://t.me/shashlikuz_group"
+              />
+              <br />
+              <div className={styles.restaurants__btn}>
+                <button className={styles.restaurants__visit}>
+                 {t("pageManufacturers.site")}
+                </button>
+                <Link href={"/cafes/shashlik"}>
+                  <button className={styles.restaurants__more}>
+                    {t("btnMore")}
+                  </button>
+                </Link>
+              </div>
+            </div> 
           </div>
+        </div>
+        
+        <div className={styles.restaurants__card}>
+          <div className={styles.restaurants__img}>
+            <Image
+              src={"/assets/img/nihal.png"}
+              alt="appex2"
+              width={100}
+              height={100}
+            />
+            <div className={styles.restaurants__card__section}>
+              <h1 className={styles.restaurants__title}>Shashlik Uz</h1>
+              <div className={styles.restaurants__text}>
+                <p>{t("pageRestaurants.nihol")}</p>
+              </div>
+              <SocialNetworks
+                instagram="https://www.instagram.com/shashlikuz/?igshid=NDk5N2NlZjQ%3D"
+                facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
+                telegram="https://t.me/shashlikuz_group"
+              />
+              <br />
+              <div className={styles.restaurants__btn}>
+                <button className={styles.restaurants__visit}>
+                 {t("pageManufacturers.site")}
+                </button>
+                <Link href={"/cafes/nihol"}>
+                  <button className={styles.restaurants__more}>
+                    {t("btnMore")}
+                  </button>
+                </Link>
+              </div>
+            </div> 
+          </div>
+
+          
+        </div>
+
+        <div className={styles.restaurants__card}>
+          <div className={styles.restaurants__img}>
+            <Image
+              src={"/assets/img/nihal.png"}
+              alt="appex2"
+              width={100}
+              height={100}
+            />
+            <div className={styles.restaurants__card__section}>
+              <h1 className={styles.restaurants__title}>Karadeniz</h1>
+              <div className={styles.restaurants__text}>
+                <p>{t("pageRestaurants.karadeniz")}</p>
+              </div>
+              <SocialNetworks
+                instagram="/"
+                facebook="/"
+                telegram="/"
+              />
+              <br />
+              <div className={styles.restaurants__btn}>
+                <button className={styles.restaurants__visit}>
+                 {t("pageManufacturers.site")}
+                </button>
+                <Link href={"/cafes/karadeniz"}>
+                  <button className={styles.restaurants__more}>
+                    {t("btnMore")}
+                  </button>
+                </Link>
+              </div>
+            </div> 
+          </div>
+
+          
         </div>
       </div>
-
-      <Link href="/restaurants">
-        <button className={styles.cont__btn}>Смотреть больше</button>
-      </Link>
     </div>
+     
   );
 };
 

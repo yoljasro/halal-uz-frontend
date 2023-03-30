@@ -1,5 +1,5 @@
 // next components
-import Link from "next/link";
+import a from "next/link";
 import Image from "next/image";
 // nuka carousel
 // react
@@ -24,7 +24,7 @@ export const Footer: FC<any> = () => {
           <p>{t("pageFooter.address")}</p>
         </div>
         <div className={styles.footer__social}>
-          <Link
+          <a
             href={"https://instagram.com/world.halal?igshid=YmMyMTA2M2Y"}
             target="_blank"
           >
@@ -34,8 +34,8 @@ export const Footer: FC<any> = () => {
               width={45}
               height={45}
             />
-          </Link>
-          <Link
+          </a>
+          <a
             href={
               "https://www.facebook.com/WorldHalalCommittee?mibextid=LQQJ4d"
             }
@@ -47,23 +47,23 @@ export const Footer: FC<any> = () => {
               width={45}
               height={45}
             />
-          </Link>
-          <Link href={"/"} target="_blank">
+          </a>
+          <a href={"/"} target="_blank">
             <Image
               src={"/assets/img/telegram.png"}
               alt="telegram"
               width={45}
               height={45}
             />
-          </Link>
-          <Link href={"/"} target="_blank">
+          </a>
+          <a href={"/"} target="_blank">
             <Image
               src={"/assets/img/whatsapp.png"}
               alt="facebook"
               width={45}
               height={45}
             />
-          </Link>
+          </a>
         </div>
         <p className={styles.footer__work}>{t("pageFooter.workingMode")}</p>
         <p className={styles.footer__plan}>
@@ -72,35 +72,35 @@ export const Footer: FC<any> = () => {
       </div>
       <div className={styles.footer__section}>
         <ul>
-          <Link href="/">
+          <a href="/">
             <li>{t("main")}</li>
-          </Link>
-          <Link href={"/aboutUs"}>
+          </a>
+          <a href={"/aboutUs"}>
             <li>{t("our")}</li>
-          </Link>
+          </a>
 
-          <Link href="#productions">
+          <a href="#productions">
             <li>{t("productive")}</li>
-          </Link>
-          <Link href="#chefs">
+          </a>
+          <a href="#chefs">
             <li>{t("chef")}</li>
-          </Link>
-          <Link href="/restaurants">
+          </a>
+          <a href="/restaurants">
             <li>{t("restaurants")}</li>
-          </Link>
+          </a>
 
-          <Link href="#members">
+          <a href="#members">
             <li>{t("partners")}</li>
-          </Link>
-          <Link href="/halalMap">
+          </a>
+          <a href="/halalMap">
             <li>{t("map")}</li>
-          </Link>
+          </a>
         </ul>
       </div>
       <div className={styles.footer__section}>
-        <Link href={"/faq"}>
+        <a href={"/faq"}>
           <p className={styles.footer__faq}>{t("pageFooter.faq")}</p>
-        </Link>
+        </a>
       </div>
     </div>
   );

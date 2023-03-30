@@ -43,7 +43,7 @@ export default function Home() {
        <Header/>  
        {/* <Travels/> */}
       {/* <Restaurants/> */}
-      {/* <NewRes/> */}
+      <NewRes/>
       {/* <Productions/> */}
       <ProductionsNew/>
       <Chefs/>

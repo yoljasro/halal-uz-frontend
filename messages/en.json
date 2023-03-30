@@ -42,7 +42,9 @@
     "information": "Here are the food manufacturers that have received the Halal certificate",
     "siyob": "SIYOB FERMA",
     "shashlik": "SHASHLIKUZ",
-    "agro": "AGRO-BRAVO"
+    "agro": "AGRO-BRAVO" , 
+    "certificate" : "View certificate"   ,
+    "site" : "Visit the site"
   },
 
   "pageHalalChef": {

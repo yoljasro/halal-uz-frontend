@@ -32,7 +32,7 @@ export const Header: FC<any> = () => {
           {t("address")}
         </div>
         <div className={styles.header__loc}>
-          {t("location")}
+          <Image src='/assets/img/tashkent.png' width={128} height={39}/>
         </div>
       </div>
     </div>

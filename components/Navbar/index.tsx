@@ -12,7 +12,6 @@ import styles from "./index.module.sass";
 
 export const Navbar = () => {
   const t = useTranslations();
-  const router = useRouter();
 
   return (
     <div className={styles.navbar}>

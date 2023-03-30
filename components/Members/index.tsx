@@ -53,10 +53,10 @@ export const Members: FC<any> = () => {
         infinite={true}
         rewindWithAnimation={true}
         autoPlay={true}
-        autoPlaySpeed={3000}
+        autoPlaySpeed={4000}
         keyBoardControl={true}
-        customTransition="all .5"
-        transitionDuration={200}
+        customTransition="all .6"
+        transitionDuration={300}
         containerClass="carousel-container"
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"

@@ -3,13 +3,17 @@ import { RestoranTitle } from "../../components/restoranTitle";
 // next components
 import Image from "next/image";
 import Link from "next/link";
+import { GetStaticProps } from "next";
+import { useTranslations } from "next-intl";
 
 const Sariqbola = () => {
+  const t = useTranslations()
+
   return (
     <div>
       <RestoranTitle 
         subtitle="SARIQ BOLA"
-        description="Lorem ipsum dolor sit amet consectetur. Eros commodo nulla dis vestibulum nisl eget amet molestie. Elit cras tincidunt urna donec a dis. Quis faucibus suspendisse malesuada feugiat."
+        description={t("pageRestaurants.sariq")}
         img="/assets/img/sariq1.jpeg"
         img2="/assets/img/sariq2.jpeg"
         img3="/assets/img/sariq3.jpeg"
@@ -25,3 +29,11 @@ const Sariqbola = () => {
 };
 
 export default Sariqbola;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+      props: {
+          messages: (await import(`../../messages/${locale}.json`)).default
+      }
+  }
+}

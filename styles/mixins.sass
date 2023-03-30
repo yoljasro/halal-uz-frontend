@@ -1,9 +1,11 @@
 @import "./variables"
 
 @mixin font ($fontSize, $color, $weight, $important: "not important")
-    @if $important == important
+    @if $important == important 
         color: $color !important
         font-size: $fontSize !important
+
+        @include font(16px , red , bold ,)
 
         @if $weight == black
             font-weight: 800 !important
@@ -45,3 +47,4 @@
         @else if $weight == bold
             font-weight: 700
             font-family: "Montserrat-Bold"
+

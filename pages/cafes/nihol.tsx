@@ -3,13 +3,18 @@ import { RestoranTitle } from "../../components/restoranTitle";
 // next components
 import Image from "next/image";
 import Link from "next/link";
+import { GetStaticProps } from "next";
+import { useTranslations } from "next-intl";
+
 
 const Nihol = () => {
+  const t = useTranslations()
+
   return (
     <div>
       <RestoranTitle
         subtitle="NIHOL"
-        description="Lorem ipsum dolor sit amet consectetur. Eros commodo nulla dis vestibulum nisl eget amet molestie. Elit cras tincidunt urna donec a dis. Quis faucibus suspendisse malesuada feugiat."
+        description={t("pageRestaurants.nihol")}
         img="/assets/img/niholone.jpeg"
         img2="/assets/img/niholtwo.jpeg"
         img3="/assets/img/niholthree.jpeg"
@@ -25,3 +30,11 @@ const Nihol = () => {
 };
 
 export default Nihol;
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
+  return {
+      props: {
+          messages: (await import(`../../messages/${locale}.json`)).default
+      }
+  }
+}

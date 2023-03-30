@@ -8,6 +8,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@mui/material";
 // mui components
+// intl
+import { useTranslations } from "next-intl";
+
 
 type RestoranTitle = {
   subtitle: string;
@@ -36,6 +39,8 @@ export const RestoranTitle: FC<RestoranTitle> = ({
   facebook,
   pdf,
 }) => {
+  const t = useTranslations()
+
   return (
     <div className={styles.title}>
       <h3 className={styles.title__subtitle}>{subtitle}</h3>
@@ -43,7 +48,7 @@ export const RestoranTitle: FC<RestoranTitle> = ({
         <h1 className={styles.title__eventText__description}>{description}</h1>
       </div>
       <a className={styles.title__link} href={pdf} rel={"noreferrer"} target={"_blank"}>
-        Посмотреть сертификат
+        {t("pageManufacturers.certificate")}
       </a>
       <h3 className={styles.title__gallery}>Галерея</h3>
 
@@ -103,25 +108,25 @@ export const RestoranTitle: FC<RestoranTitle> = ({
       </Carousel>
       <p className={styles.title__social}>Ресторан в соц сетях:</p>
       <div className={styles.title__socialIcons}>
-        <Link href={instagram}>
+        <a href={instagram} target={"_blank"}>
           <Image
             src={"/assets/img/cafeInsta.png"}
             alt="image"
             width={45}
             height={45}
           />
-        </Link>
+        </a>
 
-        <Link href={facebook}>
+        <a href={facebook} target={"_blank"}>
           <Image
             src={"/assets/img/cafeFacebook.png"}
             alt="image"
             width={45}
             height={45}
           />
-        </Link>
+        </a>
       </div>
-      <button className={styles.title__btn}>Перейти на сайт</button>
+      <button className={styles.title__btn}>{t("pageManufacturers.site")}</button>
     </div>
   );
 };
