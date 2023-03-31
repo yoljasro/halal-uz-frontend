@@ -67,7 +67,7 @@ export const RestoranTitle: FC<RestoranTitle> = ({
           width={1280}
           height={480}
         />
-        <Image
+        {/* <Image
           className={styles.title__img}
           src={img2}
           alt="restoranImages"
@@ -100,8 +100,8 @@ export const RestoranTitle: FC<RestoranTitle> = ({
           src={img6}
           alt="restoranImages"
           width={1280}
-          height={480}
-        />
+          height={480} */}
+        {/* /> */}
       </Carousel>
       <p className={styles.title__social}>Ресторан в соц сетях:</p>
       <div className={styles.title__socialIcons}>
