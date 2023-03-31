@@ -6,8 +6,16 @@
 .partner
     display: flex
     margin-bottom: 100px
+    flex-direction: column
 
     &__img
-        object-fit: contain !important
+        object-fit: scale-down !important
         image-orientation: flip
         background-size: contain
+
+    &__text
+        font-family: ExoBold
+        font-size: 16px
+        line-height: 25px
+        text-align: center
+        color: #001A63

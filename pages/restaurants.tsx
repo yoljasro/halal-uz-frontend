@@ -192,10 +192,11 @@ import { SocialNetworks } from "../components/socialNetworks";
         <div className={styles.restaurants__card}>
           <div className={styles.restaurants__img}>
             <Image
-              src={"/assets/img/nihal.png"}
+              src={"/assets/img/karadenizlogo.jpg"}
               alt="appex2"
               width={100}
               height={100}
+              className={styles.restaurants__logo}
             />
             <div className={styles.restaurants__card__section}>
               <h1 className={styles.restaurants__title}>Karadeniz</h1>
@@ -203,7 +204,7 @@ import { SocialNetworks } from "../components/socialNetworks";
                 <p>{t("pageRestaurants.karadeniz")}</p>
               </div>
               <SocialNetworks
-                instagram="/"
+                instagram="https://instagram.com/karadeniz.uz?igshid=YmMyMTA2M2Y"
                 facebook="/"
                 telegram="/"
               />

@@ -14,37 +14,58 @@ import { MainPageTitle } from "../components/MainPageTitle";
 const FAQ = () => {
   return (
     <div className={styles.cont}>
-        <MainPageTitle subtitle="FAQ" description="This is Halal"/>
-      <Accordion>
+      <MainPageTitle subtitle="Часто задаваемые вопросы" />
+      <Accordion
+        sx={{
+          width: "100%",
+          maxWidth: "700px",
+        }}
+      >
         <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
-          <Typography className={styles.cont__title}>Accordion 1</Typography>
+          <Typography className={styles.cont__title}>
+            Что такое Халяль Сертификат
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Сертификат подтверждающие о том, что тот или иной продукт разрешен к
+            употреблению.
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion
+        sx={{
+          width: "100%",
+          maxWidth: "700px",
+        }}
+      >
         <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-          <Typography className={styles.cont__title}>Accordion 2</Typography>
+          <Typography className={styles.cont__title}>
+            Как можно получить Сертификат Халяль -
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+            Нужно соответствовать всем нормам и требованиям священного <br />{" "}
+            корана а также соответствовать международным стандартам
           </Typography>
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion
+        sx={{
+          width: "100%",
+          maxWidth: "700px",
+        }}
+      >
         <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-          <Typography className={styles.cont__title}>Accordion 3</Typography>
+          <Typography className={styles.cont__title}>
+            Кому выдается Сертификат Халяль
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-            malesuada lacus ex, sit amet blandit leo lobortis eget.
+          <Typography>
+            Туристическим объектам, Заведениям общественного питания а также
+            производителям продуктов питания.
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -55,8 +76,8 @@ export default FAQ;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
-      props: {
-          messages: (await import(`../messages/${locale}.json`)).default
-      }
-  }
-}
+    props: {
+      messages: (await import(`../messages/${locale}.json`)).default,
+    },
+  };
+};

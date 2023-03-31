@@ -111,6 +111,7 @@ export const MembersArray: MembersType[] = [
 export interface PartnersType {
   img: string;
   alt: string;
+  text?: string;
 }
 
 export const PartnersArray: PartnersType[] = [
@@ -121,6 +122,7 @@ export const PartnersArray: PartnersType[] = [
   {
     img: "/assets/img/partner2.png",
     alt: "img",
+    text : "Ministry of Culture and Tourism of the Republic of Uzbekistan"
   },
   {
     img: "/assets/img/partner3.png",

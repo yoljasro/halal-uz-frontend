@@ -47,10 +47,10 @@ const AboutUs: FC<any> = () => {
 
   return (
     <div className={styles.cont}>
-      <h1 className={styles.cont__title}>О НАС</h1>
+      <h1 className={styles.cont__title}>{t("pageAboutUs.title")}</h1>
       <div className={styles.cont__element}>
         <div className={styles.cont__content}>
-          {about &&
+          {/* {about &&
             about.length > 0 &&
             about.map((item) => {
               return (
@@ -58,7 +58,8 @@ const AboutUs: FC<any> = () => {
                   {item.description}
                 </p>
               );
-            })}
+            })} */}
+            <p className={styles.cont__content__description}>{t("pageAboutUs.information")}</p>
         </div>
         <Image
         className={styles.cont__image}

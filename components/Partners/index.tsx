@@ -38,7 +38,7 @@ export const Partners: FC<any> = () => {
   const t = useTranslations();
 
   return (
-    <div className={styles.cont} id="partners">
+    <div className={styles.cont} id="partners ">
       <MainPageTitle subtitle="ПАРТНЁРЫ" />
       <Carousel
         className={styles.carousel}
@@ -49,7 +49,7 @@ export const Partners: FC<any> = () => {
         ssr={true}
         infinite={true}
         rewindWithAnimation={true}
-        autoPlay={true}
+        autoPlay={false}
         autoPlaySpeed={4000}
         keyBoardControl={true}
         customTransition="all .5"
@@ -64,10 +64,11 @@ export const Partners: FC<any> = () => {
             <Image
             className={styles.partner__img}
               src={partner.img}
-              width={140}
+              width={120}
               height={120}
               alt={partner.alt}
             />
+            <p className={styles.partner__text}>{partner.text}</p>
           </div>
         );
       })}

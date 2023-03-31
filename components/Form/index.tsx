@@ -65,7 +65,7 @@ export const Form = () => {
       })
       .catch(function (error) {
         console.log(error);
-        alert("Email already exits")
+        alert("Error")
       });
 
       // required sytems
