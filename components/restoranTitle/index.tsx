@@ -123,7 +123,7 @@ export const RestoranTitle: FC<RestoranTitle> = ({
           />
         </a>
       </div>
-      <button className={styles.title__btn}></button>
+      <button className={styles.title__btn}>{t("pageManufacturers.site")}</button>
     </div>
   );
 };

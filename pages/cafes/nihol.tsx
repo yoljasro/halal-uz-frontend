@@ -15,7 +15,7 @@ const Nihol = () => {
       <RestoranTitle
         subtitle="NIHOL"
         description={t("pageRestaurants.nihol")}
-        img="/assets/img/niholone.jpeg"
+        img="/assets/img/nihal0.png"
         img2="/assets/img/niholtwo.jpeg"
         img3="/assets/img/niholthree.jpeg"
         img4="/assets/img/niholthree.jpeg"

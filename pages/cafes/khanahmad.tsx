@@ -14,7 +14,7 @@ const Khanahmad = () => {
       <RestoranTitle 
         subtitle="KHAN AHMAD"
         description={t("pageRestaurants.ahmad")}
-        img="/assets/img/ahmad1.jpg"
+        img="/assets/img/ahmad3.png"
         img2="/assets/img/ahmad2.jpg"
         img3="/assets/img/ahmad3.jpg"
         img4="/assets/img/ahmad4.jpg"

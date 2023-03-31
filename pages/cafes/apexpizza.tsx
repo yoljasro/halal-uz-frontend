@@ -15,7 +15,7 @@ const Apexpizza = () => {
       <RestoranTitle
         subtitle="apexpizza"
         description={t("pageRestaurants.appex")}
-        img="/assets/img/ap1.jpeg"
+        img="/assets/img/ap3.png"
         img2="/assets/img/ap2.jpeg"
         img3="/assets/img/ap3.jpeg"
         img4="/assets/img/ap4.jpeg"

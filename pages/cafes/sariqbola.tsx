@@ -14,7 +14,7 @@ const Sariqbola = () => {
       <RestoranTitle 
         subtitle="SARIQ BOLA"
         description={t("pageRestaurants.sariq")}
-        img="/assets/img/sariq1.jpeg"
+        img="/assets/img/sariq2.png"
         img2="/assets/img/sariq2.jpeg"
         img3="/assets/img/sariq3.jpeg"
         img4="/assets/img/sariq4.jpeg"
