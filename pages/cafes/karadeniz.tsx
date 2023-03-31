@@ -15,12 +15,12 @@ const Karadeniz = () => {
       <RestoranTitle
         subtitle="Karadeniz"
         description={t("pageRestaurants.karadeniz")}
-        img="/assets/img/karadeniz.jpg"
-        img2="/assets/img/karadeniz3.jpg"
-        img3="/assets/img/karadeniz4.jpg"
-        img4="/assets/img/karadeniz5.jpg"
-        img5="/assets/img/karadeniz6.jpg"
-        img6="/assets/img/karadeniz7.jpg"
+        img="/assets/img/karadeniz.png"
+        img2="/assets/img/karadeniz2.png"
+        img3="/assets/img/karadeniz3.jpg"
+        img4="/assets/img/karadeniz5.png"
+        img5="/assets/img/karadeniz6.png"
+        img6="/assets/img/karadeniz7.png"
         instagram="/"
         facebook="/"
         pdf="/assets/documents/karadeniz.pdf"
