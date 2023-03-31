@@ -79,7 +79,7 @@ export const NewRes: FC<any> = () => {
                 <button className={styles.restaurants__visit}>
                   {t("pageManufacturers.site")}
                 </button>
-                <Link href={"/cafes/khanahmad"}>
+                <Link href={"/cafes/apexpizza"}>
                   <button className={styles.restaurants__more}>
                     {t("btnMore")}
                   </button>
@@ -111,7 +111,7 @@ export const NewRes: FC<any> = () => {
                 <button className={styles.restaurants__visit}>
                   {t("pageManufacturers.site")}
                 </button>
-                <Link href={"/cafes/khanahmad"}>
+                <Link href={"/cafes/sariqbola"}>
                   <button className={styles.restaurants__more}>
                     {t("btnMore")}
                   </button>
@@ -143,7 +143,7 @@ export const NewRes: FC<any> = () => {
                 <button className={styles.restaurants__visit}>
                   {t("pageManufacturers.site")}
                 </button>
-                <Link href={"/cafes/khanahmad"}>
+                <Link href={"/cafes/shashlik"}>
                   <button className={styles.restaurants__more}>
                     {t("btnMore")}
                   </button>

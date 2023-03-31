@@ -49,7 +49,7 @@ export const Partners: FC<any> = () => {
         ssr={true}
         infinite={true}
         rewindWithAnimation={true}
-        autoPlay={false}
+        autoPlay={true}
         autoPlaySpeed={4000}
         keyBoardControl={true}
         customTransition="all .5"
