@@ -2,7 +2,7 @@ import { FC } from "react";
 //sass
 import styles from "./index.module.sass";
 // carousel nuka
-import Carousel from "nuka-carousel/lib/carousel";
+// import Carousel from "nuka-carousel/lib/carousel";
 // next components
 import Image from "next/image";
 import Link from "next/link";
@@ -10,7 +10,27 @@ import { Button } from "@mui/material";
 // mui components
 // intl
 import { useTranslations } from "next-intl";
+// carousel 
+import Carousel from "react-multi-carousel";
 
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 5000, min: 1024 },
+    items: 5,
+    slidesToSlide: 1,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 1,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 2,
+    slidesToSlide: 1,
+  },
+};
 
 type RestoranTitle = {
   subtitle: string;
@@ -52,60 +72,68 @@ export const RestoranTitle: FC<RestoranTitle> = ({
       </a>
       <h3 className={styles.title__gallery}>Галерея</h3>
 
-      <Carousel
-        autoplay={true}
-        autoplayInterval={7000}
-        animation={"fade"}
-        wrapAround={true}
-        pauseOnHover={true}
-        renderCenterRightControls={null}
-        renderCenterLeftControls={null}
-        renderBottomCenterControls={null}
-        swiping={false}
-      >
+      {/* <Carousel
+      className={styles.carousel}
+      swipeable={true}
+      draggable={true}
+      showDots={false}
+      responsive={responsive}
+      ssr={true}
+      infinite={true}
+      rewindWithAnimation={true}
+      autoPlay={true}
+      autoPlaySpeed={4000}
+      keyBoardControl={true}
+      customTransition="all .5"
+      transitionDuration={500}
+      containerClass="carousel-container"
+      dotListClass="custom-dot-list-style"
+      itemClass="carousel-item-padding-40-px"
+      > */}
+      <div className={styles.title__images}>
         <Image
           className={styles.title__img}
           src={img}
           alt="restoranImages"
-          width={1280}
-          height={480}
+          width={400}
+          height={300}
         />
         <Image
           className={styles.title__img}
           src={img2}
           alt="restoranImages"
-          width={1280}
-          height={480}
+          width={400}
+          height={300}
         />
         <Image
           className={styles.title__img}
           src={img3}
           alt="restoranImages"
-          width={1280}
-          height={480}
+          width={400}
+          height={300}
         />
         <Image
           className={styles.title__img}
           src={img4}
           alt="restoranImages"
-          width={1280}
-          height={480}
+          width={400}
+          height={300}
         />
         <Image
           className={styles.title__img}
           src={img5}
           alt="restoranImages"
-          width={1280}
-          height={480}
+          width={400}
+          height={300}
         />
         <Image
           className={styles.title__img}
           src={img6}
           alt="restoranImages"
-          width={1280}
-          height={480}
+          width={400}
+          height={300}
         />
-      </Carousel>
+      </div>
       <p className={styles.title__social}>Ресторан в соц сетях:</p>
       <div className={styles.title__socialIcons}>
         <a href={instagram} target={"_blank"}>

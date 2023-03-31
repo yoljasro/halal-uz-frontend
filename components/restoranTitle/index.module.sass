@@ -3,6 +3,20 @@
     flex-direction: column
     padding: 100px 80px
 
+    &__images
+        display: flex
+        flex-wrap: wrap
+        width: 100%
+        justify-content: space-between
+        gap: 20px
+        @media (max-width:769px)
+            flex-direction: column
+
+    &__img
+        object-fit: cover !important
+        @media (max-width:769px)
+            width: 600px !important
+
     &__subtitle
         font-family: ExoBold
         font-size: 48px
