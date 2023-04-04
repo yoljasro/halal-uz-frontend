@@ -99,8 +99,9 @@
   },
   "pageAboutUs": {
     "title": "Bizim hakkımızda",
-    "information": "Bizim hakkımızda - Dünya İslami Mutfak Toplulukları Platformu (WICS), 22 İslam ülkesinden mutfak dernekleri tarafından 13 Mayıs'ta kuruldu, 2017 yılında İstanbul, Türkiye. 2019 yılında, Dünya Helal Komitesi (WHC) WICS altında kurulmuştur. WHC - turistik yerleri, catering kuruluşlarını ve gıda üreticilerini sertifikalandırıyoruz - Kur'an-ı Kerim ve uluslararası standartlar temelinde.",
-    "document": "Aşağıda faaliyetlerimizi teyit eden belgeleri görebilirsiniz.",
+    "information": "Bizim hakkımızda - Dünya İslami Mutfak Toplulukları Platformu (WICS), 22 İslam ülkesinden mutfak dernekleri tarafından 13 Mayıs'ta kuruldu, 2017 yılında İstanbul, Türkiye. 2019 yılında, Dünya Helal Komitesi (WHC) WICS altında kurulmuştur.",
+    "tourist" : " WHC - turistik yerleri, catering kuruluşlarını ve gıda üreticilerini sertifikalandırıyoruz - Kur'an-ı Kerim ve uluslararası standartlar temelinde.",
+    "document": "Aşağıda faaliyetlerimizi teyit eden belgeleri görebilirsiniz." ,
     "viewDocument": "Belgeleri Görüntüleme"
   },
 

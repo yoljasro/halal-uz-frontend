@@ -10,17 +10,16 @@ const Header: FC<any> = () => {
   const t = useTranslations();
   return (
     <div className={styles.header}>
-      <h3>New Clothing Collection</h3>
-      <div className={styles.header__subTitle}>
-        <p>
-          Lorem ipsum dolor sit ametcaecati odit quaerat nostrum beatae deleniti
-          quos, ipsa consequuntur magni Lorem ipsum dolor sit ametcaecati odit
-          quaerat nostrum beatae deleniti quos, ipsa consequuntur magni Lorem
-          ipsum dolor sit ametcaecati odit quaerat nostrum beatae deleniti quos,
-          ipsa consequuntur magni
-        </p>
+      <div className={styles.header__card}>
+        <div className={styles.header__card__img}>
+               <img src={"/assets/img/xanAhmad.png"} alt="img" /> 
+        </div>
+        <div className={styles.header__section}>
+          <h1>Title</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing s alias fuga!</p>
+          <button>See More</button>
+        </div>
       </div>
-      <button>See More</button>
     </div>
   );
 };

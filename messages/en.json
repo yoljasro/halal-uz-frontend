@@ -100,7 +100,8 @@
 
   "pageAboutUs": {
     "title": "ABOUT US",
-    "information": "About Us - The World Platform for Islamic Culinary Communities (WICS) was founded by culinary associations from 22 Islamic countries on May 13, 2017 in Istanbul, Turkey. In 2019, the World Halal Committee (WHC) was founded under WICS. WHC - certifies tourist facilities, catering establishments, as well as food producers - based on the Holy Quran and international standards.",
+    "information": "About Us - The World Platform for Islamic Culinary Communities (WICS) was founded by culinary associations from 22 Islamic countries on May 13, 2017 in Istanbul, Turkey. In 2019, the World Halal Committee (WHC) was founded under WICS.",
+    "tourist" : " WHC - certifies tourist facilities, catering establishments, as well as food producers - based on the Holy Quran and international standards." ,
     "document": "Below you can see the documents confirming our activities.",
     "viewDocument": "Viewing Documents"
   },

@@ -10,8 +10,32 @@
   align-items: center
   gap: 20px
 
-  &__subTitle
+  &__card
     width: 100%
-    max-width: 500px
-    color: red
-    font-style: 25px
+    max-width: 620px
+    height: 330px
+    // background-image: url("/assets/img/xanAhmad.png")
+    background-size: contain
+    background-repeat: no-repeat
+
+    &__img
+      // background-image: url("/assets/img/xanAhmad.png")
+      width: 100%
+      height: 100%
+      &:hover
+        background: #424240
+      & img 
+        z-index: 2
+
+  &__section
+    width: 100%
+    // margin-top: 30px
+    padding-left: 30px
+    padding-top: 30px
+    display: flex
+    flex-direction: column
+    gap: 20px
+    height: 100%
+
+    &:hover
+      background-color: #424240

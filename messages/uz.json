@@ -100,7 +100,8 @@
 
   "pageAboutUs": {
     "title": "BIZ HAQIMIZDA",
-    "information": "Biz haqimizda – Islom oshpazlik jamiyatlari uchun Jahon platformasi (WICS) 22 islom davlati oshpazlik uyushmalari tomonidan 2017-yil 13-may kuni Turkiyaning Istanbul shahrida tashkil etilgan. 2019 yilda WICS qoshida Butunjahon halol qo'mitasi (WHC) tashkil etildi. WHC - turistik ob'ektlar, umumiy ovqatlanish korxonalari, shuningdek, oziq-ovqat mahsulotlarini ishlab chiqaruvchilarni - Qur'oni Karim va xalqaro standartlar asosida sertifikatlaydi.",
+    "information": "Biz haqimizda – Islom oshpazlik jamiyatlari uchun Jahon platformasi (WICS) 22 islom davlati oshpazlik uyushmalari tomonidan 2017-yil 13-may kuni Turkiyaning Istanbul shahrida tashkil etilgan. 2019 yilda WICS qoshida Butunjahon halol qo'mitasi (WHC) tashkil etildi. ",
+    "tourist" : "WHC - turistik ob'ektlar, umumiy ovqatlanish korxonalari, shuningdek, oziq-ovqat mahsulotlarini ishlab chiqaruvchilarni - Qur'oni Karim va xalqaro standartlar asosida sertifikatlaydi." , 
     "document": "Quyida faoliyatimizni tasdiqlovchi hujjatlar bilan tanishishingiz mumkin.",
     "viewDocument": "Hujjatlarni ko'rish"
   },

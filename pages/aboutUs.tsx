@@ -60,6 +60,7 @@ const AboutUs: FC<any> = () => {
               );
             })} */}
             <p className={styles.cont__content__description}>{t("pageAboutUs.information")}</p>
+            <p className={styles.cont__content__tourist}>{t("pageAboutUs.tourist")}</p>
         </div>
         <Image
         className={styles.cont__image}
