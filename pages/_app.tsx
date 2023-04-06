@@ -14,10 +14,10 @@ export default function App({ Component, pageProps }: AppProps<PagePropsType>) {
   return (
     <NextIntlProvider messages={pageProps.messages}>
       <Script type="text/javascript" id="script">
-        {`window.replainSettings = { id: 'df4fee06-ab83-4c56-b22d-6d341558aff3' };
+        {`window.replainSettings = { id: '81a74c64-211a-408f-b8fa-3a93e3c4fd9a' };
 (function(u){var s=document.createElement('script');s.async=true;s.src=u;
 var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
-})('https://widget.replain.cc/dist/client.js')`}
+})('https://widget.replain.cc/dist/client.js');`}
       </Script>
 
       <Layout>
