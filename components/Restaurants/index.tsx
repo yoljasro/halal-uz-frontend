@@ -49,12 +49,12 @@ export const Restaurants: FC<any> = () => {
               variant="contained"
               className={styles.restaurants__certificateBtn}
             >
-              <a target={"_blank"} href="/assets/documents/ahmad.pdf">
+              <a rel="noreferrer" target={"_blank"} href="/assets/documents/ahmad.pdf">
                 {t("pageManufacturers.certificate")}
               </a>
             </Button>
             <div className={styles.restaurants__socialNetworks}>
-              <a
+              <a rel="noreferrer"
                 target={"_blank"}
                 href={
                   "https://www.instagram.com/khanahmad_restaurant/?igshid=NDk5N2NlZjQ%3D"
@@ -67,7 +67,7 @@ export const Restaurants: FC<any> = () => {
                   height={45}
                 />
               </a>
-              <a
+              <a rel="noreferrer"
                 target={"_blank"}
                 href="https://www.facebook.com/profile.php?id=100054751930596&mibextid=LQQJ4d"
               >
@@ -79,7 +79,7 @@ export const Restaurants: FC<any> = () => {
                 />
               </a>
 
-              <a target={"_blank"} href="https://t.me/KhanAhmad_restaurant">
+              <a rel="noreferrer" target={"_blank"} href="https://t.me/KhanAhmad_restaurant">
                 <Image
                   src={"/assets/img/telegram.png"}
                   alt="instagram"
@@ -115,7 +115,7 @@ export const Restaurants: FC<any> = () => {
               </a>
             </Button>
             <div className={styles.restaurants__socialNetworks}>
-              <a
+              <Link
                 target={"_blank"}
                 href={
                   "https://www.instagram.com/apexpizza.uz/?igshid=NDk5N2NlZjQ%3D"
@@ -127,8 +127,8 @@ export const Restaurants: FC<any> = () => {
                   width={45}
                   height={45}
                 />
-              </a>
-              <a
+              </Link>
+              <a rel="noreferrer"
                 target={"_blank"}
                 href="https://www.facebook.com/apexpizza.uz?mibextid=LQQJ4d"
               >
@@ -140,14 +140,14 @@ export const Restaurants: FC<any> = () => {
                 />
               </a>
 
-              <a target={"_blank"} href="/">
+              <Link target={"_blank"} href="/">
                 <Image
                   src={"/assets/img/telegram.png"}
                   alt="instagram"
                   width={45}
                   height={45}
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -176,12 +176,12 @@ export const Restaurants: FC<any> = () => {
               variant="contained"
               className={styles.restaurants__certificateBtn}
             >
-              <a target={"_blank"} href="/assets/documents/sariq.pdf">
+              <a rel="noreferrer" target={"_blank"} href="/assets/documents/sariq.pdf">
                 {t("pageManufacturers.certificate")}
               </a>
             </Button>
             <div className={styles.restaurants__socialNetworks}>
-              <a
+              <a rel="noreferrer"
                 target={"_blank"}
                 href={
                   "https://www.instagram.com/sariqbola_pizza/?igshid=NDk5N2NlZjQ%3D"
@@ -194,7 +194,7 @@ export const Restaurants: FC<any> = () => {
                   height={45}
                 />
               </a>
-              <a
+              <a rel="noreferrer"
                 target={"_blank"}
                 href="https://www.facebook.com/sariqbolapizza/?mibextid=LQQJ4d"
               >
@@ -206,14 +206,14 @@ export const Restaurants: FC<any> = () => {
                 />
               </a>
 
-              <a target={"_blank"} href="/">
+              <Link rel="noreferrer" target={"_blank"} href="/">
                 <Image
                   src={"/assets/img/telegram.png"}
                   alt="instagram"
                   width={45}
                   height={45}
                 />
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -237,12 +237,12 @@ export const Restaurants: FC<any> = () => {
               variant="contained"
               className={styles.restaurants__certificateBtn}
             >
-              <a target={"_blank"} href="/assets/documents/shashlik.pdf">
+              <a rel="noreferrer" target={"_blank"} href="/assets/documents/shashlik.pdf">
                 {t("pageManufacturers.certificate")}
               </a>
             </Button>
             <div className={styles.restaurants__socialNetworks}>
-              <a
+              <a rel="noreferrer"
                 target={"_blank"}
                 href={
                   "https://www.instagram.com/shashlikuz/?igshid=NDk5N2NlZjQ%3D"
@@ -255,7 +255,7 @@ export const Restaurants: FC<any> = () => {
                   height={45}
                 />
               </a>
-              <a
+              <a rel="noreferrer"
                 target={"_blank"}
                 href="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
               >
@@ -267,7 +267,7 @@ export const Restaurants: FC<any> = () => {
                 />
               </a>
 
-              <a target={"_blank"} href="https://t.me/shashlikuz_group">
+              <a rel="noreferrer" target={"_blank"} href="https://t.me/shashlikuz_group">
                 <Image
                   src={"/assets/img/telegram.png"}
                   alt="instagram"

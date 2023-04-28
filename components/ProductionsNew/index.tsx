@@ -33,14 +33,14 @@ export const ProductionsNew = () => {
           />
           <h3 className={styles.production__title}>SIYOB FERMA</h3>
           <div className={styles.production__card__section}>
-            <a target={"_blank"} href={"https://siyobferma.uz"}>
+            <a rel="noreferrer" target={"_blank"} href={"https://siyobferma.uz"}>
               <Button variant="contained" className={styles.production__btn}>
                 {t("pageManufacturers.site")}
               </Button>
             </a>
             <br />
             <Button variant="contained" className={styles.production__viewBtn}>
-              <a
+              <a rel="noreferrer"
                 className={styles.production__link}
                 target={"_blank"}
                 href="/assets/documents/siyob.pdf"
@@ -70,7 +70,7 @@ export const ProductionsNew = () => {
             </Button>
             <br />
             <Button variant="contained" className={styles.production__viewBtn}>
-              <a
+              <a rel="noreferrer"
                 className={styles.production__link}
                 target={"_blank"}
                 href="/assets/documents/shashlikuz.pdf"
@@ -95,14 +95,14 @@ export const ProductionsNew = () => {
           />
           <h3 className={styles.production__title}>AGRO-BRAVO</h3>
           <div className={styles.production__card__section}>
-            <a target="_blank" href={"https://agrobravo.uz/ru/"}>
+            <a rel="noreferrer" target="_blank" href={"https://agrobravo.uz/ru/"}>
               <Button variant="contained" className={styles.production__btn}>
                 {t("pageManufacturers.site")}
               </Button>
             </a>
             <br />
             <Button variant="contained" className={styles.production__viewBtn}>
-              <a
+              <a rel="noreferrer"
                 className={styles.production__link}
                 target={"_blank"}
                 href="/assets/documents/agro.pdf"
@@ -130,14 +130,14 @@ export const ProductionsNew = () => {
           />
           <h3 className={styles.production__title}>GOLDEN-CORN</h3>
           <div className={styles.production__card__section}>
-            <a target={"_blank"} href={"https://golden-corn.uz/"}>
+            <a rel="noreferrer" target={"_blank"} href={"https://golden-corn.uz/"}>
               <Button variant="contained" className={styles.production__btn}>
                 {t("pageManufacturers.site")}
               </Button>
             </a>
             <br />
             <Button variant="contained" className={styles.production__viewBtn}>
-              <a
+              <a rel="noreferrer"
                 className={styles.production__link}
                 target={"_blank"}
                 href="/assets/documents/goldencorn.pdf"

@@ -1,5 +1,5 @@
 // next components
-import a from "next/link";
+import Link from "next/link";
 import Image from "next/image";
 // nuka carousel
 // react
@@ -28,7 +28,7 @@ export const Footer: FC<any> = () => {
 
         </div>
         <div className={styles.footer__social}>
-          <a
+          <a rel="noreferrer"
             href={"https://instagram.com/world.halal?igshid=YmMyMTA2M2Y"}
             target="_blank"
           >
@@ -39,7 +39,7 @@ export const Footer: FC<any> = () => {
               height={45}
             />
           </a>
-          <a
+          <a rel="noreferrer"
             href={
               "https://www.facebook.com/WorldHalalCommittee?mibextid=LQQJ4d"
             }
@@ -52,7 +52,7 @@ export const Footer: FC<any> = () => {
               height={45}
             />
           </a>
-          <a href={"/"} target="_blank">
+          <a rel="noreferrer" href={"/"} target="_blank">
             <Image
               src={"/assets/img/telegram.png"}
               alt="telegram"
@@ -60,7 +60,7 @@ export const Footer: FC<any> = () => {
               height={45}
             />
           </a>
-          <a href={"/"} target="_blank">
+          <a rel="noreferrer" href={"/"} target="_blank">
             <Image
               src={"/assets/img/whatsapp.png"}
               alt="facebook"
@@ -76,29 +76,29 @@ export const Footer: FC<any> = () => {
       </div>
       <div className={styles.footer__section}>
         <ul>
-          <a href="/">
+          <Link rel="noreferrer" href="/">
             <li>{t("main")}</li>
-          </a>
-          <a href={"/aboutUs"}>
+          </Link>
+          <Link rel="noreferrer" href={"/aboutUs"}>
             <li>{t("our")}</li>
-          </a>
+          </Link>
 
-          <a href="#productions">
+          <Link rel="noreferrer" href="#productions">
             <li>{t("productive")}</li>
-          </a>
-          <a href="#chefs">
+          </Link>
+          <Link rel="noreferrer" href="#chefs">
             <li>{t("chef")}</li>
-          </a>
-          <a href="/restaurants">
+          </Link>
+          <Link rel="noreferrer" href="/restaurants">
             <li>{t("restaurants")}</li>
-          </a>
+          </Link>
 
-          <a href="#members">
+          <Link rel="noreferrer" href="#members">
             <li>{t("partners")}</li>
-          </a>
-          <a href="/halalMap">
+          </Link>
+          <Link rel="noreferrer" href="/halalMap">
             <li>{t("map")}</li>
-          </a>
+          </Link>
         </ul>
       </div>
       <div className={styles.footer__section}>

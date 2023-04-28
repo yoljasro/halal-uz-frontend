@@ -16,7 +16,6 @@ import { Restaurants } from "../components/Restaurants";
 import { Main } from "../components/Main";
 import { Chefs } from "../components/Chefs";
 import { Productions } from "../components/Productions";
-import { NewRes } from "../components/NewRes";
 import { ProductionsNew } from "../components/ProductionsNew";
 // import { Get } from "../components/get";
 // import useTranslations  from 'use-intl'

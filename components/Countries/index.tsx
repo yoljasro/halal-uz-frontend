@@ -15,7 +15,6 @@ import Link from "next/link";
 // constants
 import { CountriesArray, CountriesType } from "../../constants";
 import { useRouter } from "next/router";
-import Document from "next/document";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -101,13 +100,13 @@ export const Countries: FC<LinkType> = ({ link, azerbajan , saudia }) => {
         >
           <TabPanel value={value} index={0} dir={theme.direction}>
             <div className={styles.cont__countries}>
-              <a target={"_blank"} className={styles.cont__link} href={link}>
+              <a rel="noreferrer" target={"_blank"} className={styles.cont__link} href={link}>
                 <div className={styles.cont__card}>Uzbekistan</div>
               </a>
-              <a href={saudia} target="_blank" className={styles.cont__link}>
+              <a rel="noreferrer" href={saudia} target="_blank" className={styles.cont__link}>
                 <div className={styles.cont__card}>Saudia Arabia</div>
               </a>
-              <a href={azerbajan} target="_blank" className={styles.cont__link}>
+              <a rel="noreferrer" href={azerbajan} target="_blank" className={styles.cont__link}>
                 <div className={styles.cont__card}>Azerbajan</div>
               </a>
               <div className={styles.cont__card}>India</div>

@@ -37,7 +37,7 @@ const News = () => {
           }}
           className={styles.news__card}
         >
-          <Image
+          <Image alt='image'
             className={styles.news__image}
             src="/assets/img/newsimage.jpg"
             width={500}
@@ -70,7 +70,7 @@ const News = () => {
           }}
           className={styles.news__card}
         >
-          <Image
+          <Image alt='image'
             className={styles.news__image}
             src="/assets/img/newsimage.jpg"
             width={500}
@@ -98,7 +98,7 @@ const News = () => {
           </div>
         </div>
         <div className={styles.news__card}>
-          <Image
+          <Image alt='image'
             className={styles.news__image}
             src="/assets/img/news.png"
             width={500}

@@ -45,7 +45,7 @@ export const RestoranTitle: FC<RestoranTitle> = ({
         <h1 className={styles.title__eventText__description}>{description}</h1>
       </div>
       <Button className={styles.title__certificateBtn} variant="outlined" >
-        <a href={pdf}></a>
+        <a rel="noreferrer" href={pdf}></a>
         {t("pageManufacturers.certificate")}
       </Button>
       <h3 className={styles.title__gallery}>Галерея</h3>
@@ -108,7 +108,7 @@ export const RestoranTitle: FC<RestoranTitle> = ({
       {/* </Carousel> */}
       <p className={styles.title__social}>Ресторан в соц сетях:</p>
       <div className={styles.title__socialIcons}>
-        <a href={instagram} target={"_blank"}>
+        <a rel="noreferrer"  href={instagram} target={"_blank"}>
           <Image
             src={"/assets/img/cafeInsta.png"}
             alt="image"
@@ -117,7 +117,7 @@ export const RestoranTitle: FC<RestoranTitle> = ({
           />
         </a>
 
-        <a href={facebook} target={"_blank"}>
+        <a rel="noreferrer" href={facebook} target={"_blank"}>
           <Image
             src={"/assets/img/cafeFacebook.png"}
             alt="image"

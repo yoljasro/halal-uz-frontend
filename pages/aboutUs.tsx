@@ -53,7 +53,7 @@ const AboutUs: FC<any> = () => {
           name="google-site-verification"
           content="Pi7kisuljjOmFbBlvmk-S8DASJP-WbIGUQ1ERs9XwS4"
         />
-        <link rel="icon" href="/assets/img/logo.svg" />
+        {/* <link rel="noreferrer"f="/assets/img/logo.svg" /> */}
       </Head>
       <h1 className={styles.cont__title}>{t("pageAboutUs.title")}</h1>
       <div className={styles.cont__element}>
@@ -75,10 +75,9 @@ const AboutUs: FC<any> = () => {
           </p>
         </div>
 
-        <Image
+        <Image alt='image'
           className={styles.cont__image}
           src={"/assets/img/aboutImg.png"}
-          alt="aboutImg"
           width={359}
           height={297}
         />
@@ -102,12 +101,12 @@ const AboutUs: FC<any> = () => {
             subtitle="Our Partner web site"
             description="The official website of the Association of Cooks of Uzbekistan"
           />
-          <a target="_blank" href="http://chefs.uz/">
-          <Image src={'/assets/img/cookersLogo.png'} width={150} height={150} alt='cookerslogo'/>
+          <a rel="noreferrer" target="_blank" href="http://chefs.uz/">
+          <Image alt='image' src={'/assets/img/cookersLogo.png'} width={150} height={150} />
           </a>
           <Button variant="contained">
             {" "}
-            <a target="_blank" href="http://chefs.uz/">
+            <a rel="noreferrer" target="_blank" href="http://chefs.uz/">
               {t("pageManufacturers.site")}
             </a>
           </Button>
@@ -118,13 +117,13 @@ const AboutUs: FC<any> = () => {
       </div>
       <div className={styles.cont__certificate}>
         <p>{t("pageAboutUs.process")}</p>
-        <a href="/assets/img/cer_uzb.jpg" target={"_blank"}>
+        <a rel="noreferrer" href="/assets/img/cer_uzb.jpg" target={"_blank"}>
           <Button variant="contained">{t("pageAboutUs.uzbekCharter")}</Button>
         </a>
-        <a href="/assets/img/cer_ru.jpg" target={"_blank"}>
+        <a rel="noreferrer" href="/assets/img/cer_ru.jpg" target={"_blank"}>
           <Button variant="contained">{t("pageAboutUs.russianCharter")}</Button>
         </a>
-        <a href="/assets/img/cer_eng.jpg" target={"_blank"}>
+        <a rel="noreferrer" href="/assets/img/cer_eng.jpg" target={"_blank"}>
           <Button variant="contained">{t("pageAboutUs.englishCharter")}</Button>
         </a>
       </div>
@@ -136,7 +135,7 @@ const AboutUs: FC<any> = () => {
           <div className={styles.cont__documents__content__document}>
             <p>
               №1
-              <a href="/assets/documents/halal1.pdf" target={"_blank"}>
+              <a rel="noreferrer" href="/assets/documents/halal1.pdf" target={"_blank"}>
                 <Button variant="contained">
                   {t("pageAboutUs.russianCharter")}
                 </Button>
@@ -144,7 +143,7 @@ const AboutUs: FC<any> = () => {
             </p>
             <p>
               №2
-              <a href="/assets/documents/halal2.pdf" target={"_blank"}>
+              <a rel="noreferrer" href="/assets/documents/halal2.pdf" target={"_blank"}>
                 <Button variant="contained">
                   {t("pageAboutUs.englishCharter")}
                 </Button>
@@ -152,7 +151,7 @@ const AboutUs: FC<any> = () => {
             </p>
             <p>
               №3
-              <a href="/assets/documents/halal3.pdf" target={"_blank"}>
+              <a rel="noreferrer" href="/assets/documents/halal3.pdf" target={"_blank"}>
                 <Button variant='contained'>
                 {t("pageAboutUs.vertification")}
                 </Button>
@@ -162,7 +161,7 @@ const AboutUs: FC<any> = () => {
           <div className={styles.cont__documents__content__document}>
             <p>
               №4
-              <a href="/assets/documents/halal4.pdf" target={"_blank"}>
+              <a rel="noreferrer" href="/assets/documents/halal4.pdf" target={"_blank"}>
               <Button variant='contained'>
                 OIC SMIIC 1 2019
                 </Button>
@@ -170,7 +169,7 @@ const AboutUs: FC<any> = () => {
             </p>
             <p>
               №5
-              <a href="/assets/documents/halal5.pdf" target={"_blank"}>
+              <a rel="noreferrer" href="/assets/documents/halal5.pdf" target={"_blank"}>
               <Button variant='contained'>
                 OIC SMIIC 6 2019
                 </Button>
@@ -178,7 +177,7 @@ const AboutUs: FC<any> = () => {
             </p>
             <p>
               №6
-              <a href="/assets/documents/halal6.pdf" target={"_blank"}>
+              <a rel="noreferrer" href="/assets/documents/halal6.pdf" target={"_blank"}>
               <Button variant='contained'>
                 OIC SMIIC 9 2019
                 </Button>
@@ -191,74 +190,74 @@ const AboutUs: FC<any> = () => {
         <h3>{t("pageAboutUs.command")}</h3>
         <div className={styles.cont__commands}>
           <div className={styles.cont__card}>
-            <Image
+            <Image alt='image'
               src={"/assets/img/commandone.png"}
               width={200}
               height={300}
             />
             <h3 className={styles.cont__card__name}>Акбар Умаров</h3>
-            <p className={styles.cont__card__description}> Qo'mita raisi</p>
+            <p className={styles.cont__card__description}> Qomita raisi</p>
           </div>
           <div className={styles.cont__card}>
-            <Image
+            <Image alt='image'
               src={"/assets/img/commandtwo.png"}
               width={200}
               height={300}
             />
             <h3 className={styles.cont__card__name}>Akbar Umarov</h3>
-            <p className={styles.cont__card__description}>Rais O'rinbosari</p>
+            <p className={styles.cont__card__description}>Rais Orinbosari</p>
           </div>
           <div className={styles.cont__card}>
-            <Image src={"/assets/img/command1.png"} width={200} height={400} />
+            <Image alt='image' src={"/assets/img/command1.png"} width={200} height={400} />
             <h3 className={styles.cont__card__name}>Акбар Умаров</h3>
             <p className={styles.cont__card__description}>Lavozim</p>
           </div>
           <div className={styles.cont__card}>
-            <Image src={"/assets/img/command2.png"} width={200} height={300} />
+            <Image alt='image' src={"/assets/img/command2.png"} width={200} height={300} />
             <h3 className={styles.cont__card__name}>Акбар Умаров</h3>
             <p className={styles.cont__card__description}>Lavozim</p>
           </div>
           <div className={styles.cont__card}>
-            <Image src={"/assets/img/command01.png"} width={200} height={300} />
+            <Image alt='image' src={"/assets/img/command01.png"} width={200} height={300} />
             <h3 className={styles.cont__card__name}>Full-name</h3>
             <p className={styles.cont__card__description}>Lavozim</p>
           </div>
           <div className={styles.cont__card}>
-            <Image src={"/assets/img/command5.png"} width={200} height={300} />
+            <Image alt='image' src={"/assets/img/command5.png"} width={200} height={300} />
             <h3 className={styles.cont__card__name}>Full-name</h3>
             <p className={styles.cont__card__description}>Lavozim</p>
           </div>
           <div className={styles.cont__card}>
-            <Image src={"/assets/img/command6.png"} width={200} height={300} />
+            <Image alt='image' src={"/assets/img/command6.png"} width={200} height={300} />
             <h3 className={styles.cont__card__name}>Full-name</h3>
             <p className={styles.cont__card__description}>Lavozim</p>
           </div>
           <div className={styles.cont__card}>
-            <Image src={"/assets/img/command04.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Full-name</h3>
-            <p className={styles.cont__card__description}>Lavozim</p>
-          </div>
-
-          <div className={styles.cont__card}>
-            <Image src={"/assets/img/command01.png"} width={200} height={300} />
+            <Image alt='image' src={"/assets/img/command04.png"} width={200} height={300} />
             <h3 className={styles.cont__card__name}>Full-name</h3>
             <p className={styles.cont__card__description}>Lavozim</p>
           </div>
 
           <div className={styles.cont__card}>
-            <Image src={"/assets/img/command02.png"} width={200} height={300} />
+            <Image alt='image' src={"/assets/img/command01.png"} width={200} height={300} />
             <h3 className={styles.cont__card__name}>Full-name</h3>
             <p className={styles.cont__card__description}>Lavozim</p>
           </div>
 
           <div className={styles.cont__card}>
-            <Image src={"/assets/img/command03.png"} width={200} height={300} />
+            <Image alt='image' src={"/assets/img/command02.png"} width={200} height={300} />
             <h3 className={styles.cont__card__name}>Full-name</h3>
             <p className={styles.cont__card__description}>Lavozim</p>
           </div>
 
           <div className={styles.cont__card}>
-            <Image src={"/assets/img/command04.png"} width={200} height={300} />
+            <Image alt='image' src={"/assets/img/command03.png"} width={200} height={300} />
+            <h3 className={styles.cont__card__name}>Full-name</h3>
+            <p className={styles.cont__card__description}>Lavozim</p>
+          </div>
+
+          <div className={styles.cont__card}>
+            <Image alt='image' src={"/assets/img/command04.png"} width={200} height={300} />
             <h3 className={styles.cont__card__name}>Full-name</h3>
             <p className={styles.cont__card__description}>Lavozim</p>
           </div>
