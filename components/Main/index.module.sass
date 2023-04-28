@@ -8,7 +8,7 @@
     height: 102px
     padding: 20px 80px
     margin-bottom: 24px
-    
+
     @media (max-width:769px)
         width: 100%
         padding: 20px 40px
@@ -29,6 +29,8 @@
 
         & img
             cursor: pointer !important
+            @media (max-width: 769px)
+                width: 100px !important
 
     &__closeBtn
         font-size: 25px
@@ -40,7 +42,7 @@
         background: aqua
         &:hover
             background: #5b74c7
-            transition: 0.5s ease 
+            transition: 0.5s ease
 
     &__title
         width: 100%
@@ -49,7 +51,7 @@
         font-family: ExoBold
         font-size: 20px
         height: 72px
-        line-height: 36px
+        line-height: 36px   
         text-align: left
         color: #000000
         margin-left: 20px
@@ -79,7 +81,8 @@
         cursor: pointer
         margin-right: 30px
 
-    &__modal
+        &:hover
+            background: #48f41d
 
     &__select
         border: none

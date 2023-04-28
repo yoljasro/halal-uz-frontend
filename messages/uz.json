@@ -2,13 +2,13 @@
   "members": "A'zolar",
   "restaurants": "Restoranlar",
   "productive": "Ishlab chiqaruvchilar",
-  "chef": "Bosh Oshpaz",
+  "chef": "Chefs",
   "partners": "Hamkorlar",
   "main": "Asosiy",
   "our": "Biz haqimizda",
-  "map" : "Halol GID" , 
+  "map" : "Halol GID" ,  
 
-  "aboutUs": "Biz haqimizda",
+  "aboutUs": "Biz Haqimizda",
   "aboutUsInformation": "Biz Butunjahon Halol Q'omitasi (WHC)  ",
   "certificate" : " biz turistik ob'ektlar, umumiy ovqatlanish korxonalari, shuningdek, oziq-ovqat ishlab chiqaruvchilarni Qur'oni Karim va xalqaro standartlar asosida sertifikatlaymiz." , 
   "btnMore": "Ko'proq",
@@ -22,7 +22,9 @@
     "ourMembers": "BIZNING A'ZOLAR",
     "chefSHalal": "HALOL OSHPAZ",
     "manufacturers": "ISHLAB CHIQARUVCHILAR",
-    "siyob": ""
+    "siyob": "" , 
+    "news" : "Yangiliklar" , 
+    "hotels" : "Mehmonxonalar"
   },
 
   "pageRestaurants": {
@@ -30,7 +32,7 @@
     "information": "Ushbu bo'limda siz Halol sertifikatini olgan umumiy ovqatlanish korxonalari bilan tanishishingiz mumkin",
     "btnmore": "Saytga tashrif buyuring" , 
     "ahmad" : "Turk oshxonasining premium restorani, Samarqandning asosiy ko'chasida.",
-    "appex" : "Халяльная Сеть Пиццерий по городу Ташкент. Быстро, вкусно и недорого." , 
+    "appex" : "Toshkent shahridagi pitseriyalarning halol tarmog'i. Tez, mazali va arzon." , 
     "nihol" : "O'zbek oshxonasining oilaviy restorani, halol mahsulotlar va yuqori sifat" ,
     "sariq" : "Mashhur rassom - Jaxongir Xajaev - Sariq bola - Halol pizza pitseriya tarmog'i" , 
     "shashlik" : "Samarqanddagi restoranlar tarmog'i. Sizni suvli va halol kabob kutmoqda. " , 
@@ -43,12 +45,12 @@
     "siyob": "SIYOB FERMA",
     "shashlik": "SHASHLIKUZ",
     "agro": "AGRO-BRAVO" , 
-    "site" : "Saytga tashrif buyuring" , 
+    "site" : "Saytga kiring" , 
     "certificate" : "Sertifikatni ko'rish"
   },
 
   "pageHalalChef": {
-    "title": "HALOL OSHPAZ",
+    "title": "HALOL CHEF",
     "information": "Ushbu bolimda xalqaro halol shef  unvoniga ega bolgan bosh oshpazlarning royxati keltirilgan"
   },
 
@@ -85,7 +87,10 @@
 
   "pageFooter": {
     "title": "ALOQA",
-    "address": "«JAHON HALOL KOMITTESI» QK, Manzil: O'zbekiston, Toshkent sh., Mirzo-Ulug'bek tumani, ko'ch. Oltintepa 354 Tel: +998 71 266-77-78, +998 71 266-78-00 Elektron pochta Pochta: committeehalal@gmail.com",
+    "address": "«Butunjahon Halol Qo'mitasi» ",
+    "street" : "Manzil : O'zbekiston , Toshkent sh. , Mirzo Ulug'bek tumani , Oltintepa ko'chasi 354" , 
+    "phone" : "Tel: +998 71 266-77-78, +998 71 266-78-00 " , 
+    "email" : "Elektron  Pochta: committeehalal@gmail.com" , 
     "workingMode": "Ish rejimi:",
     "workingModeInformation": "Dushanba - Juma, 09:00 - 18:00",
     "our": "Biz haqimizda",
@@ -103,7 +108,15 @@
     "information": "Biz haqimizda – Islom oshpazlik jamiyatlari uchun Jahon platformasi (WICS) 22 islom davlati oshpazlik uyushmalari tomonidan 2017-yil 13-may kuni Turkiyaning Istanbul shahrida tashkil etilgan. 2019 yilda WICS qoshida Butunjahon halol qo'mitasi (WHC) tashkil etildi. ",
     "tourist" : "WHC - turistik ob'ektlar, umumiy ovqatlanish korxonalari, shuningdek, oziq-ovqat mahsulotlarini ishlab chiqaruvchilarni - Qur'oni Karim va xalqaro standartlar asosida sertifikatlaydi." , 
     "document": "Quyida faoliyatimizni tasdiqlovchi hujjatlar bilan tanishishingiz mumkin.",
-    "viewDocument": "Hujjatlarni ko'rish"
+    "viewDocument": "Hujjatlarni ko'rish" , 
+    "location" : "Bizning Manzil" , 
+    "command" : "Bizning Jamoa" , 
+    "map" : "Xaritada ochish" , 
+    "process" : "Sertifikat olish jarayoni",
+    "russianCharter" : "Nizom rus tilida" , 
+    "englishCharter" : "Nizom ingliz tilida" , 
+    "uzbekCharter" : "Nizom o'zbek tilida" ,
+    "vertification" : " Halol tekshirish talablari" 
   },
 
   "pageHalalGuide": {
@@ -118,6 +131,15 @@
         "w" : "(WICS)" ,
         "request" : "Arizangizni yuboring:" , 
         "requestDesc" : "Siz ushbu bo'limda so'rov qilishingiz mumkin, bizning xodimlarimiz siz bilan bog'lanadi, maslahat beradi, savollaringizga javob beradi va Halol sertifikatini olishga yordam beradi."
-    }
+    } 
+    , 
+    "faq" : {
+       "certificate" : " Halol sertifikati nima" , 
+       "certificateText" : " Muayyan mahsulot foydalanish uchun tasdiqlanganligini tasdiqlovchi sertifikat." , 
+       "get" : "Halol sertifikatini qanday olishim mumkin -" , 
+       "getText" : "   Qur'oni Karimning barcha me'yor va talablariga rioya qilish, shuningdek, xalqaro standartlarga rioya qilish kerak" , 
+       "take" : "Halol sertifikati kimlarga beriladi" , 
+       "takeText" : "Turistik ob'ektlar, umumiy ovqatlanish korxonalari va oziq-ovqat ishlab chiqaruvchilari."
+      }
 }
 

@@ -1,47 +1,39 @@
 .cont
-    padding-left: 80px
-    margin-bottom: 600px
+    // padding-left: 80px
+    // margin-bottom: 600px
+    margin-top: -40px
 
-    &__title
-        font-family: ExoBold
-        font-size: 48px
-        font-weight: 700
-        line-height: 58px
-        letter-spacing: 0em
-        text-align: left
-        padding-top: 100px
-        color: #00E376
+    &__select
+        display: flex
+        gap: 100px
+        flex-wrap: wrap
+        margin: 50px 20px
+        @media (max-width:769px)
+            // flex-direction: column
+            gap: 10px
+            justify-content: center
 
-    &__eventText
-        width: 100%
-        max-width: 714px
-
-        &__description
-            font-family: ExoExtraRegular
+        &__region
+            height: 50px
+            width: 100%
+            max-width: 300px
+            border-radius: 10px
+            background: #EEEEEE
+            font-family: ExoRegular
+            border: none
+            outline: none
             font-size: 20px
             font-weight: 500
             line-height: 36px
             letter-spacing: 0.02em
-            color: #696969
-            padding-top: 40px
-            margin-bottom: 40px
+            text-align: center
+            margin-left: 30px
+            cursor: pointer
+            padding: 4px 47px 4px 20px
+            // margin: 50px 0px
 
-    &__map
-        width: 100% !important
-        // display: flex !important
-        display: flex !important
-        margin-left: -20px
-        display: flex
-        // justify-content: center
-        &__loc
-            // margin-top: -200px
-            // display: flex
-            // flex-direction: column
-                
-
-    &__select
-        display: flex
-        margin-bottom: 60px
+            & option
+                cursor: pointer
 
         &__category
             height: 50px
@@ -60,27 +52,8 @@
             cursor: pointer
             padding: 4px 47px 4px 20px
 
-        &__region
-            // height: 50px
-            // max-width: 275px
-            // width: 100%
-            border-radius: 10px
-            background: #EEEEEE
-            font-family: ExoExtraRegular
-            border: none
-            outline: none
-            font-size: 20px
-            font-weight: 500
-            line-height: 36px
-            letter-spacing: 0.02em
-            text-align: center
-            margin-left: 30px
-            cursor: pointer
-            padding: 4px 47px 4px 20px
-
-             
-            & option 
-                cursor: pointer
-
     &__map
-        margin-bottom: 400px
+        display: flex
+        justify-content: center
+        width: 100%
+

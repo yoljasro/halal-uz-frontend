@@ -11,9 +11,11 @@ import { useRouter } from "next/router";
 import styles from "./index.module.sass";
 import { MainPageTitle } from "../MainPageTitle";
 import { SocialNetworks } from "../socialNetworks";
+import { Button } from "@mui/material";
 
 export const ProductionsNew = () => {
   const t = useTranslations();
+  const router = useRouter();
 
   return (
     <div className={styles.cont} id="productions">
@@ -31,15 +33,21 @@ export const ProductionsNew = () => {
           />
           <h3 className={styles.production__title}>SIYOB FERMA</h3>
           <div className={styles.production__card__section}>
-            <button className={styles.production__btn}>{t("pageManufacturers.site")}</button>{" "}
-            <br />
-            <a
-              className={styles.production__link}
-              target={"_blank"}
-              href="/assets/documents/siyob.pdf"
-            >
-              {t("pageManufacturers.certificate")}
+            <a target={"_blank"} href={"https://siyobferma.uz"}>
+              <Button variant="contained" className={styles.production__btn}>
+                {t("pageManufacturers.site")}
+              </Button>
             </a>
+            <br />
+            <Button variant="contained" className={styles.production__viewBtn}>
+              <a
+                className={styles.production__link}
+                target={"_blank"}
+                href="/assets/documents/siyob.pdf"
+              >
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
             <SocialNetworks
               instagram=" https://instagram.com/siyobferma.uz?igshid=NDk5N2NlZjQ="
               facebook="https://www.facebook.com/siyob.ferma?mibextid=LQQJ4d"
@@ -57,16 +65,20 @@ export const ProductionsNew = () => {
           />
           <h3 className={styles.production__title}>SHASHLIKUZ</h3>
           <div className={styles.production__card__section}>
-            <button className={styles.production__btn}>{t("pageManufacturers.site")}</button>{" "}
+            <Button variant="contained" className={styles.production__btn}>
+              {t("pageManufacturers.site")}
+            </Button>
             <br />
-            <a
-              className={styles.production__link}
-              target={"_blank"}
-              href="/assets/documents/shashlikuz.pdf"
-            >
-              {" "}
-              {t("pageManufacturers.certificate")}
-            </a>
+            <Button variant="contained" className={styles.production__viewBtn}>
+              <a
+                className={styles.production__link}
+                target={"_blank"}
+                href="/assets/documents/shashlikuz.pdf"
+              >
+                {" "}
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
             <SocialNetworks
               instagram="https://instagram.com/shashlikuz?igshid=NDk5N2NlZjQ="
               facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
@@ -83,19 +95,60 @@ export const ProductionsNew = () => {
           />
           <h3 className={styles.production__title}>AGRO-BRAVO</h3>
           <div className={styles.production__card__section}>
-            <button className={styles.production__btn}>{t("pageManufacturers.site")}</button>{" "}
-            <br />
-            <a
-              className={styles.production__link}
-              target={"_blank"}
-              href="/assets/documents/agro.pdf"
-            >
-              {" "}
-              {t("pageManufacturers.certificate")}
+            <a target="_blank" href={"https://agrobravo.uz/ru/"}>
+              <Button variant="contained" className={styles.production__btn}>
+                {t("pageManufacturers.site")}
+              </Button>
             </a>
+            <br />
+            <Button variant="contained" className={styles.production__viewBtn}>
+              <a
+                className={styles.production__link}
+                target={"_blank"}
+                href="/assets/documents/agro.pdf"
+              >
+                {" "}
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
             <SocialNetworks
               instagram=" https://instagram.com/agrobravo.uz?igshid=NDk5N2NlZjQ="
               facebook="https://www.facebook.com/agrobravo.uz?mibextid=LQQJ4d"
+              telegram="/"
+            />
+          </div>
+          <div>
+          </div>
+        </div>
+
+        <div className={styles.production__card}>
+          <Image
+            src={"/assets/img/goldenCorn.png"}
+            alt="siyob"
+            width={180}
+            height={180}
+          />
+          <h3 className={styles.production__title}>GOLDEN-CORN</h3>
+          <div className={styles.production__card__section}>
+            <a target={"_blank"} href={"https://golden-corn.uz/"}>
+              <Button variant="contained" className={styles.production__btn}>
+                {t("pageManufacturers.site")}
+              </Button>
+            </a>
+            <br />
+            <Button variant="contained" className={styles.production__viewBtn}>
+              <a
+                className={styles.production__link}
+                target={"_blank"}
+                href="/assets/documents/goldencorn.pdf"
+              >
+                {" "}
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
+            <SocialNetworks
+              instagram=" https://www.instagram.com/goldencorn_uz/"
+              facebook="https://www.facebook.com/goldencornuz/"
               telegram="/"
             />
           </div>

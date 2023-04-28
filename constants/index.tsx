@@ -122,7 +122,7 @@ export const PartnersArray: PartnersType[] = [
   {
     img: "/assets/img/partner2.png",
     alt: "img",
-    text : "Ministry of Culture and Tourism of the Republic of Uzbekistan"
+    text: "Ministry of Culture and Tourism of the Republic of Uzbekistan",
   },
   {
     img: "/assets/img/partner3.png",
@@ -139,5 +139,135 @@ export const PartnersArray: PartnersType[] = [
   {
     img: "/assets/img/partner6.png",
     alt: "img",
+  },
+  {
+    img: "/assets/img/tourism.png",
+    alt: "img",
+  },
+  {
+    img: "/assets/img/islam.png",
+    alt: "img",
+  },
+];
+
+export interface CountriesType {
+  country: string;
+  link: string;
+}
+
+export const CountriesArray: CountriesType[] = [
+  {
+    country: "Afghanistan",
+    link: "string",
+  },
+  {
+    country: "Armenia",
+    link: "string",
+  },
+  {
+    country: "Azerbaijan",
+
+    link: "string",
+  },
+  {
+    country: "Bahrain",
+
+    link: "string",
+  },
+  {
+    country: "Bangladesh",
+
+    link: "string",
+  },
+  {
+    country: "Bhutan",
+
+    link: "string",
+  },
+  {
+    country: "Brunei",
+
+    link: "string",
+  },
+  {
+    country: "Cambodia",
+
+    link: "string",
+  },
+  {
+    country: "China",
+
+    link: "string",
+  },
+  {
+    country: "Cyprus",
+
+    link: "string",
+  },
+  {
+    country: "Georgia",
+
+    link: "string",
+  },
+  {
+    country: "India",
+
+    link: "string",
+  },
+  {
+    country: "Indonesia",
+
+    link: "string",
+  },
+  {
+    country: "Iran",
+
+    link: "string",
+  },
+  {
+    country: "Iraq",
+
+    link: "string",
+  },
+  {
+    country: "Israel",
+
+    link: "string",
+  },
+  {
+    country: "Japan",
+
+    link: "string",
+  },
+  {
+    country: "Jordan",
+
+    link: "string",
+  },
+  {
+    country: "Kazakhstan",
+
+    link: "string",
+  },
+  {
+    country: "Kuwait",
+
+    link: "string",
+  },
+];
+
+export interface NewsType {
+  image: string;
+  href: string;
+  title: string;
+  description: string;
+}
+
+export const News: NewsType[] = [
+  {
+    image: "/assets/image/news.png",
+    href: "/" , 
+    title : "News Title" , 
+    description : "Charge Two Devices at the Same Time With This Magnetic Wireless Charging Dock"
   },
 ];

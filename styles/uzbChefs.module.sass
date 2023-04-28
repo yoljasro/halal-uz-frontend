@@ -1,0 +1,115 @@
+
+.cont
+    margin-bottom: 100px
+    // margin-top: -50px
+    @media (max-width:769px)
+        // margin-top: 550px
+
+    &__backgroundImg
+        // position: absolute !important
+        // // bottom: 50px !important
+        // width: 1600px !important
+        // height: 366px !important
+        // // z-index:-21 !important
+        // background-size: contain
+
+    &__chefs
+        display: flex
+        justify-content: center
+        justify-content: space-around
+        padding: 100px 80px 0px 80px
+        flex-wrap: wrap
+        gap: 20px
+        align-content: center
+        @media (max-width:769px)
+            justify-content: center
+
+        &__card
+            height: 390px
+            width: 280px
+            overflow: hidden 
+
+            &:hover &__hoverContent
+                display: flex
+                padding: auto
+                background: #000000a5
+                height: 100%
+                border-radius: 10px
+                overflow: hidden
+                border-bottom-right-radius: 102px
+                border-top-left-radius: 102px
+                @media (max-width:769px)
+                    border-bottom-left-radius: 80px
+                    border-top-right-radius: 100px
+
+            &:hover &__hoverContent2
+                display: flex
+                padding: auto
+                background: #000000a5
+                height: 100%
+                border-radius: 10px
+                border-bottom-left-radius: 100px
+                border-top-right-radius: 100px
+
+            &__hoverContent
+                align-items: center
+                display: flex
+                flex-direction: column
+                justify-content: center
+                position: relative
+                top: -395px
+                display: none
+
+                & h3
+                    font-family: ExoBold
+                    font-size: 24px
+                    font-weight: 700
+                    line-height: 36px
+                    color: #28D783
+                    text-align: center
+
+                & p
+                    font-family: ExoRegular
+                    padding-top: 20px
+                    font-size: 16px
+                    font-weight: 400
+                    color: #FFFFFFFF
+                    line-height: 28px
+                    text-align: center
+                    padding-bottom: 35px
+
+            &__hoverContent2
+                align-items: center
+                display: flex
+                flex-direction: column
+                justify-content: center
+                position: relative
+                top: -395px
+                display: none
+
+                & h3
+                    font-family: ExoBold
+                    font-size: 24px
+                    font-weight: 700
+                    line-height: 36px
+                    color: #28D783
+                    text-align: center
+
+                & p
+                    font-family: ExoRegular
+                    padding-top: 20px
+                    font-size: 16px
+                    font-weight: 400
+                    color: #FFFFFFFF
+                    line-height: 28px
+                    text-align: center
+                    padding-bottom: 35px
+
+    &__btnMore
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 50px
+        width: 100%
+        & button 
+            padding: 10px  30px !important

@@ -11,254 +11,279 @@ import { useRouter } from "next/router";
 // styles
 import styles from "./index.module.sass";
 import { MainPageTitle } from "../MainPageTitle";
-// import { restaurants } from "../../constants";
 import { SocialNetworks } from "../socialNetworks";
+import { RestaurantsModel, RestaurantsType } from "../../constants";
+import { Button } from "@mui/material";
 
 export const Restaurants: FC<any> = () => {
   const t = useTranslations();
-  const router = useRouter();
-  const [selectedLang, setSelectedLang] = useState(router.locale);
-
-  useEffect(() => {
-    if (selectedLang) {
-      router.push(router.asPath, undefined, {
-        locale: selectedLang,
-      });
-    }
-  }, [selectedLang]);
 
   return (
-    <div className={styles.cont}>
+    <div className={styles.restaurants}>
       <MainPageTitle
         subtitle={t("pageRestaurants.title")}
         description={t("pageRestaurants.information")}
       />
-      <div className={styles.cont__restaurants}>
-        <div className={styles.cont__restaurants__restaurant}>
+      <div className={styles.restaurants__cont}>
+        <div className={styles.restaurants__card}>
           <Image
-            src="/assets/img/xanAhmad.png"
-            alt="ergash meat"
-            width={620}
-            height={320}
-            className={styles.cont__restaurants__restaurant__bg}
+            className={styles.restaurants__img}
+            src={"/assets/img/xanAhmad.png"}
+            width={600}
+            height={330}
           />
-          <Image
-            src={"/assets/img/xanAhmad2.png"}
-            alt="ergash meat house"
-            width={100}
-            height={100}
-            className={styles.cont__restaurants__restaurant__img}
-          />
-          <div className={styles.cont__restaurants__restaurant__hoverContent}>
-            <h1
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__title
-              }
-            >
-              KHAN AHMAD
-            </h1>
-            <p
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__description
-              }
-            >
-              Lorem ipsum dolor sit amet consectetur.
-            </p>  
-            <SocialNetworks
-              instagram="https://www.instagram.com/khanahmad_restaurant/?igshid=NDk5N2NlZjQ%3D"
-              facebook="https://www.facebook.com/profile.php?id=100054751930596&mibextid=LQQJ4d"
-              telegram="https://t.me/KhanAhmad_restaurant"
+          <div className={styles.restaurants__logo}>
+            <Image
+              src={"/assets/img/xanAhmad2.png"}
+              alt="sarik bola"
+              width={100}
+              height={100}
             />
-            <br />
-            
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__visitBtn
-              }
+          </div>
+          <div className={styles.restaurants__content}>
+            <h1 className={styles.restaurants__title}>KHAN AHMAD</h1>
+            <p className={styles.restaurants__description}>
+              {t("pageRestaurants.ahmad")}
+            </p>
+            <Button
+              variant="contained"
+              className={styles.restaurants__certificateBtn}
             >
-              Перейти на сайт
-            </button>
-            <Link href={"/cafes/khanahmad"}>
-              <button
-                className={
-                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
+              <a target={"_blank"} href="/assets/documents/ahmad.pdf">
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
+            <div className={styles.restaurants__socialNetworks}>
+              <a
+                target={"_blank"}
+                href={
+                  "https://www.instagram.com/khanahmad_restaurant/?igshid=NDk5N2NlZjQ%3D"
                 }
               >
-                Подробнее
-              </button>
-            </Link>
+                <Image
+                  src={"/assets/img/instagram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+              <a
+                target={"_blank"}
+                href="https://www.facebook.com/profile.php?id=100054751930596&mibextid=LQQJ4d"
+              >
+                <Image
+                  src={"/assets/img/facebook.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+
+              <a target={"_blank"} href="https://t.me/KhanAhmad_restaurant">
+                <Image
+                  src={"/assets/img/telegram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className={styles.cont__restaurants__restaurant}>
-          <Image
-            src="/assets/img/appexPizza.png"
-            alt="appex pizza"
-            width={620}
-            height={320}
-            className={styles.cont__restaurants__restaurant__bg}
-          />
-          <Image
-            src={"/assets/img/apexpizza2.png"}
-            alt="appex"
-            width={100}
-            height={100}
-            className={styles.cont__restaurants__restaurant__img}
-          />
-          <div className={styles.cont__restaurants__restaurant__hoverContent}>
-            <h1
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__title
-              }
-            >
-              appexpizza
-            </h1>
-            <p
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__description
-              }
-            >
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <SocialNetworks
-              instagram="https://www.instagram.com/apexpizza.uz/?igshid=NDk5N2NlZjQ%3D"
-              facebook=" https://www.facebook.com/apexpizza.uz?mibextid=LQQJ4d"
-              telegram="/"
+         <div className={styles.restaurants__card}>
+          <Image src={"/assets/img/appex.png"} width={600} height={330} />
+          <div className={styles.restaurants__logo}>
+            <Image
+              src={"/assets/img/apexpizza2.png"}
+              alt="appex2"
+              width={100}
+              height={100}
             />
-            <br />
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__visitBtn
-              }
+          </div>
+          <div className={styles.restaurants__content}>
+            <h1 className={styles.restaurants__title}>appexpizza</h1>
+            <p className={styles.restaurants__description}>
+              {t("pageRestaurants.appex")}
+            </p>
+            <Button
+              variant="contained"
+              className={styles.restaurants__certificateBtn}
             >
-              Перейти на сайт
-            </button>
-            <Link href={"/cafes/apexpizza"}>
-              <button
-                className={
-                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
+              <a target={"_blank"} href="/assets/documents/appex.pdf">
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
+            <div className={styles.restaurants__socialNetworks}>
+              <a
+                target={"_blank"}
+                href={
+                  "https://www.instagram.com/apexpizza.uz/?igshid=NDk5N2NlZjQ%3D"
                 }
               >
-                Подробнее{" "}
-              </button>
-            </Link>
+                <Image
+                  src={"/assets/img/instagram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+              <a
+                target={"_blank"}
+                href="https://www.facebook.com/apexpizza.uz?mibextid=LQQJ4d"
+              >
+                <Image
+                  src={"/assets/img/facebook.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+
+              <a target={"_blank"} href="/">
+                <Image
+                  src={"/assets/img/telegram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className={styles.cont__restaurants__restaurant}>
+        <div className={styles.restaurants__card}>
           <Image
-            src="/assets/img/sarikbola.png"
-            alt="sarik bola"
-            width={620}
-            height={320}
-            className={styles.cont__restaurants__restaurant__bg}
+            className={styles.restaurants__img}
+            src={"/assets/img/sarikbola.png"}
+            width={600}
+            height={330}
           />
-          <Image
-            src={"/assets/img/sarikbola2.png"}
-            alt="sarik bola"
-            width={100}
-            height={100}
-            className={styles.cont__restaurants__restaurant__img}
-          />
-          <div className={styles.cont__restaurants__restaurant__hoverContent}>
-            <h1
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__title
-              }
-            >
-              SARIQ BOLA
-            </h1>
-            <p
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__description
-              }
-            >
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <SocialNetworks
-              instagram="https://www.instagram.com/sariqbola_pizza/?igshid=NDk5N2NlZjQ%3D"
-              facebook="https://www.facebook.com/sariqbolapizza/?mibextid=LQQJ4d"
-              telegram="/"
+          <div className={styles.restaurants__logo}>
+            <Image
+              src={"/assets/img/sarikbola2.png"}
+              alt="sarik bola"
+              width={100}
+              height={100}
             />
-            <br />
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__visitBtn
-              }
+          </div>
+          <div className={styles.restaurants__content}>
+            <h1 className={styles.restaurants__title}>Sariq Bola</h1>
+            <p className={styles.restaurants__description}>
+              {t("pageRestaurants.sariq")}
+            </p>
+            <Button
+              variant="contained"
+              className={styles.restaurants__certificateBtn}
             >
-              Перейти на сайт
-            </button>
-            <Link href={"/cafes/sariqbola"}>
-              <button
-                className={
-                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
+              <a target={"_blank"} href="/assets/documents/sariq.pdf">
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
+            <div className={styles.restaurants__socialNetworks}>
+              <a
+                target={"_blank"}
+                href={
+                  "https://www.instagram.com/sariqbola_pizza/?igshid=NDk5N2NlZjQ%3D"
                 }
               >
-                Подробнее{" "}
-              </button>
-            </Link>
+                <Image
+                  src={"/assets/img/instagram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+              <a
+                target={"_blank"}
+                href="https://www.facebook.com/sariqbolapizza/?mibextid=LQQJ4d"
+              >
+                <Image
+                  src={"/assets/img/facebook.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+
+              <a target={"_blank"} href="/">
+                <Image
+                  src={"/assets/img/telegram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className={styles.cont__restaurants__restaurant}>
-          <Image
-            src="/assets/img/shashlikuz.png"
-            alt="shashlik uz"
-            width={620}
-            height={320}
-            className={styles.cont__restaurants__restaurant__bg}
-          />
-          <Image
-            src={"/assets/img/shashlik.png"}
-            alt="shashlik uz"
-            width={100}
-            height={100}
-            className={styles.cont__restaurants__restaurant__img}
-          />
-          <div className={styles.cont__restaurants__restaurant__hoverContent}>
-            <h1
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__title
-              }
-            >
-              SHASHLIK UZ
-            </h1>
-            <p
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__description
-              }
-            >
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-            <SocialNetworks
-              instagram="https://www.instagram.com/shashlikuz/?igshid=NDk5N2NlZjQ%3D"
-              facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
-              telegram="https://t.me/shashlikuz_group"
+        <div className={styles.restaurants__card}>
+          <Image src={"/assets/img/shashlik.png"} width={600} height={330} />
+          <div className={styles.restaurants__logo}>
+            <Image
+              src={"/assets/img/shashlikk.png"}
+              alt="appex2"
+              width={100}
+              height={100}
             />
-            <br />
-            <button
-              className={
-                styles.cont__restaurants__restaurant__hoverContent__visitBtn
-              }
+          </div>
+          <div className={styles.restaurants__content}>
+            <h1 className={styles.restaurants__title}>Shashlik Uz</h1>
+            <p className={styles.restaurants__description}>
+              {t("pageRestaurants.shashlik")}
+            </p>
+            <Button
+              variant="contained"
+              className={styles.restaurants__certificateBtn}
             >
-              Перейти на сайт
-            </button>
-            <Link href={"/cafes/shashlik"}>
-              <button
-                className={
-                  styles.cont__restaurants__restaurant__hoverContent__moreBtn
+              <a target={"_blank"} href="/assets/documents/shashlik.pdf">
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
+            <div className={styles.restaurants__socialNetworks}>
+              <a
+                target={"_blank"}
+                href={
+                  "https://www.instagram.com/shashlikuz/?igshid=NDk5N2NlZjQ%3D"
                 }
               >
-                Подробнее{" "}
-              </button>
-            </Link>
+                <Image
+                  src={"/assets/img/instagram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+              <a
+                target={"_blank"}
+                href="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
+              >
+                <Image
+                  src={"/assets/img/facebook.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+
+              <a target={"_blank"} href="https://t.me/shashlikuz_group">
+                <Image
+                  src={"/assets/img/telegram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+            </div>
           </div>
-        </div>
+        </div>  
       </div>
-
-      <Link href="/restaurants">
-        <button className={styles.cont__btn}>Смотреть больше</button>
-      </Link>
+      <div className={styles.restaurants__moreBtn}>
+        <Link href="/nav">
+          <Button variant="contained">{t("btnMore")}</Button>
+        </Link>
+      </div>
     </div>
   );
 };

@@ -38,7 +38,7 @@ export const Partners: FC<any> = () => {
   const t = useTranslations();
 
   return (
-    <div className={styles.cont} id="partners ">
+    <div className={styles.cont} id="partners">
       <MainPageTitle subtitle="ПАРТНЁРЫ" />
       <Carousel
         className={styles.carousel}

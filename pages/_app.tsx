@@ -5,6 +5,7 @@ import { useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import Script from "next/script";
 import { Layout } from "../components/Layout";
+import NextNProgress from 'nextjs-progressbar';
 
 type PagePropsType = {
   messages: typeof import("../messages/en.json");
@@ -21,6 +22,7 @@ var x=document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);
       </Script>
 
       <Layout>
+      <NextNProgress />
         <Component {...pageProps} />
       </Layout>
     </NextIntlProvider>

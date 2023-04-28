@@ -1,4 +1,6 @@
-
+.cont
+    @media (max-width:769px)
+        // margin-bottom: 400px
 .restaurants
     display: flex
     flex-wrap: wrap
@@ -7,63 +9,74 @@
     gap: 50px
     align-items: center
     width: 100%
+    @media (max-width:769px)
+        gap: 200px
 
     &__card
         width: 100%
-        max-width: 620px
-        height: 330px
+        max-width: 600px
         background-image: url("/assets/img/xanAhmad.png")
         background-size: contain
         background-repeat: no-repeat
-        &:hover
-            // background: #3A3A38 c
+        opacity: 0.9
+        border: 2px solid aqua
+        @media (max-width:769px)
+            margin-top: 800px
         &:hover &__section
-            display: block
+    &__section
+        padding-left: 30px
+        padding-top: 250px
 
-        &__section
-            display: none
-            margin-top: 30px
-            border: none
-            z-index: 3
-        @media (max-width:1200px)
-            max-width: 500px !important
-            height: 350px
+    @media (max-width:1200px)
+        max-width: 500px
 
-        &:hover
-            border-radius: 28px
-            z-index: 1
-            // opacity: 0.5
-            // background: black
-            // background: #9f9f9f
-            background-image: linear-gradient(#05059b83,rgba(0, 0, 65, 0.548)),url(/assets/img/xamAhmad.png)
         &:nth-last-child(3)
             background-image: url("/assets/img/appex.png")
+            @media (max-width:769px)
+                // margin-top: 200px
             &:hover
-                background-image: linear-gradient(#05059b83,rgba(0, 0, 65, 0.548)),url(/assets/img/xamAhmad.png)
         &:nth-last-child(2)
             background-image: url("/assets/img/sarikbola.png")
+            @media (max-width:769px)
+                // margin-top: 200px
             &:hover
-                background-image: linear-gradient(#05059b83,rgba(0, 0, 65, 0.548)),url(/assets/img/xamAhmad.png)
         &:nth-last-child(1)
             background-image: url("/assets/img/shashlik.png")
+            @media (max-width:769px)
+                // margin-top: 500px
             &:hover
-                background-image: linear-gradient(#05059b83,rgba(0, 0, 65, 0.548)),url(/assets/img/xamAhmad.png)
     &__img
         margin-top: -40px
         margin-left: 44px
 
+    &__certificateBtn
+        margin-top: 15px
+
     &__title
         font-family: ExoBold
         font-size: 32px
-        color: #FFFFFFFF
+        color: #000000
+        @media (max-width:769px)
+            padding-top: 20px
+
+    &__socialNetworks
+        display: flex
+        gap: 20px
+        margin-top: 20px  
+        margin-bottom: 30px  
+        & img 
+            &:hover
+                transform: rotate(360deg)
+                transition: 0.3s linear
 
     &__text
         width: 100%
         max-width: 500px
         margin-top: 10px
-        color: #FFFFFFFF
-        font-family: ExoRegular
+        color: #000000d8
+        font-family: ExoBold
         font-size: 18px
+        text-shadow: 1px 1px 1px 1px yellow
         @media (max-width:1200px)
             max-width: 350px
 
@@ -106,6 +119,7 @@
         line-height: 24px
         text-align: center
         cursor: pointer
+
         @media (max-width:1200px)
             width: 100%
             max-width: 300px
@@ -113,7 +127,6 @@
     &__moreBtn
         display: flex
         justify-content: center
-        margin-top: 90px
         & button
             font-family: ExoRegular
             font-size: 24px
@@ -123,3 +136,4 @@
             border-radius: 8px
             align-items: center
             cursor: pointer
+            margin-top: 70px

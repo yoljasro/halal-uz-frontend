@@ -37,19 +37,20 @@ export const RestoranTitle: FC<RestoranTitle> = ({
   facebook,
   pdf,
 }) => {
-  const t = useTranslations()
+  const t = useTranslations();
   return (
     <div className={styles.title}>
       <h3 className={styles.title__subtitle}>{subtitle}</h3>
       <div className={styles.title__eventText}>
         <h1 className={styles.title__eventText__description}>{description}</h1>
       </div>
-      <a className={styles.title__link} href={pdf} rel={"noreferrer"} target={"_blank"}>
-        Посмотреть сертификат
-      </a>
+      <Button className={styles.title__certificateBtn} variant="outlined" >
+        <a href={pdf}></a>
+        {t("pageManufacturers.certificate")}
+      </Button>
       <h3 className={styles.title__gallery}>Галерея</h3>
 
-      <Carousel
+      {/* <Carousel
         autoplay={false}
         autoplayInterval={7000}
         animation={"fade"}
@@ -59,50 +60,52 @@ export const RestoranTitle: FC<RestoranTitle> = ({
         renderCenterLeftControls={null}
         renderBottomCenterControls={null}
         swiping={false}
-      >
+      > */}
+      <div className={styles.title__gallery}>
         <Image
           className={styles.title__img}
           src={img}
           alt="restoranImages"
-          width={1280}
-          height={480}
+          width={350}
+          height={350}
         />
-        {/* <Image
+        <Image
           className={styles.title__img}
           src={img2}
           alt="restoranImages"
-          width={1280}
-          height={480}
+          width={350}
+          height={350}
         />
         <Image
           className={styles.title__img}
           src={img3}
           alt="restoranImages"
-          width={1280}
-          height={480}
+          width={350}
+          height={350}
         />
         <Image
           className={styles.title__img}
           src={img4}
           alt="restoranImages"
-          width={1280}
-          height={480}
+          width={350}
+          height={350}
         />
         <Image
           className={styles.title__img}
           src={img5}
           alt="restoranImages"
-          width={1280}
-          height={480}
+          width={350}
+          height={350}
         />
         <Image
           className={styles.title__img}
           src={img6}
           alt="restoranImages"
-          width={1280}
-          height={480} */}
-        {/* /> */}
-      </Carousel>
+          width={350}
+          height={350}
+        />
+      </div>
+      {/* </Carousel> */}
       <p className={styles.title__social}>Ресторан в соц сетях:</p>
       <div className={styles.title__socialIcons}>
         <a href={instagram} target={"_blank"}>
@@ -123,7 +126,9 @@ export const RestoranTitle: FC<RestoranTitle> = ({
           />
         </a>
       </div>
-      <button className={styles.title__btn}>{t("pageManufacturers.site")}</button>
+      <Button className={styles.title__btn}>
+        {t("pageManufacturers.site")}
+      </Button>
     </div>
   );
 };

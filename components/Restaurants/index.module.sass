@@ -1,119 +1,77 @@
-@import ../../styles/variables, ../../styles/mixins
+.restaurants
+    justify-content: center
+    flex-wrap: wrap
 
-.cont
-    &__restaurants
+    &__cont
         display: flex
         justify-content: center
         flex-wrap: wrap
-        align-items: center
-        @media (max-width:769px)
-            flex-direction: column
+        gap: 70px
+        margin-top: 70px
 
-        &__restaurant
-            height: 320px
-            max-width: 620px
-            width: 100%
-            border-radius: 10px
-            margin-top: 72px
+    &__card
+        width: 100%
+        max-width: 600px
+        border: 2px solid aqua
+        border-radius: 12px
+
+    &__logo
+        position: relative
+        top: -400px
+        left: 44px
+        @media (max-width:769px)
+            top: -280px
+            left: 0px
             margin-left: 40px
 
+    &__content
+        margin-top: -80px
+        margin-left: 30px
+        display: flex
+        flex-direction: column
+        gap: 20px
+
+    &__title
+        font-family: ExoBold
+        font-size: 32px
+        color: #000000
+        @media (max-width:769px)
+            padding-top: 20px
+
+    &__description
+        width: 100%
+        max-width: 500px
+        margin-top: 10px
+        color: #000000d8
+        font-family: ExoBold
+        font-size: 18px
+        text-shadow: 1px 1px 1px 1px yellow
+        @media (max-width:1200px)
+            max-width: 350px
+
+    &__certificateBtn
+        width: 100%
+        max-width: 250px
+
+    &__socialNetworks
+        display: flex
+        gap: 20px
+
+        & img
             &:hover
-                transition: 1s all
+                transform: rotate(360deg)
+                transition: 0.4s linear
 
-            &:hover &__hoverContent
-                display: block !important
-
-            &__hoverContent
-                padding-left: 30px
-                padding-top: 60px
-                position: relative
-                top: -35px
-                display: none !important
-                transition: 2s all
-                position: relative
-                top: -428px
-                background: #2D2D2DCC
-                height: 320px
-                border-radius: 28px
-                max-width: 620px
-                width: 100%
-
-                &__title
-                    
-
-                &__description
-                    font-family: ExoExtraRegular
-                    font-size: 18px
-                    font-weight: 400
-                    line-height: 30px
-                    letter-spacing: 0em
-                    color: $white
-                    padding-top: 10px
-
-                & img
-                    margin-top: 20px
-                    margin-left: 15px
-                    &:hover
-                        cursor: pointer
-                        transform: scale(1.1)
-                        transform: 1s ease
-
-                    &::first-of-type
-                        margin-left: 0
-
-                &__visitBtn
-                    margin-top: 40px
-                    padding: 13px 41px
-                    border-radius: 8px
-                    border: none
-                    background: none
-                    border: 1px solid #FFFFFF
-                    font-family: ExoBold
-                    font-size: 20px
-                    font-weight: 600
-                    line-height: 24px
-                    text-align: center
-                    color: $white
-                    cursor: pointer
-
-                &__moreBtn
-                    padding: 13px 97px
-                    background: #0081C9
-                    border-radius: 8px
-                    border: none
-                    font-family: ExoBold
-                    font-size: 20px
-                    font-weight: 600
-                    line-height: 24px
-                    color: $white
-                    text-align: center
-                    margin-left: 20px
-                    cursor: pointer
-
-            &__bg
-                border-radius: 30px
-
-            &__img
-                top: -35px !important
-                left: -30px !important
-                display: none !important
-                z-index: 3 !important
-
-    &__btn
-        padding: 16px 78px
+    &__moreBtn
         display: flex
         justify-content: center
-        margin: 80px auto
-        background: rgba(61, 61, 61, 1)
-        border: none
-        border-radius: 8px
-        font-family: ExoExtraRegular
-        text-align: center
-        font-size: 24px
-        font-weight: 600
-        line-height: 29px
-        color: $white
-        cursor: pointer
-
-        &:hover
-            background: #3834b2
+        & button
+            font-family: ExoRegular
+            font-size: 24px
+            padding: 12px 70px
+            background: #3D3D3D
+            color: rgba(255, 255, 255, 1)
+            border-radius: 8px
+            align-items: center
+            cursor: pointer
+            margin-top: 70px

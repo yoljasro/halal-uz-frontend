@@ -22,6 +22,10 @@ export const Footer: FC<any> = () => {
         <p className={styles.footer__title}>{t("pageFooter.title")}</p>
         <div className={styles.footer__address}>
           <p>{t("pageFooter.address")}</p>
+          <p>{t("pageFooter.street")}</p>
+          <p>{t("pageFooter.phone")}</p>
+          <p>{t("pageFooter.email")}</p>
+
         </div>
         <div className={styles.footer__social}>
           <a

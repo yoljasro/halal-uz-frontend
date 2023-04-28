@@ -5,20 +5,32 @@ import styles from "../styles/nav.module.sass";
 // next
 import { GetStaticProps } from "next";
 import { useTranslations } from "next-intl";
+import { Countries } from "../components/Countries";
+import { MainPageTitle } from "../components/MainPageTitle";
+import Head from "next/head";
 
 const Header: FC<any> = () => {
   const t = useTranslations();
   return (
-    <div className={styles.header}>
-      <div className={styles.header__card}>
-        <div className={styles.header__card__img}>
-               <img src={"/assets/img/xanAhmad.png"} alt="img" /> 
-        </div>
-        <div className={styles.header__section}>
-          <h1>Title</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing s alias fuga!</p>
-          <button>See More</button>
-        </div>
+    <div className={styles.cont}>
+      <Head>
+        <title>Countries: </title>
+        <meta
+          name="description"
+          content="Halal.uz Halol sertifikatini beruvchi kom  paniya rasmiy web sayti"
+        />
+        <meta
+          name="google-site-verification"
+          content="Pi7kisuljjOmFbBlvmk-S8DASJP-WbIGUQ1ERs9XwS4"
+        />
+        <link rel="icon" href="/assets/img/logo.svg" />
+      </Head>
+      <MainPageTitle
+        subtitle="Халяльные рестораны в странах мира"
+        description="Здесь вы можете увидеть сертифицированные халяль рестораны по всему миру"
+      />
+      <div>
+        <Countries link={"/restaurants"} />
       </div>
     </div>
   );

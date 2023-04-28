@@ -6,22 +6,24 @@
     background-image: url("/assets/img/headerBg.png")
     background-repeat: no-repeat
     background-size: cover
-    padding: 100px 80px
-    justify-content: center
+    padding: 50px 10px
+    justify-content: space-between
+    @media (max-width:1000px)
+        flex-direction: column
 
     &__info
         max-height: 419px
         height: 100vh
-        backdrop-filter: blur(10px)
+        // backdrop-filter: blur(10px)
         max-width: 674px
         width: 100%
         border-radius: 10px
         padding-left: 40px
-        background: #4E4E4E99
+        // background: 
+        // border: 1px solid aqua
         @media (max-width:769px)
-            max-height: 400px
+            max-height: 410px
             min-width: 380px
-            
 
     &__title
         font-family: ExoBold
@@ -33,14 +35,16 @@
             font-size: 35px
 
         & span
-            color: #FFFFFF
+            color: #00E376
 
     &__description
         font-family: ExoExtraLight
         font-size: 22px
-        font-weight: 400
+        font-weight: 500
         line-height: 30px
-        color: #FFFFFF
+        color: #3D3D3D
+        width: 100%
+        max-width: 600px
         padding-top: 20px
         @media (max-width:769px)
             font-size: 19px
@@ -73,12 +77,11 @@
         @media (max-width:1250px)
             margin-top: 30px
         @media (max-width:769px)
+            margin: 0
             display: none
-        // top: 300px
-        // left: 300px
 
     &__address
-        background: #2F2F2F 
+        background: #2F2F2F
         font-family: ExoBold
         line-height: 36px
         text-align: center

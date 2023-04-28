@@ -1,14 +1,14 @@
 {
   "members": "Members",
   "restaurants": "Restaurants",
-  "productive": "Productive",
+  "productive": "Manufacturers",
   "chef": "Chef",
   "partners": "Partners",
   "main": "Main",
-  "our": "About us",
+  "our": "About Us",
   "map": "Halal Guide",
-  "address" :"Center of Islamic Civilization" , 
-  "location" : "Tashkent" ,
+  "address": "Center of Islamic Civilization",
+  "location": "Tashkent",
 
   "aboutUs": "About us",
   "aboutUsInformation": "We are the World Halal Committee (WHC) ",
@@ -22,19 +22,21 @@
     "ourMembers": "OUR MEMBERS",
     "chefSHalal": "HALAL CHEF",
     "manufacturers": "MANUFACTURERS",
-    "siyob": ""
+    "siyob": "",
+    "news": "News",
+    "hotels": "Hotels"
   },
 
   "pageRestaurants": {
     "title": "HALAL RESTAURANTS",
     "information": "In this section, you can get acquainted with catering establishments that have received the Halal certificate",
-    "btnmore": "See more" , 
-    "ahmad" : "Premium restaurant of Turkish cuisine, on the main street of Samarkand.",
-    "appex" : "Halal Network of Pizzerias in the city of Tashkent. Fast, tasty and cheap" , 
-    "nihol" : "Family Restaurant of Uzbek Cuisine, Halal products and high quality" ,
-    "sariq" : "The network of Pizzerias of the Famous Artist - Jakhongir Khazhaev - Sarik Bola - Halal Pizza." , 
-    "shashlik" : "Restaurant chain in Samarkand. Juicy and Halal Kebabs are waiting for you" ,
-    "karadeniz" : "Turkish restaurant in the elite district of Tashkent. Halal Dishes from Turkish Chef"
+    "btnmore": "See more",
+    "ahmad": "Premium restaurant of Turkish cuisine, on the main street of Samarkand.",
+    "appex": "Halal Network of Pizzerias in the city of Tashkent. Fast, tasty and cheap",
+    "nihol": "Family Restaurant of Uzbek Cuisine, Halal products and high quality",
+    "sariq": "The network of Pizzerias of the Famous Artist - Jakhongir Khazhaev - Sarik Bola - Halal Pizza.",
+    "shashlik": "Restaurant chain in Samarkand. Juicy and Halal Kebabs are waiting for you",
+    "karadeniz": "Turkish restaurant in the elite district of Tashkent. Halal Dishes from Turkish Chef"
   },
 
   "pageManufacturers": {
@@ -42,9 +44,9 @@
     "information": "Here are the food manufacturers that have received the Halal certificate",
     "siyob": "SIYOB FERMA",
     "shashlik": "SHASHLIKUZ",
-    "agro": "AGRO-BRAVO" , 
-    "certificate" : "View certificate"   ,
-    "site" : "Visit the site"
+    "agro": "AGRO-BRAVO",
+    "certificate": "View certificate",
+    "site": "Visit the site"
   },
 
   "pageHalalChef": {
@@ -85,7 +87,10 @@
 
   "pageFooter": {
     "title": "CONTACTS",
-    "address": "JV «WORLD HALAL COMMITTEE», Address: Uzbekistan, Tashkent, Mirzo-Ulugbek district, st. Altyntepa 354 Tel: +998 71 266-77-78, +998 71 266-78-00 Email Mail: committeehalal@gmail.com",
+    "address": "JV «WORLD HALAL COMMITTEE»,   ",
+    "street": "Address: Uzbekistan, Tashkent, Mirzo-Ulugbek district, st. Altyntepa 354",
+    "phone": "Tel: +998 71 266-77-78, +998 71 266-78-00",
+    "email": "Email : committeehalal@gmail.com",
     "workingMode": "Working mode:",
     "workingModeInformation": "Mon - Fri, 09:00 - 18:00",
     "our": "About Us",
@@ -94,16 +99,24 @@
     "chefSHalal": "Halal chef",
     "guide": "Halal Guide",
     "questions": "Frequently asked Questions",
-    "apply": "Submit an application" , 
-    "faq" : "FAQ"
+    "apply": "Submit an application",
+    "faq": "FAQ"
   },
 
   "pageAboutUs": {
     "title": "ABOUT US",
     "information": "About Us - The World Platform for Islamic Culinary Communities (WICS) was founded by culinary associations from 22 Islamic countries on May 13, 2017 in Istanbul, Turkey. In 2019, the World Halal Committee (WHC) was founded under WICS.",
-    "tourist" : " WHC - certifies tourist facilities, catering establishments, as well as food producers - based on the Holy Quran and international standards." ,
+    "tourist": " WHC - certifies tourist facilities, catering establishments, as well as food producers - based on the Holy Quran and international standards.",
     "document": "Below you can see the documents confirming our activities.",
-    "viewDocument": "Viewing Documents"
+    "viewDocument": "Viewing Documents",
+    "location": "Our Location",
+    "command": "Our command" , 
+    "map" : "Open in map" , 
+    "process": "The process of obtaining a certificate"  , 
+    "russianCharter" : " Regulation  Russian" , 
+    "englishCharter" : " Regulation  English" , 
+    "uzbekCharter" : "Regulation Uzbek" ,
+    "vertification" : "  verification requirements" 
   },
 
   "pageHalalGuide": {
@@ -115,8 +128,16 @@
   "mainC": {
     "company": "WORLDWIDE HALAL  COMMITTEE",
     "w": "(WICS)",
-    "btn" : "Submit an application" ,
-    "request" : "Submit your application:" , 
-    "requestDesc" : "In this section, you can leave a request, our staff will contact you, advise you, answer your questions and help you in obtaining the Halal Certificate."
+    "btn": "Submit an application",
+    "request": "Submit your application:",
+    "requestDesc": "In this section, you can leave a request, our staff will contact you, advise you, answer your questions and help you in obtaining the Halal Certificate."
+  },
+  "faq": {
+    "certificate": " What is Halal Certificate",
+    "certificateText": "  A certificate confirming that a particular product is approved for use.",
+    "get": "How can I get a Halal Certificate -",
+    "getText": "   It is necessary to comply with all the norms and requirements of the Holy Quran, as well as comply with international standards",
+    "take": "To whom is the Halal Certificate issued?ь",
+    "takeText": "  Tourist facilities, catering establishments and food manufacturers."
   }
 }

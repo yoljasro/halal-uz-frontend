@@ -1,0 +1,57 @@
+.news
+    margin-top: -130px
+    margin-bottom: 200px
+    @media (max-width:769px)
+        margin-top: 50px
+        // margin-bottom: 50px
+
+    &__content
+        display: flex
+        justify-content: center
+        flex-direction: column
+        width: 100%
+        align-items: center
+        align-content: center
+        margin-top: 50px
+        gap: 45px
+
+    &__card
+        width: 90%
+        display: flex
+        gap: 30px
+        cursor: pointer
+        @media (max-width:769px)
+            flex-direction: column
+
+    &__title
+        font-family: ExoBold
+        color: #00E376
+        font-size: 25px
+        font-weight: 700
+        letter-spacing: 0em
+        text-align: left
+        max-width: 700px
+        width: 100%
+
+    &__image
+        border-radius: 10px !important
+
+    &__description
+        max-width: 700px
+        width: 100%
+        padding-top: 20px
+        font-family: ExoRegular
+        font-size: 20px
+        font-weight: 400
+        line-height: 20px
+
+    &__date
+        padding-top: 20px
+        font-family: ExoBold
+
+    &__btn
+        margin-top: 40px !important
+        background: blue !important
+        color: white !important
+        width: 100% !important
+        max-width: 150px !important

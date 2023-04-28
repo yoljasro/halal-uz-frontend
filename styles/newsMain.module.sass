@@ -1,0 +1,55 @@
+.newsMain
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    width: 100%
+    align-items: center
+    align-content: center
+    flex-direction: column
+    gap: 30px
+    margin-top: 80px
+    margin-bottom: 30px
+    @media (max-width:769px)
+        margin-top: 140px
+
+    &__image
+        border-radius: 15px !important
+        width: 90% !important
+
+    &__title
+        font-family: ExoBold
+        color: #00E376
+        font-size: 25px
+        font-weight: 700
+        padding-bottom: 20px
+        text-align: center
+
+    &__images
+        display: flex
+        gap: 50px
+        flex-wrap: wrap
+        justify-content: center
+
+        & img
+            // object-fit: contain !important
+            &:hover
+                transform: scale(1.3)
+                transition: 0.3s linear
+
+
+    &__text
+        width: 90%
+        display: flex
+        justify-content: center
+        align-items: center
+        align-content: center
+        @media (max-width:769px)
+            width: 100%
+
+    &__description
+        padding-top: 20px
+        font-family: ExoRegular
+        font-size: 20px
+        font-weight: 400
+        line-height: 25px
+        text-align: center

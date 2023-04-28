@@ -9,11 +9,28 @@ import Typography from "@mui/material/Typography";
 import styles from "../styles/faq.module.sass";
 // next
 import type { NextPage, GetStaticProps } from "next";
+// router intl
+import { useTranslations } from "next-intl";
 import { MainPageTitle } from "../components/MainPageTitle";
+import Head from "next/head";
 
 const FAQ = () => {
+  const t = useTranslations();
+
   return (
     <div className={styles.cont}>
+      <Head>
+        <title>About Halal </title>
+        <meta
+          name="description"
+          content="Halal.uz Halol sertifikatini beruvchi kom  paniya rasmiy web sayti"
+        />
+        <meta
+          name="google-site-verification"
+          content="Pi7kisuljjOmFbBlvmk-S8DASJP-WbIGUQ1ERs9XwS4"
+        />
+        <link rel="icon" href="/assets/img/logo.svg" />
+      </Head>
       <MainPageTitle subtitle="Часто задаваемые вопросы" />
       <Accordion
         sx={{
@@ -23,14 +40,24 @@ const FAQ = () => {
       >
         <AccordionSummary aria-controls="panel1a-content" id="panel1a-header">
           <Typography className={styles.cont__title}>
-            Что такое Халяль Сертификат
+            {t("faq.certificate")}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Сертификат подтверждающие о том, что тот или иной продукт разрешен к
-            употреблению.
-          </Typography>
+          <Typography>{t("faq.certificateText")}</Typography>
+        </AccordionDetails>
+      </Accordion>
+      <Accordion
+        sx={{
+          width: "100%",
+          maxWidth: "700px",
+        }}
+      >
+        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
+          <Typography className={styles.cont__title}>{t("faq.get")}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography>{t("faq.getText")}</Typography>
         </AccordionDetails>
       </Accordion>
       <Accordion
@@ -41,32 +68,11 @@ const FAQ = () => {
       >
         <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
           <Typography className={styles.cont__title}>
-            Как можно получить Сертификат Халяль -
+            {t("faq.take")}
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
-          <Typography>
-            Нужно соответствовать всем нормам и требованиям священного <br />{" "}
-            корана а также соответствовать международным стандартам
-          </Typography>
-        </AccordionDetails>
-      </Accordion>
-      <Accordion
-        sx={{
-          width: "100%",
-          maxWidth: "700px",
-        }}
-      >
-        <AccordionSummary aria-controls="panel2a-content" id="panel2a-header">
-          <Typography className={styles.cont__title}>
-            Кому выдается Сертификат Халяль
-          </Typography>
-        </AccordionSummary>
-        <AccordionDetails>
-          <Typography>
-            Туристическим объектам, Заведениям общественного питания а также
-            производителям продуктов питания.
-          </Typography>
+          <Typography>{t("faq.takeText")}</Typography>
         </AccordionDetails>
       </Accordion>
     </div>

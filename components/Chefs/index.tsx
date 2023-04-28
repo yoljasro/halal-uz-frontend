@@ -12,6 +12,7 @@ import { useRouter } from "next/router";
 import styles from "./index.module.sass";
 import { MainPageTitle } from "../MainPageTitle";
 import { SocialNetworks } from "../socialNetworks";
+import { Button } from "@mui/material";
 
 export const Chefs: FC<any> = ({ props }) => {
   const t = useTranslations();
@@ -92,13 +93,11 @@ export const Chefs: FC<any> = ({ props }) => {
             />
           </div>
         </div>
-        {/* <Image
-          className={styles.cont__backgroundImg}
-          src="/assets/img/chefBG.png"
-          alt="chefBg"
-          width={1440}
-          height={206}
-        /> */}
+      </div>
+      <div className={styles.cont__btnMore}>
+        <Link href="/chefs">
+          <Button variant="contained">{t("btnMore")}</Button>
+        </Link>
       </div>
     </div>
   );
