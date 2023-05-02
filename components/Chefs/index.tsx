@@ -38,6 +38,11 @@ export const Chefs: FC<any> = ({ props }) => {
               facebook="https://www.facebook.com/fathulla.khan.796?mibextid=LQQJ4d"
               telegram="@Fathullakhan_001"
             />
+            <a target={'_blank'} rel="noreferrer" href="assets/documents/halal1.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -56,6 +61,11 @@ export const Chefs: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
+             <a target={'_blank'} rel="noreferrer" href="assets/documents/halal1.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -73,6 +83,11 @@ export const Chefs: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
+            <a target={'_blank'} rel="noreferrer" href="assets/documents/halal1.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -91,6 +106,11 @@ export const Chefs: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
+            <a target={'_blank'} rel="noreferrer" href="assets/documents/halal1.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
           </div>
         </div>
       </div>

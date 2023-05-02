@@ -7,7 +7,7 @@ import type { NextPage, GetStaticProps } from "next";
 // import { UserInfo } from "../components/UserInfo";
 import styles from "../styles/Home.module.sass";
 import { useRouter } from "next/router";
-import { Header } from "../components/Header"; 
+import { Header } from "../components/Header";
 import { Partners } from "../components/Partners";
 import { Footer } from "../components/Footer";
 import { Members } from "../components/Members";
@@ -25,39 +25,39 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <div>
-      </div>
+      <div></div>
       <Head>
-
         <title>Halal.uz </title>
         <meta
-          name="description"
-          content="Halal.uz Halol sertifikatini beruvchi kom  paniya rasmiy web sayti"
+          name="Halol sertifikati"
+          content=" Halol sertifikatini beruvchi kompaniya rasmiy web sayti"
         />
-<meta name="google-site-verification" content="Pi7kisuljjOmFbBlvmk-S8DASJP-WbIGUQ1ERs9XwS4" />
+        <meta
+          name="google-site-verification"
+          content="Pi7kisuljjOmFbBlvmk-S8DASJP-WbIGUQ1ERs9XwS4"
+        />
         <link rel="icon" href="/assets/img/logo.svg" />
-      </Head> 
+      </Head>
       {/* <UserInfo /> */}
-      <Navbar /> 
-       <Header/>  
-       {/* <Travels/> */}
+      <Navbar />
+      <Header />
+      {/* <Travels/> */}
       {/* <Restaurants/> */}
       {/* <NewRes/> */}
-      <Restaurants/>
+      <Restaurants />
       {/* <Productions/> */}
-      <ProductionsNew/>
-      <Chefs/>
-       <Members/>
-       <Partners/>    
+      <ProductionsNew />
+      <Chefs />
+      <Members />
+      <Partners />
     </div>
   );
 }
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
-      props: {
-          messages: (await import(`../messages/${locale}.json`)).default
-      }
-  }
-}
-
+    props: {
+      messages: (await import(`../messages/${locale}.json`)).default,
+    },
+  };
+};

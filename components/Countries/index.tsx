@@ -109,18 +109,18 @@ export const Countries: FC<LinkType> = ({ link, azerbajan , saudia }) => {
               <a rel="noreferrer" href={azerbajan} target="_blank" className={styles.cont__link}>
                 <div className={styles.cont__card}>Azerbajan</div>
               </a>
-              <div className={styles.cont__card}>India</div>
-              <div className={styles.cont__card}>China</div>
-              <div className={styles.cont__card}>BAA</div>
-              <div className={styles.cont__card}>Krgzstan</div>
-              <div className={styles.cont__card}>Kazakstan</div>
-              <div className={styles.cont__card}>Qatar</div>
-              <div className={styles.cont__card}>Singapore</div>
-              <div className={styles.cont__card}>Turkey</div>
-              <div className={styles.cont__card}>Filippin</div>
-              <div className={styles.cont__card}>Ukraine</div>
-              <div className={styles.cont__card}>Bahrayn</div>
-              <div className={styles.cont__card}>Korea</div>
+              <div className={styles.cont__card}>Kazakhstan</div>
+              <div className={styles.cont__card}>Kyrgyzstan</div>
+              <div className={styles.cont__card}>Morocco</div>
+              <div className={styles.cont__card}>Nigeria</div>
+              <div className={styles.cont__card}>Malaysia</div>
+              <div className={styles.cont__card}>Pakistan</div>
+              <div className={styles.cont__card}>Livan</div>
+              <div className={styles.cont__card}>Jordan</div>
+              <div className={styles.cont__card}>Bangladesh</div>
+              <div className={styles.cont__card}>Gambia</div>
+              <div className={styles.cont__card}>Katar</div>
+              <div className={styles.cont__card}>Egypt</div>
             </div>
           </TabPanel>
           <TabPanel value={value} index={1} dir={theme.direction}>

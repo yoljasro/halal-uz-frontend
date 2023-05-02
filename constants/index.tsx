@@ -112,25 +112,30 @@ export interface PartnersType {
   img: string;
   alt: string;
   text?: string;
+  href?: string;
 }
 
 export const PartnersArray: PartnersType[] = [
   {
     img: "/assets/img/partner1.png",
     alt: "img",
+    href: "http://www.wicsglobal.org"
   },
   {
     img: "/assets/img/partner2.png",
     alt: "img",
     text: "Ministry of Culture and Tourism of the Republic of Uzbekistan",
+    href: "https://uzbektourism.uz"
   },
   {
     img: "/assets/img/partner3.png",
     alt: "img",
+    href: 'http://chefs.uz'
   },
   {
     img: "/assets/img/partner4.png",
     alt: "img",
+    href: "https://worldchefs.org"
   },
   {
     img: "/assets/img/partner5.png",
@@ -139,6 +144,7 @@ export const PartnersArray: PartnersType[] = [
   {
     img: "/assets/img/partner6.png",
     alt: "img",
+    href: "https://wfrs.rest/"
   },
   {
     img: "/assets/img/tourism.png",
@@ -147,6 +153,7 @@ export const PartnersArray: PartnersType[] = [
   {
     img: "/assets/img/islam.png",
     alt: "img",
+    href: "https://www.cisc.uz" 
   },
 ];
 

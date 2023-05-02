@@ -12,10 +12,16 @@
         object-fit: contain !important
         image-orientation: flip
         background-size: contain
+        width: 100%
+        &:hover
+            transform: scale(0.9)
+            cursor: pointer
+            transition: 0.2s linear
 
     &__text
         font-family: ExoBold
-        font-size: 16px
+        font-size: 15px
         line-height: 25px
         text-align: center
+        padding-right: 30px
         color: #001A63

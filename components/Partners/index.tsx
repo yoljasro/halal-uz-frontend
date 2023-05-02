@@ -6,7 +6,7 @@ import Image from "next/image";
 import React, { FC, ChangeEventHandler, useState, useEffect } from "react";
 // next intl
 import { useTranslations } from "next-intl";
-// carousel 
+// carousel
 import Carousel from "react-multi-carousel";
 // router
 import { useRouter } from "next/router";
@@ -58,20 +58,22 @@ export const Partners: FC<any> = () => {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-      {PartnersArray.map((partner: PartnersType) => {
-        return (
-          <div className={styles.partner} key={partner.alt}>
-            <Image
-            className={styles.partner__img}
-              src={partner.img}
-              width={120}
-              height={120}
-              alt={partner.alt}
-            />
-            <p className={styles.partner__text}>{partner.text}</p>
-          </div>
-        );
-      })}
+        {PartnersArray.map((partner: PartnersType) => {
+          return (
+            <div className={styles.partner} key={partner.alt}>
+              <a target={"_blank"} rel="noreferrer" href={partner.href}>
+                <Image
+                  className={styles.partner__img}
+                  src={partner.img}
+                  width={120}
+                  height={120}
+                  alt={partner.alt}
+                />
+              </a>
+              <p className={styles.partner__text}>{partner.text}</p>
+            </div>
+          );
+        })}
       </Carousel>
     </div>
   );

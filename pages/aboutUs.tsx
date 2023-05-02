@@ -96,21 +96,6 @@ const AboutUs: FC<any> = () => {
           </Button>
         </div>
 
-        <div className={styles.cont__chefsUz}>
-          <MainPageTitle
-            subtitle="Our Partner web site"
-            description="The official website of the Association of Cooks of Uzbekistan"
-          />
-          <a rel="noreferrer" target="_blank" href="http://chefs.uz/">
-          <Image alt='image' src={'/assets/img/cookersLogo.png'} width={150} height={150} />
-          </a>
-          <Button variant="contained">
-            {" "}
-            <a rel="noreferrer" target="_blank" href="http://chefs.uz/">
-              {t("pageManufacturers.site")}
-            </a>
-          </Button>
-        </div>
         <div className={styles.cont__contact}>
           <h3>{t("pageFooter.title")}</h3>
         </div>
@@ -191,76 +176,65 @@ const AboutUs: FC<any> = () => {
         <div className={styles.cont__commands}>
           <div className={styles.cont__card}>
             <Image alt='image'
-              src={"/assets/img/commandone.png"}
-              width={200}
-              height={300}
-            />
-            <h3 className={styles.cont__card__name}>Акбар Умаров</h3>
-            <p className={styles.cont__card__description}> Qomita raisi</p>
-          </div>
-          <div className={styles.cont__card}>
-            <Image alt='image'
-              src={"/assets/img/commandtwo.png"}
+              src={"/assets/img/rais.png"}
               width={200}
               height={300}
             />
             <h3 className={styles.cont__card__name}>Akbar Umarov</h3>
-            <p className={styles.cont__card__description}>Rais Orinbosari</p>
+            <p className={styles.cont__card__description}> Rais</p>
           </div>
           <div className={styles.cont__card}>
-            <Image alt='image' src={"/assets/img/command1.png"} width={200} height={400} />
-            <h3 className={styles.cont__card__name}>Акбар Умаров</h3>
-            <p className={styles.cont__card__description}>Lavozim</p>
+          <Image alt='image' src={"/assets/img/botirbek.jpg"} width={200} height={300} />
+            <h3 className={styles.cont__card__name}>Botir Mirzagaliyev</h3>
+            <p className={styles.cont__card__description}>Rais orinbosari</p>
           </div>
           <div className={styles.cont__card}>
-            <Image alt='image' src={"/assets/img/command2.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Акбар Умаров</h3>
-            <p className={styles.cont__card__description}>Lavozim</p>
+          <Image alt='image'
+              src={"/assets/img/tolibaka.png"}
+              width={200}
+              height={300}
+            />
+            <h3 className={styles.cont__card__name}>Umaraliyev Tolibjon</h3>
+            <p className={styles.cont__card__description}> Xalqaro auditor</p>
           </div>
           <div className={styles.cont__card}>
-            <Image alt='image' src={"/assets/img/command01.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Full-name</h3>
-            <p className={styles.cont__card__description}>Lavozim</p>
+          <Image alt='image' src={"/assets/img/command02.png"} width={200} height={300} />
+            <h3 className={styles.cont__card__name}>Adilov Abduhalil</h3>
+            <p className={styles.cont__card__description}>Regional Director</p>
           </div>
           <div className={styles.cont__card}>
-            <Image alt='image' src={"/assets/img/command5.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Full-name</h3>
-            <p className={styles.cont__card__description}>Lavozim</p>
+          <Image alt='image' src={"/assets/img/command04.png"} width={200} height={300} />
+            <h3 className={styles.cont__card__name}>Al-Zaben Alina </h3>
+            <p className={styles.cont__card__description}>Secretary</p>
           </div>
           <div className={styles.cont__card}>
-            <Image alt='image' src={"/assets/img/command6.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Full-name</h3>
-            <p className={styles.cont__card__description}>Lavozim</p>
+          <Image alt='image' src={"/assets/img/davron.png"} width={200} height={300} />
+            <h3 className={styles.cont__card__name}>Davron Salimov </h3>
+            <p className={styles.cont__card__description}>Cordinator</p>
           </div>
           <div className={styles.cont__card}>
-            <Image alt='image' src={"/assets/img/command04.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Full-name</h3>
-            <p className={styles.cont__card__description}>Lavozim</p>
+          <Image alt='image' src={"/assets/img/command2.png"} width={200} height={300} />
+            <h3 className={styles.cont__card__name}>Akhmad Khamdamov</h3>
+            <p className={styles.cont__card__description}>Halal Chef</p>
+          </div>
+          <div className={styles.cont__card}>
+          <Image alt='image' src={"/assets/img/command6.png"} width={200} height={300} />
+            <h3 className={styles.cont__card__name}>Mirbabaev Elyorbek</h3>
+            <p className={styles.cont__card__description}>Halal Chef</p>
+
+          </div>
+          <div className={styles.cont__card}>
+          <Image alt='image' src={"/assets/img/command5.png"} width={200} height={300} />
+            <h3 className={styles.cont__card__name}>Ruziboyev Azamat</h3>
+            <p className={styles.cont__card__description}>Halal Chef</p>
+          </div>
+          
+          <div className={styles.cont__card}>
+          <Image alt='image' src={"/assets/img/command1.png"} width={200} height={400} />
+            <h3 className={styles.cont__card__name}>Tulaganova Umriniso </h3>
+            <p className={styles.cont__card__description}>Lady Halal chef</p>
           </div>
 
-          <div className={styles.cont__card}>
-            <Image alt='image' src={"/assets/img/command01.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Full-name</h3>
-            <p className={styles.cont__card__description}>Lavozim</p>
-          </div>
-
-          <div className={styles.cont__card}>
-            <Image alt='image' src={"/assets/img/command02.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Full-name</h3>
-            <p className={styles.cont__card__description}>Lavozim</p>
-          </div>
-
-          <div className={styles.cont__card}>
-            <Image alt='image' src={"/assets/img/command03.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Full-name</h3>
-            <p className={styles.cont__card__description}>Lavozim</p>
-          </div>
-
-          <div className={styles.cont__card}>
-            <Image alt='image' src={"/assets/img/command04.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Full-name</h3>
-            <p className={styles.cont__card__description}>Lavozim</p>
-          </div>
         </div>
       </div>
     </div>

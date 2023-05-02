@@ -25,10 +25,10 @@ export const Footer: FC<any> = () => {
           <p>{t("pageFooter.street")}</p>
           <p>{t("pageFooter.phone")}</p>
           <p>{t("pageFooter.email")}</p>
-
         </div>
         <div className={styles.footer__social}>
-          <a rel="noreferrer"
+          <a
+            rel="noreferrer"
             href={"https://instagram.com/world.halal?igshid=YmMyMTA2M2Y"}
             target="_blank"
           >
@@ -39,7 +39,8 @@ export const Footer: FC<any> = () => {
               height={45}
             />
           </a>
-          <a rel="noreferrer"
+          <a
+            rel="noreferrer"
             href={
               "https://www.facebook.com/WorldHalalCommittee?mibextid=LQQJ4d"
             }
@@ -73,7 +74,11 @@ export const Footer: FC<any> = () => {
         <p className={styles.footer__plan}>
           {t("pageFooter.workingModeInformation")}
         </p>
+        <div className={styles.footer__reserved}>
+          <p>All rights reserved</p>
+        </div>
       </div>
+      
       <div className={styles.footer__section}>
         <ul>
           <Link rel="noreferrer" href="/">
