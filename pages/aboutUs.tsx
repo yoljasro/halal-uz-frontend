@@ -184,7 +184,7 @@ const AboutUs: FC<any> = () => {
             <p className={styles.cont__card__description}> Rais</p>
           </div>
           <div className={styles.cont__card}>
-          <Image alt='image' src={"/assets/img/botirbek.jpg"} width={200} height={300} />
+          <Image alt='image' src={"/assets/img/botirbek.png"} width={200} height={300} />
             <h3 className={styles.cont__card__name}>Botir Mirzagaliyev</h3>
             <p className={styles.cont__card__description}>Rais orinbosari</p>
           </div>
