@@ -38,7 +38,7 @@ export const Chefs: FC<any> = ({ props }) => {
               facebook="https://www.facebook.com/fathulla.khan.796?mibextid=LQQJ4d"
               telegram="@Fathullakhan_001"
             />
-            <a target={'_blank'} rel="noreferrer" href="assets/documents/halal1.pdf">
+            <a target={'_blank'} rel="noreferrer" href="assets/documents/fatxulla.pdf">
               <Button className={styles.cont__certificateBtn} variant="contained">
                 {t("pageManufacturers.certificate")}
               </Button>
@@ -61,7 +61,7 @@ export const Chefs: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
-             <a target={'_blank'} rel="noreferrer" href="assets/documents/halal1.pdf">
+             <a target={'_blank'} rel="noreferrer" href="assets/documents/muzaffar.pdf">
               <Button className={styles.cont__certificateBtn} variant="contained">
                 {t("pageManufacturers.certificate")}
               </Button>
@@ -83,7 +83,7 @@ export const Chefs: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
-            <a target={'_blank'} rel="noreferrer" href="assets/documents/halal1.pdf">
+            <a target={'_blank'} rel="noreferrer" href="assets/documents/doniyor.pdf">
               <Button className={styles.cont__certificateBtn} variant="contained">
                 {t("pageManufacturers.certificate")}
               </Button>
@@ -106,7 +106,7 @@ export const Chefs: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
-            <a target={'_blank'} rel="noreferrer" href="assets/documents/halal1.pdf">
+            <a target={'_blank'} rel="noreferrer" href="assets/documents/akmal.pdf">
               <Button className={styles.cont__certificateBtn} variant="contained">
                 {t("pageManufacturers.certificate")}
               </Button>

@@ -116,7 +116,15 @@
     "russianCharter" : "Устав на русском" , 
     "englishCharter" : "Устав на английском" , 
     "uzbekCharter" : "На узбекском" , 
-    "vertification" : " Требования Халяльной верификации"
+    "vertification" : " Требования Халяльной верификации" , 
+    "command1" : "Председатель" , 
+    "command2" : "Заместитель председателя" , 
+    "command3" : "Международный аудитор" , 
+    "command4" : "Региональный директор" , 
+    "command5" : "Секретарь" , 
+    "command6" : "Координатор" , 
+     "halalChef" : "Halal Chef" , 
+     "lady" : "Lady Halal Chef"
   },
 
   "pageHalalGuide": {

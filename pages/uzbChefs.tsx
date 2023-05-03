@@ -52,6 +52,11 @@ const UzbChefs: FC<any> = ({ props }) => {
               facebook="https://www.facebook.com/fathulla.khan.796?mibextid=LQQJ4d"
               telegram="@Fathullakhan_001"
             />
+             <a target={'_blank'} rel="noreferrer" href="assets/documents/fatxulla.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -70,6 +75,11 @@ const UzbChefs: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
+             <a target={'_blank'} rel="noreferrer" href="assets/documents/muzaffar.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -87,6 +97,11 @@ const UzbChefs: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
+             <a target={'_blank'} rel="noreferrer" href="assets/documents/doniyor.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -105,9 +120,84 @@ const UzbChefs: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
+             <a target={'_blank'} rel="noreferrer" href="assets/documents/akmal.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
           </div>
         </div>
+
+        <div className={styles.cont__chefs__card}>
+          <Image
+            src="/assets/img/command2.png"
+            width={280}
+            height={390}
+            alt="chef1"
+          />
+          <div className={styles.cont__chefs__card__hoverContent}>
+            <h3>Akhmad Khamdamov</h3>
+            <SocialNetworks
+              instagram=" https://instagram.com/fathullakhan_?igshid=NDk5N2NlZjQ="
+              facebook="https://www.facebook.com/fathulla.khan.796?mibextid=LQQJ4d"
+              telegram="@Fathullakhan_001"
+            />
+             <a target={'_blank'} rel="noreferrer" href="assets/documents/ahmad.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
+          </div>
+        </div>
+
+        <div className={styles.cont__chefs__card}>
+          <Image
+            src="/assets/img/command4.png"
+            width={280}
+            height={390}
+            alt="chef2"
+          />
+
+          <div className={styles.cont__chefs__card__hoverContent2}>
+            <h3>Mirbabaev Elyorbek</h3>
+            <SocialNetworks
+              instagram=""
+              facebook="/"
+              telegram="/"
+            />
+             <a target={'_blank'} rel="noreferrer" href="assets/documents/elyor.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
+          </div>
+        </div>
+
+        <div className={styles.cont__chefs__card}>
+          <Image
+            src="/assets/img/command5.png"
+            width={280}
+            height={390}
+            alt="chef2"
+          />
+
+          <div className={styles.cont__chefs__card__hoverContent2}>
+            <h3>Ruziboyev Azamat</h3>
+            <SocialNetworks
+              instagram=""
+              facebook="/"
+              telegram="/"
+            />
+             <a target={'_blank'} rel="noreferrer" href="assets/documents/azamat.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
+          </div>
+        </div>
+
       </div>
+
     </div>
   );
 };

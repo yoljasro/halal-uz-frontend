@@ -116,7 +116,15 @@
     "russianCharter" : "Nizom rus tilida" , 
     "englishCharter" : "Nizom ingliz tilida" , 
     "uzbekCharter" : "Nizom o'zbek tilida" ,
-    "vertification" : " Halol tekshirish talablari" 
+    "vertification" : " Halol tekshirish talablari"  , 
+    "command1" : "Rais" , 
+    "command2" : "Rais o'rinbosari" , 
+    "command3" : "Xalqaro auditor" , 
+    "command4" : "Regional Direktor" , 
+    "command5" : "kotib" , 
+    "command6" : "Kordinator" , 
+     "halalChef" : "Halol Chef" , 
+     "lady" : "Lady Halol Chef"
   },
 
   "pageHalalGuide": {

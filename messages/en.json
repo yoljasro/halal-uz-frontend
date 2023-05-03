@@ -116,7 +116,15 @@
     "russianCharter" : " Regulation  Russian" , 
     "englishCharter" : " Regulation  English" , 
     "uzbekCharter" : "Regulation Uzbek" ,
-    "vertification" : "  verification requirements" 
+    "vertification" : "  verification requirements" ,
+    "command1" : "Chairman" , 
+    "command2" : "Deputy Chairman" , 
+    "command3" : "International auditor" , 
+    "command4" : "Reginal Director" , 
+    "command5" : "Secretary" , 
+    "command6" : "Coorinator" , 
+     "halalChef" : "Halal Chef" , 
+     "lady" : "Lady Halal Chef"
   },
 
   "pageHalalGuide": {

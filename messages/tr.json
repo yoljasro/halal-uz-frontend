@@ -115,7 +115,15 @@
     "russianCharter" : "Yönetmelik Rusça" , 
     "englishCharter" : "Yönetmelik İngilizcedir" , 
     "uzbekCharter" : "Yonetmelik uzbekcedir" ,
-    "vertification" : " Dürüst doğrulama gereksinimleri" 
+    "vertification" : " Dürüst doğrulama gereksinimleri" ,
+    "command1" : "Başkan" , 
+    "command2" : "Başkan Vekili" , 
+    "command3" : "Xalqaro denetçisi" , 
+    "command4" : "Bölgesel Direktörr" , 
+    "command5" : "Kotib" , 
+    "command6" : "koordinatör" , 
+     "halalChef" : "Halol Chef" , 
+     "lady" : "Lady Halol Chef"
   },
 
   "pageHalalGuide": {

@@ -83,14 +83,9 @@ export const Countries: FC<LinkType> = ({ link, azerbajan , saudia }) => {
           >
             <Tab label="Asia" {...a11yProps(0)} />
             <Tab label="Europe" {...a11yProps(1)} />
-            <Tab label="African" {...a11yProps(2)} />
-            <Tab label="Australia" {...a11yProps(3)} />
+            <Tab label="USA" {...a11yProps(2)} />
+            {/* <Tab label="Australia" {...a11yProps(3)} /> */}
             <Tab label="Africian" {...a11yProps(4)} />
-            <Tab label="Europe" {...a11yProps(5)} />
-            <Tab label="Asia" {...a11yProps(6)} />
-            <Tab label="Africian" {...a11yProps(7)} />
-            <Tab label="Asia" {...a11yProps(8)} />
-            <Tab label="Europe" {...a11yProps(9)} />
           </Tabs>
         </AppBar>
         <SwipeableViews
@@ -144,138 +139,43 @@ export const Countries: FC<LinkType> = ({ link, azerbajan , saudia }) => {
           </TabPanel>
           <TabPanel value={value} index={2} dir={theme.direction}>
             <div className={styles.cont__countries}>
-              <div className={styles.cont__card}>France</div>
-              <div className={styles.cont__card}>Angly</div>
-              <div className={styles.cont__card}>Spanish</div>
-              <div className={styles.cont__card}>Portugal</div>
-              <div className={styles.cont__card}>Latvia</div>
-              <div className={styles.cont__card}>Litva</div>
-              <div className={styles.cont__card}>Niderlandiya</div>
-              <div className={styles.cont__card}>Vengry</div>
-              <div className={styles.cont__card}>Croatia</div>
-              <div className={styles.cont__card}>Germany</div>
-              <div className={styles.cont__card}>Russia</div>
-              <div className={styles.cont__card}>Italy</div>
-              <div className={styles.cont__card}>Dania</div>
-              <div className={styles.cont__card}>Finland</div>
-              <div className={styles.cont__card}>Switzerland</div>
+              <div className={styles.cont__card}>Alabama</div>
+              <div className={styles.cont__card}>Alyaska</div>
+              <div className={styles.cont__card}>Arizona</div>
+              <div className={styles.cont__card}>Arkanzas</div>
+              <div className={styles.cont__card}>Kaliforniya</div>
+              <div className={styles.cont__card}>Kolorado</div>
+              <div className={styles.cont__card}>Konnektikut</div>
+              <div className={styles.cont__card}>Delaver 9</div>
+              <div className={styles.cont__card}>Florida</div>
+              <div className={styles.cont__card}>Gavayi</div>
+              <div className={styles.cont__card}>Kanzas</div>
+              <div className={styles.cont__card}>Merilend</div>
+              <div className={styles.cont__card}>Massachusets</div>
+              <div className={styles.cont__card}>Missisipi</div>
+              <div className={styles.cont__card}>Minnesota</div>
             </div>
           </TabPanel>
           <TabPanel value={value} index={3} dir={theme.direction}>
             <div className={styles.cont__countries}>
-              <div className={styles.cont__card}>France</div>
-              <div className={styles.cont__card}>Angly</div>
-              <div className={styles.cont__card}>Spanish</div>
-              <div className={styles.cont__card}>Portugal</div>
-              <div className={styles.cont__card}>Latvia</div>
-              <div className={styles.cont__card}>Litva</div>
-              <div className={styles.cont__card}>Niderlandiya</div>
-              <div className={styles.cont__card}>Vengry</div>
-              <div className={styles.cont__card}>Croatia</div>
-              <div className={styles.cont__card}>Germany</div>
-              <div className={styles.cont__card}>Russia</div>
-              <div className={styles.cont__card}>Italy</div>
-              <div className={styles.cont__card}>Dania</div>
-              <div className={styles.cont__card}>Finland</div>
-              <div className={styles.cont__card}>Switzerland</div>
+              <div className={styles.cont__card}>Algeria</div>
+              <div className={styles.cont__card}>Angola</div>
+              <div className={styles.cont__card}>Benin</div>
+              <div className={styles.cont__card}>Botswana</div>
+              <div className={styles.cont__card}>Burundi</div>
+              <div className={styles.cont__card}>Cabo Verde</div>
+              <div className={styles.cont__card}>Cameroon</div>
+              <div className={styles.cont__card}>Central African Republic</div>
+              <div className={styles.cont__card}>Chad</div>
+              <div className={styles.cont__card}>Comoros</div>
+              <div className={styles.cont__card}>Democratic Republic of the Congo</div>
+              <div className={styles.cont__card}>Republic of the Congo</div>
+              <div className={styles.cont__card}>Egypt</div>
+              <div className={styles.cont__card}>Equatorial Guinea</div>
+              <div className={styles.cont__card}>Eritrea</div>
             </div>
           </TabPanel>
           <TabPanel value={value} index={4} dir={theme.direction}>
-            <div className={styles.cont__countries}>
-              <div className={styles.cont__card}>France</div>
-              <div className={styles.cont__card}>Angly</div>
-              <div className={styles.cont__card}>Spanish</div>
-              <div className={styles.cont__card}>Portugal</div>
-              <div className={styles.cont__card}>Latvia</div>
-              <div className={styles.cont__card}>Litva</div>
-              <div className={styles.cont__card}>Niderlandiya</div>
-              <div className={styles.cont__card}>Vengry</div>
-              <div className={styles.cont__card}>Croatia</div>
-              <div className={styles.cont__card}>Germany</div>
-              <div className={styles.cont__card}>Russia</div>
-              <div className={styles.cont__card}>Italy</div>
-              <div className={styles.cont__card}>Dania</div>
-              <div className={styles.cont__card}>Finland</div>
-              <div className={styles.cont__card}>Switzerland</div>
-            </div>
-          </TabPanel>
-          <TabPanel value={value} index={5} dir={theme.direction}>
-            <div className={styles.cont__countries}>
-              <div className={styles.cont__card}>France</div>
-              <div className={styles.cont__card}>Angly</div>
-              <div className={styles.cont__card}>Spanish</div>
-              <div className={styles.cont__card}>Portugal</div>
-              <div className={styles.cont__card}>Latvia</div>
-              <div className={styles.cont__card}>Litva</div>
-              <div className={styles.cont__card}>Niderlandiya</div>
-              <div className={styles.cont__card}>Vengry</div>
-              <div className={styles.cont__card}>Croatia</div>
-              <div className={styles.cont__card}>Germany</div>
-              <div className={styles.cont__card}>Russia</div>
-              <div className={styles.cont__card}>Italy</div>
-              <div className={styles.cont__card}>Dania</div>
-              <div className={styles.cont__card}>Finland</div>
-              <div className={styles.cont__card}>Switzerland</div>
-            </div>
-          </TabPanel>
-          <TabPanel value={value} index={6} dir={theme.direction}>
-            <div className={styles.cont__countries}>
-              <div className={styles.cont__card}>France</div>
-              <div className={styles.cont__card}>Angly</div>
-              <div className={styles.cont__card}>Spanish</div>
-              <div className={styles.cont__card}>Portugal</div>
-              <div className={styles.cont__card}>Latvia</div>
-              <div className={styles.cont__card}>Litva</div>
-              <div className={styles.cont__card}>Niderlandiya</div>
-              <div className={styles.cont__card}>Vengry</div>
-              <div className={styles.cont__card}>Croatia</div>
-              <div className={styles.cont__card}>Germany</div>
-              <div className={styles.cont__card}>Russia</div>
-              <div className={styles.cont__card}>Italy</div>
-              <div className={styles.cont__card}>Dania</div>
-              <div className={styles.cont__card}>Finland</div>
-              <div className={styles.cont__card}>Switzerland</div>
-            </div>
-          </TabPanel>
-          <TabPanel value={value} index={7} dir={theme.direction}>
-            <div className={styles.cont__countries}>
-              <div className={styles.cont__card}>France</div>
-              <div className={styles.cont__card}>Angly</div>
-              <div className={styles.cont__card}>Spanish</div>
-              <div className={styles.cont__card}>Portugal</div>
-              <div className={styles.cont__card}>Latvia</div>
-              <div className={styles.cont__card}>Litva</div>
-              <div className={styles.cont__card}>Niderlandiya</div>
-              <div className={styles.cont__card}>Vengry</div>
-              <div className={styles.cont__card}>Croatia</div>
-              <div className={styles.cont__card}>Germany</div>
-              <div className={styles.cont__card}>Russia</div>
-              <div className={styles.cont__card}>Italy</div>
-              <div className={styles.cont__card}>Dania</div>
-              <div className={styles.cont__card}>Finland</div>
-              <div className={styles.cont__card}>Switzerland</div>
-            </div>
-          </TabPanel>
-          <TabPanel value={value} index={8} dir={theme.direction}>
-            <div className={styles.cont__countries}>
-              <div className={styles.cont__card}>France</div>
-              <div className={styles.cont__card}>Angly</div>
-              <div className={styles.cont__card}>Spanish</div>
-              <div className={styles.cont__card}>Portugal</div>
-              <div className={styles.cont__card}>Latvia</div>
-              <div className={styles.cont__card}>Litva</div>
-              <div className={styles.cont__card}>Niderlandiya</div>
-              <div className={styles.cont__card}>Vengry</div>
-              <div className={styles.cont__card}>Croatia</div>
-              <div className={styles.cont__card}>Germany</div>
-              <div className={styles.cont__card}>Russia</div>
-              <div className={styles.cont__card}>Italy</div>
-              <div className={styles.cont__card}>Dania</div>
-              <div className={styles.cont__card}>Finland</div>
-              <div className={styles.cont__card}>Switzerland</div>
-            </div>
-          </TabPanel>
-          <TabPanel value={value} index={9} dir={theme.direction}>
             <div className={styles.cont__countries}>
               <div className={styles.cont__card}>France</div>
               <div className={styles.cont__card}>Angly</div>

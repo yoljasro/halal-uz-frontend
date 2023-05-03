@@ -52,6 +52,11 @@ const Azerbajan: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
+             <a target={'_blank'} rel="noreferrer" href="assets/documents/akmal.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
           </div>
         </div>
 

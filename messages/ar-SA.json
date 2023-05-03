@@ -116,7 +116,15 @@
     "russianCharter" : "اللائحة باللغة الروسية" , 
     "englishCharter" : "اللائحة باللغة الإنجليزية" ,
     "uzbekCharter" : "في الأوزبكية" , 
-    "vertification" : " متطلبات التحقق الحلال" 
+    "vertification" : " متطلبات التحقق الحلال" ,
+    "command1" : "رايس" , 
+    "command2" : "نائب رئيس مجلس الإدارة" , 
+    "command3" : "المدقق الدولي" , 
+    "command4" : "مدير ريجينال" , 
+    "command5" : "مدير ريجينال" , 
+    "command6" : "منسق" , 
+     "halalChef" : "Halol Chef" , 
+     "lady" : "Lady Halol Chef"
   },
 
   "pageHalalGuide": {

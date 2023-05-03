@@ -75,7 +75,8 @@ const AboutUs: FC<any> = () => {
           </p>
         </div>
 
-        <Image alt='image'
+        <Image
+          alt="image"
           className={styles.cont__image}
           src={"/assets/img/aboutImg.png"}
           width={359}
@@ -84,16 +85,9 @@ const AboutUs: FC<any> = () => {
 
         <div className={styles.cont__content__location}>
           <p>{t("pageAboutUs.location")} :</p>
-          <Button
-            onClick={() =>
-              router.push(
-                "https://maps.windows.com/?form=WNAMSH&collection=point.41.322191_69.345869_Point"
-              )
-            }
-            variant="contained"
-          >
-            {t("pageAboutUs.map")}
-          </Button>
+          <a rel="noreferrer" target={"_blank"} href="https://maps.windows.com/?form=WNAMSH&collection=point.41.322191_69.345869_Point">
+            <Button variant="contained">{t("pageAboutUs.map")}</Button>
+          </a>
         </div>
 
         <div className={styles.cont__contact}>
@@ -120,7 +114,11 @@ const AboutUs: FC<any> = () => {
           <div className={styles.cont__documents__content__document}>
             <p>
               №1
-              <a rel="noreferrer" href="/assets/documents/halal1.pdf" target={"_blank"}>
+              <a
+                rel="noreferrer"
+                href="/assets/documents/halal1.pdf"
+                target={"_blank"}
+              >
                 <Button variant="contained">
                   {t("pageAboutUs.russianCharter")}
                 </Button>
@@ -128,7 +126,11 @@ const AboutUs: FC<any> = () => {
             </p>
             <p>
               №2
-              <a rel="noreferrer" href="/assets/documents/halal2.pdf" target={"_blank"}>
+              <a
+                rel="noreferrer"
+                href="/assets/documents/halal2.pdf"
+                target={"_blank"}
+              >
                 <Button variant="contained">
                   {t("pageAboutUs.englishCharter")}
                 </Button>
@@ -136,9 +138,13 @@ const AboutUs: FC<any> = () => {
             </p>
             <p>
               №3
-              <a rel="noreferrer" href="/assets/documents/halal3.pdf" target={"_blank"}>
-                <Button variant='contained'>
-                {t("pageAboutUs.vertification")}
+              <a
+                rel="noreferrer"
+                href="/assets/documents/halal3.pdf"
+                target={"_blank"}
+              >
+                <Button variant="contained">
+                  {t("pageAboutUs.vertification")}
                 </Button>
               </a>
             </p>
@@ -146,26 +152,32 @@ const AboutUs: FC<any> = () => {
           <div className={styles.cont__documents__content__document}>
             <p>
               №4
-              <a rel="noreferrer" href="/assets/documents/halal4.pdf" target={"_blank"}>
-              <Button variant='contained'>
-                OIC SMIIC 1 2019
-                </Button>
+              <a
+                rel="noreferrer"
+                href="/assets/documents/halal4.pdf"
+                target={"_blank"}
+              >
+                <Button variant="contained">OIC SMIIC 1 2019</Button>
               </a>
             </p>
             <p>
               №5
-              <a rel="noreferrer" href="/assets/documents/halal5.pdf" target={"_blank"}>
-              <Button variant='contained'>
-                OIC SMIIC 6 2019
-                </Button>
+              <a
+                rel="noreferrer"
+                href="/assets/documents/halal5.pdf"
+                target={"_blank"}
+              >
+                <Button variant="contained">OIC SMIIC 6 2019</Button>
               </a>
             </p>
             <p>
               №6
-              <a rel="noreferrer" href="/assets/documents/halal6.pdf" target={"_blank"}>
-              <Button variant='contained'>
-                OIC SMIIC 9 2019
-                </Button>
+              <a
+                rel="noreferrer"
+                href="/assets/documents/halal6.pdf"
+                target={"_blank"}
+              >
+                <Button variant="contained">OIC SMIIC 9 2019</Button>
               </a>
             </p>
           </div>
@@ -175,66 +187,128 @@ const AboutUs: FC<any> = () => {
         <h3>{t("pageAboutUs.command")}</h3>
         <div className={styles.cont__commands}>
           <div className={styles.cont__card}>
-            <Image alt='image'
+            <Image
+              alt="image"
               src={"/assets/img/rais.png"}
               width={200}
               height={300}
             />
             <h3 className={styles.cont__card__name}>Akbar Umarov</h3>
-            <p className={styles.cont__card__description}> Rais</p>
+            <p className={styles.cont__card__description}>
+              {" "}
+              {t("pageAboutUs.command1")}
+            </p>
           </div>
           <div className={styles.cont__card}>
-          <Image alt='image' src={"/assets/img/botirbek.png"} width={200} height={300} />
+            <Image
+              alt="image"
+              src={"/assets/img/botirbek.png"}
+              width={200}
+              height={300}
+            />
             <h3 className={styles.cont__card__name}>Botir Mirzagaliyev</h3>
-            <p className={styles.cont__card__description}>Rais orinbosari</p>
+            <p className={styles.cont__card__description}>
+              {t("pageAboutUs.command2")}
+            </p>
           </div>
           <div className={styles.cont__card}>
-          <Image alt='image'
+            <Image
+              alt="image"
               src={"/assets/img/tolibaka.png"}
               width={200}
               height={300}
             />
             <h3 className={styles.cont__card__name}>Umaraliyev Tolibjon</h3>
-            <p className={styles.cont__card__description}> Xalqaro auditor</p>
+            <p className={styles.cont__card__description}>
+              {" "}
+              {t("pageAboutUs.command3")}
+            </p>
           </div>
           <div className={styles.cont__card}>
-          <Image alt='image' src={"/assets/img/command02.png"} width={200} height={300} />
+            <Image
+              alt="image"
+              src={"/assets/img/command02.png"}
+              width={200}
+              height={300}
+            />
             <h3 className={styles.cont__card__name}>Adilov Abduhalil</h3>
-            <p className={styles.cont__card__description}>Regional Director</p>
+            <p className={styles.cont__card__description}>
+              {t("pageAboutUs.command4")}
+            </p>
           </div>
           <div className={styles.cont__card}>
-          <Image alt='image' src={"/assets/img/command04.png"} width={200} height={300} />
+            <Image
+              alt="image"
+              src={"/assets/img/command04.png"}
+              width={200}
+              height={300}
+            />
             <h3 className={styles.cont__card__name}>Al-Zaben Alina </h3>
-            <p className={styles.cont__card__description}>Secretary</p>
+            <p className={styles.cont__card__description}>
+              {t("pageAboutUs.command5")}
+            </p>
           </div>
           <div className={styles.cont__card}>
-          <Image alt='image' src={"/assets/img/davron.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Davron Salimov </h3>
-            <p className={styles.cont__card__description}>Cordinator</p>
+            <Image
+              alt="image"
+              src={"/assets/img/davron.png"}
+              width={200}
+              height={300}
+            />
+            <h3 className={styles.cont__card__name}>Davron Sultonov </h3>
+            <p className={styles.cont__card__description}>
+              {t("pageAboutUs.command6")}
+            </p>
           </div>
           <div className={styles.cont__card}>
-          <Image alt='image' src={"/assets/img/command2.png"} width={200} height={300} />
-            <h3 className={styles.cont__card__name}>Akhmad Khamdamov</h3>
+            <Image
+              alt="image"
+              src={"/assets/img/command2.png"}
+              width={200}
+              height={300}
+            />
+            <h3 className={styles.cont__card__name}>
+              {t("pageAboutUs.halalChef")}
+            </h3>
             <p className={styles.cont__card__description}>Halal Chef</p>
           </div>
           <div className={styles.cont__card}>
-          <Image alt='image' src={"/assets/img/command6.png"} width={200} height={300} />
+            <Image
+              alt="image"
+              src={"/assets/img/command6.png"}
+              width={200}
+              height={300}
+            />
             <h3 className={styles.cont__card__name}>Mirbabaev Elyorbek</h3>
-            <p className={styles.cont__card__description}>Halal Chef</p>
-
+            <p className={styles.cont__card__description}>
+              {t("pageAboutUs.halalChef")}
+            </p>
           </div>
           <div className={styles.cont__card}>
-          <Image alt='image' src={"/assets/img/command5.png"} width={200} height={300} />
+            <Image
+              alt="image"
+              src={"/assets/img/command5.png"}
+              width={200}
+              height={300}
+            />
             <h3 className={styles.cont__card__name}>Ruziboyev Azamat</h3>
-            <p className={styles.cont__card__description}>Halal Chef</p>
-          </div>
-          
-          <div className={styles.cont__card}>
-          <Image alt='image' src={"/assets/img/command1.png"} width={200} height={400} />
-            <h3 className={styles.cont__card__name}>Tulaganova Umriniso </h3>
-            <p className={styles.cont__card__description}>Lady Halal chef</p>
+            <p className={styles.cont__card__description}>
+              {t("pageAboutUs.halalChef")}
+            </p>
           </div>
 
+          <div className={styles.cont__card}>
+            <Image
+              alt="image"
+              src={"/assets/img/command1.png"}
+              width={200}
+              height={400}
+            />
+            <h3 className={styles.cont__card__name}>Tulaganova Umriniso </h3>
+            <p className={styles.cont__card__description}>
+              {t("pageAboutUs.lady")}
+            </p>
+          </div>
         </div>
       </div>
     </div>
