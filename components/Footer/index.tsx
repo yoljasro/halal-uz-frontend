@@ -75,7 +75,7 @@ export const Footer: FC<any> = () => {
           {t("pageFooter.workingModeInformation")}
         </p>
         <div className={styles.footer__reserved}>
-          <p>All rights reserved</p>
+          <p>All rights reserved@by World Halal Committee</p>
         </div>
       </div>
       

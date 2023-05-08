@@ -25,7 +25,7 @@ const UzbChefs: FC<any> = ({ props }) => {
         <title>UZB Halal Chefs </title>
         <meta
           name="description"
-          content="Halal.uz Halol sertifikatini beruvchi kom  paniya rasmiy web sayti"
+          content="worldhalal.uz Halol sertifikatini beruvchi kompaniya rasmiy web sayti"
         />
         <meta
           name="google-site-verification"
