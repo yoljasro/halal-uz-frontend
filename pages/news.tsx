@@ -29,7 +29,7 @@ const News = () => {
         />
         <link rel="icon" href="/assets/img/logo.svg" />
       </Head>
-      <MainPageTitle subtitle="News" description="This is Halal News" />
+      <MainPageTitle subtitle="News" description=" Halal News" />
       <div className={styles.news__content}>
         <div
           onClick={() => {
@@ -37,28 +37,26 @@ const News = () => {
           }}
           className={styles.news__card}
         >
-          <Image alt='image'
+          <Image
+            alt="image"
             className={styles.news__image}
-            src="/assets/img/newsimage.jpg"
+            src="/assets/img/coffee.jpg"
             width={500}
             height={350}
           />
           <div>
             <h3 className={styles.news__title}>
-              Самарқанднинг Пастдарғом туманига янги ҳоким тайинланди
+              Coffee & Tea Fest 2023 Uzbekistan
             </h3>
             <p className={styles.news__description}>
-              Бугун, 19 апрель куни Самарқанд вилоятининг Пастдарғом тумани
-              ҳокимлигида ўтказилаётган халқ депутатлари туман Кенгашининг
-              навбатдан ташқари сессиясида депутатлар томонидан Ваҳобжон
-              Абдуғаниевич Муродқобилов номзоди Пастдарғом тумани ҳокими
-              лавозимига тасдиқланди. Бу ҳақда Самарқанд вилояти ҳокимлиги
-              Матбуот хизмати хабар берди. Маълумот учун, Ваҳобжон Муродқобилов
-              1974 йилда Самарқанд вилояти, Пастдарғом туманида туғилган. Мазкур
-              тайинловга қадар Ўзбекистон Республикаси Олий Мажлиси Қонунчилик
-              палатаси депутати вазифасида фаолият олиб борган.
+              С 12 по 14 мая на площади «Дружбы народов » официальный фестиваль
+              кофе и чая в Узбекистане.☕️
+              <br /> <br />
+              Основная цель фестиваля - Качественное развитие кофейной и чайной
+              индустрии и бизнеса, а также перспектива сотрудничества и обмена
+              опытом от топовых бариста и барменами. ....
             </p>
-            <p className={styles.news__date}>17-Aprile 2023</p>
+            <p className={styles.news__date}>8-May 2023</p>
             <Button className={styles.news__btn} variant="contained">
               See more
             </Button>
@@ -66,61 +64,27 @@ const News = () => {
         </div>
         <div
           onClick={() => {
-            router.push("/newsMain");
+            router.push("/kazanNews");
           }}
           className={styles.news__card}
         >
-          <Image alt='image'
+          <Image
+            alt="image"
             className={styles.news__image}
-            src="/assets/img/newsimage.jpg"
+            src="/assets/img/kazan.jpg"
             width={500}
             height={350}
           />
           <div>
             <h3 className={styles.news__title}>
-              Самарқанднинг Пастдарғом туманига янги ҳоким тайинланди
+              KAZANFORUM International Chefs Cup 2023 by WHS "Kazan is the
+              center of world halal cuisine"
             </h3>
             <p className={styles.news__description}>
-              Бугун, 19 апрель куни Самарқанд вилоятининг Пастдарғом тумани
-              ҳокимлигида ўтказилаётган халқ депутатлари туман Кенгашининг
-              навбатдан ташқари сессиясида депутатлар томонидан Ваҳобжон
-              Абдуғаниевич Муродқобилов номзоди Пастдарғом тумани ҳокими
-              лавозимига тасдиқланди. Бу ҳақда Самарқанд вилояти ҳокимлиги
-              Матбуот хизмати хабар берди. Маълумот учун, Ваҳобжон Муродқобилов
-              1974 йилда Самарқанд вилояти, Пастдарғом туманида туғилган. Мазкур
-              тайинловга қадар Ўзбекистон Республикаси Олий Мажлиси Қонунчилик
-              палатаси депутати вазифасида фаолият олиб борган.
+            National cuisine is an integral part of any country and culture. The richer the national cuisine at the destination, the more likely that visitors will return.
+Aim: promote the popularization of halal cuisine and dishes that exist on the territory of the Republic of Tatarstan of the Russian Federation and beyond. Bring more diverse halal cuisine to Kazan restaurants as a legacy of the KAZANFORUM International Chefs Cup 2023 by WHS. 
             </p>
-            <p className={styles.news__date}>17-Aprile 2023</p>
-            <Button className={styles.news__btn} variant="contained">
-              See more
-            </Button>
-          </div>
-        </div>
-        <div className={styles.news__card}>
-          <Image alt='image'
-            className={styles.news__image}
-            src="/assets/img/news.png"
-            width={500}
-            height={350}
-          />
-          <div>
-            <h3 className={styles.news__title}>
-              Charge Two Devices at the Same Time With This Magnetic Wireless
-              Charging Dock
-            </h3>
-            <p className={styles.news__description}>
-              Leverage agile frameworks to provide a robust synopsis for high
-              level overviews. Iterative approaches to corporate strategy foster
-              collaborative thinking to further the overall value proposition.
-              Organically grow the holistic world view of disruptive innovation
-              via workplace diversity and empowerment. Bring to the table
-              win-win survival strategies to ensure proactive domination. At the
-              end of the day, going forward, a new normal that has evolved from
-              generation X is on the runway heading towards a streamlined cloud
-              solution.
-            </p>
-            <p className={styles.news__date}>17-Aprile 2023</p>
+            <p className={styles.news__date}>8-may 2023</p>
             <Button className={styles.news__btn} variant="contained">
               See more
             </Button>
