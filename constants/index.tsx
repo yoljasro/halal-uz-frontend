@@ -71,7 +71,7 @@ export const MembersArray: MembersType[] = [
     alt: "Image 10",
     text: "Bangladesh",
   },
-  {
+  { 
     src: "/assets/img/gambiya.png",
     alt: "Image 11",
     text: "Gambia",

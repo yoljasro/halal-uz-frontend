@@ -27,7 +27,8 @@ interface TabPanelProps {
 type LinkType = {
   link: string;
   azerbajan: string;
-  saudia : string;
+  saudia: string;
+  turkey: string;
 };
 function TabPanel(props: TabPanelProps) {
   const { children, country, value, index, ...other } = props;
@@ -56,7 +57,12 @@ function a11yProps(index: number) {
   };
 }
 
-export const Countries: FC<LinkType> = ({ link, azerbajan , saudia }) => {
+export const Countries: FC<LinkType> = ({
+  link,
+  azerbajan,
+  saudia,
+  turkey,
+}) => {
   const router = useRouter();
   const theme = useTheme();
   const [value, setValue] = React.useState(0);
@@ -95,16 +101,38 @@ export const Countries: FC<LinkType> = ({ link, azerbajan , saudia }) => {
         >
           <TabPanel value={value} index={0} dir={theme.direction}>
             <div className={styles.cont__countries}>
-              <a rel="noreferrer" target={"_blank"} className={styles.cont__link} href={link}>
+              <a
+                rel="noreferrer"
+                target={"_blank"}
+                className={styles.cont__link}
+                href={link}
+              >
                 <div className={styles.cont__card}>Uzbekistan</div>
               </a>
-              <a rel="noreferrer" href={saudia} target="_blank" className={styles.cont__link}>
+              <a
+                rel="noreferrer"
+                href={saudia}
+                target="_blank"
+                className={styles.cont__link}
+              >
                 <div className={styles.cont__card}>Saudia Arabia</div>
               </a>
-              <a rel="noreferrer" href={azerbajan} target="_blank" className={styles.cont__link}>
+              <a
+                rel="noreferrer"
+                href={azerbajan}
+                target="_blank"
+                className={styles.cont__link}
+              >
                 <div className={styles.cont__card}>Azerbajan</div>
               </a>
-              <div className={styles.cont__card}>Kazakhstan</div>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href={turkey}
+                className={styles.cont__link}
+              >
+                <div className={styles.cont__card}>Turkey</div>
+              </a>
               <div className={styles.cont__card}>Kyrgyzstan</div>
               <div className={styles.cont__card}>Morocco</div>
               <div className={styles.cont__card}>Nigeria</div>
@@ -116,6 +144,8 @@ export const Countries: FC<LinkType> = ({ link, azerbajan , saudia }) => {
               <div className={styles.cont__card}>Gambia</div>
               <div className={styles.cont__card}>Katar</div>
               <div className={styles.cont__card}>Egypt</div>
+              <div className={styles.cont__card}>Kazakstan</div>
+              <div className={styles.cont__card}>Gambia</div>
             </div>
           </TabPanel>
           <TabPanel value={value} index={1} dir={theme.direction}>
@@ -168,7 +198,9 @@ export const Countries: FC<LinkType> = ({ link, azerbajan , saudia }) => {
               <div className={styles.cont__card}>Central African Republic</div>
               <div className={styles.cont__card}>Chad</div>
               <div className={styles.cont__card}>Comoros</div>
-              <div className={styles.cont__card}>Democratic Republic of the Congo</div>
+              <div className={styles.cont__card}>
+                Democratic Republic of the Congo
+              </div>
               <div className={styles.cont__card}>Republic of the Congo</div>
               <div className={styles.cont__card}>Egypt</div>
               <div className={styles.cont__card}>Equatorial Guinea</div>

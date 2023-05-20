@@ -13,8 +13,8 @@ const KazanNews = () => {
   return (
     <div className={styles.newsMain}>
       <h1 className={styles.newsMain__title}>
-        KAZANFORUM International Chefs Cup 2023 by WHS "Kazan is the center of
-        world halal cuisine"
+        KAZANFORUM International Chefs Cup 2023 by WHS Kazan is the center of
+        world halal cuisine
       </h1>
       <div className={styles.newsMain__images}>
         <Image

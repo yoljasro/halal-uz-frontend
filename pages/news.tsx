@@ -77,8 +77,8 @@ const News = () => {
           />
           <div>
             <h3 className={styles.news__title}>
-              KAZANFORUM International Chefs Cup 2023 by WHS "Kazan is the
-              center of world halal cuisine"
+              KAZANFORUM International Chefs Cup 2023 by WHS Kazan is the
+              center of world halal cuisine
             </h3>
             <p className={styles.news__description}>
             National cuisine is an integral part of any country and culture. The richer the national cuisine at the destination, the more likely that visitors will return.

@@ -16,13 +16,13 @@ import { Button } from "@mui/material";
 import Head from "next/head";
 import { GetStaticProps } from "next";
 
-const Azerbajan: FC<any> = ({ props }) => {
+const Turkey: FC<any> = ({ props }) => {
   const t = useTranslations();
 
   return (
     <div className={styles.cont}>
       <Head>
-        <title>Azerbajan Halal Chefs </title>
+        <title>Turkey Halal Chefs </title>
         <meta
           name="description"
           content="Halal.uz Halol sertifikatini beruvchi kompaniya rasmiy web sayti"
@@ -40,19 +40,19 @@ const Azerbajan: FC<any> = ({ props }) => {
       <div className={styles.cont__chefs}>
         <div className={styles.cont__chefs__card}>
           <Image
-            src="/assets/img/otherchef2.jpeg"
+            src="/assets/img/biralmis.jpeg"
             width={280}
             height={390}
             alt="chef1"
           />
           <div className={styles.cont__chefs__card__hoverContent}>
-            <h3>Тахир Амирасланов</h3>
+            <h3>Ahmet Biralmis</h3>
             <SocialNetworks
               instagram=" /"
               facebook="/"
               telegram="/"
             />
-             <a target={'_blank'} rel="noreferrer" href="/assets/documents/akmal.pdf">
+             <a target={'_blank'} rel="noreferrer" href="/assets/documents/biralmis.pdf">
               <Button className={styles.cont__certificateBtn} variant="contained">
                 {t("pageManufacturers.certificate")}
               </Button>
@@ -62,14 +62,14 @@ const Azerbajan: FC<any> = ({ props }) => {
 
         <div className={styles.cont__chefs__card}>
           <Image
-            src="/assets/img/otherchef4.jpeg"
+            src="/assets/img/bayram.jpg"
             width={280}
             height={390}
             alt="chef2"
           />
 
           <div className={styles.cont__chefs__card__hoverContent2}>
-            <h3>Elchin Mamadov</h3>
+            <h3>Bayram Ozrek</h3>
             <SocialNetworks
               instagram="/"
               facebook="/"
@@ -84,7 +84,7 @@ const Azerbajan: FC<any> = ({ props }) => {
   );
 };
 
-export default Azerbajan;
+export default Turkey;
 
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
