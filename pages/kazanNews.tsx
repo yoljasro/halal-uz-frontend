@@ -18,7 +18,26 @@ const KazanNews = () => {
       </h1>
       <div className={styles.newsMain__images}>
         <Image
-          src={"/assets/img/kazan.jpg"}
+          src={"/assets/img/kazanforum.jpg"}
+          alt="kazanImage"
+          width={600}
+          height={400}
+        />
+        <Image
+          src={"/assets/img/kazanform2.jpg"}
+          alt="kazanImage"
+          width={600}
+          height={400}
+        />
+        <Image
+          src={"/assets/img/kazanform3.jpg"}
+          alt="kazanImage"
+          width={600}
+          height={400}
+        />
+
+        <Image
+          src={"/assets/img/kazanform4.jpg"}
           alt="kazanImage"
           width={600}
           height={400}

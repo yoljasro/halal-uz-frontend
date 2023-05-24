@@ -106,7 +106,32 @@ export const MembersArray: MembersType[] = [
     alt: "Image 17",
     text: "Turkey",
   },
-];
+  {
+    src: "/assets/img/bosniaa.png" , 
+    alt: "Image 18" , 
+    text: "Bosnia-Herzegovina"
+  } ,
+  {
+    src: "/assets/img/maldives.png" , 
+    alt: "Image 18" , 
+    text: "Maldives"
+  },
+  {
+    src: "/assets/img/tunisa.jpg" , 
+    alt: "Image 18" , 
+    text: "Tunisia"
+  } ,
+  {
+    src: "/assets/img/palastine.png" , 
+    alt: "Image 18" , 
+    text: "Palastine"
+  } ,
+  {
+    src: "/assets/img/singapore.png" , 
+    alt: "Image 18" , 
+    text: "Singapore"
+  } ,
+];  
 
 export interface PartnersType {
   img: string;

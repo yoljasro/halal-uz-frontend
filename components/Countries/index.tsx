@@ -133,7 +133,14 @@ export const Countries: FC<LinkType> = ({
               >
                 <div className={styles.cont__card}>Turkey</div>
               </a>
+              <a
+                rel="noreferrer"
+                target="_blank"
+                href={'/'}
+                className={styles.cont__link}
+              >
               <div className={styles.cont__card}>Kyrgyzstan</div>
+              </a>
               <div className={styles.cont__card}>Morocco</div>
               <div className={styles.cont__card}>Nigeria</div>
               <div className={styles.cont__card}>Malaysia</div>
@@ -146,6 +153,11 @@ export const Countries: FC<LinkType> = ({
               <div className={styles.cont__card}>Egypt</div>
               <div className={styles.cont__card}>Kazakstan</div>
               <div className={styles.cont__card}>Gambia</div>
+              <div className={styles.cont__card}>Bosnia-Herzegovina</div>
+              <div className={styles.cont__card}>Maldives</div>
+              <div className={styles.cont__card}>Tunisia</div>
+              <div className={styles.cont__card}>Palastine</div>
+              <div className={styles.cont__card}>Singapore</div>
             </div>
           </TabPanel>
           <TabPanel value={value} index={1} dir={theme.direction}>
