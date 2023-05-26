@@ -9,6 +9,8 @@
   flex-direction: column
   justify-content: center
   align-items: center
+  &:hover &__content
+    display: flex
 
   & img
     width: 120px
@@ -20,3 +22,28 @@
     font-size: 20px
     text-align: center
     padding-top: 20px
+
+  &__content
+    display: flex
+    justify-content: center
+    align-items: center
+    align-content: center
+    text-align: center
+    flex-direction: column
+    gap: 10px
+    margin-top: 30px
+    display: none
+    position: relative
+    top: 10px
+
+    & h3 
+      font-size: 18px
+      color: #00E376
+      font-family: ExoBold
+
+    & p
+      color: #000000
+      font-family: ExoRegular
+      color: #696969
+      width: 100%
+      max-width: 200px
