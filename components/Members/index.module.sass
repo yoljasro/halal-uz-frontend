@@ -9,41 +9,19 @@
   flex-direction: column
   justify-content: center
   align-items: center
-  &:hover &__content
-    display: flex
+
+  &:hover
+    transition: 1.1s ease
+    transform: scale(1.2)
+    cursor: pointer
 
   & img
     width: 120px
     height: 120px
 
   &__text
-    font-family: ExoBold  
+    font-family: ExoBold
     color: rgba(0, 0, 0, 1)
     font-size: 20px
     text-align: center
     padding-top: 20px
-
-  &__content
-    display: flex
-    justify-content: center
-    align-items: center
-    align-content: center
-    text-align: center
-    flex-direction: column
-    gap: 10px
-    margin-top: 30px
-    display: none
-    position: relative
-    top: 10px
-
-    & h3 
-      font-size: 18px
-      color: #00E376
-      font-family: ExoBold
-
-    & p
-      color: #000000
-      font-family: ExoRegular
-      color: #696969
-      width: 100%
-      max-width: 200px

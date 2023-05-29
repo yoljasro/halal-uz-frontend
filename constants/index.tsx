@@ -18,6 +18,7 @@ export interface MembersType {
   src: string;
   text: any;
   alt: string;
+  href?: string;
 }
 
 export const MembersArray: MembersType[] = [
@@ -25,6 +26,7 @@ export const MembersArray: MembersType[] = [
     src: "/assets/img/azerbayjan.png",
     alt: "Image 1",
     text: "Azerbaijan",
+    href: "/assets/documents/taxir.pdf"
   },
   {
     src: "/assets/img/kaz.png",

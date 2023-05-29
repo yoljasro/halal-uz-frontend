@@ -36,6 +36,7 @@ const responsive = {
 
 export const Members: FC<any> = () => {
   const t = useTranslations();
+  const router = useRouter();
 
   return (
     <div className={styles.cont} id="members">
@@ -63,22 +64,12 @@ export const Members: FC<any> = () => {
       >
         {MembersArray.map((image: MembersType) => (
           <div className={styles.cont} key={image.alt}>
-            <div className={styles.members} key={image.alt}>
-              <img src={image.src} alt={image.alt} />
-              <p className={styles.members__text}>{image.text}</p>
-              <div className={styles.members__content}>
-              {/* <Image
-                src={"/assets/img/tunisM.jpeg"}
-                alt="membersImage"
-                width={150}
-                height={150}
-              /> */}
-              <h3>Ameur Letaief</h3>
-              <p>email:eltaiefameur350@gmail.com </p>
-              <p>phone:00966548733174</p>
-            </div>
-            </div>
-           
+            <a rel="noreferrer" target={"_blank"} href={image.href}>
+              <div className={styles.members} key={image.alt}>
+                <img src={image.src} alt={image.alt} />
+                <p className={styles.members__text}>{image.text}</p>
+              </div>
+            </a>
           </div>
         ))}
       </Carousel>
