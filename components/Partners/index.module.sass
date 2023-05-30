@@ -9,7 +9,7 @@
     flex-direction: column
 
     &__img
-        object-fit: contain !important
+        object-fit: scale-down !important
         image-orientation: flip
         background-size: contain
         width: 100%
@@ -20,8 +20,12 @@
 
     &__text
         font-family: ExoBold
-        font-size: 15px
+        font-size: 14px
         line-height: 25px
+        // display: none 
         text-align: center
-        padding-right: 30px
+        // padding-right: 30px
+        // padding-right: -10px
+        position: relative
+        left: -40px
         color: #001A63

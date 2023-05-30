@@ -102,11 +102,13 @@ export const MembersArray: MembersType[] = [
     src: "/assets/img/saudia.png",
     alt: "Image 16",
     text: "Saudia Arabia",
+    href: "/assets/documents/hani.pdf"
   },
   {
     src: "/assets/img/turkish.png",
     alt: "Image 17",
     text: "Turkey",
+    href: "/assets/documents/turkey.pdf"
   },
   {
     src: "/assets/img/bosniaa.png" , 
@@ -121,7 +123,8 @@ export const MembersArray: MembersType[] = [
   {
     src: "/assets/img/tunisa.jpg" , 
     alt: "Image 18" , 
-    text: "Tunisia"
+    text: "Tunisia",
+    href: "/assets/documents/tunis.pdf"
   } ,
   {
     src: "/assets/img/palastine.png" , 
@@ -131,7 +134,8 @@ export const MembersArray: MembersType[] = [
   {
     src: "/assets/img/singapore.png" , 
     alt: "Image 18" , 
-    text: "Singapore"
+    text: "Singapore" ,
+    href : "/assets/documents/kamal.pdf"
   } ,
 ];  
 
