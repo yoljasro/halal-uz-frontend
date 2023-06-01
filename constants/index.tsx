@@ -26,7 +26,7 @@ export const MembersArray: MembersType[] = [
     src: "/assets/img/azerbayjan.png",
     alt: "Image 1",
     text: "Azerbaijan",
-    href: "/assets/documents/taxir.pdf"
+    href: "/assets/documents/azerbayjanCookers.pdf"
   },
   {
     src: "/assets/img/kaz.png",
@@ -62,6 +62,7 @@ export const MembersArray: MembersType[] = [
     src: "/assets/img/livan.png",
     alt: "Image 8",
     text: "Livan",
+    href: "/assets/documents/livan.pdf"
   },
   {
     src: "/assets/img/jordan.png",
@@ -89,7 +90,7 @@ export const MembersArray: MembersType[] = [
     text: "Uzbekistan",
   },
   {
-    src: "/assets/img/katar.png",
+    src: "/assets/img/katar.png", 
     alt: "Image 14",
     text: "Katar",
   },
