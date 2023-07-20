@@ -475,7 +475,7 @@ const Restaurants: FC<any> = () => {
         
         <div className={styles.restaurants__card}>
           <Image
-              src={"/assets/img/mahmudKebab.jpg"}
+              src={"/assets/img/kebab.jpg"}
             width={600}
             height={330}
             alt="mahmud Kebab"
