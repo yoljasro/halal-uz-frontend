@@ -399,7 +399,7 @@ const Restaurants: FC<any> = () => {
 
         <div className={styles.restaurants__card}>
           <Image
-            src={"/assets/img/karadeniz2.jpg"}
+            src={"/assets/img/karadenizz.png"}
             width={600}
             height={330}
             alt="image"
@@ -475,7 +475,7 @@ const Restaurants: FC<any> = () => {
         
         <div className={styles.restaurants__card}>
           <Image
-              src={"/assets/img/kebab.jpg"}
+              src={"/assets/img/kebab.png"}
             width={600}
             height={330}
             alt="mahmud Kebab"
