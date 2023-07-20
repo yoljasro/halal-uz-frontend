@@ -32,6 +32,7 @@ const Restaurants: FC<any> = () => {
             src={"/assets/img/xanAhmad.png"}
             width={600}
             height={330}
+            alt="image"
           />
           <div className={styles.restaurants__logo}>
             <Image
@@ -70,6 +71,7 @@ const Restaurants: FC<any> = () => {
                   src={"/assets/img/instagram.png"}
                   width={45}
                   height={45}
+                  alt="instagram"
                 />
               </a>
               <a
@@ -106,6 +108,7 @@ const Restaurants: FC<any> = () => {
             src={"/assets/img/appex.png"}
             width={600}
             height={330}
+            alt="image"
           />
           <div className={styles.restaurants__logo}>
             <Image
@@ -165,6 +168,7 @@ const Restaurants: FC<any> = () => {
                   src={"/assets/img/telegram.png"}
                   width={45}
                   height={45}
+                  alt="image"
                 />
               </Link>
             </div>
@@ -177,6 +181,7 @@ const Restaurants: FC<any> = () => {
             src={"/assets/img/sarikbola.png"}
             width={600}
             height={330}
+            alt="image"
           />
           <div className={styles.restaurants__logo}>
             <Image
@@ -247,6 +252,7 @@ const Restaurants: FC<any> = () => {
             src={"/assets/img/shashlik.png"}
             width={600}
             height={330}
+            alt="image"
           />
           <div className={styles.restaurants__logo}>
             <Image
@@ -321,6 +327,7 @@ const Restaurants: FC<any> = () => {
           <Image
             src={"/assets/img/nihal0.png"}
             width={600}
+            alt="image"
             height={330}
           />
           <div className={styles.restaurants__logo}>
@@ -395,6 +402,7 @@ const Restaurants: FC<any> = () => {
             src={"/assets/img/karadeniz2.jpg"}
             width={600}
             height={330}
+            alt="image"
           />
           <div className={styles.restaurants__logo}>
             <Image
@@ -425,7 +433,7 @@ const Restaurants: FC<any> = () => {
               <a
                 rel="noreferrer"
                 target={"_blank"}
-                href={"https://www.instagram.com/nihol_cafe"}
+                href={"https://www.instagram.com/karadeniz.uz/"}
               >
                 <Image
                   src={"/assets/img/instagram.png"}
@@ -437,7 +445,7 @@ const Restaurants: FC<any> = () => {
               <a
                 rel="noreferrer"
                 target={"_blank"}
-                href="https://www.facebook.com/Nihol.cafe/"
+                href="https://www.facebook.com/karadeniz.uz/"
               >
                 <Image
                   src={"/assets/img/facebook.png"}
@@ -450,7 +458,83 @@ const Restaurants: FC<any> = () => {
               <a
                 rel="noreferrer"
                 target={"_blank"}
-                href="https://t.me/niholcafee"
+                href="https://t.me/karadeniz_restaurant"
+              >
+                <Image
+                  src={"/assets/img/telegram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        
+        <div className={styles.restaurants__card}>
+          <Image
+              src={"/assets/img/mahmudKebab.jpg"}
+            width={600}
+            height={330}
+            alt="mahmud Kebab"
+          />
+          <div className={styles.restaurants__logo}>
+            <Image
+              src={"/assets/img/logoMahmud.jpg"}
+              alt="mahmudLogo"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className={styles.restaurants__content}>
+            <h1 className={styles.restaurants__title}>Mahmud Kebab</h1>
+            <p className={styles.restaurants__description}>
+              {t("pageRestaurants.mahmud")}
+            </p>
+            <Button
+              variant="contained"
+              className={styles.restaurants__certificateBtn}
+            >
+              <a
+                rel="noreferrer"
+                target={"_blank"}
+                href="/assets/documents/mahmudKebab.pdf"
+              >
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
+            <div className={styles.restaurants__socialNetworks}>
+              <a
+                rel="noreferrer"
+                target={"_blank"}
+                href={"https://www.instagram.com/mahmoodkabob/"}
+              >
+                <Image
+                  src={"/assets/img/instagram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+              <a
+                rel="noreferrer"
+                target={"_blank"}
+                href="https://www.facebook.com/mahmoodkabob/"
+              >
+                <Image
+                  src={"/assets/img/facebook.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+
+              <a
+                rel="noreferrer"
+                target={"_blank"}
+                href="https://t.me/mahmoodkabob_bot"
               >
                 <Image
                   src={"/assets/img/telegram.png"}
