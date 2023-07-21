@@ -91,7 +91,7 @@ const AboutUs: FC<any> = () => {
         </div>
 
         <div className={styles.cont__contact}>
-          <h3>{t("pageFooter.title")}</h3>
+          {/* <h3>{t("pageFooter.title")}</h3> */}
         </div>
       </div>
       <div className={styles.cont__certificate}>
@@ -113,19 +113,17 @@ const AboutUs: FC<any> = () => {
         <div className={styles.cont__documents__content}>
           <div className={styles.cont__documents__content__document}>
             <p>
-              №1
               <a
                 rel="noreferrer"
                 href="/assets/documents/halal1.pdf"
                 target={"_blank"}
               >
-                <Button variant="contained">
+                <Button className={styles.cont__documents__content__document__pdfBtn} variant="contained">
                   {t("pageAboutUs.russianCharter")}
                 </Button>
               </a>
             </p>
             <p>
-              №2
               <a
                 rel="noreferrer"
                 href="/assets/documents/halal2.pdf"
@@ -137,7 +135,6 @@ const AboutUs: FC<any> = () => {
               </a>
             </p>
             <p>
-              №3
               <a
                 rel="noreferrer"
                 href="/assets/documents/halal3.pdf"
@@ -151,7 +148,6 @@ const AboutUs: FC<any> = () => {
           </div>
           <div className={styles.cont__documents__content__document}>
             <p>
-              №4
               <a
                 rel="noreferrer"
                 href="/assets/documents/halal4.pdf"
@@ -161,7 +157,6 @@ const AboutUs: FC<any> = () => {
               </a>
             </p>
             <p>
-              №5
               <a
                 rel="noreferrer"
                 href="/assets/documents/halal5.pdf"
@@ -171,7 +166,6 @@ const AboutUs: FC<any> = () => {
               </a>
             </p>
             <p>
-              №6
               <a
                 rel="noreferrer"
                 href="/assets/documents/halal6.pdf"
@@ -251,18 +245,6 @@ const AboutUs: FC<any> = () => {
           <div className={styles.cont__card}>
             <Image
               alt="image"
-              src={"/assets/img/davron.png"}
-              width={200}
-              height={300}
-            />
-            <h3 className={styles.cont__card__name}>Davron Sultonov </h3>
-            <p className={styles.cont__card__description}>
-              {t("pageAboutUs.command6")}
-            </p>
-          </div>
-          <div className={styles.cont__card}>
-            <Image
-              alt="image"
               src={"/assets/img/command2.png"}
               width={200}
               height={300}
@@ -271,18 +253,6 @@ const AboutUs: FC<any> = () => {
               {t("pageAboutUs.halalChef")}
             </h3>
             <p className={styles.cont__card__description}>Halal Chef</p>
-          </div>
-          <div className={styles.cont__card}>
-            <Image
-              alt="image"
-              src={"/assets/img/command6.png"}
-              width={200}
-              height={300}
-            />
-            <h3 className={styles.cont__card__name}>Mirbabaev Elyorbek</h3>
-            <p className={styles.cont__card__description}>
-              {t("pageAboutUs.halalChef")}
-            </p>
           </div>
           <div className={styles.cont__card}>
             <Image
@@ -297,18 +267,6 @@ const AboutUs: FC<any> = () => {
             </p>
           </div>
 
-          <div className={styles.cont__card}>
-            <Image
-              alt="image"
-              src={"/assets/img/command1.png"}
-              width={200}
-              height={400}
-            />
-            <h3 className={styles.cont__card__name}>Tulaganova Umriniso </h3>
-            <p className={styles.cont__card__description}>
-              {t("pageAboutUs.lady")}
-            </p>
-          </div>
         </div>
       </div>
     </div>

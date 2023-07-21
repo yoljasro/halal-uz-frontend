@@ -74,6 +74,10 @@ const Map: FC<MapProps> = () => {
         name: "Karadeniz",
         location: { lat: 41.272833, lng: 69.240262 },
       },
+      {
+        name: "Mahmud Kebab",
+        location: { lat: 41.322699, lng: 69.245742  },
+      }
     ]);
   };
 
