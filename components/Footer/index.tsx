@@ -76,7 +76,7 @@ export const Footer: FC<any> = () => {
         </p>
         <div className={styles.footer__reserved}>
           <p>All rights reserved@by World Halal Committee</p>
-          <a className={styles.footer__my} href="https://t.me/jasurbek_s7">Powered by JasurBek</a>
+          {/* <a className={styles.footer__my} href="https://t.me/jasurbek_s7">Powered by JasurBek</a> */}
         </div>
       </div>
       
