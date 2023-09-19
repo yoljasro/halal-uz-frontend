@@ -26,7 +26,7 @@ const Summit = () => {
         <img
             alt="image"
             className={styles.news__image}
-            src={"https://worldhalalsummit.com.tr/en/wp-content/uploads/2022/08/BURK0895-1024x683.jpg"}
+            src={"https://worldhalalsummit.com.tr/en/wp-content/uploads/2022/08/BURK2566-1024x683.jpg"}
             width={500}
             height={350}
           />
