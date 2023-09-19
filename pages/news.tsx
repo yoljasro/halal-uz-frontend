@@ -42,7 +42,7 @@ const News = () => {
           <Image
             alt="image"
             className={styles.news__image}
-            src="/assets/img/pres.png"
+            src="/assets/img/sammit.png"
             width={500}
             height={350}
           />
