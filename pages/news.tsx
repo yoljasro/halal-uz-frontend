@@ -39,10 +39,10 @@ const News = () => {
           }}
           className={styles.news__card}
         >
-          <Image
+          <img
             alt="image"
             className={styles.news__image}
-            src="/assets/img/sammit.png"
+            src={"https://worldhalalsummit.com.tr/en/wp-content/uploads/2022/08/BURK0895-1024x683.jpg"}
             width={500}
             height={350}
           />
