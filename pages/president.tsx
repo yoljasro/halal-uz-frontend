@@ -16,18 +16,20 @@ const Summit = () => {
       В Турции пройдет Всемирный Халяльный Саммит 2023.
       </h1>
       <div className={styles.newsMain__images}>
-        <Image
-          src={"/assets/img/pres.png"}
-          alt="kazanImage"
-          width={600}
-          height={400}
-        />
-        <Image
-          src={"/assets/img/pres2.png"}
-          alt="kazanImage"
-          width={600}
-          height={400}
-        />
+      <img
+            alt="image"
+            className={styles.news__image}
+            src={"https://worldhalalsummit.com.tr/en/wp-content/uploads/2022/08/BURK0895-1024x683.jpg"}
+            width={500}
+            height={350}
+          />
+        <img
+            alt="image"
+            className={styles.news__image}
+            src={"https://worldhalalsummit.com.tr/en/wp-content/uploads/2022/08/BURK0895-1024x683.jpg"}
+            width={500}
+            height={350}
+          />
 
       </div>
       <div className={styles.newsMain__text}>
