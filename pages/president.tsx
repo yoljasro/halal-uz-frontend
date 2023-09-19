@@ -17,13 +17,13 @@ const Summit = () => {
       </h1>
       <div className={styles.newsMain__images}>
         <Image
-          src={"/assets/img/pres.jpg"}
+          src={"/assets/img/pres.png"}
           alt="kazanImage"
           width={600}
           height={400}
         />
         <Image
-          src={"/assets/img/pres2.jpg"}
+          src={"/assets/img/pres2.png"}
           alt="kazanImage"
           width={600}
           height={400}
