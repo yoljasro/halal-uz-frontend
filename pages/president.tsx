@@ -13,7 +13,7 @@ const Summit = () => {
   return (
     <div className={styles.newsMain}>
       <h1 className={styles.newsMain__title}>
-      В Турции пройдет Всемирный Халяльный Саммит 2023
+      В Турции пройдет Всемирный Халяльный Саммит 2023.
       </h1>
       <div className={styles.newsMain__images}>
         <Image
