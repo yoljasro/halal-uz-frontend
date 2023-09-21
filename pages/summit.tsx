@@ -17,16 +17,18 @@ const Summit = () => {
       </h1>
       <div className={styles.newsMain__images}>
         <Image
-          src={"/assets/img/summit1.png"}
+          src={"/assets/img/samor.png"}
           alt="kazanImage"
           width={600}
           height={400}
+          objectFit="contain"
         />
         <Image
-          src={"/assets/img/summit2.png"}
+          src={"/assets/img/samor2.png"}
           alt="kazanImage"
           width={600}
           height={400}
+          objectFit="contain"
         />
       </div>
       <div className={styles.newsMain__text}>

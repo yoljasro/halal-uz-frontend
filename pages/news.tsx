@@ -70,9 +70,10 @@ const News = () => {
           <Image
             alt="image" 
             className={styles.news__image}
-            src="/assets/img/summit1.png"
+            src="/assets/img/samor.png"
             width={500}
             height={350}
+            objectFit="contain"
           />
           <div>
             <h3 className={styles.news__title}>
