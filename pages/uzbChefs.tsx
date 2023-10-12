@@ -194,6 +194,33 @@ const UzbChefs: FC<any> = ({ props }) => {
               </Button>
             </a>
           </div>
+
+          
+        </div>
+
+        <div className={styles.cont__chefs__card}>
+          <Image
+            src="/assets/img/razikov.jpg"
+            width={280}
+            height={390}
+            alt="chef2"
+          />
+
+          <div className={styles.cont__chefs__card__hoverContent2}>
+            <h3>Davron Razikov</h3>
+            <SocialNetworks
+              instagram=""
+              facebook="/"
+              telegram="/"
+            />
+             <a target={'_blank'} rel="noreferrer" href="assets/documents/razikov.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
+          </div>
+
+          
         </div>
 
       </div>
