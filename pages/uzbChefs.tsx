@@ -200,7 +200,7 @@ const UzbChefs: FC<any> = ({ props }) => {
 
         <div className={styles.cont__chefs__card}>
           <Image
-            src="/assets/img/razikov.jpg"
+            src="/assets/img/razikov.png"
             width={280}
             height={390}
             alt="chef2"
