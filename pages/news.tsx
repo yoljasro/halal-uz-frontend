@@ -51,8 +51,7 @@ const News = () => {
             </h3>
 
             <p className={styles.news__description}>
-              Xalqaro ziyorat turizm haftaligi doirasida Joriy yilning 28 noyabrda Buxoro viloyatida Milliy Taomlar Festivali bo‘lib o‘tdi, ushbu festival turli xil davlatlardan musulmon sayohatchilarni qamrab oldi, festivalning asosiy maqsadi Halol taomlar orqali, xalqaro darajada O‘zbekistondagi Ziyorat Turizm potensialini keng targ‘ib qilish.ждению и развитию национальных традиций узбекского чаепития.
-              🫖
+              Xalqaro ziyorat turizm haftaligi doirasida Joriy yilning 28 noyabrda Buxoro viloyatida Milliy Taomlar Festivali bolib otdi, ushbu festival turli xil davlatlardan musulmon sayohatchilarni qamrab oldi, festivalning asosiy maqsadi Halol taomlar orqali, xalqaro darajada Ozbekistondagi Ziyorat Turizm potensialini keng targib qilish.
             </p>
             <p className={styles.news__date}>29-noyabr 2023</p>
             <Button className={styles.news__btn} variant="contained">
