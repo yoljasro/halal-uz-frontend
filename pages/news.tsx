@@ -32,8 +32,35 @@ const News = () => {
       <MainPageTitle subtitle="News" description=" Halal News" />
       <div className={styles.news__content}>
 
-        
-      <div
+        <div
+          onClick={() => {
+            router.push("/national");
+          }}
+          className={styles.news__card}
+        >
+          <Image
+            alt="image"
+            className={styles.news__image}
+            src="/assets/img/national.png"
+            width={500}
+            height={350}
+          />
+          <div>
+            <h3 className={styles.news__title}>
+              Международная неделя паломнического туризма
+            </h3>
+
+            <p className={styles.news__description}>
+              Xalqaro ziyorat turizm haftaligi doirasida Joriy yilning 28 noyabrda Buxoro viloyatida Milliy Taomlar Festivali bo‘lib o‘tdi, ushbu festival turli xil davlatlardan musulmon sayohatchilarni qamrab oldi, festivalning asosiy maqsadi Halol taomlar orqali, xalqaro darajada O‘zbekistondagi Ziyorat Turizm potensialini keng targ‘ib qilish.ждению и развитию национальных традиций узбекского чаепития.
+              🫖
+            </p>
+            <p className={styles.news__date}>29-noyabr 2023</p>
+            <Button className={styles.news__btn} variant="contained">
+              See more
+            </Button>
+          </div>
+        </div> 
+        <div
           onClick={() => {
             router.push("/president");
           }}
@@ -48,11 +75,11 @@ const News = () => {
           />
           <div>
             <h3 className={styles.news__title}>
-            В Турции пройдет Всемирный Халяльный Саммит 2023
+              В Турции пройдет Всемирный Халяльный Саммит 2023
             </h3>
 
             <p className={styles.news__description}>
-            В Турции, г. Стамбуле с 25-28 ноября 2023 года.
+              В Турции, г. Стамбуле с 25-28 ноября 2023 года.
             </p>
             <p className={styles.news__date}>19-sentabr 2023</p>
             <Button className={styles.news__btn} variant="contained">
@@ -61,14 +88,14 @@ const News = () => {
           </div>
         </div>
 
-      <div
+        <div
           onClick={() => {
             router.push("/summit");
           }}
           className={styles.news__card}
         >
           <Image
-            alt="image" 
+            alt="image"
             className={styles.news__image}
             src="/assets/img/samor.png"
             width={500}
@@ -77,11 +104,11 @@ const News = () => {
           />
           <div>
             <h3 className={styles.news__title}>
-            В Ташкенте прошла встреча Президента Всемирного Халяльного Комитета WICS с Президнетом Всемирного Халяльного Саммита WHS
+              В Ташкенте прошла встреча Президента Всемирного Халяльного Комитета WICS с Президнетом Всемирного Халяльного Саммита WHS
             </h3>
 
             <p className={styles.news__description}>
-            Стороны обсудили двухстороннее сотрудничество
+              Стороны обсудили двухстороннее сотрудничество
             </p>
             <p className={styles.news__date}>18-sentabr 2023</p>
             <Button className={styles.news__btn} variant="contained">
@@ -225,6 +252,8 @@ const News = () => {
             </Button>
           </div>
         </div>
+
+
       </div>
     </div>
   );

@@ -9,12 +9,10 @@
   "map": "Halal Guide",
   "address": "Center of Islamic Civilization",
   "location": "Tashkent",
-
   "aboutUs": "About us",
   "aboutUsInformation": "We are the World Halal Committee (WHC) ",
   "certificate": " we certify tourist sites, catering establishments, as well as food producers - based on the Holy Quran and international standards.",
   "btnMore": "More",
-
   "pagesTitle": {
     "partners": "Partners",
     "travel": "TRAVEL",
@@ -26,7 +24,6 @@
     "news": "News",
     "hotels": "Hotels"
   },
-
   "pageRestaurants": {
     "title": "HALAL RESTAURANTS",
     "information": "In this section, you can get acquainted with catering establishments that have received the Halal certificate",
@@ -36,10 +33,9 @@
     "nihol": "Family Restaurant of Uzbek Cuisine, Halal products and high quality",
     "sariq": "The network of Pizzerias of the Famous Artist - Jakhongir Khazhaev - Sarik Bola - Halal Pizza.",
     "shashlik": "Restaurant chain in Samarkand. Juicy and Halal Kebabs are waiting for you",
-    "karadeniz": "Turkish restaurant in the elite district of Tashkent. Halal Dishes from Turkish Chef" , 
-    "mahmud" : "Mahmud kebab Turkish cuisine in Tashkent Delicious tandoori bread, minced meat skewers, chicken with vegetables and greens."
+    "karadeniz": "Turkish restaurant in the elite district of Tashkent. Halal Dishes from Turkish Chef",
+    "mahmud": "Mahmud kebab Turkish cuisine in Tashkent Delicious tandoori bread, minced meat skewers, chicken with vegetables and greens."
   },
-
   "pageManufacturers": {
     "title": "MANUFACTURERS",
     "information": "Here are the food manufacturers that have received the Halal certificate",
@@ -49,12 +45,10 @@
     "certificate": "View certificate",
     "site": "Visit the site"
   },
-
   "pageHalalChef": {
     "title": "HALAL CHEF",
     "information": "This section is dedicated to eminent Chefs who received the International Halal Chef Badge"
   },
-
   "pageOurMembers": {
     "title": "OUR MEMBERS",
     "information": "This section lists the states that are part of our international organization",
@@ -81,11 +75,9 @@
     "saudiArabia": "SAUDI ARABIA",
     "turkey": "TURKEY"
   },
-
   "pagePartners": {
     "title": "PARTNERS"
   },
-
   "pageFooter": {
     "title": "CONTACTS",
     "address": "JV «WORLD HALAL COMMITTEE»,   ",
@@ -103,7 +95,6 @@
     "apply": "Submit an application",
     "faq": "FAQ"
   },
-
   "pageAboutUs": {
     "title": "ABOUT US",
     "information": "About Us - The World Platform for Islamic Culinary Communities (WICS) was founded by culinary associations from 22 Islamic countries on May 13, 2017 in Istanbul, Turkey. In 2019, the World Halal Committee (WHC) was founded under WICS.",
@@ -111,23 +102,22 @@
     "document": "Below you can see the documents confirming our activities.",
     "viewDocument": "Viewing Documents",
     "location": "Our Location",
-    "command": "Our command" , 
-    "map" : "Open in map" , 
-    "process": "The process of obtaining a certificate"  , 
-    "russianCharter" : " Regulation  Russian" , 
-    "englishCharter" : " Regulation  English" , 
-    "uzbekCharter" : "Regulation Uzbek" ,
-    "vertification" : "  verification requirements" ,
-    "command1" : "Chairman" , 
-    "command2" : "Deputy Chairman" , 
-    "command3" : "International auditor" , 
-    "command4" : "Reginal Director" , 
-    "command5" : "Secretary" , 
-    "command6" : "Coorinator" , 
-     "halalChef" : "Halal Chef" , 
-     "lady" : "Lady Halal Chef"
+    "command": "Our command",
+    "map": "Open in map",
+    "process": "The process of obtaining a certificate",
+    "russianCharter": " Regulation  Russian",
+    "englishCharter": " Regulation  English",
+    "uzbekCharter": "Regulation Uzbek",
+    "vertification": "  verification requirements",
+    "command1": "Chairman",
+    "command2": "Deputy Chairman",
+    "command3": "International auditor",
+    "command4": "Reginal Director",
+    "command5": "Secretary",
+    "command6": "Coorinator",
+    "halalChef": "Halal Chef",
+    "lady": "Lady Halal Chef"
   },
-
   "pageHalalGuide": {
     "title": "HALAL GUIDE",
     "information": "In this section, a map of the world, with locations where there are Hotels, catering establishments, as well as food manufacturers who have received a Halal certificate",
@@ -148,5 +138,8 @@
     "getText": "   It is necessary to comply with all the norms and requirements of the Holy Quran, as well as comply with international standards",
     "take": "To whom is the Halal Certificate issued?ь",
     "takeText": "  Tourist facilities, catering establishments and food manufacturers."
+  },
+  "news": {
+    "national": "National Food Festival was held in Bukhara region on November 28 of this year as part of the International Pilgrimage and Tourism Week"
   }
 }
