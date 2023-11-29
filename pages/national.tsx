@@ -10,7 +10,7 @@ import { MainPageTitle } from "../components/MainPageTitle";
 import { Button } from "@material-ui/core";
 import { useTranslations } from "next-intl";
 
-const Food = () => {
+const National = () => {
     const t = useTranslations();
 
   return (
@@ -28,7 +28,7 @@ const Food = () => {
       </div>
       <div className={styles.newsMain__text}>
         <p className={styles.newsMain__description}>
-        В  рамках Международной недели паломнического туризма 28 ноября текущего года в Бухарской области прошел Национальный гастрономический фестиваль, привлекший путешественников-мусульман 
+        B  рамках Международной недели паломнического туризма 28 ноября текущего года в Бухарской области прошел Национальный гастрономический фестиваль, привлекший путешественников-мусульман 
         из разных стран.
           <br /> <br />
         </p>
@@ -36,7 +36,7 @@ const Food = () => {
     </div>
   );
 };
-export default Food;
+export default National;
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   return {
