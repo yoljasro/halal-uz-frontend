@@ -34,6 +34,34 @@ const News = () => {
 
         <div
           onClick={() => {
+            router.push("/conferen");
+          }}
+          className={styles.news__card}
+        >
+          <Image
+            alt="image"
+            className={styles.news__image}
+            src="/assets/img/konferensiya.png"
+            width={500}
+            height={350}
+          />
+          <div>
+            <h3 className={styles.news__title}>
+              в Ташкенте прошла конференция, посвященная развитию паломнического туризма. 🌙
+            </h3>
+
+            <p className={styles.news__description}>
+              На конференции выступил председатель Всемирного комитета Халяль. ✅
+            </p>
+            <p className={styles.news__date}>11-dekabr 2023</p>
+            <Button className={styles.news__btn} variant="contained">
+              See more
+            </Button>
+          </div>
+        </div>
+
+        <div
+          onClick={() => {
             router.push("/national");
           }}
           className={styles.news__card}
@@ -59,6 +87,7 @@ const News = () => {
             </Button>
           </div>
         </div>
+
         <div
           onClick={() => {
             router.push("/president");
@@ -243,7 +272,7 @@ const News = () => {
               также перспектива сотрудничества и обмена опытом от топовых
               бариста и барменами. Кроме того отдельное внимание будет уделено
               возрождению и развитию национальных традиций узбекского чаепития.
-        
+
             </p>
             <p className={styles.news__date}>8-may 2023</p>
             <Button className={styles.news__btn} variant="contained">
