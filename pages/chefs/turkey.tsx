@@ -52,7 +52,7 @@ const Turkey: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
-             <a target={'_blank'} rel="noreferrer" href="/assets/documents/biralmis.pdf">
+            <a target={'_blank'} rel="noreferrer" href="/assets/documents/biralmis.pdf">
               <Button className={styles.cont__certificateBtn} variant="contained">
                 {t("pageManufacturers.certificate")}
               </Button>
@@ -75,9 +75,60 @@ const Turkey: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
+            <a target={'_blank'} rel="noreferrer" href="/">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
           </div>
         </div>
 
+        <div className={styles.cont__chefs__card}>
+          <Image
+            src="/assets/img/turkchef.jpg"
+            width={280}
+            height={390}
+            alt="chef2"
+          />
+
+          <div className={styles.cont__chefs__card__hoverContent2}>
+            <h3>Hudaverdi Akgun </h3>
+            <SocialNetworks
+              instagram="/"
+              facebook="/"
+              telegram="/"
+            />
+            <a target={'_blank'} rel="noreferrer" href="/assets/documents/hudayverdi.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
+          </div>
+        </div>
+
+
+        <div className={styles.cont__chefs__card}>
+          <Image
+            src="/assets/img/shuhrat.jpg"
+            width={280}
+            height={390}
+            alt="chef2"
+          />
+
+          <div className={styles.cont__chefs__card__hoverContent2}>
+            <h3>Шарипов Шухрат </h3>
+            <SocialNetworks
+              instagram="/"
+              facebook="/"
+              telegram="/"
+            />
+            <a target={'_blank'} rel="noreferrer" href="/assets/documents/shuhrat.pdf">
+              <Button className={styles.cont__certificateBtn} variant="contained">
+                {t("pageManufacturers.certificate")}
+              </Button>
+            </a>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -88,10 +139,10 @@ export default Turkey;
 
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
-    return {
-        props: {
-            messages: (await import(`../../messages/${locale}.json`)).default
-        }
+  return {
+    props: {
+      messages: (await import(`../../messages/${locale}.json`)).default
     }
   }
-  
+}
+

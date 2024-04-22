@@ -153,6 +153,74 @@ export const ProductionsNew = () => {
             />
           </div>
         </div>
+
+        <div className={styles.production__card}>
+          <Image
+            src={"/assets/img/biriktiredi.png"}
+            alt="siyob"
+            width={180}
+            height={180}
+          />
+          <h3 className={styles.production__title}>Chak-Chak</h3>
+          <div className={styles.production__card__section}>
+            <a rel="noreferrer" target={"_blank"} href={"/"}>
+              <Button variant="contained" className={styles.production__btn}>
+                {t("pageManufacturers.site")}
+              </Button>
+            </a>
+            <br />
+            <Button variant="contained" className={styles.production__viewBtn}>
+              <a rel="noreferrer"
+                className={styles.production__link}
+                target={"_blank"}
+                href="/assets/documents/biriktiredi.pdf"
+              >
+                {" "}
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
+            <SocialNetworks
+              instagram=""
+              facebook=""
+              telegram="/"
+            />
+          </div>
+        </div>
+
+        <div className={styles.production__card}>
+          <Image
+            src={"/assets/img/remax.png"}
+            alt="siyob"
+            width={180}
+            height={180}
+            className={styles.production__remax}
+          />
+          <h3 className={styles.production__title}>Remax</h3>
+          <div className={styles.production__card__section}>
+            <a rel="noreferrer" target={"_blank"} href={"/"}>
+              <Button variant="contained" className={styles.production__btn}>
+                {t("pageManufacturers.site")}
+              </Button>
+            </a>
+            <br />
+            <Button variant="contained" className={styles.production__viewBtn}>
+              <a rel="noreferrer"
+                className={styles.production__link}
+                target={"_blank"}
+                href="/assets/documents/remax.pdf"
+              >
+                {" "}
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
+            <SocialNetworks
+              instagram=""
+              facebook=""
+              telegram="/"
+            />
+          </div>
+        </div>
+        
       </div>
     </div>
   );

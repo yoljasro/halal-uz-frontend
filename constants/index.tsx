@@ -109,7 +109,7 @@ export const MembersArray: MembersType[] = [
     src: "/assets/img/turkish.png",
     alt: "Image 17",
     text: "Turkey",
-    href: "/assets/documents/turkey.pdf"
+    href: "/assets/documents/akgun.pdf"
   },
   {
     src: "/assets/img/bosniaa.png" , 
