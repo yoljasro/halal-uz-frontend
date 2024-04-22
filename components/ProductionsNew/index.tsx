@@ -189,7 +189,7 @@ export const ProductionsNew = () => {
 
         <div className={styles.production__card}>
           <Image
-            src={"/assets/img/remax.jpg"}
+            src={"/assets/img/remax.svg"}
             alt="siyob"
             width={180}
             height={180}
@@ -207,7 +207,7 @@ export const ProductionsNew = () => {
               <a rel="noreferrer"
                 className={styles.production__link}
                 target={"_blank"}
-                href="/assets/documents/remax.svg"
+                href="/assets/documents/remax.png"
               >
                 {" "}
                 {t("pageManufacturers.certificate")}
