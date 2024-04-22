@@ -207,7 +207,7 @@ export const ProductionsNew = () => {
               <a rel="noreferrer"
                 className={styles.production__link}
                 target={"_blank"}
-                href="/assets/documents/remax.pdf"
+                href="/assets/documents/remax.svg"
               >
                 {" "}
                 {t("pageManufacturers.certificate")}
