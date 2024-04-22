@@ -75,11 +75,11 @@ const Turkey: FC<any> = ({ props }) => {
               facebook="/"
               telegram="/"
             />
-            <a target={'_blank'} rel="noreferrer" href="/">
+            <Link target={'_blank'} rel="noreferrer" href="/">
               <Button className={styles.cont__certificateBtn} variant="contained">
                 {t("pageManufacturers.certificate")}
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
 
