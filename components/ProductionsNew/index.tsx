@@ -156,7 +156,7 @@ export const ProductionsNew = () => {
 
         <div className={styles.production__card}>
           <Image
-            src={"/assets/img/biriktiredi.png"}
+            src={"/assets/img/chaki_chak.png"}
             alt="siyob"
             width={180}
             height={180}
@@ -189,7 +189,7 @@ export const ProductionsNew = () => {
 
         <div className={styles.production__card}>
           <Image
-            src={"/assets/img/remax.png"}
+            src={"/assets/img/remax.jpg"}
             alt="siyob"
             width={180}
             height={180}

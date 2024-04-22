@@ -41,7 +41,7 @@ const Turkey: FC<any> = ({ props }) => {
 
         <div className={styles.cont__chefs__card}>
           <Image
-            src="/assets/img/berik.jpg"
+            src="/assets/img/berik.png"
             width={280}
             height={390}
             alt="chef2"

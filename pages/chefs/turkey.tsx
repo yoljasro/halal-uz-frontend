@@ -85,7 +85,7 @@ const Turkey: FC<any> = ({ props }) => {
 
         <div className={styles.cont__chefs__card}>
           <Image
-            src="/assets/img/turkchef.jpg"
+            src="/assets/img/cheff_mens.png"
             width={280}
             height={390}
             alt="chef2"
@@ -109,7 +109,7 @@ const Turkey: FC<any> = ({ props }) => {
 
         <div className={styles.cont__chefs__card}>
           <Image
-            src="/assets/img/shuhrat.jpg"
+            src="/assets/img/cheffs.png"
             width={280}
             height={390}
             alt="chef2"
