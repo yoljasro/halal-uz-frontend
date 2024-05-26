@@ -12,10 +12,98 @@ import styles from "./index.module.sass";
 import { MainPageTitle } from "../MainPageTitle";
 import { SocialNetworks } from "../socialNetworks";
 import { Button } from "@mui/material";
+// Import the API function
+import { projectsLogoAPI } from "../API";
+import { ProjectLogoResponse, ProjectLogos } from "../../types";
 
-export const ProductionsNew = () => {
+export const ProductionsNew: FC = () => {
   const t = useTranslations();
   const router = useRouter();
+  const [apiData, setApiData] = useState<any[]>([]);
+
+  // Static data
+  const staticData = [
+    {
+      imageSrc: "/assets/img/siyob.png",
+      title: "SIYOB FERMA",
+      siteLink: "https://siyobferma.uz",
+      certificateLink: "/assets/documents/siyob.pdf",
+      socialNetworks: {
+        instagram: "https://instagram.com/siyobferma.uz?igshid=NDk5N2NlZjQ=",
+        facebook: "https://www.facebook.com/siyob.ferma?mibextid=LQQJ4d",
+        telegram: "https://t.me/siyobferma_uz",
+      },
+    },
+    {
+      imageSrc: "/assets/img/shashlikP.png",
+      title: "SHASHLIKUZ",
+      siteLink: "",
+      certificateLink: "/assets/documents/shashlikuz.pdf",
+      socialNetworks: {
+        instagram: "https://instagram.com/shashlikuz?igshid=NDk5N2NlZjQ=",
+        facebook: "https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d",
+        telegram: "https://t.me/shashlikuz_group",
+      },
+    },
+    {
+      imageSrc: "/assets/img/agroBravo.png",
+      title: "AGRO-BRAVO",
+      siteLink: "https://agrobravo.uz/ru/",
+      certificateLink: "/assets/documents/agro.pdf",
+      socialNetworks: {
+        instagram: "https://instagram.com/agrobravo.uz?igshid=NDk5N2NlZjQ=",
+        facebook: "https://www.facebook.com/agrobravo.uz?mibextid=LQQJ4d",
+        telegram: "/",
+      },
+    },
+    {
+      imageSrc: "/assets/img/goldenCorn.png",
+      title: "GOLDEN-CORN",
+      siteLink: "https://golden-corn.uz/",
+      certificateLink: "/assets/documents/goldencorn.pdf",
+      socialNetworks: {
+        instagram: "https://www.instagram.com/goldencorn_uz/",
+        facebook: "https://www.facebook.com/goldencornuz/",
+        telegram: "/",
+      },
+    },
+    {
+      imageSrc: "/assets/img/chaki_chak.png",
+      title: "Chak-Chak",
+      siteLink: "/",
+      certificateLink: "/assets/documents/biriktiredi.pdf",
+      socialNetworks: {
+        instagram: "",
+        facebook: "",
+        telegram: "/",
+      },
+    },
+    {
+      imageSrc: "/assets/img/remax.svg",
+      title: "Remax",
+      siteLink: "/",
+      certificateLink: "/assets/documents/remax.pdf",
+      socialNetworks: {
+        instagram: "",
+        facebook: "",
+        telegram: "/",
+      },
+    },
+  ];
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const apiResponse = await projectsLogoAPI();
+        setApiData(apiResponse);
+      } catch (error) {
+        console.error("Error fetching API data:", error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  const mergedData = [...staticData, ...apiData];
 
   return (
     <div className={styles.cont} id="productions">
@@ -24,204 +112,46 @@ export const ProductionsNew = () => {
         description={t("pageManufacturers.information")}
       />
       <div className={styles.production}>
-        <div className={styles.production__card}>
-          <Image
-            src={"/assets/img/siyob.png"}
-            alt="siyob"
-            width={180}
-            height={180}
-          />
-          <h3 className={styles.production__title}>SIYOB FERMA</h3>
-          <div className={styles.production__card__section}>
-            <a rel="noreferrer" target={"_blank"} href={"https://siyobferma.uz"}>
-              <Button variant="contained" className={styles.production__btn}>
-                {t("pageManufacturers.site")}
-              </Button>
-            </a>
-            <br />
-            <Button variant="contained" className={styles.production__viewBtn}>
-              <a rel="noreferrer"
-                className={styles.production__link}
-                target={"_blank"}
-                href="/assets/documents/siyob.pdf"
-              >
-                {t("pageManufacturers.certificate")}
-              </a>
-            </Button>
-            <SocialNetworks
-              instagram=" https://instagram.com/siyobferma.uz?igshid=NDk5N2NlZjQ="
-              facebook="https://www.facebook.com/siyob.ferma?mibextid=LQQJ4d"
-              telegram="https://t.me/siyobferma_uz"
+        {mergedData.map((item, index) => (
+          <div className={styles.production__card} key={index}>
+            <Image
+              src={item.imageSrc}
+              alt={item.title}
+              width={180}
+              height={180}
             />
+            <h3 className={styles.production__title}>{item.title}</h3>
+            <div className={styles.production__card__section}>
+              {item.siteLink && (
+                <a rel="noreferrer" target={"_blank"} href={item.siteLink}>
+                  <Button variant="contained" className={styles.production__btn}>
+                    {t("pageManufacturers.site")}
+                  </Button>
+                </a>
+              )}
+              <br />
+              {item.certificateLink && (
+                <Button variant="contained" className={styles.production__viewBtn}>
+                  <a
+                    rel="noreferrer"
+                    className={styles.production__link}
+                    target={"_blank"}
+                    href={item.certificateLink}
+                  >
+                    {t("pageManufacturers.certificate")}
+                  </a>
+                </Button>
+              )}
+              <SocialNetworks
+                instagram={item.socialNetworks?.instagram || ""}
+                facebook={item.socialNetworks?.facebook || ""}
+                telegram={item.socialNetworks?.telegram || ""}
+              />
+            </div>
           </div>
-        </div>
-
-        <div className={styles.production__card}>
-          <Image
-            src={"/assets/img/shashlikP.png"}
-            alt="siyob"
-            width={180}
-            height={180}
-          />
-          <h3 className={styles.production__title}>SHASHLIKUZ</h3>
-          <div className={styles.production__card__section}>
-            <Button variant="contained" className={styles.production__btn}>
-              {t("pageManufacturers.site")}
-            </Button>
-            <br />
-            <Button variant="contained" className={styles.production__viewBtn}>
-              <a rel="noreferrer"
-                className={styles.production__link}
-                target={"_blank"}
-                href="/assets/documents/shashlikuz.pdf"
-              >
-                {" "}
-                {t("pageManufacturers.certificate")}
-              </a>
-            </Button>
-            <SocialNetworks
-              instagram="https://instagram.com/shashlikuz?igshid=NDk5N2NlZjQ="
-              facebook="https://www.facebook.com/shashlikuz1?mibextid=LQQJ4d"
-              telegram="https://t.me/shashlikuz_group"
-            />
-          </div>
-        </div>
-        <div className={styles.production__card}>
-          <Image
-            src={"/assets/img/agroBravo.png"}
-            alt="siyob"
-            width={180}
-            height={180}
-          />
-          <h3 className={styles.production__title}>AGRO-BRAVO</h3>
-          <div className={styles.production__card__section}>
-            <a rel="noreferrer" target="_blank" href={"https://agrobravo.uz/ru/"}>
-              <Button variant="contained" className={styles.production__btn}>
-                {t("pageManufacturers.site")}
-              </Button>
-            </a>
-            <br />
-            <Button variant="contained" className={styles.production__viewBtn}>
-              <a rel="noreferrer"
-                className={styles.production__link}
-                target={"_blank"}
-                href="/assets/documents/agro.pdf"
-              >
-                {" "}
-                {t("pageManufacturers.certificate")}
-              </a>
-            </Button>
-            <SocialNetworks
-              instagram=" https://instagram.com/agrobravo.uz?igshid=NDk5N2NlZjQ="
-              facebook="https://www.facebook.com/agrobravo.uz?mibextid=LQQJ4d"
-              telegram="/"
-            />
-          </div>
-          <div>
-          </div>
-        </div>
-
-        <div className={styles.production__card}>
-          <Image
-            src={"/assets/img/goldenCorn.png"}
-            alt="siyob"
-            width={180}
-            height={180}
-          />
-          <h3 className={styles.production__title}>GOLDEN-CORN</h3>
-          <div className={styles.production__card__section}>
-            <a rel="noreferrer" target={"_blank"} href={"https://golden-corn.uz/"}>
-              <Button variant="contained" className={styles.production__btn}>
-                {t("pageManufacturers.site")}
-              </Button>
-            </a>
-            <br />
-            <Button variant="contained" className={styles.production__viewBtn}>
-              <a rel="noreferrer"
-                className={styles.production__link}
-                target={"_blank"}
-                href="/assets/documents/goldencorn.pdf"
-              >
-                {" "}
-                {t("pageManufacturers.certificate")}
-              </a>
-            </Button>
-            <SocialNetworks
-              instagram=" https://www.instagram.com/goldencorn_uz/"
-              facebook="https://www.facebook.com/goldencornuz/"
-              telegram="/"
-            />
-          </div>
-        </div>
-
-        <div className={styles.production__card}>
-          <Image
-            src={"/assets/img/chaki_chak.png"}
-            alt="siyob"
-            width={180}
-            height={180}
-          />
-          <h3 className={styles.production__title}>Chak-Chak</h3>
-          <div className={styles.production__card__section}>
-            <a rel="noreferrer" target={"_blank"} href={"/"}>
-              <Button variant="contained" className={styles.production__btn}>
-                {t("pageManufacturers.site")}
-              </Button>
-            </a>
-            <br />
-            <Button variant="contained" className={styles.production__viewBtn}>
-              <a rel="noreferrer"
-                className={styles.production__link}
-                target={"_blank"}
-                href="/assets/documents/biriktiredi.pdf"
-              >
-                {" "}
-                {t("pageManufacturers.certificate")}
-              </a>
-            </Button>
-            <SocialNetworks
-              instagram=""
-              facebook=""
-              telegram="/"
-            />
-          </div>
-        </div>
-
-        <div className={styles.production__card}>
-          <Image
-            src={"/assets/img/remax.svg"}
-            alt="siyob"
-            width={180}
-            height={180}
-            className={styles.production__remax}
-          />
-          <h3 className={styles.production__title}>Remax</h3>
-          <div className={styles.production__card__section}>
-            <a rel="noreferrer" target={"_blank"} href={"/"}>
-              <Button variant="contained" className={styles.production__btn}>
-                {t("pageManufacturers.site")}
-              </Button>
-            </a>
-            <br />
-            <Button variant="contained" className={styles.production__viewBtn}>
-              <a rel="noreferrer"
-                className={styles.production__link}
-                target={"_blank"}
-                href="/assets/documents/remax.pdf"
-              >
-                {" "}
-                {t("pageManufacturers.certificate")}
-              </a>
-            </Button>
-            <SocialNetworks
-              instagram=""
-              facebook=""
-              telegram="/"
-            />
-          </div>
-        </div>
-        
+        ))}
       </div>
     </div>
   );
 };
+
