@@ -140,7 +140,7 @@ export const ProductionsNew: FC = () => {
                   >
                     {t("pageManufacturers.certificate")}
                   </a>
-                </Button>
+                </Button> 
               )}
               <SocialNetworks
                 instagram={item.socialNetworks?.instagram || ""}

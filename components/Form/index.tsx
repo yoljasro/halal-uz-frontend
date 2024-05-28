@@ -1,76 +1,47 @@
-// next image link components
-import Image from "next/image";
-import Link from "next/link";
-// react
-import React, { FC, ChangeEventHandler, useState, useEffect } from "react";
-// next intl
+// Form.tsx
+import React, { useState } from "react";
 import { useTranslations } from "next-intl";
-// router
-import { useRouter } from "next/router";
-//styles
 import styles from "./index.module.sass";
-// axios
-import { MainPageTitle } from "../MainPageTitle";
-// mui components
+import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select, { SelectChangeEvent } from "@mui/material/Select";
-import Button from "@mui/material";
-import { TextField } from "@mui/material";
+import Button from "@mui/material/Button";
 import axios from "axios";
 
 export const Form = () => {
-  const [name, setName] = React.useState("");
-  const [surname, setSurName] = React.useState("");
-  const [brandName, setBrandName] = React.useState("");
-  const [activity, setActivity] = React.useState("");
-  const [phone, setPhone] = React.useState("");
-  const [email, setEmail] = React.useState("");
+  const [name, setName] = useState("");
+  const [surname, setSurname] = useState("");
+  const [brandName, setBrandName] = useState("");
+  const [activity, setActivity] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
   const t = useTranslations();
-  const [open, setOpen] = React.useState(false);
 
   const handleChange = (event: SelectChangeEvent) => {
     setActivity(event.target.value as string);
   };
 
-  const url = "http://smartshopcenter.org:5000/request";
-  const data = { name, surname, brandName, activity, phone, email };
- 
   const handleSubmit = () => {
-    console.log(data);
-    if( name === ""){
-      alert("Name required ")
+    const data = { name, surname, brandName, activity, phone, email };
+    const url = "http://localhost:5000/form";
+    console.log(url)
+
+    if (name === "" || surname === "" || brandName === "" || activity === "" || phone === "" || email === "") {
+      alert("Please fill in all fields");
+      return;
     }
-    else if (surname === ""){
-      alert("Surname Required")
-    }
-    else if (brandName === ""){
-      alert("BrandName Required")
-    }
-    else if (activity === ""){
-      alert("Activity Required")
-    }
-    else if (phone === ""){
-      alert("Phone Required")
-    }
-    else if (email === ""){
-      alert("Email  Required")
-    }
-    axios
-      .post(url, data)
+
+    axios.post(url, data)
       .then(function (response) {
         console.log(response);
-        alert("Request Sended in Database")
+        alert("Request sent to the database");
       })
       .catch(function (error) {
         console.log(error);
-        alert("Error")
+        alert("Error");
       });
-
-      // required sytems
-
-      
   };
 
   return (
@@ -79,89 +50,70 @@ export const Form = () => {
       <div className={styles.form__text}>
         <p>{t("mainC.requestDesc")}</p>
       </div>
-
       <div className={styles.form__section}>
         <div className={styles.form__input}>
           <TextField
             className={styles.form__textField}
-            type={"text"}
-            placeholder={"Имя"}
-            variant={"outlined"}
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
+            type="text"
+            placeholder={t("mainC.name")}
+            variant="outlined"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
           />
-
           <TextField
             className={styles.form__textField}
-            type={"text"}
-            placeholder={"Фамилия"}
-            variant={"outlined"}
-            onChange={(e) => {
-              setSurName(e.target.value);
-            }}
+            type="text"
+            placeholder={t("mainC.surname")}
+            variant="outlined"
+            value={surname}
+            onChange={(e) => setSurname(e.target.value)}
           />
         </div>
         <div className={styles.form__input}>
           <TextField
-            className={styles.form__brandName}
-            type={"text"}
-            placeholder={"Название бренда"}
-            variant={"outlined"}
-            onChange={(e) => {
-              setBrandName(e.target.value);
-            }}
+            className={styles.form__textField}
+            type="text"
+            placeholder={t("mainC.brandName")}
+            variant="outlined"
+            value={brandName}
+            onChange={(e) => setBrandName(e.target.value)}
           />
         </div>
         <div className={styles.form__select}>
-          <InputLabel
-            className={styles.form__label}
-            id="demo-simple-select-label"
-          >
-            Выбрать вид деятельности
-          </InputLabel>
+          <InputLabel className={styles.form__label}>{t("mainC.activity")}</InputLabel>
           <Select
             className={styles.form__activity}
-            labelId="demo-simple-select-label"
-            id="demo-simple-select"
             value={activity}
-            placeholder="text"
             onChange={handleChange}
+            displayEmpty
           >
-            <MenuItem value={"Производство продуктов питания"}>
-              Производство продуктов питания
-            </MenuItem>
-            <MenuItem value={"Заведение общественного питания"}>
-              Заведение общественного питания
-            </MenuItem>
-            <MenuItem value={"Гостиницы (хостели, мотели и т.п)"}>
-              Гостиницы (хостели, мотели и т.п)
-            </MenuItem>
+            <MenuItem value="" disabled>{t("mainC.selectActivity")}</MenuItem>
+            <MenuItem value={t("mainC.foodProduction")}>{t("mainC.foodProduction")}</MenuItem>
+            <MenuItem value={t("mainC.foodEstablishment")}>{t("mainC.foodEstablishment")}</MenuItem>
+            <MenuItem value={t("mainC.hotels")}>{t("mainC.hotels")}</MenuItem>
           </Select>
         </div>
         <div className={styles.form__input}>
           <TextField
             className={styles.form__textField}
-            type={"text"}
-            placeholder={"Телефон"}
-            variant={"outlined"}
-            onChange={(e) => {
-              setPhone(e.target.value);
-            }}
+            type="text"
+            placeholder={t("mainC.phone")}
+            variant="outlined"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
           />
-
           <TextField
             className={styles.form__textField}
-            type={"text"}
-            placeholder={"Эл. почта"}
-            variant={"outlined"}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
+            type="email"
+            placeholder={t("mainC.email")}
+            variant="outlined"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <button className={styles.form__btn} onClick={handleSubmit}>Отправить</button>
+        <Button variant="contained" onClick={handleSubmit} className={styles.form__btn}>{t("mainC.send")}</Button>
       </div>
     </div>
   );
 };
+
