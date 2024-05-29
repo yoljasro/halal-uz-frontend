@@ -1,6 +1,5 @@
 // Form.tsx
 import React, { useState } from "react";
-import { useTranslations } from "next-intl";
 import styles from "./index.module.sass";
 import TextField from "@mui/material/TextField";
 import InputLabel from "@mui/material/InputLabel";
@@ -14,106 +13,117 @@ export const Form = () => {
   const [name, setName] = useState("");
   const [surname, setSurname] = useState("");
   const [brandName, setBrandName] = useState("");
-  const [activity, setActivity] = useState("");
+  const [serviceType, setServiceType] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const t = useTranslations();
 
-  const handleChange = (event: SelectChangeEvent) => {
-    setActivity(event.target.value as string);
+  const handleChange = (event: SelectChangeEvent<string>) => {
+    setServiceType(event.target.value);
   };
 
-  const handleSubmit = () => {
-    const data = { name, surname, brandName, activity, phone, email };
-    const url = "http://localhost:5000/form";
-    console.log(url)
+  const handleInputChange = (setter: React.Dispatch<React.SetStateAction<string>>) => (event: React.ChangeEvent<HTMLInputElement>) => {
+    setter(event.target.value);
+  };
 
-    if (name === "" || surname === "" || brandName === "" || activity === "" || phone === "" || email === "") {
+  const handleSubmit = async () => {
+    const data = { name, surname, brandName, serviceType, phone, email };
+    const url = process.env.NEXT_PUBLIC_API_URL || "http://localhost:5000/form";
+
+    if (!name || !surname || !brandName || !serviceType || !phone || !email) {
       alert("Please fill in all fields");
       return;
     }
 
-    axios.post(url, data)
-      .then(function (response) {
-        console.log(response);
-        alert("Request sent to the database");
-      })
-      .catch(function (error) {
-        console.log(error);
-        alert("Error");
-      });
+    try {
+      const response = await axios.post(url, data);
+      console.log(response);
+      alert("Request sent to the database");
+    } catch (error) {
+      console.error(error);
+      alert("Error");
+    }
   };
 
   return (
     <div className={styles.form}>
-      <p className={styles.form__title}>{t("mainC.request")}</p>
+      <p className={styles.form__title}>Request Form</p>
       <div className={styles.form__text}>
-        <p>{t("mainC.requestDesc")}</p>
+        <p>Please fill out the form below to submit your request.</p>
       </div>
       <div className={styles.form__section}>
         <div className={styles.form__input}>
           <TextField
             className={styles.form__textField}
             type="text"
-            placeholder={t("mainC.name")}
+            placeholder="Name"
             variant="outlined"
             value={name}
-            onChange={(e) => setName(e.target.value)}
+            onChange={handleInputChange(setName)}
           />
           <TextField
             className={styles.form__textField}
             type="text"
-            placeholder={t("mainC.surname")}
+            placeholder="Surname"
             variant="outlined"
             value={surname}
-            onChange={(e) => setSurname(e.target.value)}
+            onChange={handleInputChange(setSurname)}
           />
         </div>
         <div className={styles.form__input}>
           <TextField
             className={styles.form__textField}
             type="text"
-            placeholder={t("mainC.brandName")}
+            placeholder="Brand Name"
             variant="outlined"
             value={brandName}
-            onChange={(e) => setBrandName(e.target.value)}
+            onChange={handleInputChange(setBrandName)}
           />
         </div>
         <div className={styles.form__select}>
-          <InputLabel className={styles.form__label}>{t("mainC.activity")}</InputLabel>
-          <Select
-            className={styles.form__activity}
-            value={activity}
-            onChange={handleChange}
-            displayEmpty
-          >
-            <MenuItem value="" disabled>{t("mainC.selectActivity")}</MenuItem>
-            <MenuItem value={t("mainC.foodProduction")}>{t("mainC.foodProduction")}</MenuItem>
-            <MenuItem value={t("mainC.foodEstablishment")}>{t("mainC.foodEstablishment")}</MenuItem>
-            <MenuItem value={t("mainC.hotels")}>{t("mainC.hotels")}</MenuItem>
-          </Select>
+          <FormControl variant="outlined" fullWidth>
+            <InputLabel>Service Type</InputLabel>
+            <Select
+              className={styles.form__activity}
+              value={serviceType}
+              onChange={handleChange}
+              displayEmpty
+              label="Service Type"
+            >
+              <MenuItem value="" disabled>
+                Select Service Type
+              </MenuItem>
+              <MenuItem value="foodProduction">Food Production</MenuItem>
+              <MenuItem value="foodEstablishment">Food Establishment</MenuItem>
+              <MenuItem value="hotels">Hotels</MenuItem>
+            </Select>
+          </FormControl>
         </div>
         <div className={styles.form__input}>
           <TextField
             className={styles.form__textField}
             type="text"
-            placeholder={t("mainC.phone")}
+            placeholder="Phone"
             variant="outlined"
             value={phone}
-            onChange={(e) => setPhone(e.target.value)}
+            onChange={handleInputChange(setPhone)}
           />
           <TextField
             className={styles.form__textField}
             type="email"
-            placeholder={t("mainC.email")}
+            placeholder="Email"
             variant="outlined"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={handleInputChange(setEmail)}
           />
         </div>
-        <Button variant="contained" onClick={handleSubmit} className={styles.form__btn}>{t("mainC.send")}</Button>
+        <Button
+          variant="contained"
+          onClick={handleSubmit}
+          className={styles.form__btn}
+        >
+          Send
+        </Button>
       </div>
     </div>
   );
 };
-
