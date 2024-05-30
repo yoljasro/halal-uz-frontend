@@ -1,20 +1,13 @@
-// next image link components
 import Image from "next/image";
 import Link from "next/link";
-// react
-import React, { FC, ChangeEventHandler, useState, useEffect } from "react";
-// next intl
+import React, { FC, useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
-// router
 import { useRouter } from "next/router";
-//styles
 import styles from "./index.module.sass";
 import { MainPageTitle } from "../MainPageTitle";
 import { SocialNetworks } from "../socialNetworks";
 import { Button } from "@mui/material";
-// Import the API function
 import { projectsLogoAPI } from "../API";
-import { ProjectLogoResponse, ProjectLogos } from "../../types";
 
 export const ProductionsNew: FC = () => {
   const t = useTranslations();
@@ -48,7 +41,7 @@ export const ProductionsNew: FC = () => {
     {
       imageSrc: "/assets/img/agroBravo.png",
       title: "AGRO-BRAVO",
-      siteLink: "https://agrobravo.uz/ru/",
+      siteLink: "https://agrobravo.uz/ru/", 
       certificateLink: "/assets/documents/agro.pdf",
       socialNetworks: {
         instagram: "https://instagram.com/agrobravo.uz?igshid=NDk5N2NlZjQ=",
@@ -95,7 +88,19 @@ export const ProductionsNew: FC = () => {
     const fetchData = async () => {
       try {
         const apiResponse = await projectsLogoAPI();
-        setApiData(apiResponse);
+        console.log("API response:", apiResponse); // Add this line to log the response
+        const formattedData = apiResponse.map(item => ({
+          imageSrc: item.image,
+          title: item.nameuz,
+          siteLink: item.siteLink,
+          certificateLink: item.certificate,
+          socialNetworks: {
+            instagram: item.instagram,
+            facebook: item.facebook,
+            telegram: item.telegram,
+          },
+        }));
+        setApiData(formattedData);
       } catch (error) {
         console.error("Error fetching API data:", error);
       }
@@ -114,8 +119,8 @@ export const ProductionsNew: FC = () => {
       <div className={styles.production}>
         {mergedData.map((item, index) => (
           <div className={styles.production__card} key={index}>
-            <Image
-              src={item.imageSrc}
+            <img
+              src={item.imageSrc.startsWith('http') ? item.imageSrc : item.imageSrc}
               alt={item.title}
               width={180}
               height={180}
@@ -136,11 +141,11 @@ export const ProductionsNew: FC = () => {
                     rel="noreferrer"
                     className={styles.production__link}
                     target={"_blank"}
-                    href={item.certificateLink}
+                    href={item.certificateLink.startsWith('http') ? item.certificateLink : item.certificate}
                   >
                     {t("pageManufacturers.certificate")}
                   </a>
-                </Button> 
+                </Button>
               )}
               <SocialNetworks
                 instagram={item.socialNetworks?.instagram || ""}
@@ -154,4 +159,3 @@ export const ProductionsNew: FC = () => {
     </div>
   );
 };
-
