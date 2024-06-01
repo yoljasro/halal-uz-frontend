@@ -1,10 +1,12 @@
 // types.ts
 export interface Project {
-    _id?: string;
-    title: string;
-    description: string;
     image: string;
-    __v?: number;
+    nameuz: string;
+    certificate: string;
+    siteLink : string;
+    instagram: string;
+    facebook : string;
+    telegram: string
 }
 
 export interface ApiResponse {
@@ -24,13 +26,23 @@ export interface ClientsResponse {
 }
  
 export interface ProjectLogos {
-    _id?: string;
-    image : string;
-    __v?: number
+    image: string;
+    nameuz: string;
+    certificate: string;
+    siteLink : string;
+    instagram: string;
+    facebook : string;
+    telegram: string
 }
 
 export interface ProjectLogoResponse {
     image: string;
-    name: string;
+    nameuz: string;
+    certificate: string;
+    siteLink : string;
+    instagram: string;
+    facebook : string;
+    telegram: string
+
     
 }

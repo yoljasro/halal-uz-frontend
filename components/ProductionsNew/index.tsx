@@ -1,20 +1,25 @@
-// next image link components
 import Image from "next/image";
-import Link from "next/link";
-// react
-import React, { FC, ChangeEventHandler, useState, useEffect } from "react";
-// next intl
+import React, { FC, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-// router
 import { useRouter } from "next/router";
-//styles
 import styles from "./index.module.sass";
 import { MainPageTitle } from "../MainPageTitle";
 import { SocialNetworks } from "../socialNetworks";
 import { Button } from "@mui/material";
-// Import the API function
 import { projectsLogoAPI } from "../API";
-import { ProjectLogoResponse, ProjectLogos } from "../../types";
+import { ProjectLogoResponse } from "../../types";
+
+interface ProjectData {
+  imageSrc: string;
+  title: string;
+  siteLink: string;
+  certificateLink: string;
+  socialNetworks: {
+    instagram: string;
+    facebook: string;
+    telegram: string;
+  };
+}
 
 export const ProductionsNew: FC = () => {
   const t = useTranslations();
@@ -94,8 +99,19 @@ export const ProductionsNew: FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const apiResponse = await projectsLogoAPI();
-        setApiData(apiResponse);
+        const apiResponse: ProjectLogoResponse[] = await projectsLogoAPI();
+        const formattedData: ProjectData[] = apiResponse.map((item) => ({
+          imageSrc: `http://localhost:5000${item.image}`,
+          title: item.nameuz,
+          siteLink: item.siteLink,
+          certificateLink: `http://localhost:5000${item.certificate}`,
+          socialNetworks: {
+            instagram: item.instagram,
+            facebook: item.facebook,
+            telegram: item.telegram,
+          },
+        }));
+        setApiData(formattedData);
       } catch (error) {
         console.error("Error fetching API data:", error);
       }
@@ -140,7 +156,7 @@ export const ProductionsNew: FC = () => {
                   >
                     {t("pageManufacturers.certificate")}
                   </a>
-                </Button> 
+                </Button>
               )}
               <SocialNetworks
                 instagram={item.socialNetworks?.instagram || ""}
@@ -154,4 +170,3 @@ export const ProductionsNew: FC = () => {
     </div>
   );
 };
-

@@ -2,13 +2,16 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   i18n: {
-    locales: ['en', 'ru', 'uz' , 'tr'  , 'ar-SA'] ,
+    locales: ['en', 'ru', 'uz', 'tr', 'ar-SA'],
     defaultLocale: 'ru'
   },
-  typescript : {
+  typescript: {
     ignoreBuildErrors: true,
-  }, 
-  output: "standalone"
+  },
+  output: "standalone",
+  images: {
+    domains: ['localhost'], // backend hostnomasi shu yerda qo'shiladi
+  },
 }
 
 module.exports = nextConfig
