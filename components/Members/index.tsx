@@ -15,6 +15,7 @@ import { MainPageTitle } from "../MainPageTitle";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { MembersArray, MembersType } from "../../constants";
+import { membersApi } from "../API"; // assuming this is the API function to fetch members data
 
 const responsive = {
   desktop: {
@@ -37,6 +38,25 @@ const responsive = {
 export const Members: FC<any> = () => {
   const t = useTranslations();
   const router = useRouter();
+  const [apiData, setApiData] = useState<any[]>([]);
+  const [localData, setLocalData] = useState<MembersType[]>([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const apiResponse = await membersApi(); // Backenddan ma'lumotlarni olish
+        setApiData(apiResponse);
+      } catch (error) {
+        console.error("Error fetching API data:", error);
+      }
+    };
+    fetchData();
+  }, []);
+
+  useEffect(() => {
+    // Lokal ma'lumotlarni o'rnating
+    setLocalData(MembersArray);
+  }, []);
 
   return (
     <div className={styles.cont} id="members">
@@ -62,12 +82,15 @@ export const Members: FC<any> = () => {
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
-        {MembersArray.map((image: MembersType) => (
-          <div className={styles.cont} key={image.alt}>
-            <a rel="noreferrer" target={"_blank"} href={image.href}>
-              <div className={styles.members} key={image.alt}>
-                <img src={image.src} alt={image.alt} />
-                <p className={styles.members__text}>{image.text}</p>
+        {[...localData, ...apiData].map((item: MembersType) => (
+          <div className={styles.cont} key={item.alt}>
+            <a rel="noreferrer" target={"_blank"} href={item.href}>
+              <div className={styles.members} key={item.alt}>
+              <img
+                  src={item.image.startsWith("/assets") ? item.image : `http://localhost:5000${item.image}`}
+                  alt={item.alt}
+                />
+                <p className={styles.members__text}>{item.title}</p>
               </div>
             </a>
           </div>

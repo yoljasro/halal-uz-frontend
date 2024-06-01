@@ -13,6 +13,14 @@ export interface ApiResponse {
     projects: Project[];
 }
 
+export interface Member{
+    title: string;
+    image: string;
+}
+
+export interface MembersResponse {
+    members : Member[]
+}
 
 export interface Client {
     _id?: string;

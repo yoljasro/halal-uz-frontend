@@ -15,127 +15,127 @@ export const RestaurantsModel: RestaurantsType[] = [
 ];
 
 export interface MembersType {
-  src: string;
-  text: any;
+  image: string;
+  title: any;
   alt: string;
   href?: string;
 }
 
 export const MembersArray: MembersType[] = [
   {
-    src: "/assets/img/azerbayjan.png",
+    image: "/assets/img/azerbayjan.png",
     alt: "Image 1",
-    text: "Azerbaijan",
+    title: "Azerbaijan",
     href: "/assets/documents/azerbayjanCookers.pdf"
   },
   {
-    src: "/assets/img/kaz.png",
+    image: "/assets/img/kaz.png",
     alt: "Image 2",
-    text: "Kazakhstan",
+    title: "Kazakhstan",
   },
   {
-    src: "/assets/img/kgz.png",
+    image: "/assets/img/kgz.png",
     alt: "Image 3",
-    text: "Kyrgyzstan",
+    title: "Kyrgyzstan",
   },
   {
-    src: "/assets/img/morocco.png",
+    image: "/assets/img/morocco.png",
     alt: "Image 4",
-    text: "Morocco",
+    title: "Morocco",
   },
   {
-    src: "/assets/img/niger.png",
+    image: "/assets/img/niger.png",
     alt: "Image 5",
-    text: "Nigeria",
+    title: "Nigeria",
   },
   {
-    src: "/assets/img/malayziya.png",
+    image: "/assets/img/malayziya.png",
     alt: "Image 6",
-    text: "Malaysia",
+    title: "Malaysia",
   },
   {
-    src: "/assets/img/pakistan.png",
+    image: "/assets/img/pakistan.png",
     alt: "Image 7",
-    text: "Pakistan",
+    title: "Pakistan",
   },
   {
-    src: "/assets/img/livan.png",
+    image: "/assets/img/livan.png",
     alt: "Image 8",
-    text: "Livan",
+    title: "Livan",
     href: "/assets/documents/livan.pdf"
   },
   {
-    src: "/assets/img/jordan.png",
+    image: "/assets/img/jordan.png",
     alt: "Image 9",
-    text: "Jordan",
+    title: "Jordan",
   },
   {
-    src: "/assets/img/bangladesh.png",
+    image: "/assets/img/bangladesh.png",
     alt: "Image 10",
-    text: "Bangladesh",
+    title: "Bangladesh",
   },
   { 
-    src: "/assets/img/gambiya.png",
+    image: "/assets/img/gambiya.png",
     alt: "Image 11",
-    text: "Gambia",
+    title: "Gambia",
   },
   {
-    src: "/assets/img/aljir.png",
+    image: "/assets/img/aljir.png",
     alt: "Image 12",
-    text: "Aljir",
+    title: "Aljir",
   },
   {
-    src: "/assets/img/uzbekistan.png",
+    image: "/assets/img/uzbekistan.png",
     alt: "Image 13",
-    text: "Uzbekistan",
+    title: "Uzbekistan",
   },
   {
-    src: "/assets/img/katar.png", 
+    image: "/assets/img/katar.png", 
     alt: "Image 14",
-    text: "Katar",
+    title: "Katar",
   },
   {
-    src: "/assets/img/egytpt.png",
+    image: "/assets/img/egytpt.png",
     alt: "Image 15",
-    text: "Egypt",
+    title: "Egypt",
   },
   {
-    src: "/assets/img/saudia.png",
+    image: "/assets/img/saudia.png",
     alt: "Image 16",
-    text: "Saudia Arabia",
+    title: "Saudia Arabia",
     href: "/assets/documents/hani.pdf"
   },
   {
-    src: "/assets/img/turkish.png",
+    image: "/assets/img/turkish.png",
     alt: "Image 17",
-    text: "Turkey",
+    title: "Turkey",
     href: "/assets/documents/akgun.pdf"
   },
   {
-    src: "/assets/img/bosniaa.png" , 
+    image: "/assets/img/bosniaa.png" , 
     alt: "Image 18" , 
-    text: "Bosnia-Herzegovina"
+    title: "Bosnia-Herzegovina"
   } ,
   {
-    src: "/assets/img/maldives.png" , 
+    image: "/assets/img/maldives.png" , 
     alt: "Image 18" , 
-    text: "Maldives"
+    title: "Maldives"
   },
   {
-    src: "/assets/img/tunisa.jpg" , 
+    image: "/assets/img/tunisa.jpg" , 
     alt: "Image 18" , 
-    text: "Tunisia",
+    title: "Tunisia",
     href: "/assets/documents/tunis.pdf"
   } ,
   {
-    src: "/assets/img/palastine.png" , 
+    image: "/assets/img/palastine.png" , 
     alt: "Image 18" , 
-    text: "Palastine"
+    title: "Palastine"
   } ,
   {
-    src: "/assets/img/singapore.png" , 
+    image: "/assets/img/singapore.png" , 
     alt: "Image 18" , 
-    text: "Singapore" ,
+    title: "Singapore" ,
     href : "/assets/documents/kamal.pdf"
   } ,
 ];  
