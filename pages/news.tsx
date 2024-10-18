@@ -32,6 +32,94 @@ const News = () => {
       <MainPageTitle subtitle="News" description=" Halal News" />
       <div className={styles.news__content}>
 
+
+      <div
+          onClick={() => {
+            router.push("/gul");
+          }}
+          className={styles.news__card}
+        >
+          <Image
+            alt="image"
+            className={styles.news__image}
+            src="/assets/img/gulfod.jpg"
+            width={500}
+            height={350}
+          />
+          <div>
+            <h3 className={styles.news__title}>
+            Gulfood 2025 – В феврале 2025 года в Дубае пройдет выставка Gulfood
+            </h3>
+
+            <p className={styles.news__description}>
+            где большое внимание будет уделено халяль-продукции
+            </p>
+            <p className={styles.news__date}>14-oktabr 2024</p>
+            <Button className={styles.news__btn} variant="contained">
+              See more
+            </Button>
+          </div>
+        </div>
+
+
+      <div
+          onClick={() => {
+            router.push("/sum");
+          }}
+          className={styles.news__card}
+        >
+          <Image
+            alt="image"
+            className={styles.news__image}
+            src="/assets/img/sum.jpg"
+            width={500}
+            height={350}
+          />
+          <div>
+            <h3 className={styles.news__title}>
+            World Halal Summit  
+            </h3>
+
+            <p className={styles.news__description}>
+            2024 – В декабре в Индонезии пройдет Всемирный саммит по вопросам халяль-индустрии.
+            </p>
+            <p className={styles.news__date}>12-oktabr 2024</p>
+            <Button className={styles.news__btn} variant="contained">
+              See more
+            </Button>
+          </div>
+        </div>
+
+      <div
+          onClick={() => {
+            router.push("/expo");
+          }}
+          className={styles.news__card}
+        >
+          <Image
+            alt="image"
+            className={styles.news__image}
+            src="/assets/img/expo.jpg"
+            width={500}
+            height={350}
+          />
+          <div>
+            <h3 className={styles.news__title}>
+            Halal Expo Istanbul 2024 – Одна из крупнейших международных выставок
+            </h3>
+
+            <p className={styles.news__description}>
+            посвященных халяль-индустрии, состоится с 26 по 29 октября 2024 года в Стамбуле.
+            </p>
+            <p className={styles.news__date}>18-noyabr 2024</p>
+            <Button className={styles.news__btn} variant="contained">
+              See more
+            </Button>
+          </div>
+        </div>
+
+
+
         <div
           onClick={() => {
             router.push("/conferen");

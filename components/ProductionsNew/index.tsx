@@ -94,6 +94,42 @@ export const ProductionsNew: FC = () => {
         telegram: "/",
       },
     },
+   
+
+    {
+      imageSrc: "/assets/img/tamam.jpg",
+      title: "TAMIM",
+      siteLink: "",
+      certificateLink: "/assets/documents/pdfbir.pdf",
+      socialNetworks: {
+        instagram: "",
+        facebook: "",
+        telegram: "",
+      },
+    },
+    {
+      imageSrc: "/assets/img/dobroy.jpg",
+      title: "Доброе Деревенское утро",
+      siteLink: "",
+      certificateLink: "/assets/documents/pdfikki.pdf",
+      socialNetworks: {
+        instagram: "",
+        facebook: "",
+        telegram: "",
+      },
+    },
+    {
+      imageSrc: "/assets/img/alsafi.jpg",
+      title: "ALSAFI",
+      siteLink: "https://siyobferma.uz",
+      certificateLink: "/assets/documents/pdfuch.pdf",
+      socialNetworks: {
+        instagram: "",
+        facebook: "",
+        telegram: "",
+      },
+    },
+
   ];
 
   useEffect(() => {
