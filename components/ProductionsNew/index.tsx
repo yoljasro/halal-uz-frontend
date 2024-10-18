@@ -124,7 +124,7 @@ export const ProductionsNew: FC = () => {
       siteLink: "https://siyobferma.uz",
       certificateLink: "/assets/documents/pdfuch.pdf",
       socialNetworks: {
-        instagram: "",
+        instagram: " ",
         facebook: "",
         telegram: "",
       },
