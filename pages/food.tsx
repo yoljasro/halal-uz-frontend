@@ -13,7 +13,7 @@ const Food = () => {
   return (
     <div className={styles.newsMain}>
       <h1 className={styles.newsMain__title}>
-        Из журнала «под знаком Халяль» Исламские стандарты : тренды и бренды
+        Из журнала «под знаком Халяль» Исламские стандарты  тренды и бренды
       </h1>
       <div className={styles.newsMain__images}>
         <Image
