@@ -547,11 +547,93 @@ const Restaurants: FC<any> = () => {
           </div>
         </div>
       </div>
+
+
+
+ <div className={styles.restaurants__card}>
+          <Image
+            src={"/assets/img/resto.jpg"}
+            width={600}
+            height={330}
+            alt="image"
+          />
+          <div className={styles.restaurants__logo}>
+            <Image
+              src={"/assets/img/burgerking.png"}
+              alt="appex2"
+              width={100}
+              height={100}
+            />
+          </div>
+          <div className={styles.restaurants__content}>
+            <h1 className={styles.restaurants__title}>Burger King</h1>
+            <p className={styles.restaurants__description}>
+             Бургер Кинг – это место, где готовят мясо на огне и это единственный массовый ресторан быстрого питания, где подают бургеры с мраморной говядиной 
+            </p>
+            <Button
+              variant="contained"
+              className={styles.restaurants__certificateBtn}
+            >
+              <a
+                rel="noreferrer"
+                target={"_blank"}
+                href="/assets/documents/burgerking.pdf"
+              >
+                {t("pageManufacturers.certificate")}
+              </a>
+            </Button>
+            <div className={styles.restaurants__socialNetworks}>
+              <a
+                rel="noreferrer"
+                target={"_blank"}
+                href={"https://www.instagram.com/karadeniz.uz/"}
+              >
+                <Image
+                  src={"/assets/img/instagram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+              <a
+                rel="noreferrer"
+                target={"_blank"}
+                href="https://www.facebook.com/karadeniz.uz/"
+              >
+                <Image
+                  src={"/assets/img/facebook.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+
+              <a
+                rel="noreferrer"
+                target={"_blank"}
+                href="https://t.me/karadeniz_restaurant"
+              >
+                <Image
+                  src={"/assets/img/telegram.png"}
+                  alt="instagram"
+                  width={45}
+                  height={45}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+
       <div className={styles.restaurants__moreBtn}>
         <Link href="/nav">
           <Button variant="contained">{t("btnMore")}</Button>
         </Link>
       </div>
+
+
+
+
     </div>
   );
 };

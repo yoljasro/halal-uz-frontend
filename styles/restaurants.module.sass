@@ -1,78 +1,112 @@
 .restaurants
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin-bottom: 60px
+  padding: 0 20px
+
+  &__titleMain
+    font-family: ExoBold
+    font-size: 38px
+    margin-top: 60px
+    color: #111
+
+  &__cont
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr))
+    gap: 40px
+    justify-items: center
+    width: 100%
+    max-width: 1300px
+    margin-top: 60px
+
+  &__card
+    position: relative
+    width: 100%
+    max-width: 580px
+    background: #fff
+    border: 2px solid #00FFFF
+    border-radius: 16px
+    overflow: hidden
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1)
+    transition: transform 0.3s ease, box-shadow 0.3s ease
+
+    &:hover
+      transform: translateY(-8px)
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.18)
+
+  &__logo
+    position: absolute
+    top: 16px
+    left: 16px
+    z-index: 2
+    border-radius: 50%
+    overflow: hidden
+    background: #fff
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2)
+
+  &__img
+    width: 100%
+    height: auto
+    border-bottom: 1px solid #eee
+    object-fit: cover
+
+  &__content
+    padding: 24px
+    display: flex
+    flex-direction: column
+    gap: 16px
+
+  &__title
+    font-family: ExoBold
+    font-size: 26px
+    color: #111
+
+  &__description
+    font-family: ExoRegular
+    font-size: 16px
+    color: #333
+    line-height: 1.6
+
+  &__certificateBtn
+    width: fit-content
+    font-weight: 600
+    background: #00FFFF
+    border: none
+    color: #111
+    padding: 10px 24px
+    border-radius: 8px
+    cursor: pointer
+    transition: all 0.3s ease
+
+    &:hover
+      background: #00d0d0
+
+  &__socialNetworks
+    display: flex
+    gap: 16px
+    margin-top: 8px
+
+    & img
+      transition: transform 0.4s linear
+      &:hover
+        transform: rotate(360deg)
+
+  &__moreBtn
+    display: flex
     justify-content: center
-    flex-wrap: wrap
-    margin-bottom: 50px
+    margin-top: 60px
 
-    &__cont
-        display: flex
-        justify-content: space-around
-        flex-wrap: wrap
-        gap: 85px
-        margin-top: 70px
+    & button
+      font-family: ExoRegular
+      font-size: 22px
+      padding: 12px 60px
+      background: #3D3D3D
+      color: white
+      border: none
+      border-radius: 8px
+      cursor: pointer
+      transition: background 0.3s ease
 
-    &__card
-        width: 100%
-        max-width: 600px
-        border: 2px solid aqua
-        border-radius: 12px
-
-    &__logo
-        position: relative
-        top: -400px
-        left: 44px
-        @media (max-width:769px)
-            top: -280px
-            left: 0px
-            margin-left: 40px
-
-    &__content
-        margin-top: -80px
-        margin-left: 30px
-        display: flex
-        flex-direction: column
-        gap: 20px
-
-    &__title
-        font-family: ExoBold
-        font-size: 32px
-        color: #000000
-        @media (max-width:769px)
-            padding-top: 20px
-
-    &__description
-        width: 100%
-        max-width: 500px
-        margin-top: 10px
-        color: #000000d8
-        font-family: ExoBold
-        font-size: 18px
-        text-shadow: 1px 1px 1px 1px yellow
-        @media (max-width:1200px)
-            max-width: 350px
-
-    &__certificateBtn
-        width: 100%
-        max-width: 250px
-
-    &__socialNetworks
-        display: flex
-        gap: 20px
-
-        & img
-            &:hover
-                transform: rotate(360deg)
-                transition: 0.4s linear
-
-    &__moreBtn
-        display: flex
-        justify-content: center
-        & button
-            font-family: ExoRegular
-            font-size: 24px
-            padding: 12px 70px
-            background: #3D3D3D
-            color: rgba(255, 255, 255, 1)
-            border-radius: 8px
-            align-items: center
-            cursor: pointer
-            margin-top: 70px
+      &:hover
+        background: #222

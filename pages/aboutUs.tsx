@@ -196,18 +196,6 @@ const AboutUs: FC<any> = () => {
           <div className={styles.cont__card}>
             <Image
               alt="image"
-              src={"/assets/img/botirbek.png"}
-              width={200}
-              height={300}
-            />
-            <h3 className={styles.cont__card__name}>Botir Mirzagaliyev</h3>
-            <p className={styles.cont__card__description}>
-              {t("pageAboutUs.command2")}
-            </p>
-          </div>
-          <div className={styles.cont__card}>
-            <Image
-              alt="image"
               src={"/assets/img/tolibaka.png"}
               width={200}
               height={300}
